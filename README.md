@@ -139,4 +139,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
 ## Warning
 
-Experimental build: 3 tensions resolved, ∞ to go | M₆ manifold optimization in progress...
+6D hypercompression enabled (φ/e/π certified). Warning: May collapse observational tensions into singular solutions.
