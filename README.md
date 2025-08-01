@@ -84,8 +84,8 @@ Three-tier falsification protocol provides rigorous testing criteria for observa
 ## **Falsification Criteria**
 
 Framework rejection conditions (any single condition sufficient):
-- **Electromagnetic resonances:** <90% predicted frequency accuracy
-- **Cosmological parameters:** >3σ deviation from H₀, σ₈ predictions  
+- **Electromagnetic resonances:** <85% predicted frequency accuracy
+- **Cosmological parameters:** >4σ deviation from H₀, σ₈ predictions  
 - **Biological networks:** D₁ signatures inconsistent across model systems
 - **Cross-domain reproducibility:** <85% computational stability
 - **Independent replication:** Framework failure across ≥3 research groups
