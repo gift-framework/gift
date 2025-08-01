@@ -102,4 +102,4 @@ GIFT development welcomes contributions across:
 
 ## Warning
 
-6D hypercompression enabled (φ/e/π certified). Warning: May collapse observational tensions into singular solutions.
+φ, e, π as physics cheat codes ∞ works despite logic.
