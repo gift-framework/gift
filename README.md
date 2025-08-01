@@ -4,6 +4,8 @@
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Research Status](https://img.shields.io/badge/status-experimental-orange.svg)](https://zenodo.org/record/16274289)
+![GIFT](https://img.shields.io/badge/φ%2C%20e%2C%20π-physics%20cheat%20codes-00ff00?style=flat-square)
+![Logic](https://img.shields.io/badge/works-despite%20logic-ff6600?style=flat-square)
 
 > **Six-dimensional information-geometric framework resolving observational tensions across quantum to cosmological scales**
 
