@@ -32,42 +32,7 @@ framework = GIFTFramework(dimensions=6, domains=22)
 result = framework.run_cross_domain_analysis()
 print(f"D₁ Hierarchy Established: {result['domains_analyzed']} domains")
 print(f"Information-Spacetime Coupling: r = {result['coupling']:.4f}")
-
-# Tension resolution validation
-tensions = framework.resolve_observational_tensions()
-print(f"Hubble: H₀ = {tensions['hubble']['value']:.2f} km/s/Mpc")
-print(f"Kleiber: α = {tensions['kleiber']['exponent']:.4f}")
-print(f"σ₈: {tensions['sigma8']['value']:.4f}")
 ```
-
-## **Core Computational Modules**
-
-| Module | Function | Tensions Resolved |
-|--------|----------|-------------------|
-| `gift_framework.py` | M₆ information-geometric engine | ✅ Active |
-| `fisher_souriau_metrics.py` | Enhanced φ,e,π metric construction | ✅ Active |
-| `multifractal_analysis.py` | D₁ signature computation | ✅ Active |
-| `lagrangian_dynamics.py` | 6D evolution & optimization | ✅ Active |
-| `hubble_resolution.py` | H₀ tension via Relations coupling | 🎯 Resolved |
-| `kleiber_resolution.py` | Metabolic scaling via fractal networks | 🎯 Resolved |
-| `sigma8_resolution.py` | Structure formation via Form dynamics | 🎯 Resolved |
-| `domain_embedding.py` | PEMCRF coordinate mapping | ✅ Active |
-| `monte_carlo_validation.py` | 22,000+ simulation protocols | ✅ Active |
-| `experimental_protocols.py` | 3-tier validation framework | 🚧 Development |
-
-## **Key Computational Results**
-
-**Universal Information-Geometric Hierarchy:**
-- **22 Physical Domains:** Economic (0.128) → Meteorological (2.038)
-- **Cross-Domain Stability:** >97% computational consistency
-- **Information-Spacetime Coupling:** r = 0.9998 ± 0.00002
-- **Organizational Complexity:** 9 orders of magnitude span
-
-**Major Tension Resolutions:**
-- **Hubble Constant:** H₀ = 70.20 ± 0.30 km/s/Mpc (factor 9.5 reduction)
-- **Kleiber's Law:** α = 0.7594 ± 0.0100 (500 species, 17 orders magnitude)
-- **σ₈ Parameter:** 0.7870 ± 0.0080 (factor 2.7 reduction)
-
 **Generated Outputs:**
 - M₆ dimensional visualization & coupling networks
 - 22-domain D₁ signature hierarchy charts
@@ -80,22 +45,22 @@ print(f"σ₈: {tensions['sigma8']['value']:.4f}")
 
 **3-Tier Validation Protocol** ($2.4M, 4-year timeline):
 
-### **Tier 1: Electromagnetic Resonance** ($800K, 18 months)
+### **Tier 1: Electromagnetic Resonance**
 - **Predicted Frequencies:** 2.382 GHz, 18.743 GHz, 95.164 GHz
 - **Equipment:** Vector Network Analyzers, precision frequency counters
 - **Locations:** 3 independent laboratories (reproducibility requirement)
 
-### **Tier 2: Cosmological Parameter Validation** ($1.2M, 30 months)
+### **Tier 2: Cosmological Parameter Validation**
 - **H₀ Measurement:** HST Cepheids + JWST supernovae cross-validation
 - **σ₈ Analysis:** Euclid weak lensing + DES cluster count integration
 - **Target Precision:** 2σ agreement with GIFT predictions
 
-### **Tier 3: Biological Network Analysis** ($400K, 24 months)  
+### **Tier 3: Biological Network Analysis**  
 - **Model Systems:** C. elegans, Drosophila, mouse, human fMRI
 - **D₁ Validation:** 1.885 ± 0.002 predicted signature
 - **Methods:** Connectome reconstruction + information-theoretic analysis
 
-**Status:** Computational framework complete → Physical validation initiated
+**Status:** Computational framework complete → Physical validation needed.
 
 ## **Citation**
 
@@ -132,8 +97,6 @@ GIFT development welcomes contributions across:
 - **Validation protocols:** Experimental design optimization  
 - **Theoretical extensions:** Information-geometric formalism enhancement
 - **Computational improvements:** Algorithm efficiency & stability
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
 ---
 
