@@ -202,6 +202,6 @@ Results are computational patterns from optimization procedures. Physical interp
 
 ### GIFT Translator
 
-available here : [GIFT-BOY](https://www.bdelaf.com/gift.php)
+Available here : [GIFT-BOY](https://www.bdelaf.com/gift.php)
 
 > **Universe v13.8B:** Currently running on 4D physics (emulated) ∞ Native M₆ support coming soon...
