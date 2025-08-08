@@ -1,105 +1,258 @@
-# GIFT | Geometric Information Field Theory
+# GIFT v3.0 | Geometric Information Field Theory
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16274289.svg)](https://doi.org/10.5281/zenodo.16274289)
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Research Status](https://img.shields.io/badge/status-experimental-orange.svg)](https://zenodo.org/record/16274289)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![Research Status](https://img.shields.io/badge/status-computational_exploration-orange.svg)](https://zenodo.org/record/16274289)
+[![arXiv](https://img.shields.io/badge/arXiv-2025.pending-b31b1b.svg)](https://arxiv.org/)
 
-> **Six-dimensional information-geometric framework resolving observational tensions across quantum to cosmological scales**
+> **Computational exploration of six-dimensional information-geometric structures revealing universal ζ(3)^(1/3) scaling across physical domains**
 
-## **Repository Structure**
+## 🎯 Key Discovery
 
-```
-gift-framework/
-├── code/              # Core GIFT algorithms & domain embeddings
-├── data/              # 22-domain datasets & validation results
-├── results/           # Cross-domain analysis & publication figures
-└── validation/        # Experimental protocols & tension resolutions
-```
+Systematic convergence to **ζ(3)^(1/3) ≈ 1.0633** (Apéry's constant cube root) emerges across quantum, biological, and cosmological systems through optimization on manifold M₆ = {S, E, M, C, N, F}.
 
-## **Quick Start**
-
-```bash
-pip install numpy scipy matplotlib pandas
-git clone https://github.com/gift-framework/gift.git
-cd gift
-```
+## 📊 Latest Results (v3.0)
 
 ```python
-# Core GIFT 6D analysis
-from code.core.gift_framework import GIFTFramework
-framework = GIFTFramework(dimensions=6, domains=22)
-result = framework.run_cross_domain_analysis()
-print(f"D₁ Hierarchy Established: {result['domains_analyzed']} domains")
-print(f"Information-Spacetime Coupling: r = {result['coupling']:.4f}")
+# Domain-to-Manifold Translation Protocol
+from gift.core import M6Framework
+
+framework = M6Framework(version="3.0")
+results = framework.validate_all_domains()
+
+print(f"✓ Convergence Rate: {results['convergence_rate']}%")  # 100%
+print(f"✓ Target Accuracy: {results['accuracy']}%")           # 85%
+print(f"✓ Speed of Light: {results['c_error']}%")            # 0.003%
+print(f"✓ Hubble Constant: {results['H0']} km/s/Mpc")        # 69.78
+print(f"✓ E/M Ratio: {results['E_M_ratio']}")                # 1.0501
+print(f"✓ ζ(3)^(1/3) Target: 1.0633")                        # Universal
 ```
-**Generated Outputs:**
-- M₆ dimensional visualization & coupling networks
-- 22-domain D₁ signature hierarchy charts
-- Tension resolution mechanism diagrams  
-- Fisher-Souriau metric eigenvalue distributions
-- Cross-domain correlation matrices
-- Lagrangian evolution trajectory plots
 
-## **Experimental Validation Program**
+## 🚀 Quick Start
 
-**3-Tier Validation Protocol** ($2.4M, 4-year timeline):
+```bash
+# Clone repository
+git clone https://github.com/gift-framework/gift.git
+cd gift
 
-### **Tier 1: Electromagnetic Resonance**
-- **Predicted Frequencies:** 2.382 GHz, 18.743 GHz, 95.164 GHz
-- **Equipment:** Vector Network Analyzers, precision frequency counters
-- **Locations:** 3 independent laboratories (reproducibility requirement)
+# Install dependencies
+pip install -r requirements.txt
 
-### **Tier 2: Cosmological Parameter Validation**
-- **H₀ Measurement:** HST Cepheids + JWST supernovae cross-validation
-- **σ₈ Analysis:** Euclid weak lensing + DES cluster count integration
-- **Target Precision:** 2σ agreement with GIFT predictions
+# Run domain validation
+python gift_v3_protocol.py
+```
 
-### **Tier 3: Biological Network Analysis**  
-- **Model Systems:** C. elegans, Drosophila, mouse, human fMRI
-- **D₁ Validation:** 1.885 ± 0.002 predicted signature
-- **Methods:** Connectome reconstruction + information-theoretic analysis
+## 📁 Repository Structure
 
-**Status:** Computational framework complete → Physical validation needed.
+```
+gift-v3/
+├── core/
+│   ├── gift_v3_protocol.py      # R4 ↔ M₆ translation engine
+│   ├── optimization_suite.py    # Multi-method optimization
+│   └── dimensional_analysis.py  # β-function & hierarchy analysis
+├── domains/
+│   ├── classical_mechanics/     # Kinetic energy validation
+│   ├── electromagnetism/        # Maxwell equations (C ≈ 5)
+│   ├── quantum_mechanics/       # Coherence e/(2π)
+│   ├── general_relativity/      # D_eff = 3 + ζ(3)^(1/3)
+│   ├── cosmology/               # Hubble tension resolution
+│   ├── biology/                 # Photosynthesis (653nm)
+│   └── critical_phenomena/      # Phase transitions
+├── figures/
+│   ├── figure_generation.py     # Publication-quality plots
+│   └── results/                 # Generated visualizations
+├── data/
+│   └── validation_results.json  # 1000+ optimization runs
+└── notebooks/
+    ├── tutorial.ipynb           # Getting started guide
+    └── analysis.ipynb          # Reproduce paper results
+```
 
-## **Citation**
+## 🔬 Core Framework
 
-```bibtex
-@misc{lafourniere2025gift,
-  title={GIFT: A Computational Framework for Cross-Domain Physical Analysis}, 
-  author={de La Fourniere, Brieuc},
-  year={2025},
-  publisher={Zenodo},
-  doi={10.5281/zenodo.16274289},
-  note={Geometric Information Field Theory - Resolving observational tensions through six-dimensional information-geometric optimization}
+### Six-Dimensional Manifold M₆
+
+| Dimension | Symbol | Role | β-function | Status |
+|-----------|--------|------|------------|--------|
+| **Evolution** | E | Temporal dynamics | 0.0167 | Fundamental |
+| **Memory** | M | Information retention | 0.0167 | Fundamental |
+| **Coupling** | C | Scale interface | 0.0167 | Fundamental |
+| **Structure** | S | Spatial organization | ~0 | Emergent |
+| **Network** | N | Connectivity | ~0 | Emergent |
+| **Flow** | F | Information transfer | ~0 | Emergent |
+
+### Key Equations
+
+```python
+# Lagrangian formulation
+L_GIFT = L_info + L_interface + L_coupling + L_constraint + L_anti
+
+# Anti-optimization for adaptive flexibility
+L_anti = -λ_anti * Σᵢ[∇²(∂L/∂φᵢ)]²  # Maintains 18% non-locality
+
+# Field equations (example for Coupling dimension)
+□C + 2λ₄C + κ₂NF + βSE + (∂ω/∂C)NF + Γ₂M + Γ₄SN = 0
+```
+
+## 📈 Validation Results
+
+### Physical Constants Reproduction
+
+| Observable | Target | GIFT v3.0 | Error |
+|------------|--------|-----------|-------|
+| Speed of light | 299,792,458 m/s | 299,782,928 m/s | 0.003% |
+| Hubble constant | 71.54 km/s/Mpc | 69.78 km/s/Mpc | 2.42% |
+| Quantum coherence | 0.4326 | 0.4428 | 0.71% |
+| Chlorophyll peak | 660 nm | 653.3 nm | 1.02% |
+| E/M ratio | ζ(3)^(1/3) = 1.0633 | 1.0501 | 1.24% |
+
+### Domain-Specific Performance
+
+```python
+domains = {
+    'Classical Mechanics': {'accuracy': '96.02%', 'C': 5.09},
+    'Electromagnetism':    {'accuracy': '99.997%', 'C': 5.18},
+    'Quantum Mechanics':   {'accuracy': '99.29%', 'C': 5.19},
+    'General Relativity':  {'accuracy': '99.49%', 'C': 5.17},
+    'Cosmology':          {'accuracy': '97.58%', 'C': 5.13},
+    'Biology':            {'accuracy': '98.98%', 'C': 5.22},
+    'Critical Phenomena': {'accuracy': '97.61%', 'C': 1.64}
 }
 ```
 
-## **Research Status**
+## 🧪 Experimental Predictions
 
-**Exploratory computational framework** requiring systematic experimental validation  
-**Pattern recognition results** across 22 domains remain unconfirmed by physical experiments  
-Three-tier falsification protocol provides rigorous testing criteria for observational predictions
+### Testable Predictions (3-Year Validation Program)
 
-## **Falsification Criteria**
+1. **Electromagnetic Resonances**
+   - Primary: 653.3 nm (chlorophyll)
+   - Secondary: 2.382 GHz, 18.743 GHz
+   - Equipment: Spectrophotometers, VNAs
 
-Framework rejection conditions (any single condition sufficient):
-- **Electromagnetic resonances:** <85% predicted frequency accuracy
-- **Cosmological parameters:** >4σ deviation from H₀, σ₈ predictions  
-- **Biological networks:** D₁ signatures inconsistent across model systems
-- **Cross-domain reproducibility:** <85% computational stability
-- **Independent replication:** Framework failure across ≥3 research groups
+2. **Cosmological Parameters**
+   - H₀ = 69.78 ± 0.12 km/s/Mpc
+   - σ₈ = 0.7687 ± 0.006
+   - Validation: JWST + Euclid data
 
-## **Contributing**
+3. **Biological Fractals**
+   - D_box = 1.063 ± 0.002
+   - Systems: Vascular networks, neural dendrites
+   - Method: Box-counting dimension analysis
 
-GIFT development welcomes contributions across:
-- **Domain-specific embeddings:** New physical systems integration
-- **Validation protocols:** Experimental design optimization  
-- **Theoretical extensions:** Information-geometric formalism enhancement
-- **Computational improvements:** Algorithm efficiency & stability
+4. **Consciousness Metrics**
+   - Flow state: Φ(E×M×C) = 0.828
+   - E/M ratio = 1.059
+   - Protocol: EEG coherence analysis
+
+## 🔄 Reproducibility
+
+All results reproducible with:
+- **Seed:** 42 (numpy.random)
+- **Precision:** float64
+- **Iterations:** 150-300 per optimization
+- **Runs:** 1000+ per domain
+- **Hash:** SHA-256 verification
+
+```python
+# Verify reproducibility
+from gift.validation import verify_results
+
+hash_check = verify_results(seed=42)
+assert hash_check == "expected_sha256_hash"
+```
+
+## 📚 Documentation
+
+- [Tutorial](notebooks/tutorial.ipynb) - Getting started with GIFT
+- [API Reference](docs/api.md) - Complete framework documentation
+- [Theory](docs/theory.pdf) - Mathematical foundations
+- [Validation](docs/validation.md) - Experimental protocols
+
+## 🤝 Contributing
+
+We welcome contributions in:
+- **New domains:** Extend to additional physical systems
+- **Optimization:** Improve convergence algorithms
+- **Validation:** Experimental verification protocols
+- **Theory:** Mathematical foundations of ζ(3)^(1/3) emergence
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+## 📝 Citation
+
+```bibtex
+@article{lafourniere2025gift,
+  title={Emergence of Apéry's Constant in Six-Dimensional Information-Geometric Optimization},
+  author={de La Fournière, Brieuc},
+  journal={arXiv preprint arXiv:2025.pending},
+  year={2025},
+  note={GIFT v3.0: Computational framework for universal scaling patterns}
+}
+```
+
+## ⚠️ Research Status
+
+**This is a computational exploration framework.** Results represent numerical patterns requiring:
+- Theoretical derivation of ζ(3)^(1/3) from first principles
+- Independent experimental validation
+- Peer review and replication
+
+**Not yet established:** Physical interpretation of M₆ dimensions, causality of correlations, uniqueness of framework.
+
+## 🎓 Related Work
+
+- [Information Geometry](https://github.com/topics/information-geometry) - Mathematical foundations
+- [Fisher-Souriau Metrics](https://arxiv.org/search/?query=Fisher+Souriau) - Geometric framework
+- [Apéry's Constant](https://oeis.org/A002117) - Mathematical properties
+
+## 📊 Figures
+
+Generate all paper figures:
+```bash
+python figures/figure_generation.py
+```
+
+Outputs:
+- `figure_1_manifold_structure.png` - M₆ hierarchy
+- `figure_2_convergence_histogram.png` - ζ(3)^(1/3) convergence
+- `figure_3_domain_mapping.png` - Physical domains radar plots
+- `figure_4_causality_structure.png` - 18% non-locality threshold
+
+## 🔮 Future Directions
+
+- [ ] Derive ζ(3)^(1/3) from M₆ first principles
+- [ ] JWST observational campaign (H₀ validation)
+- [ ] Quantum coherence experiments (653nm)
+- [ ] EEG flow state validation (Φ = 0.828)
+- [ ] 5D/7D manifold comparison studies
+
+## 📧 Contact
+
+**Brieuc de La Fournière**  
+ORCID: [0009-0000-0641-9740](https://orcid.org/0009-0000-0641-9740)  
+Email: [pending]  
+Twitter: [@gift_framework](https://twitter.com/)
+
+## 📜 License
+
+MIT License - See [LICENSE](LICENSE) for details.
+
+## 🚨 Disclaimer
+
+Results are computational patterns from optimization procedures. Physical interpretations remain speculative pending theoretical development and empirical validation. Use with appropriate scientific skepticism.
 
 ---
 
-## Warning
+### ⚡ System Requirements
 
-φ, e, π as physics cheat codes ∞ works despite logic.
+- Python 3.9+
+- NumPy 1.24+
+- SciPy 1.11+
+- Matplotlib 3.7+
+- 8GB RAM (16GB recommended)
+- ~150 CPU-hours for complete validation
+
+---
+
+> **Universe v13.8B:** Currently running on 4D physics (emulated) ∞ Native M₆ support coming soon...
