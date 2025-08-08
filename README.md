@@ -82,7 +82,7 @@ domains = {
 }
 ```
 
-## Key Discovery
+## Key Pattern
 
 Systematic convergence to **ζ(3)^(1/3) ≈ 1.0633** (Apéry's constant cube root) emerges across quantum, biological, and cosmological systems through optimization on manifold M₆ = {S, E, M, C, N, F}.
 
@@ -97,15 +97,15 @@ results = framework.validate_all_domains()
 
 print(f"✓ Convergence Rate: {results['convergence_rate']}%")  # 100%
 print(f"✓ Target Accuracy: {results['accuracy']}%")           # 85%
-print(f"✓ Speed of Light: {results['c_error']}%")            # 0.003%
-print(f"✓ Hubble Constant: {results['H0']} km/s/Mpc")        # 69.78
+print(f"✓ Speed of Light: {results['c_error']}%")            # 0.96%
+print(f"✓ Hubble Constant: {results['H0']} km/s/Mpc")        # 71.50
 print(f"✓ E/M Ratio: {results['E_M_ratio']}")                # 1.0501
 print(f"✓ ζ(3)^(1/3) Target: 1.0633")                        # Universal
 ```
 
 ## Experimental Predictions
 
-### Testable Predictions (3-Year Validation Program)
+### Testable Predictions Suggestions
 
 1. **Electromagnetic Resonances**
    - Primary: 653.3 nm (chlorophyll)
@@ -170,8 +170,6 @@ We welcome contributions in:
 - Independent experimental validation
 - Peer review and replication
 
-**Not yet established:** Physical interpretation of M₆ dimensions, causality of correlations, uniqueness of framework.
-
 ## Related Work
 
 - [Information Geometry](https://github.com/topics/information-geometry) - Mathematical foundations
@@ -180,7 +178,7 @@ We welcome contributions in:
 
 ## License
 
-MIT License - See [LICENSE](LICENSE) for details.
+MIT License - CC 4.0
 
 ## Disclaimer
 
