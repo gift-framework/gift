@@ -26,8 +26,8 @@ python gift_v3_protocol.py
 ```
 gift-v3/
 ├── code/
-│   ├── gift_v3_protocol.py      # R4 ↔ M₆ translation engine
-│   ├── optimization_suite.py    # Multi-method optimization
+│   ├── gift_v3_protocol.py
+│   ├── statistical_validation.py
 ```
 
 ## Core Framework
