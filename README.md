@@ -8,11 +8,11 @@
 
 > **Computational exploration of six-dimensional information-geometric structures revealing universal ζ(3)^(1/3) scaling across physical domains**
 
-## 🎯 Key Discovery
+## Key Discovery
 
 Systematic convergence to **ζ(3)^(1/3) ≈ 1.0633** (Apéry's constant cube root) emerges across quantum, biological, and cosmological systems through optimization on manifold M₆ = {S, E, M, C, N, F}.
 
-## 📊 Latest Results (v3.0)
+## Latest Results (v3.0)
 
 ```python
 # Domain-to-Manifold Translation Protocol
@@ -29,7 +29,7 @@ print(f"✓ E/M Ratio: {results['E_M_ratio']}")                # 1.0501
 print(f"✓ ζ(3)^(1/3) Target: 1.0633")                        # Universal
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 # Clone repository
@@ -43,33 +43,16 @@ pip install -r requirements.txt
 python gift_v3_protocol.py
 ```
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 gift-v3/
-├── core/
+├── code/
 │   ├── gift_v3_protocol.py      # R4 ↔ M₆ translation engine
 │   ├── optimization_suite.py    # Multi-method optimization
-│   └── dimensional_analysis.py  # β-function & hierarchy analysis
-├── domains/
-│   ├── classical_mechanics/     # Kinetic energy validation
-│   ├── electromagnetism/        # Maxwell equations (C ≈ 5)
-│   ├── quantum_mechanics/       # Coherence e/(2π)
-│   ├── general_relativity/      # D_eff = 3 + ζ(3)^(1/3)
-│   ├── cosmology/               # Hubble tension resolution
-│   ├── biology/                 # Photosynthesis (653nm)
-│   └── critical_phenomena/      # Phase transitions
-├── figures/
-│   ├── figure_generation.py     # Publication-quality plots
-│   └── results/                 # Generated visualizations
-├── data/
-│   └── validation_results.json  # 1000+ optimization runs
-└── notebooks/
-    ├── tutorial.ipynb           # Getting started guide
-    └── analysis.ipynb          # Reproduce paper results
 ```
 
-## 🔬 Core Framework
+## Core Framework
 
 ### Six-Dimensional Manifold M₆
 
@@ -95,7 +78,7 @@ L_anti = -λ_anti * Σᵢ[∇²(∂L/∂φᵢ)]²  # Maintains 18% non-locality
 □C + 2λ₄C + κ₂NF + βSE + (∂ω/∂C)NF + Γ₂M + Γ₄SN = 0
 ```
 
-## 📈 Validation Results
+## Validation Results
 
 ### Physical Constants Reproduction
 
@@ -121,7 +104,7 @@ domains = {
 }
 ```
 
-## 🧪 Experimental Predictions
+## Experimental Predictions
 
 ### Testable Predictions (3-Year Validation Program)
 
@@ -145,7 +128,7 @@ domains = {
    - E/M ratio = 1.059
    - Protocol: EEG coherence analysis
 
-## 🔄 Reproducibility
+## Reproducibility
 
 All results reproducible with:
 - **Seed:** 42 (numpy.random)
@@ -161,15 +144,7 @@ from gift.validation import verify_results
 hash_check = verify_results(seed=42)
 assert hash_check == "expected_sha256_hash"
 ```
-
-## 📚 Documentation
-
-- [Tutorial](notebooks/tutorial.ipynb) - Getting started with GIFT
-- [API Reference](docs/api.md) - Complete framework documentation
-- [Theory](docs/theory.pdf) - Mathematical foundations
-- [Validation](docs/validation.md) - Experimental protocols
-
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions in:
 - **New domains:** Extend to additional physical systems
@@ -177,9 +152,7 @@ We welcome contributions in:
 - **Validation:** Experimental verification protocols
 - **Theory:** Mathematical foundations of ζ(3)^(1/3) emergence
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-## 📝 Citation
+## Citation
 
 ```bibtex
 @article{lafourniere2025gift,
@@ -191,7 +164,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 }
 ```
 
-## ⚠️ Research Status
+##  Research Status
 
 **This is a computational exploration framework.** Results represent numerical patterns requiring:
 - Theoretical derivation of ζ(3)^(1/3) from first principles
@@ -200,51 +173,23 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 **Not yet established:** Physical interpretation of M₆ dimensions, causality of correlations, uniqueness of framework.
 
-## 🎓 Related Work
+## Related Work
 
 - [Information Geometry](https://github.com/topics/information-geometry) - Mathematical foundations
 - [Fisher-Souriau Metrics](https://arxiv.org/search/?query=Fisher+Souriau) - Geometric framework
 - [Apéry's Constant](https://oeis.org/A002117) - Mathematical properties
 
-## 📊 Figures
-
-Generate all paper figures:
-```bash
-python figures/figure_generation.py
-```
-
-Outputs:
-- `figure_1_manifold_structure.png` - M₆ hierarchy
-- `figure_2_convergence_histogram.png` - ζ(3)^(1/3) convergence
-- `figure_3_domain_mapping.png` - Physical domains radar plots
-- `figure_4_causality_structure.png` - 18% non-locality threshold
-
-## 🔮 Future Directions
-
-- [ ] Derive ζ(3)^(1/3) from M₆ first principles
-- [ ] JWST observational campaign (H₀ validation)
-- [ ] Quantum coherence experiments (653nm)
-- [ ] EEG flow state validation (Φ = 0.828)
-- [ ] 5D/7D manifold comparison studies
-
-## 📧 Contact
-
-**Brieuc de La Fournière**  
-ORCID: [0009-0000-0641-9740](https://orcid.org/0009-0000-0641-9740)  
-Email: [pending]  
-Twitter: [@gift_framework](https://twitter.com/)
-
-## 📜 License
+## License
 
 MIT License - See [LICENSE](LICENSE) for details.
 
-## 🚨 Disclaimer
+## Disclaimer
 
 Results are computational patterns from optimization procedures. Physical interpretations remain speculative pending theoretical development and empirical validation. Use with appropriate scientific skepticism.
 
 ---
 
-### ⚡ System Requirements
+### System Requirements
 
 - Python 3.9+
 - NumPy 1.24+
