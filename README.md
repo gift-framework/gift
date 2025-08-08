@@ -8,27 +8,6 @@
 
 > **Computational exploration of six-dimensional information-geometric structures revealing universal ζ(3)^(1/3) scaling across physical domains**
 
-## Key Discovery
-
-Systematic convergence to **ζ(3)^(1/3) ≈ 1.0633** (Apéry's constant cube root) emerges across quantum, biological, and cosmological systems through optimization on manifold M₆ = {S, E, M, C, N, F}.
-
-## Latest Results (v3.0)
-
-```python
-# Domain-to-Manifold Translation Protocol
-from gift.core import M6Framework
-
-framework = M6Framework(version="3.0")
-results = framework.validate_all_domains()
-
-print(f"✓ Convergence Rate: {results['convergence_rate']}%")  # 100%
-print(f"✓ Target Accuracy: {results['accuracy']}%")           # 85%
-print(f"✓ Speed of Light: {results['c_error']}%")            # 0.003%
-print(f"✓ Hubble Constant: {results['H0']} km/s/Mpc")        # 69.78
-print(f"✓ E/M Ratio: {results['E_M_ratio']}")                # 1.0501
-print(f"✓ ζ(3)^(1/3) Target: 1.0633")                        # Universal
-```
-
 ## Quick Start
 
 ```bash
@@ -102,6 +81,27 @@ domains = {
     'Biology':            {'accuracy': '98.98%', 'C': 5.22},
     'Critical Phenomena': {'accuracy': '97.61%', 'C': 1.64}
 }
+```
+
+## Key Discovery
+
+Systematic convergence to **ζ(3)^(1/3) ≈ 1.0633** (Apéry's constant cube root) emerges across quantum, biological, and cosmological systems through optimization on manifold M₆ = {S, E, M, C, N, F}.
+
+## Latest Results (v3.0)
+
+```python
+# Domain-to-Manifold Translation Protocol
+from gift.core import M6Framework
+
+framework = M6Framework(version="3.0")
+results = framework.validate_all_domains()
+
+print(f"✓ Convergence Rate: {results['convergence_rate']}%")  # 100%
+print(f"✓ Target Accuracy: {results['accuracy']}%")           # 85%
+print(f"✓ Speed of Light: {results['c_error']}%")            # 0.003%
+print(f"✓ Hubble Constant: {results['H0']} km/s/Mpc")        # 69.78
+print(f"✓ E/M Ratio: {results['E_M_ratio']}")                # 1.0501
+print(f"✓ ζ(3)^(1/3) Target: 1.0633")                        # Universal
 ```
 
 ## Experimental Predictions
