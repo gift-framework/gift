@@ -1,0 +1,383 @@
+{
+  "validation_id": "GIFT_v4_ecology_20250813_125255",
+  "domain": "ecology",
+  "timestamp": "2025-08-13T12:53:26.380217",
+  "framework_version": "GIFT_v4.0",
+  "dataset": {
+    "sources": [
+      "GBIF",
+      "eBird",
+      "iNaturalist"
+    ],
+    "hash": "c321cfcaf7232472",
+    "samples": 601,
+    "geographic_extent": {
+      "lat_range": [
+        -59.58162573144377,
+        69.718361
+      ],
+      "lon_range": [
+        -176.35277375001237,
+        178.35750582887158
+      ],
+      "centroid": [
+        30.768766821442373,
+        -1.2370728468409455
+      ]
+    },
+    "temporal_range": {
+      "start_date": "2021-06-13",
+      "end_date": "2025-08-13T12:52:58.361127",
+      "span_days": 1522
+    }
+  },
+  "mapping": {
+    "S": "Taxonomic complexity and spatial organization (Shannon diversity \u00d7 spatial clustering)",
+    "E": "Temporal dynamics and population change rates (variability + seasonality + abundance)",
+    "M": "Community persistence and ecological memory (species persistence + stability)",
+    "C": "Cross-scale ecological coupling (trophic + taxonomic + abundance coupling)",
+    "N": "Species interaction networks (connectivity + diversity + modularity)",
+    "F": "Information and energy ecosystem flow (energy + information + resource flux)"
+  },
+  "optimization_results": {
+    "best_constant": "e_cuberoot",
+    "best_performance": {
+      "target_constant": 1.395612425,
+      "achieved_ratio": 1.39561242433873,
+      "deviation": 6.612699277042111e-10,
+      "deviation_percent": 4.738206079701613e-08,
+      "optimization_steps": 22,
+      "optimal_coordinates": [
+        0.008089808474059343,
+        -0.00048802956213327717,
+        -0.00034968856194137,
+        -0.019030967596409314,
+        -0.053778122066898366,
+        0.0018353475422483326
+      ],
+      "objective_value": 0.0016607206971860319,
+      "algorithm": "L-BFGS-B"
+    },
+    "all_constants": {
+      "sqrt2": {
+        "target_constant": 1.414213562,
+        "achieved_ratio": 1.414213706561454,
+        "deviation": 1.4456145391861241e-07,
+        "deviation_percent": 1.0222038439100503e-05,
+        "optimization_steps": 37,
+        "optimal_coordinates": [
+          -0.0010889315307276103,
+          -0.005800682772526903,
+          -0.004101701805770334,
+          0.000627071076494337,
+          0.0013006407754473967,
+          -0.0033529866709820356
+        ],
+        "objective_value": 3.2438470566931934e-05,
+        "algorithm": "L-BFGS-B"
+      },
+      "euler_gamma": {
+        "target_constant": 0.577215665,
+        "achieved_ratio": 0.5772156734181523,
+        "deviation": 8.418152286360225e-09,
+        "deviation_percent": 1.458406761424298e-06,
+        "optimization_steps": 57,
+        "optimal_coordinates": [
+          0.00012472363014665174,
+          -0.002302040092061477,
+          -0.003988180251847349,
+          0.00021212297953761245,
+          0.00016577763484169696,
+          -4.510611975533111e-06
+        ],
+        "objective_value": 1.0599248733876684e-05,
+        "algorithm": "L-BFGS-B"
+      },
+      "apery": {
+        "target_constant": 1.202056903,
+        "achieved_ratio": 1.2020565899166673,
+        "deviation": 3.130833325926119e-07,
+        "deviation_percent": 2.6045633265051175e-05,
+        "optimization_steps": 84,
+        "optimal_coordinates": [
+          0.0003143939363845338,
+          -0.005645796094123691,
+          -0.004696780718718696,
+          3.347530224883111e-05,
+          0.0002517680750298049,
+          5.4263935269583214e-05
+        ],
+        "objective_value": 2.690285016567304e-05,
+        "algorithm": "L-BFGS-B"
+      },
+      "catalan": {
+        "target_constant": 0.915965594,
+        "achieved_ratio": 0.9159656835543336,
+        "deviation": 8.955433361546028e-08,
+        "deviation_percent": 9.777041212255434e-06,
+        "optimization_steps": 60,
+        "optimal_coordinates": [
+          0.0006484349923622338,
+          -0.004153592915772215,
+          -0.004534660066358697,
+          0.0002928168699834286,
+          -0.00043010622333419004,
+          -0.0005239927449781709
+        ],
+        "objective_value": 1.9346377352609342e-05,
+        "algorithm": "L-BFGS-B"
+      },
+      "sqrt3": {
+        "target_constant": 1.732050808,
+        "achieved_ratio": 1.732049732859082,
+        "deviation": 1.0751409180720373e-06,
+        "deviation_percent": 6.207328983111661e-05,
+        "optimization_steps": 49,
+        "optimal_coordinates": [
+          0.0007742040201359696,
+          -0.008447478841129797,
+          -0.004877157309097919,
+          -0.00016926651085883267,
+          0.0004098665338419306,
+          0.00021381047382765486
+        ],
+        "objective_value": 4.7564770885689234e-05,
+        "algorithm": "L-BFGS-B"
+      },
+      "phi_cuberoot": {
+        "target_constant": 1.174618943,
+        "achieved_ratio": 1.1746186772479899,
+        "deviation": 2.657520101756461e-07,
+        "deviation_percent": 2.2624529576963078e-05,
+        "optimization_steps": 76,
+        "optimal_coordinates": [
+          0.00028441194458889976,
+          -0.005427583810298855,
+          -0.004620719926297264,
+          0.00015633119830680523,
+          0.00024356047548376635,
+          8.191500524967467e-07
+        ],
+        "objective_value": 2.535414303786947e-05,
+        "algorithm": "L-BFGS-B"
+      },
+      "pi_cuberoot": {
+        "target_constant": 1.464591887,
+        "achieved_ratio": 1.4645911779954635,
+        "deviation": 7.090045366364706e-07,
+        "deviation_percent": 4.8409699857668986e-05,
+        "optimization_steps": 69,
+        "optimal_coordinates": [
+          0.0006538800626585746,
+          -0.007032146342627576,
+          -0.004801439879428575,
+          -6.8562886652168385e-06,
+          0.00036051155363541203,
+          -0.00035877180338403353
+        ],
+        "objective_value": 3.627926796921722e-05,
+        "algorithm": "L-BFGS-B"
+      },
+      "e_cuberoot": {
+        "target_constant": 1.395612425,
+        "achieved_ratio": 1.39561242433873,
+        "deviation": 6.612699277042111e-10,
+        "deviation_percent": 4.738206079701613e-08,
+        "optimization_steps": 22,
+        "optimal_coordinates": [
+          0.008089808474059343,
+          -0.00048802956213327717,
+          -0.00034968856194137,
+          -0.019030967596409314,
+          -0.053778122066898366,
+          0.0018353475422483326
+        ],
+        "objective_value": 0.0016607206971860319,
+        "algorithm": "L-BFGS-B"
+      },
+      "khinchin": {
+        "target_constant": 2.685452001,
+        "achieved_ratio": 2.685452011497345,
+        "deviation": 1.0497345215298992e-08,
+        "deviation_percent": 3.908967731089599e-07,
+        "optimization_steps": 73,
+        "optimal_coordinates": [
+          0.0011654044186247927,
+          -0.013164562534771928,
+          -0.004902177639725119,
+          0.00010514920157971483,
+          0.0001255929690743988,
+          -3.317055734494575e-05
+        ],
+        "objective_value": 9.856449894431035e-05,
+        "algorithm": "L-BFGS-B"
+      },
+      "zeta3_cuberoot": {
+        "target_constant": 1.063378264,
+        "achieved_ratio": 1.0633783821050176,
+        "deviation": 1.1810501754361269e-07,
+        "deviation_percent": 1.110658563767791e-05,
+        "optimization_steps": 42,
+        "optimal_coordinates": [
+          -0.016863455031533817,
+          0.0006731881720293371,
+          0.0006330654045824075,
+          -0.0059965647786556645,
+          -0.013472355338427625,
+          0.0032534287774413674
+        ],
+        "objective_value": 0.00025474447142342157,
+        "algorithm": "L-BFGS-B"
+      }
+    },
+    "convergence_analysis": {
+      "mean_steps": 56.9,
+      "std_steps": 18.47403583411053,
+      "mean_objective": 0.00022125147962656307,
+      "convergence_efficiency": 2.9218391341528966
+    }
+  },
+  "validation_metrics": {
+    "mean_deviation": 1.9215550341516396e-05,
+    "std_deviation": 2.0050391011455744e-05,
+    "min_deviation": 4.738206079701613e-08,
+    "max_deviation": 6.207328983111661e-05,
+    "convergence_success_rate": 1.0,
+    "high_precision_rate": 1.0
+  },
+  "statistical_analysis": {
+    "m6_coordinate_statistics": {
+      "S": {
+        "mean": 0.40983604252807176,
+        "std": 0.37021380177408186,
+        "min": 0.0,
+        "max": 0.8800130689353902,
+        "range": 0.8800130689353902
+      },
+      "E": {
+        "mean": 0.14783016426535794,
+        "std": 0.08890379769733832,
+        "min": 0.05335129408002877,
+        "max": 0.5219815791486,
+        "range": 0.46863028506857124
+      },
+      "M": {
+        "mean": NaN,
+        "std": NaN,
+        "min": NaN,
+        "max": NaN,
+        "range": NaN
+      },
+      "C": {
+        "mean": NaN,
+        "std": NaN,
+        "min": NaN,
+        "max": NaN,
+        "range": NaN
+      },
+      "N": {
+        "mean": 0.19159492798099553,
+        "std": 0.09421976826937213,
+        "min": 0.13582199036145204,
+        "max": 0.4941799142073217,
+        "range": 0.3583579238458697
+      },
+      "F": {
+        "mean": 0.5716293003653354,
+        "std": 0.07510800570216748,
+        "min": 0.2911993821802468,
+        "max": 0.63911232925271,
+        "range": 0.3479129470724632
+      }
+    },
+    "correlation_analysis": {
+      "S_E": {
+        "correlation": -0.7592774300120438,
+        "p_value": 7.482260748712414e-114
+      },
+      "S_M": {
+        "correlation": NaN,
+        "p_value": NaN
+      },
+      "S_C": {
+        "correlation": NaN,
+        "p_value": NaN
+      },
+      "S_N": {
+        "correlation": 0.62653291740335,
+        "p_value": 7.547246430677254e-67
+      },
+      "S_F": {
+        "correlation": -0.5749689895753258,
+        "p_value": 3.522823592483907e-54
+      },
+      "E_M": {
+        "correlation": NaN,
+        "p_value": NaN
+      },
+      "E_C": {
+        "correlation": NaN,
+        "p_value": NaN
+      },
+      "E_N": {
+        "correlation": -0.4357444814143953,
+        "p_value": 3.036671502676091e-29
+      },
+      "E_F": {
+        "correlation": 0.5370186078429843,
+        "p_value": 3.3726249165517235e-46
+      },
+      "M_C": {
+        "correlation": NaN,
+        "p_value": NaN
+      },
+      "M_N": {
+        "correlation": NaN,
+        "p_value": NaN
+      },
+      "M_F": {
+        "correlation": NaN,
+        "p_value": NaN
+      },
+      "C_N": {
+        "correlation": NaN,
+        "p_value": NaN
+      },
+      "C_F": {
+        "correlation": NaN,
+        "p_value": NaN
+      },
+      "N_F": {
+        "correlation": -0.6811094671166941,
+        "p_value": 3.851807819132263e-83
+      }
+    },
+    "clustering_analysis": {
+      "error": "clustering_failed"
+    }
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "optimization_algorithm": "L-BFGS-B + differential_evolution",
+    "bounds": "[-5.0, 5.0]^6",
+    "tolerance": "1e-10",
+    "verification_hash": "20fe80c6d4fd7ca5"
+  },
+  "interpretation": {
+    "natural_emergence": true,
+    "domain_specificity": {
+      "best_constant_type": "e_cuberoot",
+      "ecological_preference": false,
+      "deviation_quality": "excellent"
+    },
+    "scale_consistency": {
+      "scale_consistency_metric": NaN,
+      "scale_quality": "variable"
+    },
+    "biological_relevance": {
+      "mathematical_precision": "high",
+      "ecological_interpretability": "exploratory",
+      "biological_significance": "promising"
+    }
+  }
+}

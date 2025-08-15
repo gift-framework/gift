@@ -1,0 +1,143 @@
+{
+  "validation_id": "GIFT_v4_crystallography_2025-08-12T1458",
+  "domain": "crystallography",
+  "framework_version": "GIFT_v4.0",
+  "dataset": {
+    "source": "synthetic_crystallographic_database",
+    "hash": "sha256:9b8c73f5ee179066",
+    "samples": 500,
+    "timestamp": "2025-08-12T14:44:25.670280",
+    "crystal_systems": {
+      "monoclinic": 85,
+      "cubic": 77,
+      "tetragonal": 71,
+      "orthorhombic": 71,
+      "triclinic": 70,
+      "hexagonal": 66,
+      "trigonal": 60
+    }
+  },
+  "mapping": {
+    "S": "log10(volume) / 10.0",
+    "E": "formation_energy * geometric_factor / 1000.0",
+    "M": "density * packing_factor / 100.0",
+    "C": "hardness * sqrt(density) / 50.0",
+    "N": "coordination_estimate / (1 + band_gap) / 10.0",
+    "F": "thermal_conductivity / (hardness + 1) / 100.0"
+  },
+  "optimization_results": {
+    "best_constant": "zeta3_cuberoot",
+    "target_value": 1.0633148,
+    "achieved_ratio": 1.0160823756813004,
+    "deviation_percent": 4.441998203984312,
+    "success_rate": 6.0,
+    "statistical_significance": {
+      "t_statistic": 0,
+      "p_value": 1.0
+    }
+  },
+  "all_constants_performance": {
+    "zeta3_cuberoot": {
+      "n_successful": 3,
+      "success_rate": 6.0,
+      "mean_deviation": 4.441998203984312,
+      "std_deviation": 1.0736677648961122,
+      "median_deviation": 3.8017732901261647,
+      "mean_em_ratio": 1.0160823756813004,
+      "std_em_ratio": 0.011416468246969564,
+      "min_deviation": 3.5697484052116986,
+      "max_deviation": 5.954472916615073,
+      "best_em_ratio": 1.02535713688462,
+      "mean_complexity": 0.5629802975048687,
+      "performance_distribution": {
+        "excellent_(<1%)": 0,
+        "good_(1-5%)": 2,
+        "acceptable_(5-10%)": 1,
+        "poor_(>10%)": 0
+      }
+    },
+    "pi_cuberoot": {
+      "n_successful": 0,
+      "success_rate": 0.0,
+      "mean_deviation": 999.0,
+      "std_deviation": 0.0,
+      "median_deviation": 999.0,
+      "mean_em_ratio": 0.0,
+      "std_em_ratio": 0.0,
+      "min_deviation": 999.0,
+      "max_deviation": 999.0,
+      "best_em_ratio": 0.0,
+      "mean_complexity": 0.0,
+      "performance_distribution": {
+        "excellent_(<1%)": 0,
+        "good_(1-5%)": 0,
+        "acceptable_(5-10%)": 0,
+        "poor_(>10%)": 0
+      }
+    },
+    "e_cuberoot": {
+      "n_successful": 0,
+      "success_rate": 0.0,
+      "mean_deviation": 999.0,
+      "std_deviation": 0.0,
+      "median_deviation": 999.0,
+      "mean_em_ratio": 0.0,
+      "std_em_ratio": 0.0,
+      "min_deviation": 999.0,
+      "max_deviation": 999.0,
+      "best_em_ratio": 0.0,
+      "mean_complexity": 0.0,
+      "performance_distribution": {
+        "excellent_(<1%)": 0,
+        "good_(1-5%)": 0,
+        "acceptable_(5-10%)": 0,
+        "poor_(>10%)": 0
+      }
+    },
+    "sqrt2": {
+      "n_successful": 0,
+      "success_rate": 0.0,
+      "mean_deviation": 999.0,
+      "std_deviation": 0.0,
+      "median_deviation": 999.0,
+      "mean_em_ratio": 0.0,
+      "std_em_ratio": 0.0,
+      "min_deviation": 999.0,
+      "max_deviation": 999.0,
+      "best_em_ratio": 0.0,
+      "mean_complexity": 0.0,
+      "performance_distribution": {
+        "excellent_(<1%)": 0,
+        "good_(1-5%)": 0,
+        "acceptable_(5-10%)": 0,
+        "poor_(>10%)": 0
+      }
+    },
+    "sqrt3": {
+      "n_successful": 0,
+      "success_rate": 0.0,
+      "mean_deviation": 999.0,
+      "std_deviation": 0.0,
+      "median_deviation": 999.0,
+      "mean_em_ratio": 0.0,
+      "std_em_ratio": 0.0,
+      "min_deviation": 999.0,
+      "max_deviation": 999.0,
+      "best_em_ratio": 0.0,
+      "mean_complexity": 0.0,
+      "performance_distribution": {
+        "excellent_(<1%)": 0,
+        "good_(1-5%)": 0,
+        "acceptable_(5-10%)": 0,
+        "poor_(>10%)": 0
+      }
+    }
+  },
+  "validation_metadata": {
+    "random_seed": 42,
+    "optimization_bounds": "[-3.0, 3.0]^6",
+    "convergence_tolerance": "multi-stage: 1e-6 to 1e-10",
+    "monte_carlo_runs": 3,
+    "validation_hash": "9caff62ba8f655e6"
+  }
+}

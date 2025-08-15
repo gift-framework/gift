@@ -1,0 +1,143 @@
+{
+  "validation_id": "GIFT_v4_crystallography_2025-08-12T1431",
+  "domain": "crystallography",
+  "framework_version": "GIFT_v4.0",
+  "dataset": {
+    "source": "synthetic_crystallographic_database",
+    "hash": "sha256:9b8c73f5ee179066",
+    "samples": 500,
+    "timestamp": "2025-08-12T14:26:26.862367",
+    "crystal_systems": {
+      "monoclinic": 85,
+      "cubic": 77,
+      "tetragonal": 71,
+      "orthorhombic": 71,
+      "triclinic": 70,
+      "hexagonal": 66,
+      "trigonal": 60
+    }
+  },
+  "mapping": {
+    "S": "log10(packing_efficiency + 0.1) + 1.0",
+    "E": "tanh(energy_per_bond * 2.0)",
+    "M": "tanh(lattice_strain / 0.5)",
+    "C": "tanh(angle_distortion * 2.0)",
+    "N": "1.0/(1.0 + band_gap)",
+    "F": "transport_efficiency * (1 - mechanical_resistance*0.1)"
+  },
+  "optimization_results": {
+    "best_constant": "zeta3_cuberoot",
+    "target_value": 1.0633148,
+    "achieved_ratio": 1.0114656303550325,
+    "deviation_percent": 4.8761824480358475,
+    "success_rate": 20.0,
+    "statistical_significance": {
+      "t_statistic": 0,
+      "p_value": 1.0
+    }
+  },
+  "all_constants_performance": {
+    "zeta3_cuberoot": {
+      "n_successful": 6,
+      "success_rate": 20.0,
+      "mean_deviation": 4.8761824480358475,
+      "std_deviation": 1.0785764847703794,
+      "median_deviation": 4.900056850303096,
+      "mean_em_ratio": 1.0114656303550325,
+      "std_em_ratio": 0.011468663391883188,
+      "min_deviation": 3.762272974104243,
+      "max_deviation": 5.9544736879864795,
+      "best_em_ratio": 1.0233099946499493,
+      "mean_complexity": 0.6312428425894393,
+      "performance_distribution": {
+        "excellent_(<1%)": 0,
+        "good_(1-5%)": 3,
+        "acceptable_(5-10%)": 3,
+        "poor_(>10%)": 0
+      }
+    },
+    "pi_cuberoot": {
+      "n_successful": 0,
+      "success_rate": 0.0,
+      "mean_deviation": 999.0,
+      "std_deviation": 0.0,
+      "median_deviation": 999.0,
+      "mean_em_ratio": 0.0,
+      "std_em_ratio": 0.0,
+      "min_deviation": 999.0,
+      "max_deviation": 999.0,
+      "best_em_ratio": 0.0,
+      "mean_complexity": 0.0,
+      "performance_distribution": {
+        "excellent_(<1%)": 0,
+        "good_(1-5%)": 0,
+        "acceptable_(5-10%)": 0,
+        "poor_(>10%)": 0
+      }
+    },
+    "e_cuberoot": {
+      "n_successful": 0,
+      "success_rate": 0.0,
+      "mean_deviation": 999.0,
+      "std_deviation": 0.0,
+      "median_deviation": 999.0,
+      "mean_em_ratio": 0.0,
+      "std_em_ratio": 0.0,
+      "min_deviation": 999.0,
+      "max_deviation": 999.0,
+      "best_em_ratio": 0.0,
+      "mean_complexity": 0.0,
+      "performance_distribution": {
+        "excellent_(<1%)": 0,
+        "good_(1-5%)": 0,
+        "acceptable_(5-10%)": 0,
+        "poor_(>10%)": 0
+      }
+    },
+    "sqrt2": {
+      "n_successful": 0,
+      "success_rate": 0.0,
+      "mean_deviation": 999.0,
+      "std_deviation": 0.0,
+      "median_deviation": 999.0,
+      "mean_em_ratio": 0.0,
+      "std_em_ratio": 0.0,
+      "min_deviation": 999.0,
+      "max_deviation": 999.0,
+      "best_em_ratio": 0.0,
+      "mean_complexity": 0.0,
+      "performance_distribution": {
+        "excellent_(<1%)": 0,
+        "good_(1-5%)": 0,
+        "acceptable_(5-10%)": 0,
+        "poor_(>10%)": 0
+      }
+    },
+    "sqrt3": {
+      "n_successful": 0,
+      "success_rate": 0.0,
+      "mean_deviation": 999.0,
+      "std_deviation": 0.0,
+      "median_deviation": 999.0,
+      "mean_em_ratio": 0.0,
+      "std_em_ratio": 0.0,
+      "min_deviation": 999.0,
+      "max_deviation": 999.0,
+      "best_em_ratio": 0.0,
+      "mean_complexity": 0.0,
+      "performance_distribution": {
+        "excellent_(<1%)": 0,
+        "good_(1-5%)": 0,
+        "acceptable_(5-10%)": 0,
+        "poor_(>10%)": 0
+      }
+    }
+  },
+  "validation_metadata": {
+    "random_seed": 42,
+    "optimization_bounds": "[-3.0, 3.0]^6",
+    "convergence_tolerance": "multi-stage: 1e-6 to 1e-10",
+    "monte_carlo_runs": 6,
+    "validation_hash": "610b4209fa5bfc49"
+  }
+}

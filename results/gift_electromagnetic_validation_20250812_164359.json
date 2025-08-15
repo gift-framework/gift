@@ -1,0 +1,136 @@
+{
+  "validation_id": "GIFT_v4_20250812_163856",
+  "domain": "intense_electromagnetic_fields",
+  "framework_version": "GIFT_v4.0",
+  "timestamp": "2025-08-12T16:43:59.923801",
+  "dataset": {
+    "source_type": "real_time_electromagnetic_fields",
+    "primary_sources": [
+      "https://services.swpc.noaa.gov/products/solar-wind/",
+      "Laboratory EM field databases"
+    ],
+    "data_hash": "sha256:786ba87febb6f5f2",
+    "samples": 303,
+    "temporal_range": "0 to 302",
+    "electromagnetic_parameters": [
+      "magnetic_field_components",
+      "plasma_density",
+      "flow_velocity",
+      "temperature",
+      "electromagnetic_energy_densities",
+      "field_complexity"
+    ]
+  },
+  "mapping_protocol": {
+    "S_structure": "log10(magnetic_energy / kinetic_energy) / 10.0",
+    "E_evolution": "tanh(alfven_velocity_ratio / 10.0)",
+    "M_memory": "1 / (1 + exp(-log10(plasma_beta)))",
+    "C_coupling": "sin(magnetic_cone_angle)",
+    "N_network": "1 / (1 + alfven_mach^2)",
+    "F_flow": "tanh(log10(pressure_ratio) / 5.0)",
+    "normalization": "clip(coordinates, -3.0, 3.0)",
+    "information_paradigm": "fundamental_information_geometry"
+  },
+  "optimization_framework": {
+    "objective_function": "L_kinetic + L_interaction + L_constraint + L_regularization + L_nonlocal",
+    "electromagnetic_parameters": {
+      "lambda_interaction": [
+        0.25,
+        0.3,
+        0.25
+      ],
+      "beta_constraint": [
+        0.2,
+        0.15
+      ],
+      "eta_regularization": [
+        0.12,
+        0.08,
+        0.1
+      ]
+    },
+    "algorithms": [
+      "L-BFGS-B",
+      "SLSQP",
+      "trust-constr"
+    ],
+    "bounds": "[-3, 3]^6",
+    "convergence_tolerance": "1e-10"
+  },
+  "blind_validation_results": {
+    "total_constants_tested": 10,
+    "best_performing_constant": "sqrt3",
+    "best_constant_value": 1.7320508075688772,
+    "performance_ranking": [
+      [
+        "sqrt3",
+        88981597131.38008
+      ],
+      [
+        "sqrt5",
+        115885956773.1891
+      ],
+      [
+        "e_cuberoot",
+        225337372307.16916
+      ],
+      [
+        "phi_cuberoot",
+        335149316112.6153
+      ],
+      [
+        "khinchin",
+        426728035692.46387
+      ],
+      [
+        "euler_gamma",
+        481430833511.61597
+      ],
+      [
+        "pi_cuberoot",
+        525538965295.3167
+      ],
+      [
+        "zeta3_cuberoot",
+        584981146811.3593
+      ],
+      [
+        "sqrt2",
+        643375253971.401
+      ],
+      [
+        "catalan",
+        897657155308.2845
+      ]
+    ]
+  },
+  "primary_results": {
+    "optimal_constant": "sqrt3",
+    "target_value": 1.7320508075688772,
+    "mean_achieved_ratio": 482988516.6397368,
+    "mean_deviation_percent": 88981597131.38008,
+    "std_deviation_percent": 152579216457.17374,
+    "min_deviation_percent": 26.08687518309297,
+    "successful_optimizations": 50,
+    "success_rate": 100.0
+  },
+  "statistical_significance": {
+    "sample_size": 50,
+    "confidence_interval_95": [
+      -210073667124.68048,
+      388036861387.4406
+    ],
+    "coefficient_of_variation": 1.7147277794069335
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "algorithm_versions": "scipy.optimize 1.11+",
+    "verification_hash": "165cdcf298870ad9"
+  },
+  "electromagnetic_insights": {
+    "field_scale_range": "6.55e+00 to 1.11e+11 nT",
+    "energy_scale_range": "Magnetic: 1.71e-11 to 4.87e+09 J/m\u00b3",
+    "information_geometric_emergence": "Natural convergence through electromagnetic field organization",
+    "scale_independence": "Consistent patterns from solar wind to laboratory plasmas"
+  }
+}

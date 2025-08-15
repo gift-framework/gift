@@ -1,0 +1,4538 @@
+{
+  "expanded_bounds": {
+    "validation_id": "GIFT_v4.4_quantum_robustness_expanded_bounds_20250812_160720",
+    "domain": "quantum_mechanics_robustness_testing",
+    "protocol": "ROBUSTNESS_TEST_EXPANDED_BOUNDS",
+    "test_variant": "expanded_bounds",
+    "dataset": {
+      "atomic_systems": 30,
+      "molecular_systems": 85,
+      "total_systems": 115,
+      "optimization_sample": 35,
+      "successful_convergences": 35,
+      "dataset_hash": "d2193a98cb3186094bf6f0073c487f16e25000aec23e2d82bf698720277fc6df",
+      "source_atomic": "Enhanced NIST Atomic Database (40 elements)",
+      "source_molecular": "Enhanced Quantum Chemistry Dataset (85 molecules)"
+    },
+    "robustness_parameters": {
+      "test_variant": "expanded_bounds",
+      "bounds": [
+        -10,
+        10
+      ],
+      "noise_factor": 0.03,
+      "lambda_interactions": [
+        0.25,
+        0.3,
+        0.25
+      ],
+      "eta_regularization": 0.12,
+      "alpha_quantum_field": 0.05,
+      "random_seed": 42
+    },
+    "emergence_results": {
+      "test_variant": "expanded_bounds",
+      "em_ratios": [
+        -0.9999999999999,
+        -0.9999999999999,
+        -0.9999999999999,
+        -0.9999999999999,
+        -0.9999999999999,
+        -0.9999999999999,
+        -0.9999999999999,
+        -0.9999999999999,
+        -0.9999999999999,
+        -0.9999999999999,
+        -0.9999999999999,
+        -0.9999999999999,
+        -0.9999999999999,
+        -0.9999999999999,
+        -0.9999999999999,
+        -0.9999999999999,
+        -0.9999999999999,
+        -0.9999999999999,
+        -0.9999999999999,
+        -0.9999999999999,
+        -0.9999999999999,
+        -0.9999999999999,
+        -0.9999999999999,
+        -0.9999999999999,
+        -0.9999999999999,
+        -0.9999999999999,
+        -0.9999999999999,
+        -0.9999999999999,
+        -0.9999999999999,
+        -0.9999999999999,
+        -0.9999999999999,
+        -0.9999999999999,
+        -0.9999999999999,
+        -0.9999999999999,
+        -0.9999999999999
+      ],
+      "nf_ratios": [
+        -1.0000000000001,
+        -1.0000000000001,
+        -1.0000000000001,
+        -1.0000000000001,
+        -1.0000000000001,
+        -1.0000000000001,
+        -1.0000000000001,
+        -1.0000000000001,
+        -1.0000000000001,
+        -1.0000000000001,
+        -1.0000000000001,
+        -1.0000000000001,
+        -1.0000000000001,
+        -1.0000000000001,
+        -1.0000000000001,
+        -1.0000000000001,
+        -1.0000000000001,
+        -1.0000000000001,
+        -1.0000000000001,
+        -1.0000000000001,
+        -1.0000000000001,
+        -1.0000000000001,
+        -1.0000000000001,
+        -1.0000000000001,
+        -1.0000000000001,
+        -1.0000000000001,
+        -1.0000000000001,
+        -1.0000000000001,
+        -1.0000000000001,
+        -1.0000000000001,
+        -1.0000000000001,
+        -1.0000000000001,
+        -1.0000000000001,
+        -1.0000000000001,
+        -1.0000000000001
+      ],
+      "phi_coordinates": [
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ]
+      ],
+      "num_successful_systems": 35,
+      "diversity_metrics": {
+        "em_std": 0.0,
+        "nf_std": 0.0,
+        "phi_std": 0.0,
+        "solution_diversity": "low"
+      },
+      "constant_analysis": {
+        "zeta3_cuberoot": {
+          "constant_value": 1.0632653853163685,
+          "em_best_match_deviation": 194.04989702569466,
+          "em_mean_deviation": 194.0498970256947,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 194.04989702571345,
+          "nf_mean_deviation": 194.04989702571342,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 194.04989702569466
+        },
+        "pi_cuberoot": {
+          "constant_value": 1.4645918875615231,
+          "em_best_match_deviation": 168.27840632552272,
+          "em_mean_deviation": 168.27840632552275,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 168.2784063255364,
+          "nf_mean_deviation": 168.27840632553642,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 168.27840632552272
+        },
+        "e_cuberoot": {
+          "constant_value": 1.3956124250860895,
+          "em_best_match_deviation": 171.65313105737175,
+          "em_mean_deviation": 171.65313105737175,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 171.65313105738608,
+          "nf_mean_deviation": 171.6531310573861,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 171.65313105737175
+        },
+        "phi_cuberoot": {
+          "constant_value": 1.1739849967053284,
+          "em_best_match_deviation": 185.1799642079158,
+          "em_mean_deviation": 185.1799642079158,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 185.1799642079328,
+          "nf_mean_deviation": 185.17996420793284,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 185.1799642079158
+        },
+        "sqrt2": {
+          "constant_value": 1.4142135623730951,
+          "em_best_match_deviation": 170.71067811864765,
+          "em_mean_deviation": 170.71067811864765,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 170.71067811866183,
+          "nf_mean_deviation": 170.71067811866186,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 170.71067811864765
+        },
+        "sqrt3": {
+          "constant_value": 1.7320508075688772,
+          "em_best_match_deviation": 157.7350269189568,
+          "em_mean_deviation": 157.73502691895678,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 157.73502691896834,
+          "nf_mean_deviation": 157.73502691896834,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 157.7350269189568
+        },
+        "sqrt5": {
+          "constant_value": 2.23606797749979,
+          "em_best_match_deviation": 144.72135954999132,
+          "em_mean_deviation": 144.72135954999135,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 144.72135955000024,
+          "nf_mean_deviation": 144.72135955000027,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 144.72135954999132
+        },
+        "catalan": {
+          "constant_value": 0.915965594177219,
+          "em_best_match_deviation": 209.17440637037967,
+          "em_mean_deviation": 209.1744063703797,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 209.17440637040153,
+          "nf_mean_deviation": 209.17440637040156,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 209.17440637037967
+        },
+        "euler_gamma": {
+          "constant_value": 0.5772156649015329,
+          "em_best_match_deviation": 273.245471460046,
+          "em_mean_deviation": 273.245471460046,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 273.24547146008064,
+          "nf_mean_deviation": 273.24547146008064,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 273.245471460046
+        },
+        "apery": {
+          "constant_value": 1.2020569031595942,
+          "em_best_match_deviation": 183.1907372580624,
+          "em_mean_deviation": 183.19073725806243,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 183.19073725807908,
+          "nf_mean_deviation": 183.19073725807908,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 183.1907372580624
+        },
+        "khinchin": {
+          "constant_value": 2.6854520010653062,
+          "em_best_match_deviation": 137.2376791543176,
+          "em_mean_deviation": 137.2376791543176,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 137.23767915432504,
+          "nf_mean_deviation": 137.237679154325,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 137.2376791543176
+        },
+        "madelung": {
+          "constant_value": 1.7476632154896952,
+          "em_best_match_deviation": 157.2192623348029,
+          "em_mean_deviation": 157.2192623348029,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 157.21926233481432,
+          "nf_mean_deviation": 157.21926233481435,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 157.2192623348029
+        }
+      },
+      "top_emerged_constant": "khinchin",
+      "best_deviation": 137.2376791543176,
+      "em_statistics": {
+        "mean": -0.9999999999999,
+        "std": 0.0,
+        "median": -0.9999999999999,
+        "range": [
+          -0.9999999999999,
+          -0.9999999999999
+        ]
+      },
+      "nf_statistics": {
+        "mean": -1.0000000000001,
+        "std": 0.0,
+        "median": -1.0000000000001,
+        "range": [
+          -1.0000000000001,
+          -1.0000000000001
+        ]
+      }
+    },
+    "performance_summary": {
+      "success_rate_percent": 100.0,
+      "total_optimizations": 35,
+      "successful_convergences": 35,
+      "top_emerged_constant": "khinchin",
+      "best_emergence_deviation": 137.2376791543176,
+      "execution_time_seconds": 39.499092,
+      "diversity_assessment": "low"
+    },
+    "individual_results": [
+      {
+        "system_id": 78,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 67,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 92,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 11,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 4,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 106,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 72,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 60,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 10,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 17,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 87,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 98,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 22,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 50,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 51,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 15,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 77,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 13,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 82,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 43,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 36,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 41,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 93,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 44,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 63,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 55,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 30,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 6,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 46,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 12,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 101,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 45,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 96,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 74,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      },
+      {
+        "system_id": 64,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          -10.0,
+          -10.0,
+          10.0,
+          -10.0,
+          10.0,
+          -10.0
+        ],
+        "em_ratio": -0.9999999999999,
+        "nf_ratio": -1.0000000000001,
+        "convergence": true,
+        "objective_value": -965.0001081222837
+      }
+    ],
+    "reproducibility": {
+      "framework_version": "GIFT_v4.4_ROBUSTNESS_EXPANDED_BOUNDS",
+      "random_seed": 42,
+      "test_objectives": [
+        "expanded_bounds",
+        "standard_noise",
+        "standard_params",
+        "single_seed"
+      ],
+      "verification_hash": "9d8af7783af7bc29"
+    }
+  },
+  "enhanced_noise": {
+    "validation_id": "GIFT_v4.4_quantum_robustness_enhanced_noise_20250812_160754",
+    "domain": "quantum_mechanics_robustness_testing",
+    "protocol": "ROBUSTNESS_TEST_ENHANCED_NOISE",
+    "test_variant": "enhanced_noise",
+    "dataset": {
+      "atomic_systems": 30,
+      "molecular_systems": 85,
+      "total_systems": 115,
+      "optimization_sample": 35,
+      "successful_convergences": 35,
+      "dataset_hash": "d2193a98cb3186094bf6f0073c487f16e25000aec23e2d82bf698720277fc6df",
+      "source_atomic": "Enhanced NIST Atomic Database (40 elements)",
+      "source_molecular": "Enhanced Quantum Chemistry Dataset (85 molecules)"
+    },
+    "robustness_parameters": {
+      "test_variant": "enhanced_noise",
+      "bounds": [
+        -3,
+        3
+      ],
+      "noise_factor": 0.15,
+      "lambda_interactions": [
+        0.25,
+        0.3,
+        0.25
+      ],
+      "eta_regularization": 0.12,
+      "alpha_quantum_field": 0.05,
+      "random_seed": 42
+    },
+    "emergence_results": {
+      "test_variant": "enhanced_noise",
+      "em_ratios": [
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333
+      ],
+      "nf_ratios": [
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333
+      ],
+      "phi_coordinates": [
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ]
+      ],
+      "num_successful_systems": 35,
+      "diversity_metrics": {
+        "em_std": 0.0,
+        "nf_std": 0.0,
+        "phi_std": 0.0,
+        "solution_diversity": "low"
+      },
+      "constant_analysis": {
+        "zeta3_cuberoot": {
+          "constant_value": 1.0632653853163685,
+          "em_best_match_deviation": 194.0498970257354,
+          "em_mean_deviation": 194.04989702573542,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 5.950102974264601,
+          "nf_mean_deviation": 5.950102974264602,
+          "nf_systems_within_10pct": 35,
+          "combined_match_score": 50.0,
+          "best_overall_deviation": 5.950102974264601
+        },
+        "pi_cuberoot": {
+          "constant_value": 1.4645918875615231,
+          "em_best_match_deviation": 168.27840632555234,
+          "em_mean_deviation": 168.2784063255523,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 31.721593674447668,
+          "nf_mean_deviation": 31.72159367444766,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 31.721593674447668
+        },
+        "e_cuberoot": {
+          "constant_value": 1.3956124250860895,
+          "em_best_match_deviation": 171.65313105740282,
+          "em_mean_deviation": 171.65313105740282,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 28.34686894259719,
+          "nf_mean_deviation": 28.346868942597194,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 28.34686894259719
+        },
+        "phi_cuberoot": {
+          "constant_value": 1.1739849967053284,
+          "em_best_match_deviation": 185.1799642079527,
+          "em_mean_deviation": 185.17996420795274,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 14.820035792047312,
+          "nf_mean_deviation": 14.820035792047312,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 14.820035792047312
+        },
+        "sqrt2": {
+          "constant_value": 1.4142135623730951,
+          "em_best_match_deviation": 170.71067811867832,
+          "em_mean_deviation": 170.71067811867835,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 29.289321881321683,
+          "nf_mean_deviation": 29.289321881321687,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 29.289321881321683
+        },
+        "sqrt3": {
+          "constant_value": 1.7320508075688772,
+          "em_best_match_deviation": 157.73502691898182,
+          "em_mean_deviation": 157.73502691898182,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 42.26497308101818,
+          "nf_mean_deviation": 42.26497308101817,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 42.26497308101818
+        },
+        "sqrt5": {
+          "constant_value": 2.23606797749979,
+          "em_best_match_deviation": 144.72135955001067,
+          "em_mean_deviation": 144.72135955001067,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 55.278640449989304,
+          "nf_mean_deviation": 55.278640449989304,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 55.278640449989304
+        },
+        "catalan": {
+          "constant_value": 0.915965594177219,
+          "em_best_match_deviation": 209.17440637042702,
+          "em_mean_deviation": 209.17440637042705,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 9.174406370426997,
+          "nf_mean_deviation": 9.174406370426997,
+          "nf_systems_within_10pct": 35,
+          "combined_match_score": 50.0,
+          "best_overall_deviation": 9.174406370426997
+        },
+        "euler_gamma": {
+          "constant_value": 0.5772156649015329,
+          "em_best_match_deviation": 273.2454714601211,
+          "em_mean_deviation": 273.2454714601211,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 73.2454714601211,
+          "nf_mean_deviation": 73.24547146012111,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 73.2454714601211
+        },
+        "apery": {
+          "constant_value": 1.2020569031595942,
+          "em_best_match_deviation": 183.19073725809847,
+          "em_mean_deviation": 183.19073725809844,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 16.809262741901524,
+          "nf_mean_deviation": 16.809262741901524,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 16.809262741901524
+        },
+        "khinchin": {
+          "constant_value": 2.6854520010653062,
+          "em_best_match_deviation": 137.23767915433373,
+          "em_mean_deviation": 137.23767915433373,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 62.762320845666274,
+          "nf_mean_deviation": 62.762320845666274,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 62.762320845666274
+        },
+        "madelung": {
+          "constant_value": 1.7476632154896952,
+          "em_best_match_deviation": 157.21926233482768,
+          "em_mean_deviation": 157.21926233482765,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 42.78073766517233,
+          "nf_mean_deviation": 42.78073766517234,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 42.78073766517233
+        }
+      },
+      "top_emerged_constant": "zeta3_cuberoot",
+      "best_deviation": 5.950102974264601,
+      "em_statistics": {
+        "mean": -1.0000000000003333,
+        "std": 0.0,
+        "median": -1.0000000000003333,
+        "range": [
+          -1.0000000000003333,
+          -1.0000000000003333
+        ]
+      },
+      "nf_statistics": {
+        "mean": 1.0000000000003333,
+        "std": 0.0,
+        "median": 1.0000000000003333,
+        "range": [
+          1.0000000000003333,
+          1.0000000000003333
+        ]
+      }
+    },
+    "performance_summary": {
+      "success_rate_percent": 100.0,
+      "total_optimizations": 35,
+      "successful_convergences": 35,
+      "top_emerged_constant": "zeta3_cuberoot",
+      "best_emergence_deviation": 5.950102974264601,
+      "execution_time_seconds": 34.080317,
+      "diversity_assessment": "low"
+    },
+    "individual_results": [
+      {
+        "system_id": 78,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 67,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 92,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 11,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 4,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 106,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 72,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 60,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 10,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 17,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 87,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 98,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 22,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 50,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 51,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 15,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 77,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 13,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 82,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 43,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 36,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 41,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 93,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 44,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 63,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 55,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 30,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 6,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 46,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 12,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 101,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 45,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 96,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 74,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 64,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      }
+    ],
+    "reproducibility": {
+      "framework_version": "GIFT_v4.4_ROBUSTNESS_ENHANCED_NOISE",
+      "random_seed": 42,
+      "test_objectives": [
+        "standard_bounds",
+        "enhanced_noise",
+        "standard_params",
+        "single_seed"
+      ],
+      "verification_hash": "c72d34ffb6fa3b0c"
+    }
+  },
+  "varied_params": {
+    "validation_id": "GIFT_v4.4_quantum_robustness_varied_params_20250812_160825",
+    "domain": "quantum_mechanics_robustness_testing",
+    "protocol": "ROBUSTNESS_TEST_VARIED_PARAMS",
+    "test_variant": "varied_params",
+    "dataset": {
+      "atomic_systems": 30,
+      "molecular_systems": 85,
+      "total_systems": 115,
+      "optimization_sample": 35,
+      "successful_convergences": 35,
+      "dataset_hash": "d2193a98cb3186094bf6f0073c487f16e25000aec23e2d82bf698720277fc6df",
+      "source_atomic": "Enhanced NIST Atomic Database (40 elements)",
+      "source_molecular": "Enhanced Quantum Chemistry Dataset (85 molecules)"
+    },
+    "robustness_parameters": {
+      "test_variant": "varied_params",
+      "bounds": [
+        -3,
+        3
+      ],
+      "noise_factor": 0.03,
+      "lambda_interactions": [
+        0.2,
+        0.35,
+        0.3
+      ],
+      "eta_regularization": 0.08,
+      "alpha_quantum_field": 0.08,
+      "random_seed": 42
+    },
+    "emergence_results": {
+      "test_variant": "varied_params",
+      "em_ratios": [
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333
+      ],
+      "nf_ratios": [
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333
+      ],
+      "phi_coordinates": [
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ]
+      ],
+      "num_successful_systems": 35,
+      "diversity_metrics": {
+        "em_std": 0.0,
+        "nf_std": 0.0,
+        "phi_std": 0.0,
+        "solution_diversity": "low"
+      },
+      "constant_analysis": {
+        "zeta3_cuberoot": {
+          "constant_value": 1.0632653853163685,
+          "em_best_match_deviation": 194.0498970257354,
+          "em_mean_deviation": 194.04989702573542,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 5.950102974264601,
+          "nf_mean_deviation": 5.950102974264602,
+          "nf_systems_within_10pct": 35,
+          "combined_match_score": 50.0,
+          "best_overall_deviation": 5.950102974264601
+        },
+        "pi_cuberoot": {
+          "constant_value": 1.4645918875615231,
+          "em_best_match_deviation": 168.27840632555234,
+          "em_mean_deviation": 168.2784063255523,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 31.721593674447668,
+          "nf_mean_deviation": 31.72159367444766,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 31.721593674447668
+        },
+        "e_cuberoot": {
+          "constant_value": 1.3956124250860895,
+          "em_best_match_deviation": 171.65313105740282,
+          "em_mean_deviation": 171.65313105740282,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 28.34686894259719,
+          "nf_mean_deviation": 28.346868942597194,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 28.34686894259719
+        },
+        "phi_cuberoot": {
+          "constant_value": 1.1739849967053284,
+          "em_best_match_deviation": 185.1799642079527,
+          "em_mean_deviation": 185.17996420795274,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 14.820035792047312,
+          "nf_mean_deviation": 14.820035792047312,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 14.820035792047312
+        },
+        "sqrt2": {
+          "constant_value": 1.4142135623730951,
+          "em_best_match_deviation": 170.71067811867832,
+          "em_mean_deviation": 170.71067811867835,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 29.289321881321683,
+          "nf_mean_deviation": 29.289321881321687,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 29.289321881321683
+        },
+        "sqrt3": {
+          "constant_value": 1.7320508075688772,
+          "em_best_match_deviation": 157.73502691898182,
+          "em_mean_deviation": 157.73502691898182,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 42.26497308101818,
+          "nf_mean_deviation": 42.26497308101817,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 42.26497308101818
+        },
+        "sqrt5": {
+          "constant_value": 2.23606797749979,
+          "em_best_match_deviation": 144.72135955001067,
+          "em_mean_deviation": 144.72135955001067,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 55.278640449989304,
+          "nf_mean_deviation": 55.278640449989304,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 55.278640449989304
+        },
+        "catalan": {
+          "constant_value": 0.915965594177219,
+          "em_best_match_deviation": 209.17440637042702,
+          "em_mean_deviation": 209.17440637042705,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 9.174406370426997,
+          "nf_mean_deviation": 9.174406370426997,
+          "nf_systems_within_10pct": 35,
+          "combined_match_score": 50.0,
+          "best_overall_deviation": 9.174406370426997
+        },
+        "euler_gamma": {
+          "constant_value": 0.5772156649015329,
+          "em_best_match_deviation": 273.2454714601211,
+          "em_mean_deviation": 273.2454714601211,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 73.2454714601211,
+          "nf_mean_deviation": 73.24547146012111,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 73.2454714601211
+        },
+        "apery": {
+          "constant_value": 1.2020569031595942,
+          "em_best_match_deviation": 183.19073725809847,
+          "em_mean_deviation": 183.19073725809844,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 16.809262741901524,
+          "nf_mean_deviation": 16.809262741901524,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 16.809262741901524
+        },
+        "khinchin": {
+          "constant_value": 2.6854520010653062,
+          "em_best_match_deviation": 137.23767915433373,
+          "em_mean_deviation": 137.23767915433373,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 62.762320845666274,
+          "nf_mean_deviation": 62.762320845666274,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 62.762320845666274
+        },
+        "madelung": {
+          "constant_value": 1.7476632154896952,
+          "em_best_match_deviation": 157.21926233482768,
+          "em_mean_deviation": 157.21926233482765,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 42.78073766517233,
+          "nf_mean_deviation": 42.78073766517234,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 42.78073766517233
+        }
+      },
+      "top_emerged_constant": "zeta3_cuberoot",
+      "best_deviation": 5.950102974264601,
+      "em_statistics": {
+        "mean": -1.0000000000003333,
+        "std": 0.0,
+        "median": -1.0000000000003333,
+        "range": [
+          -1.0000000000003333,
+          -1.0000000000003333
+        ]
+      },
+      "nf_statistics": {
+        "mean": 1.0000000000003333,
+        "std": 0.0,
+        "median": 1.0000000000003333,
+        "range": [
+          1.0000000000003333,
+          1.0000000000003333
+        ]
+      }
+    },
+    "performance_summary": {
+      "success_rate_percent": 100.0,
+      "total_optimizations": 35,
+      "successful_convergences": 35,
+      "top_emerged_constant": "zeta3_cuberoot",
+      "best_emergence_deviation": 5.950102974264601,
+      "execution_time_seconds": 31.150059,
+      "diversity_assessment": "low"
+    },
+    "individual_results": [
+      {
+        "system_id": 78,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 67,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 92,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 11,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 4,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 106,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 72,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 60,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 10,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 17,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 87,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 98,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 22,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 50,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 51,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 15,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 77,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 13,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 82,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 43,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 36,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 41,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 93,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 44,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 63,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 55,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 30,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 6,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 46,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 12,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 101,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 45,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 96,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 74,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      },
+      {
+        "system_id": 64,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -50.68911128027695
+      }
+    ],
+    "reproducibility": {
+      "framework_version": "GIFT_v4.4_ROBUSTNESS_VARIED_PARAMS",
+      "random_seed": 42,
+      "test_objectives": [
+        "standard_bounds",
+        "standard_noise",
+        "varied_params",
+        "single_seed"
+      ],
+      "verification_hash": "6afed11765ed70c4"
+    }
+  },
+  "multi_seed": {
+    "validation_id": "GIFT_v4.4_quantum_robustness_multi_seed_20250812_160901",
+    "domain": "quantum_mechanics_robustness_testing",
+    "protocol": "ROBUSTNESS_TEST_MULTI_SEED",
+    "test_variant": "multi_seed",
+    "dataset": {
+      "atomic_systems": 30,
+      "molecular_systems": 85,
+      "total_systems": 115,
+      "optimization_sample": 35,
+      "successful_convergences": 35,
+      "dataset_hash": "8b70dd2b5939b9327a8610b7401e6773e957f10baafcb38f8528a39e43d420fb",
+      "source_atomic": "Enhanced NIST Atomic Database (40 elements)",
+      "source_molecular": "Enhanced Quantum Chemistry Dataset (85 molecules)"
+    },
+    "robustness_parameters": {
+      "test_variant": "multi_seed",
+      "bounds": [
+        -3,
+        3
+      ],
+      "noise_factor": 0.03,
+      "lambda_interactions": [
+        0.25,
+        0.3,
+        0.25
+      ],
+      "eta_regularization": 0.12,
+      "alpha_quantum_field": 0.05,
+      "random_seed": 1337
+    },
+    "emergence_results": {
+      "test_variant": "multi_seed",
+      "em_ratios": [
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333,
+        -1.0000000000003333
+      ],
+      "nf_ratios": [
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333,
+        1.0000000000003333
+      ],
+      "phi_coordinates": [
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ]
+      ],
+      "num_successful_systems": 35,
+      "diversity_metrics": {
+        "em_std": 0.0,
+        "nf_std": 0.0,
+        "phi_std": 0.0,
+        "solution_diversity": "low"
+      },
+      "constant_analysis": {
+        "zeta3_cuberoot": {
+          "constant_value": 1.0632653853163685,
+          "em_best_match_deviation": 194.0498970257354,
+          "em_mean_deviation": 194.04989702573542,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 5.950102974264601,
+          "nf_mean_deviation": 5.950102974264602,
+          "nf_systems_within_10pct": 35,
+          "combined_match_score": 50.0,
+          "best_overall_deviation": 5.950102974264601
+        },
+        "pi_cuberoot": {
+          "constant_value": 1.4645918875615231,
+          "em_best_match_deviation": 168.27840632555234,
+          "em_mean_deviation": 168.2784063255523,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 31.721593674447668,
+          "nf_mean_deviation": 31.72159367444766,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 31.721593674447668
+        },
+        "e_cuberoot": {
+          "constant_value": 1.3956124250860895,
+          "em_best_match_deviation": 171.65313105740282,
+          "em_mean_deviation": 171.65313105740282,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 28.34686894259719,
+          "nf_mean_deviation": 28.346868942597194,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 28.34686894259719
+        },
+        "phi_cuberoot": {
+          "constant_value": 1.1739849967053284,
+          "em_best_match_deviation": 185.1799642079527,
+          "em_mean_deviation": 185.17996420795274,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 14.820035792047312,
+          "nf_mean_deviation": 14.820035792047312,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 14.820035792047312
+        },
+        "sqrt2": {
+          "constant_value": 1.4142135623730951,
+          "em_best_match_deviation": 170.71067811867832,
+          "em_mean_deviation": 170.71067811867835,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 29.289321881321683,
+          "nf_mean_deviation": 29.289321881321687,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 29.289321881321683
+        },
+        "sqrt3": {
+          "constant_value": 1.7320508075688772,
+          "em_best_match_deviation": 157.73502691898182,
+          "em_mean_deviation": 157.73502691898182,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 42.26497308101818,
+          "nf_mean_deviation": 42.26497308101817,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 42.26497308101818
+        },
+        "sqrt5": {
+          "constant_value": 2.23606797749979,
+          "em_best_match_deviation": 144.72135955001067,
+          "em_mean_deviation": 144.72135955001067,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 55.278640449989304,
+          "nf_mean_deviation": 55.278640449989304,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 55.278640449989304
+        },
+        "catalan": {
+          "constant_value": 0.915965594177219,
+          "em_best_match_deviation": 209.17440637042702,
+          "em_mean_deviation": 209.17440637042705,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 9.174406370426997,
+          "nf_mean_deviation": 9.174406370426997,
+          "nf_systems_within_10pct": 35,
+          "combined_match_score": 50.0,
+          "best_overall_deviation": 9.174406370426997
+        },
+        "euler_gamma": {
+          "constant_value": 0.5772156649015329,
+          "em_best_match_deviation": 273.2454714601211,
+          "em_mean_deviation": 273.2454714601211,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 73.2454714601211,
+          "nf_mean_deviation": 73.24547146012111,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 73.2454714601211
+        },
+        "apery": {
+          "constant_value": 1.2020569031595942,
+          "em_best_match_deviation": 183.19073725809847,
+          "em_mean_deviation": 183.19073725809844,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 16.809262741901524,
+          "nf_mean_deviation": 16.809262741901524,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 16.809262741901524
+        },
+        "khinchin": {
+          "constant_value": 2.6854520010653062,
+          "em_best_match_deviation": 137.23767915433373,
+          "em_mean_deviation": 137.23767915433373,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 62.762320845666274,
+          "nf_mean_deviation": 62.762320845666274,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 62.762320845666274
+        },
+        "madelung": {
+          "constant_value": 1.7476632154896952,
+          "em_best_match_deviation": 157.21926233482768,
+          "em_mean_deviation": 157.21926233482765,
+          "em_systems_within_10pct": 0,
+          "nf_best_match_deviation": 42.78073766517233,
+          "nf_mean_deviation": 42.78073766517234,
+          "nf_systems_within_10pct": 0,
+          "combined_match_score": 0.0,
+          "best_overall_deviation": 42.78073766517233
+        }
+      },
+      "top_emerged_constant": "zeta3_cuberoot",
+      "best_deviation": 5.950102974264601,
+      "em_statistics": {
+        "mean": -1.0000000000003333,
+        "std": 0.0,
+        "median": -1.0000000000003333,
+        "range": [
+          -1.0000000000003333,
+          -1.0000000000003333
+        ]
+      },
+      "nf_statistics": {
+        "mean": 1.0000000000003333,
+        "std": 0.0,
+        "median": 1.0000000000003333,
+        "range": [
+          1.0000000000003333,
+          1.0000000000003333
+        ]
+      }
+    },
+    "performance_summary": {
+      "success_rate_percent": 100.0,
+      "total_optimizations": 35,
+      "successful_convergences": 35,
+      "top_emerged_constant": "zeta3_cuberoot",
+      "best_emergence_deviation": 5.950102974264601,
+      "execution_time_seconds": 35.506825,
+      "diversity_assessment": "low"
+    },
+    "individual_results": [
+      {
+        "system_id": 83,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 58,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 28,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 36,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 6,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 80,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 93,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 18,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 14,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 60,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 13,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 8,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 48,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 0,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 114,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 47,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 78,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 72,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 112,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 15,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 57,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 3,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 63,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 75,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 62,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 107,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 16,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 88,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 12,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 1,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 31,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 20,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 66,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 17,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      },
+      {
+        "system_id": 44,
+        "algorithm": "differential_evolution",
+        "phi_optimal": [
+          3.0,
+          3.0,
+          -3.0,
+          -3.0,
+          -3.0,
+          -3.0
+        ],
+        "em_ratio": -1.0000000000003333,
+        "nf_ratio": 1.0000000000003333,
+        "convergence": true,
+        "objective_value": -49.67688936437511
+      }
+    ],
+    "reproducibility": {
+      "framework_version": "GIFT_v4.4_ROBUSTNESS_MULTI_SEED",
+      "random_seed": 1337,
+      "test_objectives": [
+        "standard_bounds",
+        "standard_noise",
+        "standard_params",
+        "multi_seed"
+      ],
+      "verification_hash": "42e12f3c109319e3"
+    }
+  }
+}

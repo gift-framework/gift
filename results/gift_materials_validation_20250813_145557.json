@@ -1,0 +1,148 @@
+{
+  "validation_id": "GIFT_v4_materials_20250813_145557",
+  "domain": "materials_science",
+  "dataset": {
+    "sources": [
+      "Materials Project (simulated)",
+      "Crystallography Open Database (simulated)",
+      "JARVIS-DFT (simulated)"
+    ],
+    "hash": "1b47763916ba1a6f",
+    "samples": 300,
+    "timestamp": "2025-08-13T14:55:57.768742"
+  },
+  "mapping": {
+    "S": "Crystallographic information complexity (symmetry, structure)",
+    "E": "Energy landscape dynamics and phase susceptibility",
+    "M": "Information retention (mechanical, electronic, phononic)",
+    "C": "Cross-scale coupling strength (elastic, magnetic, piezo)",
+    "N": "Topological connectivity in real/reciprocal space",
+    "F": "Information transmission efficiency (phononic, electronic flux)"
+  },
+  "results": {
+    "emerged_constant": "unity",
+    "constant_value": 1.0,
+    "ratio_type": "ratio_EM",
+    "convergence_ratio": 1.0,
+    "deviation_percent": 0.0,
+    "optimization_algorithm": "L-BFGS-B",
+    "final_lagrangian": -59.67578926259339,
+    "statistical_significance": 1e-15
+  },
+  "m6_coordinates": {
+    "optimized": [
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0
+    ],
+    "ensemble_mean": [
+      0.13132666274086513,
+      0.6259788540365819,
+      0.6081168210820991,
+      0.7238486156365881,
+      0.6968065152037309,
+      0.792993229571929
+    ],
+    "ensemble_std": [
+      0.04925068830539248,
+      0.04317499150246045,
+      0.10468812063899181,
+      0.032484736751195,
+      0.07156382713312222,
+      0.02334530763489725
+    ]
+  },
+  "emerged_ratios": {
+    "E/M": 1.0,
+    "N/F": 1.0,
+    "S/C": 1.0,
+    "EMC/SNF": 1.0
+  },
+  "cross_validation": {
+    "algorithms_tested": 4,
+    "convergence_consistency": 0.6062177825278475,
+    "all_emerged_ratios": [
+      1.0,
+      1.0,
+      -0.39999999972,
+      0.9999999999998895
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "numpy_version": "2.0.2",
+    "optimization_bounds": [
+      [
+        -2.0,
+        2.0
+      ],
+      [
+        -2.0,
+        2.0
+      ],
+      [
+        -2.0,
+        2.0
+      ],
+      [
+        -2.0,
+        2.0
+      ],
+      [
+        -2.0,
+        2.0
+      ],
+      [
+        -2.0,
+        2.0
+      ]
+    ],
+    "tolerance": 1e-12,
+    "max_iterations": 20000,
+    "no_forced_constraints": true,
+    "free_emergence": true,
+    "verification_hash": "a79a1940e059f49a"
+  },
+  "domain_specific": {
+    "crystal_systems_included": [
+      "cubic",
+      "tetragonal",
+      "orthorhombic",
+      "hexagonal",
+      "trigonal",
+      "monoclinic",
+      "triclinic"
+    ],
+    "space_groups_range": [
+      1,
+      230
+    ],
+    "property_ranges": {
+      "formation_energy_eV": [
+        -5.0,
+        2.0
+      ],
+      "band_gap_eV": [
+        0.0,
+        10.0
+      ],
+      "bulk_modulus_GPa": [
+        1.0,
+        500.0
+      ],
+      "density_g_cm3": [
+        0.5,
+        20.0
+      ]
+    },
+    "information_theoretic_metrics": {
+      "shannon_entropy_m6": -8.317766167319343,
+      "fisher_information": 0.0,
+      "coordinate_norm": 4.898979485566356,
+      "coordinate_variance": 0.0
+    }
+  }
+}

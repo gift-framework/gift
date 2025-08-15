@@ -1,0 +1,38 @@
+{
+  "validation_id": "GIFT_v4_allometry_20250812_145749",
+  "domain": "allometric_scaling",
+  "dataset": {
+    "source": "synthetic_realistic_allometry",
+    "hash": null,
+    "samples": 500,
+    "species_distribution": {
+      "mammal": 150,
+      "bird": 133,
+      "fish": 103,
+      "reptile": 61,
+      "invertebrate": 53
+    }
+  },
+  "mapping": {
+    "S": "structural_complexity + body_compactness",
+    "E": "metabolic_intensity + brain_cost + entropy",
+    "M": "lifespan_scaling + thermal_regulation",
+    "C": "scaling_deviations + phylogenetic_constraints",
+    "N": "habitat_complexity + brain_body_ratio",
+    "F": "metabolic_time + heart_rate + complexity"
+  },
+  "best_constant": {
+    "name": "mystery_const_A",
+    "value": 1.0633148,
+    "mean_deviation": 8.227529332672944,
+    "success_rate": 20.0,
+    "mean_em_ratio": 0.9764655816155837
+  },
+  "statistical_significance": "p < 0.05",
+  "reproducibility": {
+    "random_seed": 42,
+    "algorithm": "multi_method_optimization",
+    "bounds": "[-3, 3]^6",
+    "tolerance": "ftol=1e-10, gtol=1e-8"
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "validation_id": "GIFT_emergent_allometry_20250812_161425",
+  "approach": "emergent_lagrangian_optimization",
+  "domain": "allometric_scaling",
+  "optimization_stats": {
+    "total_optimizations": 63,
+    "successful_rate": 100.0,
+    "methods_used": [
+      "L-BFGS-B",
+      "SLSQP"
+    ]
+  },
+  "emergent_ratios": {
+    "E/M": {
+      "mean": 250365325.58304667,
+      "std": 1581924192.9139035,
+      "median": 1.0,
+      "q25": 0.4999999656222719,
+      "q75": 1.0000000000000036,
+      "min": -315800726.8708442,
+      "max": 12048003509.607496,
+      "count": 63
+    },
+    "N/F": {
+      "mean": 226302753.61060986,
+      "std": 905145602.410821,
+      "median": 1.0,
+      "q25": 0.6179999995835181,
+      "q75": 1.0000000000446763,
+      "min": -2.0436788619389143,
+      "max": 6605704945.81268,
+      "count": 63
+    },
+    "S/E": {
+      "mean": 79915602.43523464,
+      "std": 510828672.4705773,
+      "median": 0.9999999995843947,
+      "q25": -0.0033614643816142213,
+      "q75": 1.0000000000022675,
+      "min": -341324448.8346701,
+      "max": 3957329847.470957,
+      "count": 63
+    },
+    "C/F": {
+      "mean": 226302718.62474605,
+      "std": 905145611.1578127,
+      "median": 1.3653266111921708e-09,
+      "q25": -1.8090119077911413,
+      "q75": 1.0000000001256202,
+      "min": -3611.6349150701576,
+      "max": 6605704945.810629,
+      "count": 63
+    }
+  },
+  "best_mathematical_match": {
+    "ratio": "S/E",
+    "constant": "sqrt3",
+    "value": 1.7320508,
+    "emergent_value": 79915602.43523464,
+    "deviation": 4613929378.005762
+  },
+  "top_matches_by_ratio": {
+    "E/M": [
+      {
+        "constant": "sqrt3",
+        "value": 1.7320508,
+        "deviation": 250365323.85099587,
+        "relative_deviation": 14454848775.278177,
+        "significance": 0.1582663220984206
+      },
+      {
+        "constant": "pi_cuberoot",
+        "value": 1.4645918,
+        "deviation": 250365324.11845487,
+        "relative_deviation": 17094546351.990696,
+        "significance": 0.15826632226749254
+      },
+      {
+        "constant": "sqrt2",
+        "value": 1.4142136,
+        "deviation": 250365324.16883308,
+        "relative_deviation": 17703501378.35141,
+        "significance": 0.15826632229933868
+      }
+    ],
+    "N/F": [
+      {
+        "constant": "sqrt3",
+        "value": 1.7320508,
+        "deviation": 226302751.87855905,
+        "relative_deviation": 13065595528.639175,
+        "significance": 0.2500180648017405
+      },
+      {
+        "constant": "pi_cuberoot",
+        "value": 1.4645918,
+        "deviation": 226302752.14601806,
+        "relative_deviation": 15451592187.394337,
+        "significance": 0.25001806509722774
+      },
+      {
+        "constant": "sqrt2",
+        "value": 1.4142136,
+        "deviation": 226302752.19639626,
+        "relative_deviation": 16002020642.171469,
+        "significance": 0.2500180651528853
+      }
+    ],
+    "S/E": [
+      {
+        "constant": "sqrt3",
+        "value": 1.7320508,
+        "deviation": 79915600.70318383,
+        "relative_deviation": 4613929378.005762,
+        "significance": 0.15644306009034137
+      },
+      {
+        "constant": "pi_cuberoot",
+        "value": 1.4645918,
+        "deviation": 79915600.97064283,
+        "relative_deviation": 5456510201.043242,
+        "significance": 0.15644306061392005
+      },
+      {
+        "constant": "sqrt2",
+        "value": 1.4142136,
+        "deviation": 79915601.02102104,
+        "relative_deviation": 5650886190.107423,
+        "significance": 0.1564430607125406
+      }
+    ],
+    "C/F": [
+      {
+        "constant": "sqrt3",
+        "value": 1.7320508,
+        "deviation": 226302716.89269525,
+        "relative_deviation": 13065593508.729378,
+        "significance": 0.2500180237334645
+      },
+      {
+        "constant": "pi_cuberoot",
+        "value": 1.4645918,
+        "deviation": 226302717.16015425,
+        "relative_deviation": 15451589798.615166,
+        "significance": 0.2500180240289518
+      },
+      {
+        "constant": "sqrt2",
+        "value": 1.4142136,
+        "deviation": 226302717.21053246,
+        "relative_deviation": 16002018168.29738,
+        "significance": 0.2500180240846093
+      }
+    ]
+  },
+  "emergence_philosophy": {
+    "lagrangian_type": "physically_motivated_emergent",
+    "constraints": "harmonic_potentials_without_prescribed_values",
+    "discovery_method": "post_hoc_comparison_with_mathematical_constants"
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "bounds": "[-3, 3]^6",
+    "tolerance": "ftol=1e-10, gtol=1e-8"
+  }
+}

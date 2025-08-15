@@ -1,0 +1,175 @@
+================================================================================
+📊 COMPLETE VALIDATION REPORT (JSON)
+================================================================================
+{
+  "validation_id": "GIFT_v4_PHYSIO_20250813_203948",
+  "framework_version": "GIFT_v4.0",
+  "domain": "cardiovascular_physiology",
+  "timestamp": "2025-08-13T20:40:42.672476",
+  "dataset": {
+    "source": "MIT-BIH Arrhythmia Database (PhysioNet)",
+    "source_url": "https://physionet.org/content/mitdb/",
+    "verification_hash": "0c1f8cca2a61ec18",
+    "total_samples": 15,
+    "data_type": "real_ecg_signals",
+    "sampling_characteristics": "360Hz, 10000 samples per record"
+  },
+  "methodology": {
+    "mapping_protocol": "information_geometric_cardiovascular",
+    "optimization_approach": "bias_free_emergence",
+    "validation_type": "triple_blind_multi_algorithm",
+    "target_constants": "none_predetermined",
+    "emergence_analysis": "post_hoc_comparison"
+  },
+  "coordinate_mapping": {
+    "S_substrate": "baseline_cardiac_structural_information",
+    "E_evolution": "heart_rate_variability_dynamics",
+    "M_memory": "autonomic_persistence_patterns",
+    "C_coherence": "multiscale_autonomic_coupling",
+    "N_network": "cardiovascular_connectivity_patterns",
+    "F_flux": "cardiac_information_transmission_efficiency"
+  },
+  "optimization_results": {
+    "overall_success_rate_percent": 37.78,
+    "algorithm_performance": {
+      "L-BFGS-B": {
+        "success_rate": 0.0,
+        "successful_optimizations": 0,
+        "total_attempts": 15
+      },
+      "SLSQP": {
+        "success_rate": 13.333333333333334,
+        "successful_optimizations": 2,
+        "total_attempts": 15
+      },
+      "trust-constr": {
+        "success_rate": 100.0,
+        "successful_optimizations": 15,
+        "total_attempts": 15
+      }
+    },
+    "total_successful_optimizations": 17,
+    "total_optimization_attempts": 45
+  },
+  "emergence_analysis": {
+    "emerged_ratios_count": 8,
+    "emerged_ratios_statistics": {
+      "mean": 1.6835969811067937,
+      "std": 0.8701671275928982,
+      "median": 1.7477501437282081,
+      "min": 0.26781312857654715,
+      "max": 2.837337450354088
+    },
+    "constant_analysis": {
+      "zeta3_cuberoot": {
+        "constant_value": 1.0633,
+        "min_deviation_percent": 59.1158159264327,
+        "mean_deviation_percent": 93.04544211408874,
+        "close_matches": 0,
+        "total_samples": 8,
+        "match_percentage": 0.0
+      },
+      "pi_cuberoot": {
+        "constant_value": 1.4646,
+        "min_deviation_percent": 15.518125819046766,
+        "mean_deviation_percent": 53.8510300422713,
+        "close_matches": 0,
+        "total_samples": 8,
+        "match_percentage": 0.0
+      },
+      "e_cuberoot": {
+        "constant_value": 1.3956,
+        "min_deviation_percent": 21.22946909900823,
+        "mean_deviation_percent": 58.985539266201314,
+        "close_matches": 0,
+        "total_samples": 8,
+        "match_percentage": 0.0
+      },
+      "phi_cuberoot": {
+        "constant_value": 1.174,
+        "min_deviation_percent": 44.11230585568645,
+        "mean_deviation_percent": 79.55725604762398,
+        "close_matches": 0,
+        "total_samples": 8,
+        "match_percentage": 0.0
+      },
+      "sqrt2": {
+        "constant_value": 1.4142,
+        "min_deviation_percent": 19.635021266140498,
+        "mean_deviation_percent": 57.55212742180069,
+        "close_matches": 0,
+        "total_samples": 8,
+        "match_percentage": 0.0
+      },
+      "sqrt3": {
+        "constant_value": 1.7321,
+        "min_deviation_percent": 1.5291586671620143,
+        "mean_deviation_percent": 38.775429110971885,
+        "close_matches": 3,
+        "total_samples": 8,
+        "match_percentage": 37.5
+      },
+      "catalan": {
+        "constant_value": 0.9159,
+        "min_deviation_percent": 58.23058719792484,
+        "mean_deviation_percent": 116.0664031006775,
+        "close_matches": 0,
+        "total_samples": 8,
+        "match_percentage": 0.0
+      },
+      "euler_gamma": {
+        "constant_value": 0.5772,
+        "min_deviation_percent": 33.720365236624005,
+        "mean_deviation_percent": 213.51389223823728,
+        "close_matches": 0,
+        "total_samples": 8,
+        "match_percentage": 0.0
+      },
+      "apery": {
+        "constant_value": 1.2021,
+        "min_deviation_percent": 40.743571312349964,
+        "mean_deviation_percent": 76.52875684211841,
+        "close_matches": 0,
+        "total_samples": 8,
+        "match_percentage": 0.0
+      },
+      "khinchin": {
+        "constant_value": 2.6854,
+        "min_deviation_percent": 5.65790758747628,
+        "mean_deviation_percent": 38.72001867437731,
+        "close_matches": 0,
+        "total_samples": 8,
+        "match_percentage": 0.0
+      }
+    },
+    "best_match": {
+      "constant_name": "sqrt3",
+      "constant_value": 1.7321,
+      "min_deviation_percent": 1.5291586671620143,
+      "match_percentage": 37.5
+    }
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "lagrangian_formulation": "bias_free_natural_emergence",
+    "constraint_parameters": "unity_constraints_only",
+    "regularization": "gradient_norm_cubic_quartic",
+    "verification_protocol": "multi_algorithm_consensus"
+  },
+  "computational_environment": {
+    "python_version": "3.x",
+    "key_libraries": [
+      "numpy",
+      "scipy",
+      "wfdb",
+      "scikit-learn"
+    ],
+    "optimization_algorithms": [
+      "L-BFGS-B",
+      "SLSQP",
+      "trust-constr"
+    ],
+    "numerical_precision": "float64"
+  }
+}
+

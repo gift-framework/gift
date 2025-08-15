@@ -1,0 +1,170 @@
+{
+  "validation_id": "GIFT_Chemistry_Colab_20250812_085030",
+  "domain": "molecular_chemistry",
+  "dataset": {
+    "source": "pubchem_api+reference_molecules",
+    "hash": "df290f5ff15d4f51",
+    "samples": 40,
+    "timerange": "2025-08-12 (single day)",
+    "sources_breakdown": {
+      "reference_molecules": 20,
+      "pubchem_molecules": 20
+    }
+  },
+  "mapping": {
+    "description": "Molecular descriptors to M6 coordinates transformation",
+    "S": "tanh((log(MW+1)/10 + atoms/50 + complexity/100))",
+    "E": "tanh((logP/5 + TPSA/200 + |formation_energy|/1000))",
+    "M": "tanh((stability + rigidity + ring_density)/3)",
+    "C": "tanh((atom_bond_ratio + connectivity + shape_factor/3)/3)",
+    "N": "tanh((connectivity + diversity + char_entropy)/3)",
+    "F": "tanh((aromatic_fraction + entropy/5 + flexibility)/3)",
+    "sample_molecules": [
+      {
+        "id": "ref_methane",
+        "name": "Methane",
+        "smiles": "C",
+        "molecular_weight": 16.04,
+        "mapping": {
+          "S": 0.381712796524865,
+          "E": 0.3203885093836596,
+          "M": 0.0,
+          "C": 0.6482197761765135,
+          "N": 0.5370495669980352,
+          "F": 0.32151273753163434
+        }
+      },
+      {
+        "id": "ref_ethane",
+        "name": "Ethane",
+        "smiles": "CC",
+        "molecular_weight": 30.07,
+        "mapping": {
+          "S": 0.485329874182074,
+          "E": 0.49309393416199443,
+          "M": 0.0,
+          "C": 0.6468371421880847,
+          "N": 0.42872485898211177,
+          "F": 0.32151273753163434
+        }
+      },
+      {
+        "id": "ref_propane",
+        "name": "Propane",
+        "smiles": "CCC",
+        "molecular_weight": 44.1,
+        "mapping": {
+          "S": 0.5610161844790178,
+          "E": 0.63407386998604,
+          "M": 0.0,
+          "C": 0.6473404114807008,
+          "N": 0.3919834410360616,
+          "F": 0.32151273753163434
+        }
+      },
+      {
+        "id": "ref_butane",
+        "name": "Butane",
+        "smiles": "CCCC",
+        "molecular_weight": 58.12,
+        "mapping": {
+          "S": 0.6219602169551249,
+          "E": 0.7425950133389496,
+          "M": 0.0,
+          "C": 0.6479010851626547,
+          "N": 0.3738207293206251,
+          "F": 0.32151273753163434
+        }
+      },
+      {
+        "id": "ref_methanol",
+        "name": "Methanol",
+        "smiles": "CO",
+        "molecular_weight": 32.04,
+        "mapping": {
+          "S": 0.4560123250310591,
+          "E": 0.3131914063438449,
+          "M": 0.0,
+          "C": 0.6471447626520478,
+          "N": 0.7372575809383864,
+          "F": 0.37994896225522484
+        }
+      }
+    ]
+  },
+  "results": {
+    "target_constant": "zeta3_cuberoot",
+    "target_value": 1.0633148,
+    "convergence_ratio": 1.0,
+    "deviation_percent": 5.9544736892592764,
+    "optimization_runs": 25,
+    "successful_optimizations": 25,
+    "statistical_significance": 0.0,
+    "success_rate_percent": 100.0
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "algorithm": "multi_algorithm_L-BFGS-B+DiffEvol",
+    "bounds": "[-3, 3]^6",
+    "tolerance": "1e-8",
+    "verification_hash": "df290f5ff15d4f51",
+    "framework_version": "4.0_colab"
+  },
+  "blind_validation": {
+    "constants_tested": [
+      "zeta3_cuberoot",
+      "pi_cuberoot",
+      "e_cuberoot",
+      "phi_cuberoot",
+      "sqrt2",
+      "sqrt3",
+      "catalan",
+      "euler_gamma",
+      "apery",
+      "khinchin"
+    ],
+    "ranking": [
+      {
+        "constant": "zeta3_cuberoot",
+        "deviation_percent": 5.9544736892592764,
+        "rank": 1
+      },
+      {
+        "constant": "catalan",
+        "deviation_percent": 9.174405676370373,
+        "rank": 2
+      },
+      {
+        "constant": "phi_cuberoot",
+        "deviation_percent": 15.72340793300618,
+        "rank": 3
+      },
+      {
+        "constant": "apery",
+        "deviation_percent": 16.809262523263257,
+        "rank": 4
+      },
+      {
+        "constant": "e_cuberoot",
+        "deviation_percent": 28.346867654658276,
+        "rank": 5
+      }
+    ],
+    "best_constant": "zeta3_cuberoot",
+    "best_deviation_percent": 5.9544736892592764
+  },
+  "computational_environment": {
+    "mode": "colab_optimized",
+    "rdkit_available": false,
+    "descriptor_method": "simplified_but_sophisticated",
+    "execution_timestamp": "2025-08-12T08:50:30.578727"
+  },
+  "detailed_statistics": {
+    "mean_em_ratio": 1.0,
+    "std_em_ratio": 0.0,
+    "median_em_ratio": 1.0,
+    "n_samples": 25,
+    "t_statistic": -Infinity,
+    "significant_convergence": "True"
+  }
+}

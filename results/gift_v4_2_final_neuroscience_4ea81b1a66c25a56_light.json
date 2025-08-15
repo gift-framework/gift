@@ -1,0 +1,312 @@
+{
+  "validation_metadata": {
+    "validation_id": "GIFT_v4_final_neuroscience_20250812_160839",
+    "domain": "neuroscience",
+    "timestamp": "2025-08-12T16:09:57.262999",
+    "random_seed": 42,
+    "validation_hash": "4ea81b1a66c25a56",
+    "framework_version": "GIFT v4.2 Final"
+  },
+  "dataset_summary": {
+    "total_samples": 300,
+    "data_sources": [
+      "synthetic_small_world",
+      "synthetic_scale_free",
+      "synthetic_modular",
+      "synthetic_random"
+    ],
+    "m6_mapped_samples": 300,
+    "network_size_range": [
+      50,
+      149
+    ],
+    "clustering_range": [
+      0.02023809523809524,
+      0.6558891725558392
+    ]
+  },
+  "m6_mapping_info": {
+    "formula_S": "S = 0.3 + 0.7 * (log10(network_size) - 1.7) / 0.5",
+    "formula_E": "E = 0.2 + 1.3 * tanh(global_efficiency * (1 + connectivity_strength) * 2.0)",
+    "formula_M": "M = 0.15 + 0.85 * (tanh(small_world_sigma / 2.0) + 1) / 2",
+    "formula_C": "C = 0.1 + 1.4 * tanh(connectivity_strength * (1 + degree_centrality) * 3.0)",
+    "formula_N": "N = 0.2 + 1.3 * tanh(modularity * (1 + global_efficiency) * 1.5)",
+    "formula_F": "F = 0.1 + 1.4 * tanh((degree_centrality + betweenness_centrality) * global_efficiency * 4.0)",
+    "coordinate_ranges": {
+      "S": {
+        "min": 0.2985580060704263,
+        "max": 0.9624607757771837,
+        "mean": 0.6855829226980963,
+        "std": 0.1865367354756782
+      },
+      "E": {
+        "min": 0.39572316562890814,
+        "max": 1.3416231462973738,
+        "mean": 1.0545882354113265,
+        "std": 0.18121146605915783
+      },
+      "M": {
+        "min": 0.5803321079561766,
+        "max": 0.8625549390276817,
+        "mean": 0.6928717814192492,
+        "std": 0.07046414150155048
+      },
+      "C": {
+        "min": 0.2147181725176837,
+        "max": 1.1550867426498332,
+        "mean": 0.540021751928229,
+        "std": 0.2651659932372268
+      },
+      "N": {
+        "min": 0.7741101182449515,
+        "max": 1.3616657773906584,
+        "mean": 1.1580330876929879,
+        "std": 0.16807374766260363
+      },
+      "F": {
+        "min": 0.14921333914513188,
+        "max": 0.8232265391338358,
+        "mean": 0.3661810177011169,
+        "std": 0.17968497799816843
+      }
+    }
+  },
+  "optimization_parameters": {
+    "constraint_weight": 10.0,
+    "physics_weight": 5.0,
+    "regularization_weight": 1.0,
+    "stability_weight": 2.0,
+    "min_magnitude": 0.1,
+    "max_magnitude": 2.0,
+    "target_constant": "ζ(3)^(1/3)",
+    "target_value": 1.0633148
+  },
+  "performance_results": {
+    "apery": {
+      "target_value": 1.2020569,
+      "n_successful_runs": 20,
+      "n_physical_solutions": 20,
+      "success_rate": 100.0,
+      "physical_rate": 100.0,
+      "mean_em_ratio": 1.2317797998383324,
+      "std_em_ratio": 0.15463180158721399,
+      "mean_deviation_percent": 3.3811657053437605,
+      "std_deviation_percent": 12.655536462360812,
+      "min_deviation": 0.1338031618207815,
+      "median_deviation": 0.40908633081515255
+    },
+    "sqrt3": {
+      "target_value": 1.7320508,
+      "n_successful_runs": 20,
+      "n_physical_solutions": 20,
+      "success_rate": 100.0,
+      "physical_rate": 100.0,
+      "mean_em_ratio": 1.6777934939643715,
+      "std_em_ratio": 0.16977572190656773,
+      "mean_deviation_percent": 3.1325470382062965,
+      "std_deviation_percent": 9.802005917295713,
+      "min_deviation": 0.5031261371984391,
+      "median_deviation": 0.9009536205752906
+    },
+    "catalan": {
+      "target_value": 0.9159656,
+      "n_successful_runs": 20,
+      "n_physical_solutions": 20,
+      "success_rate": 100.0,
+      "physical_rate": 100.0,
+      "mean_em_ratio": 0.9135681600854836,
+      "std_em_ratio": 0.045528776693459824,
+      "mean_deviation_percent": 1.9261981281410072,
+      "std_deviation_percent": 4.589651968035543,
+      "min_deviation": 0.15541252497195696,
+      "median_deviation": 0.9161570528251526
+    },
+    "phi_cuberoot": {
+      "target_value": 1.1673039,
+      "n_successful_runs": 20,
+      "n_physical_solutions": 20,
+      "success_rate": 100.0,
+      "physical_rate": 100.0,
+      "mean_em_ratio": 1.161819027017909,
+      "std_em_ratio": 0.0018589209722350987,
+      "mean_deviation_percent": 0.46987532399157617,
+      "std_deviation_percent": 0.15924910147521126,
+      "min_deviation": 0.17220799534436354,
+      "median_deviation": 0.4688568785146048
+    },
+    "e_cuberoot": {
+      "target_value": 1.3956124,
+      "n_successful_runs": 20,
+      "n_physical_solutions": 20,
+      "success_rate": 100.0,
+      "physical_rate": 100.0,
+      "mean_em_ratio": 1.3870831104256067,
+      "std_em_ratio": 0.002867905386607217,
+      "mean_deviation_percent": 0.621783837962244,
+      "std_deviation_percent": 0.17063855412933834,
+      "min_deviation": 0.10633523276505658,
+      "median_deviation": 0.6565051004789686
+    },
+    "sqrt2": {
+      "target_value": 1.4142136,
+      "n_successful_runs": 20,
+      "n_physical_solutions": 20,
+      "success_rate": 100.0,
+      "physical_rate": 100.0,
+      "mean_em_ratio": 1.4285786861362273,
+      "std_em_ratio": 0.10603457253535398,
+      "mean_deviation_percent": 2.353700035970123,
+      "std_deviation_percent": 7.190863957594088,
+      "min_deviation": 0.47441750415359596,
+      "median_deviation": 0.7039657331613722
+    },
+    "euler_gamma": {
+      "target_value": 0.5772157,
+      "n_successful_runs": 20,
+      "n_physical_solutions": 20,
+      "success_rate": 100.0,
+      "physical_rate": 100.0,
+      "mean_em_ratio": 0.6824869226020256,
+      "std_em_ratio": 0.24030739571199158,
+      "mean_deviation_percent": 18.237761481890672,
+      "std_deviation_percent": 41.63216553395751,
+      "min_deviation": 3.667920063447913,
+      "median_deviation": 8.723089333518057
+    },
+    "zeta3_cuberoot": {
+      "target_value": 1.0633148,
+      "n_successful_runs": 20,
+      "n_physical_solutions": 20,
+      "success_rate": 100.0,
+      "physical_rate": 100.0,
+      "mean_em_ratio": 1.0620309580742386,
+      "std_em_ratio": 0.0029399894674345824,
+      "mean_deviation_percent": 0.23241948280916752,
+      "std_deviation_percent": 0.19237341910461586,
+      "min_deviation": 0.011094362823369551,
+      "median_deviation": 0.19882548607294925
+    },
+    "khinchin": {
+      "target_value": 2.685452,
+      "n_successful_runs": 20,
+      "n_physical_solutions": 20,
+      "success_rate": 100.0,
+      "physical_rate": 100.0,
+      "mean_em_ratio": 2.5952609872903962,
+      "std_em_ratio": 0.2644029334287681,
+      "mean_deviation_percent": 3.358503995215847,
+      "std_deviation_percent": 9.845751606387605,
+      "min_deviation": 0.8037522882113598,
+      "median_deviation": 1.0976276293304437
+    },
+    "madelung": {
+      "target_value": 1.7475645,
+      "n_successful_runs": 20,
+      "n_physical_solutions": 20,
+      "success_rate": 100.0,
+      "physical_rate": 100.0,
+      "mean_em_ratio": 1.7007565108711287,
+      "std_em_ratio": 0.13410789737683373,
+      "mean_deviation_percent": 2.6784699007602493,
+      "std_deviation_percent": 7.673988420847056,
+      "min_deviation": 0.5922608410502409,
+      "median_deviation": 0.9268735791310949
+    },
+    "pi_cuberoot": {
+      "target_value": 1.4645918,
+      "n_successful_runs": 20,
+      "n_physical_solutions": 20,
+      "success_rate": 100.0,
+      "physical_rate": 100.0,
+      "mean_em_ratio": 1.4222602585520376,
+      "std_em_ratio": 0.13826670310710443,
+      "mean_deviation_percent": 2.8903303601701325,
+      "std_deviation_percent": 9.440630700452129,
+      "min_deviation": 0.21562289744885252,
+      "median_deviation": 0.7540054201392536
+    },
+    "sqrt5": {
+      "target_value": 2.236068,
+      "n_successful_runs": 20,
+      "n_physical_solutions": 20,
+      "success_rate": 100.0,
+      "physical_rate": 100.0,
+      "mean_em_ratio": 2.176537388478022,
+      "std_em_ratio": 0.15754609302943456,
+      "mean_deviation_percent": 2.6622898553165175,
+      "std_deviation_percent": 7.045675401170028,
+      "min_deviation": 0.8426881952786778,
+      "median_deviation": 1.057395783374434
+    }
+  },
+  "statistical_analysis": {
+    "total_successful_runs": 240,
+    "domain_performance_tier": "Performance Élevée (0.2-0.5% déviation)",
+    "constants_ranking": [
+      {
+        "rank": 1,
+        "constant": "zeta3_cuberoot",
+        "mean_deviation_percent": 0.23241948280916752,
+        "std_deviation_percent": 0.19237341910461586,
+        "success_rate": 100.0
+      },
+      {
+        "rank": 2,
+        "constant": "phi_cuberoot",
+        "mean_deviation_percent": 0.46987532399157617,
+        "std_deviation_percent": 0.15924910147521126,
+        "success_rate": 100.0
+      },
+      {
+        "rank": 3,
+        "constant": "e_cuberoot",
+        "mean_deviation_percent": 0.621783837962244,
+        "std_deviation_percent": 0.17063855412933834,
+        "success_rate": 100.0
+      },
+      {
+        "rank": 4,
+        "constant": "catalan",
+        "mean_deviation_percent": 1.9261981281410072,
+        "std_deviation_percent": 4.589651968035543,
+        "success_rate": 100.0
+      },
+      {
+        "rank": 5,
+        "constant": "sqrt2",
+        "mean_deviation_percent": 2.353700035970123,
+        "std_deviation_percent": 7.190863957594088,
+        "success_rate": 100.0
+      }
+    ],
+    "significant_comparisons": 11
+  },
+  "key_findings": {
+    "primary_target_convergence": {
+      "target_constant": "ζ(3)^(1/3)",
+      "target_value": 1.0633148,
+      "achieved_ratio": 1.0620309580742386,
+      "mean_deviation_percent": 0.23241948280916752,
+      "std_deviation_percent": 0.19237341910461586,
+      "best_deviation_percent": 0.011094362823369551,
+      "success_rate_percent": 100.0,
+      "physical_rate_percent": 100.0,
+      "statistical_significance": "p < 0.05"
+    }
+  },
+  "domain_classification": "Performance Élevée (0.2-0.5% déviation)",
+  "reproducibility": {
+    "random_seed": 42,
+    "optimization_bounds": [
+      0.1,
+      2.0
+    ],
+    "convergence_tolerance": 1e-09,
+    "gradient_tolerance": 1e-08,
+    "algorithms_used": [
+      "L-BFGS-B",
+      "SLSQP"
+    ],
+    "n_runs_per_constant": 20
+  }
+}

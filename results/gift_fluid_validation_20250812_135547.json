@@ -1,0 +1,76 @@
+{
+  "validation_id": "GIFT_v4_fluid_dynamics_2025-08-12T135547.993496",
+  "domain": "fluid_dynamics",
+  "framework_version": "Enhanced 6D Optimization with Adaptive Constraints v4.0",
+  "dataset": {
+    "source": "Synthetic physically-realistic turbulence database",
+    "hash": "sha256:be61f73753d1de93",
+    "samples": 300,
+    "reynolds_range": [
+      10.0,
+      10000000.0
+    ],
+    "flow_regimes": {
+      "laminar": 115,
+      "turbulent_high": 100,
+      "turbulent_moderate": 50,
+      "turbulent_low": 20,
+      "transition": 15
+    },
+    "generation_timestamp": "2025-08-12T13:55:47.993496"
+  },
+  "mapping": {
+    "S": "log10(reynolds_number) / 6.0  # Structural complexity via Reynolds scaling",
+    "E": "tanh(velocity / 100.0)  # Evolutionary dynamics through velocity normalization",
+    "M": "log10(density) / 3.0  # Memory effects via density scaling",
+    "C": "log10(viscosity * 1e6) / 6.0  # Coupling strength through viscosity scaling",
+    "N": "turbulent_intensity * 10.0  # Network properties via turbulent intensity",
+    "F": "log10(energy_dissipation) / 10.0  # Flow characteristics through energy cascade"
+  },
+  "primary_results": {
+    "target_constant": "zeta3_cuberoot",
+    "target_value": 1.0632653853163685,
+    "convergence_ratio": NaN,
+    "deviation_percent": NaN,
+    "statistical_significance": NaN,
+    "success_rate": NaN,
+    "convergence_quality": "unknown"
+  },
+  "blind_validation": {
+    "constants_tested": 12,
+    "best_performing": null,
+    "performance_ranking": []
+  },
+  "optimization_parameters": {
+    "lambda": [
+      0.25,
+      0.35,
+      0.2
+    ],
+    "beta": [
+      0.15,
+      0.25
+    ],
+    "eta": [
+      0.12,
+      0.08
+    ],
+    "bounds": "[-3, 3]^6",
+    "tolerance": "1e-8",
+    "algorithms": [
+      "L-BFGS-B",
+      "SLSQP"
+    ],
+    "sample_size": 30
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "validation_hash": "be61f73753d1de93",
+    "framework_version": "4.0",
+    "timestamp": "2025-08-12T13:55:47.993496"
+  },
+  "detailed_statistics": {
+    "success": false,
+    "error": "No successful optimizations"
+  }
+}

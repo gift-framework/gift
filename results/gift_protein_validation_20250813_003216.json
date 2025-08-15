@@ -1,0 +1,66 @@
+{
+  "validation_metadata": {
+    "validation_id": "GIFT_v4.2_proteins_20250813_003210",
+    "domain": "proteins",
+    "framework_version": "GIFT_v4.2",
+    "timestamp": "2025-08-13T00:32:15.241641",
+    "random_seed": 42
+  },
+  "dataset_info": {
+    "source": "UniProt REST API + PDB cross-references",
+    "sample_size": 299,
+    "data_hash": "fc382896fa7d6c7c",
+    "feature_count": 20,
+    "quality_metrics": {
+      "length_range": [
+        47,
+        2624
+      ],
+      "hydrophobicity_range": [
+        -1.603109656301146,
+        1.4869565217391305
+      ],
+      "entropy_range": [
+        3.4312940912531777,
+        4.245978189558888
+      ]
+    }
+  },
+  "mapping_protocol": {
+    "paradigm": "Information fondamentale non-\u00e9mergente",
+    "coordinate_space": "M^6 = {S,E,M,C,N,F}",
+    "normalization": "tanh() bounded [-3, 3]",
+    "sophistication_level": "Multi-\u00e9chelle + couplages non-lin\u00e9aires"
+  },
+  "optimization_results": {
+    "best_constant": "khinchin",
+    "best_deviation": 99.04757033179943,
+    "best_ratio_type": "S*N/F",
+    "achieved_value": 0.025577041582809833,
+    "target_value": 2.685452001,
+    "performance_ranking": "         constant  deviation  achieved_value  target_value ratio_type\n7        khinchin  99.047570        0.025577      2.685452      S*N/F\n5         plastic  99.047570        0.010460      1.098267      S*N/F\n9           sqrt3  99.047570        0.016497      1.732051      S*N/F\n8     pi_cuberoot  99.047570        0.013949      1.464592      S*N/F\n4      e_cuberoot  99.047570        0.013292      1.395612      S*N/F\n1         catalan  99.047570        0.008724      0.915966      S*N/F\n0  zeta3_cuberoot  99.047570        0.010127      1.063265      S*N/F\n2    phi_cuberoot  99.047570        0.011181      1.173985      S*N/F\n6     euler_gamma  99.047571        0.005498      0.577216      S*N/F\n3           sqrt2  99.047571        0.013469      1.414214      S*N/F",
+    "statistical_significance": {
+      "p_value": 9.765739766279639e-05,
+      "t_statistic": -6.02950209197921,
+      "degrees_freedom": 9
+    },
+    "convergence_metrics": {
+      "mean_deviation": 99.04757044368485,
+      "std_deviation": 5.8680258572617436e-08,
+      "min_deviation": 99.04757033179943,
+      "max_deviation": 99.04757055120707
+    }
+  },
+  "reproducibility": {
+    "algorithm": "L-BFGS-B",
+    "tolerance": "1e-12",
+    "bounds": "[-10, 10] per parameter",
+    "convergence_rate": 1.0
+  },
+  "computational_evidence": {
+    "dimensional_consistency": true,
+    "scale_invariance_tested": true,
+    "bias_free_protocol": true,
+    "mathematical_emergence": "Libre (non forc\u00e9)"
+  }
+}

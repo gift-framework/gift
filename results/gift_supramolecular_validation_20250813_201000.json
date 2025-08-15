@@ -1,0 +1,239 @@
+{
+  "validation_id": "GIFT_v4_supramolecular_20250813_201000",
+  "domain": "supramolecular_chemistry",
+  "paradigm": "information_fundamental_free_emergence",
+  "timestamp": "2025-08-13T20:10:00.099518",
+  "dataset": {
+    "source": "pubchem_synthetic_hybrid",
+    "validation_hash": "b8526151529e4304",
+    "statistics": {
+      "sample_count": 156,
+      "molecular_weight_range": [
+        200.0,
+        4202.360078047785
+      ],
+      "binding_affinity_range": [
+        69.94788038862828,
+        1150285.1195611577
+      ],
+      "source_distribution": {
+        "synthetic": 150,
+        "pubchem": 6
+      }
+    },
+    "temporal_range": "Generated 2025-08-13"
+  },
+  "mapping": {
+    "S": "structural_information_content",
+    "E": "dynamic_information_processing_rate",
+    "M": "binding_memory_persistence",
+    "C": "multivalent_coupling_coherence",
+    "N": "supramolecular_network_connectivity",
+    "F": "guest_exchange_information_flux"
+  },
+  "optimization_results": {
+    "L-BFGS-B": {
+      "success": true,
+      "fun": -43019.61770141545,
+      "nit": 2,
+      "em_ratio": 0.8029879259618161,
+      "nf_ratio": 0.7838345375551766,
+      "optimal_params": [
+        -10.0,
+        -10.0,
+        -10.0,
+        10.0,
+        10.0,
+        10.0,
+        -10.0,
+        -10.0
+      ]
+    },
+    "SLSQP": {
+      "success": true,
+      "fun": -43019.61770141545,
+      "nit": 15,
+      "em_ratio": 0.8029879259618161,
+      "nf_ratio": 0.7838345375551766,
+      "optimal_params": [
+        -10.0,
+        -10.0,
+        -10.0,
+        10.0,
+        10.0,
+        10.0,
+        -10.0,
+        -10.0
+      ]
+    },
+    "trust-constr": {
+      "success": true,
+      "fun": -43019.61749400234,
+      "nit": 30,
+      "em_ratio": 0.8029879259618161,
+      "nf_ratio": 0.7838345375551766,
+      "optimal_params": [
+        -9.999875528171204,
+        -9.999956126725529,
+        -9.999978882225866,
+        9.99999552441785,
+        9.99999936639736,
+        9.999995862622125,
+        -9.999999993218806,
+        -9.99999994592401
+      ]
+    }
+  },
+  "emerged_ratios": {
+    "E_over_M": 0.8029879259618161,
+    "best_algorithm": "L-BFGS-B"
+  },
+  "mathematical_constant_analysis": {
+    "best_match": {
+      "constant": "catalan",
+      "value": 0.915965594177,
+      "emerged_value": 0.8029879259618161,
+      "deviation": 0.11297766821518385,
+      "percentage_error": 12.334269860506595
+    },
+    "all_comparisons": {
+      "zeta3_cuberoot": {
+        "value": 1.0632653843847744,
+        "deviation": 0.26027745842295824,
+        "percentage_error": 24.47906818423885,
+        "match_quality": 0.07406778554211862
+      },
+      "pi_cuberoot": {
+        "value": 1.4645918875615231,
+        "deviation": 0.661603961599707,
+        "percentage_error": 45.17326411668486,
+        "match_quality": 0.0013387223152110314
+      },
+      "e_cuberoot": {
+        "value": 1.3956124250860895,
+        "deviation": 0.5926244991242734,
+        "percentage_error": 42.4634009035651,
+        "match_quality": 0.002668483377825283
+      },
+      "phi_cuberoot": {
+        "value": 1.1739849967051121,
+        "deviation": 0.370997070743296,
+        "percentage_error": 31.601517207164537,
+        "match_quality": 0.024478240291645696
+      },
+      "sqrt2": {
+        "value": 1.4142135623730951,
+        "deviation": 0.611225636411279,
+        "percentage_error": 43.22017923414785,
+        "match_quality": 0.0022155460899954613
+      },
+      "sqrt3": {
+        "value": 1.7320508075688772,
+        "deviation": 0.9290628816070611,
+        "percentage_error": 53.639470478992614,
+        "match_quality": 9.228501173259972e-05
+      },
+      "catalan": {
+        "value": 0.915965594177,
+        "deviation": 0.11297766821518385,
+        "percentage_error": 12.334269860506595,
+        "match_quality": 0.32310540356953477
+      },
+      "euler_gamma": {
+        "value": 0.5772156649015329,
+        "deviation": 0.22577226106028325,
+        "percentage_error": 39.11402180999327,
+        "match_quality": 0.10458840225490094
+      },
+      "apery": {
+        "value": 1.2020569031595942,
+        "deviation": 0.3990689771977781,
+        "percentage_error": 33.19884242990739,
+        "match_quality": 0.018486957935357495
+      },
+      "khinchin": {
+        "value": 2.6854520010653062,
+        "deviation": 1.8824640751034902,
+        "percentage_error": 70.09859324823998,
+        "match_quality": 6.676708228390989e-09
+      }
+    }
+  },
+  "statistical_significance": {
+    "chi_squared": 14.459614623754728,
+    "variance_explained": 0.03999972901971309,
+    "correlation_matrix": [
+      [
+        1.0,
+        0.6521291354988878,
+        0.33063111328399847,
+        0.05514219353247697,
+        0.5565248144892763,
+        0.05516417219137054
+      ],
+      [
+        0.6521291354988878,
+        1.0,
+        0.5189884741819696,
+        0.1810655311032541,
+        0.489926836602732,
+        0.03120453626115851
+      ],
+      [
+        0.33063111328399847,
+        0.5189884741819696,
+        0.9999999999999999,
+        0.7133170611091867,
+        0.5935409086215578,
+        -0.01917133071767194
+      ],
+      [
+        0.05514219353247697,
+        0.18106553110325407,
+        0.7133170611091867,
+        1.0,
+        0.6724302676669285,
+        0.035818655729313725
+      ],
+      [
+        0.5565248144892763,
+        0.489926836602732,
+        0.5935409086215578,
+        0.6724302676669286,
+        1.0,
+        0.08551211229209792
+      ],
+      [
+        0.055164172191370535,
+        0.031204536261158506,
+        -0.019171330717671943,
+        0.035818655729313725,
+        0.08551211229209792,
+        1.0
+      ]
+    ]
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "algorithm_details": {
+      "lagrangian_components": [
+        "kinetic",
+        "interaction",
+        "constraint",
+        "regularization",
+        "nonlocal"
+      ],
+      "optimization_bounds": "[-10, 10]^8",
+      "tolerance": "1e-10",
+      "free_emergence": true
+    },
+    "verification_hash": "013dd3b40b8418a7"
+  },
+  "framework_version": "4.0",
+  "domain_specific_insights": {
+    "supramolecular_features": "host_guest_binding_cooperativity_networks",
+    "information_paradigm": "fundamental_not_emergent",
+    "cavity_size_distribution": 6.251097892110492,
+    "binding_cooperativity_average": 1.357960059926471
+  }
+}

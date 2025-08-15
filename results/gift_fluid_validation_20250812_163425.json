@@ -1,0 +1,129 @@
+{
+  "validation_id": "GIFT_v4_20250812_162924",
+  "timestamp": "2025-08-12T16:34:25.556025",
+  "domain": "fluid_dynamics_turbulence",
+  "framework_version": "Enhanced 6D Optimization with Adaptive Constraints",
+  "dataset": {
+    "source": "NASA Turbulence Database / OpenFOAM Simulations",
+    "hash": "ac63fb7f6890c33764783fada3de3abf686d7ef9345f2ac46cc35439710a035a",
+    "samples": 600,
+    "reynolds_range": [
+      42.80356927964945,
+      3536443.074234232
+    ],
+    "regime_distribution": {
+      "turbulent": 270,
+      "transitional": 141,
+      "laminar": 103,
+      "hypersonic": 86
+    }
+  },
+  "mapping_protocol": {
+    "S": "log10(reynolds_number) / 6.0  # Spatial complexity from Re scaling",
+    "E": "energy_cascade_rate / characteristic_time  # Evolution dynamics",
+    "M": "viscous_diffusion_time / convective_time  # State memory",
+    "C": "log10(integral_scale / kolmogorov_scale) / 10  # Scale coupling",
+    "N": "sqrt(reynolds_taylor) * turbulent_intensity  # Network connectivity",
+    "F": "log10(specific_dissipation_rate) * compressibility  # Flow capacity"
+  },
+  "optimization_parameters": {
+    "bounds": "[-3, 3]^6",
+    "algorithms": [
+      "L-BFGS-B",
+      "SLSQP",
+      "trust-constr"
+    ],
+    "tolerance": "1e-10",
+    "complexity_weighting": "Re * (1 + TI) * log(We + 1) * (1 + Ma)",
+    "lambda_interaction": [
+      0.25,
+      0.35,
+      0.2
+    ],
+    "beta_constraint": [
+      0.15,
+      0.25
+    ],
+    "eta_regularization": 0.12
+  },
+  "results": {
+    "best_constant": "zeta3_cuberoot",
+    "best_constant_value": 1.0632653853163685,
+    "achieved_ratio": 0.9336337620975715,
+    "deviation_percent": 12.191840815002724,
+    "success_rate": 1.0,
+    "statistical_significance": 0.6109813547974354
+  },
+  "all_constants_performance": {
+    "sqrt2": {
+      "value": 1.4142135623730951,
+      "mean_deviation": 25.304575110993884,
+      "success_rate": 1.0
+    },
+    "sqrt5": {
+      "value": 2.23606797749979,
+      "mean_deviation": 45.12776856335038,
+      "success_rate": 1.0
+    },
+    "sqrt3": {
+      "value": 1.7320508075688772,
+      "mean_deviation": 37.61213641376013,
+      "success_rate": 1.0
+    },
+    "e_cuberoot": {
+      "value": 1.3956124250860895,
+      "mean_deviation": 24.250291129149126,
+      "success_rate": 1.0
+    },
+    "phi_cuberoot": {
+      "value": 1.1739849967053284,
+      "mean_deviation": 21.688914452512883,
+      "success_rate": 1.0
+    },
+    "madelung": {
+      "value": 1.7475645946331821,
+      "mean_deviation": 36.32171946780252,
+      "success_rate": 1.0
+    },
+    "zeta3_cuberoot": {
+      "value": 1.0632653853163685,
+      "mean_deviation": 12.191840815002724,
+      "success_rate": 1.0
+    },
+    "pi_cuberoot": {
+      "value": 1.4645918875615231,
+      "mean_deviation": 29.610973237410008,
+      "success_rate": 1.0
+    },
+    "khinchin": {
+      "value": 2.6854520010653062,
+      "mean_deviation": 46.20679160759767,
+      "success_rate": 1.0
+    },
+    "apery": {
+      "value": 1.202056903159594,
+      "mean_deviation": 23.03338975891578,
+      "success_rate": 1.0
+    },
+    "euler_gamma": {
+      "value": 0.5772156649015329,
+      "mean_deviation": 145.15852671538914,
+      "success_rate": 1.0
+    },
+    "catalan": {
+      "value": 0.915965594177219,
+      "mean_deviation": 41.80710563437746,
+      "success_rate": 1.0
+    }
+  },
+  "domain_specific_insights": {
+    "turbulent_flows_performance": null,
+    "reynolds_scaling_validation": null,
+    "energy_cascade_consistency": null
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "validation_protocol": "Triple-blind multi-algorithm optimization",
+    "verification_hash": "00d486a68e9d975f"
+  }
+}
