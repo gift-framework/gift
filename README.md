@@ -1,9 +1,3 @@
-# GIFT v3.0 | Geometric Information Field Theory
-
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16274289.svg)](https://doi.org/10.5281/zenodo.16274289)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
-[![Research Status](https://img.shields.io/badge/status-computational_exploration-orange.svg)](https://zenodo.org/record/16274289)
 # GIFT: Geometric Information Field Theory
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
