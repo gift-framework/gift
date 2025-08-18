@@ -1,9 +1,17 @@
 # GIFT: Geometric Information Field Theory
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![Zenodo](https://img.shields.io/badge/[Zenodo-10.5281/zenodo.16891489-blue])](https://zenodo.org)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16891489.svg)](https://doi.org/10.5281/zenodo.16891489)
 
 A π-based geometric approach to fundamental physics that addresses current tensions in cosmology and particle physics through E8×E8 gauge theory.
+
+---
+
+## Status
+
+**This repository is under active development. Major updates and bug fixes may occur.**
+
+---
 
 ## **Repository Contents**
 
@@ -46,23 +54,33 @@ GIFT proposes that physical observables emerge from geometric information encode
 β_H = π/8 = 0.39270      (scale anomaly exponent)
 ```
 
-## **Citation**
+## Citation
 
 If you use this work, please cite:
 
 ```bibtex
-@article{gift2025,
-  title={GIFT: Geometric Information Field Theory},
-  author={de La Fournière, Brieuc},
-  journal={arXiv preprint},
-  year={2025},
-  note={Available at: https://github.com/gift-framework/gift}
+@software{gift_framework_2025,
+  author       = {Brieuc de La Fournière},
+  title        = {GIFT: Geometric Information Field Theory},
+  year         = {2025},
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.16891489},
+  url          = {https://zenodo.org/record/16891489}
 }
 ```
 
-## **License**
+---
+
+## License
 
 This work is licensed under [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
+
+---
+
+## Reproducibility
+
+All results in `gift.ipynb` are exported with reproducibility checksums.
+See notebook output for details and exported files (`.json`, `.csv`).
 
 ## **Disclaimer**
 
