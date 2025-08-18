@@ -89,6 +89,7 @@ See notebook output for details and exported files (`.json`, `.csv`).
 ## **Disclaimer**
 
 This is an independent theoretical framework requiring extensive peer review and experimental validation.
+
 All predictions should be considered speculative until confirmed through standard scientific processes.
 > Running 4D spacetime (legacy mode) ∞ Upgrading to information-geometric kernel...72.98% complete.
 > 
