@@ -1,7 +1,6 @@
 # GIFT: Geometric Information Field Theory
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![arXiv](https://img.shields.io/badge/arXiv-soon-b31b1b.svg)](https://arxiv.org)
 [![Zenodo](https://img.shields.io/badge/[Zenodo-10.5281/zenodo.16891489-blue])](https://zenodo.org)
 
 A π-based geometric approach to fundamental physics that addresses current tensions in cosmology and particle physics through E8×E8 gauge theory.
