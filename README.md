@@ -13,6 +13,11 @@ A π-based geometric approach to fundamental physics that addresses current tens
 
 ---
 
+## Documentation & Resources
+
+- [Preprint (Zenodo)](https://zenodo.org/record/16891489)
+- [Dictionary PDF (Glossary)](https://zenodo.org/record/16891489/files/gift_dictionary.pdf)
+
 ## **Repository Contents**
 
 - **`gift.ipynb`** - Complete computational notebook with all calculations
