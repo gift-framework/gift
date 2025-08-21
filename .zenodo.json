@@ -1,0 +1,23 @@
+{
+  "title": "GIFT: Geometric Information Field Theory",
+  "description": "A π-based geometric approach to fundamental physics with sub-percent predictive accuracy across cosmology and particle physics",
+  "creators": [
+    {
+      "name": "de La Fournière, Brieuc",
+      "orcid": "0009-0000-0641-9740"
+    }
+  ],
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "theoretical physics",
+    "geometric field theory",
+    "cosmology",
+    "particle physics",
+    "unification"
+  ],
+  "communities": [
+    {
+      "identifier": "zenodo"
+    }
+  ]
+}
