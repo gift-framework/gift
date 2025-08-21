@@ -100,4 +100,6 @@ All predictions should be considered speculative until confirmed through standar
  
 > [simple translator available here](https://www.bdelaf.com/gift.html)
 >
-> Running 4D spacetime (legacy mode) ∞ Upgrading to information-geometric kernel...72.98% complete.
+> Physics is running in safe mode. Launching upgrade script: gift.sh
+>
+> ...72.98% complete.
