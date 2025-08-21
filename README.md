@@ -13,7 +13,7 @@ A π-based geometric approach to fundamental physics that addresses current tens
 
 ---
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/USERNAME/REPO-NAME/HEAD?filepath=gift.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://[mybinder.org/v2/gh/USERNAME/REPO-NAME](https://github.com/gift-framework/gift/HEAD?filepath=gift.ipynb)
 
 ## 🚀 Quick Start
 **Click the Binder badge above to run GIFT framework instantly in your browser!**
