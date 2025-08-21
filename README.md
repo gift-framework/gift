@@ -3,6 +3,7 @@
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16891489.svg)](https://doi.org/10.5281/zenodo.16891489)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gift-framework/gift/HEAD?filepath=gift-notebook.py)
+
 A π-based geometric approach to fundamental physics that addresses current tensions in cosmology and particle physics through E8×E8 gauge theory.
 
 ---
