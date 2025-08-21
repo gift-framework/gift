@@ -21,8 +21,18 @@ A π-based geometric approach to fundamental physics that addresses current tens
 
 ## **Repository Contents**
 
-- **`gift.ipynb`** - Complete computational notebook with all calculations
-- **`README.md`** - This file
+gift-framework/
+├── README.md
+├── gift-notebook.py          # Notebook principal source
+├── gift-notebook.ipynb       # Notebook principal 
+├── requirements.txt          # Dependencies
+├── environment.yml          # Conda env
+├── data/                    # Données expérimentales
+├── results/                 # Outputs sauvegardés
+├── docs/                    # Documentation/site web
+├── tests/                   # Tests unitaires
+└── examples/                # Notebooks d'exemple
+
 
 ---
 
