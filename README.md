@@ -24,15 +24,15 @@ A π-based geometric approach to fundamental physics that addresses current tens
 ```
 gift-framework/
 ├── README.md
-├── gift-notebook.py         # Notebook principal source
-├── gift-notebook.ipynb      # Notebook principal 
+├── gift-notebook.py         # Main Notebook Source
+├── gift-notebook.ipynb      # Main Notebook 
 ├── requirements.txt         # Dependencies
 ├── environment.yml          # Conda env
-├── data/                    # Données expérimentales
-├── results/                 # Outputs sauvegardés
-├── docs/                    # Documentation/site web
-├── tests/                   # Tests unitaires
-└── examples/                # Notebooks d'exemple
+├── data/                    # experimental data
+├── results/                 # Saved Outputs
+├── docs/                    # Documentation
+├── tests/                   # Tests 
+└── examples/                # Exemple Notebook
 ```
 
 ---
