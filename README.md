@@ -15,10 +15,6 @@ A π-based geometric approach to fundamental physics that addresses current tens
 
 ---
 
-## 🚀 Quick Start
-**Click the Binder badge above to run GIFT framework instantly in your browser!**
-No installation required - just click and compute.
-
 ## Documentation & Resources
 
 - [Preprint and dictionary (Zenodo)](https://zenodo.org/record/16891489)
@@ -27,6 +23,8 @@ No installation required - just click and compute.
 
 - **`gift.ipynb`** - Complete computational notebook with all calculations
 - **`README.md`** - This file
+
+---
 
 ## **Quick Start**
 
@@ -41,6 +39,8 @@ git clone https://github.com/gift-framework/gift.git
 cd gift
 jupyter notebook gift.ipynb
 ```
+
+---
 
 ## **What's in the Notebook**
 
