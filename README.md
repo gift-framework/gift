@@ -21,6 +21,7 @@ A π-based geometric approach to fundamental physics that addresses current tens
 
 ## **Repository Contents**
 
+```
 gift-framework/
 ├── README.md
 ├── gift-notebook.py          # Notebook principal source
@@ -32,7 +33,7 @@ gift-framework/
 ├── docs/                    # Documentation/site web
 ├── tests/                   # Tests unitaires
 └── examples/                # Notebooks d'exemple
-
+```
 
 ---
 
