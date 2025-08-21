@@ -17,15 +17,41 @@ jobs:
     
     - name: Install dependencies
       run: |
-        pip install jupyter nbconvert
         pip install -r requirements.txt
+        pip install nbconvert
     
-    - name: Convert notebooks to HTML
+    - name: Create docs directory
       run: |
-        jupyter nbconvert --to html gift-notebook.py
-        jupyter nbconvert --to html examples/*.py
         mkdir -p docs/notebooks
-        mv *.html docs/notebooks/
+    
+    - name: Convert .ipynb to HTML (if exists)
+      run: |
+        if [ -f "gift-notebook.ipynb" ]; then
+          jupyter nbconvert --to html gift-notebook.ipynb
+          mv gift-notebook.html docs/notebooks/
+          echo "✅ Converted .ipynb to HTML"
+        else
+          echo "ℹ️ No .ipynb file found"
+        fi
+    
+    - name: Create simple index page
+      run: |
+        cat > docs/index.html << 'EOF'
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>GIFT Framework Documentation</title>
+        </head>
+        <body>
+            <h1>GIFT: Geometric Information Field Theory</h1>
+            <p>A π-based geometric approach to fundamental physics</p>
+            <ul>
+                <li><a href="notebooks/gift-notebook.html">Interactive Notebook</a></li>
+                <li><a href="https://github.com/gift-framework/gift">GitHub Repository</a></li>
+            </ul>
+        </body>
+        </html>
+        EOF
     
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
