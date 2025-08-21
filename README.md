@@ -17,7 +17,7 @@ A π-based geometric approach to fundamental physics that addresses current tens
 
 ## Documentation & Resources
 
-- [Preprint and dictionary (Zenodo)](https://zenodo.org/record/16891489)
+- [Preprint (Zenodo)](https://zenodo.org/record/16891489)
 
 ## **Repository Contents**
 
