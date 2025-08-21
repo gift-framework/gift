@@ -27,9 +27,9 @@ jobs:
         pip install -r requirements.txt
         pip install nbconvert
     
-    - name: Test notebook execution
+    - name: Test Python script execution
       run: |
-        jupyter nbconvert --execute --to notebook gift-notebook.py
+        python gift-notebook.py
         
     - name: Run unit tests
       run: |
