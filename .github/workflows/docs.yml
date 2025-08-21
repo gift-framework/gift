@@ -1,0 +1,34 @@
+name: Deploy Documentation
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.9'
+    
+    - name: Install dependencies
+      run: |
+        pip install jupyter nbconvert
+        pip install -r requirements.txt
+    
+    - name: Convert notebooks to HTML
+      run: |
+        jupyter nbconvert --to html gift-notebook.py
+        jupyter nbconvert --to html examples/*.py
+        mkdir -p docs/notebooks
+        mv *.html docs/notebooks/
+    
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs
