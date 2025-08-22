@@ -37,22 +37,6 @@ gift-framework/
 
 ---
 
-## **Quick Start**
-
-### Prerequisites
-```bash
-pip install numpy scipy matplotlib pandas jupyter
-```
-
-### Running the Notebook
-```bash
-git clone https://github.com/gift-framework/gift.git
-cd gift
-jupyter notebook gift.ipynb
-```
-
----
-
 ## **What's in the Notebook**
 
 The `gift.ipynb` notebook contains:
