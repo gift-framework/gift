@@ -1,4 +1,4 @@
-# GIFT Framework v3 - Binder/Colab Dependencies
+# GIFT Framework v3 - Binder/Colab Compatible Dependencies
 numpy>=1.21.0
 matplotlib>=3.5.0
 scipy>=1.7.0
@@ -18,5 +18,5 @@ statsmodels>=0.13.0
 # Interactive features
 tqdm>=4.60.0
 
-# Colab specific
-google-colab; platform_system == "Linux" and 'google.colab' in sys.modules
+# Optional for enhanced functionality
+numba>=0.55.0; python_version>="3.8"
