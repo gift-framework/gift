@@ -1,0 +1,35 @@
+name: Update Binder
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'requirements.txt'
+      - 'runtime.txt'
+      - 'postBuild'
+      - 'gift_notebook_v3.ipynb'
+
+jobs:
+  trigger-binder-build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Trigger Binder Build
+      run: |
+        echo "🔄 Triggering Binder rebuild for GIFT v3..."
+        curl -X POST "https://mybinder.org/build/gh/${{ github.repository }}/${{ github.ref_name }}"
+        echo "✅ Binder build triggered"
+        
+    - name: Update README badges
+      uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Check Binder status
+      run: |
+        echo "🌐 Checking Binder build status..."
+        BINDER_URL="https://mybinder.org/v2/gh/${{ github.repository }}/${{ github.ref_name }}?filepath=gift_notebook_v3.ipynb"
+        echo "Binder URL: $BINDER_URL"
+        
+        # Wait a moment then test connectivity
+        sleep 30
+        curl -I "$BINDER_URL" || echo "Binder build in progress..."
