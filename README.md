@@ -120,9 +120,9 @@ roots    geometry    parameters
 
 ## Links & Resources
 
-- **Live Notebook**: [Binder Interactive Environment](https://mybinder.org/v2/gh/gift-framework/gift/HEAD?filepath=notebooks/gift_notebook_v3.ipynb)
-- **Quick Demo**: [Google Colab](https://colab.research.google.com/github/gift-framework/gift/blob/main/notebooks/gift_notebook_v3.ipynb)
-- **Preprints**: [Zenodo Repository](https://zenodo.org/record/xxxxx)
+- **Live Notebook**: [Binder Interactive Environment](https://mybinder.org/v2/gh/gift-framework/gift/HEAD?filepath=gift_notebook_v3.ipynb)
+- **Quick Demo**: [Google Colab](https://colab.research.google.com/github/gift-framework/gift/blob/main/gift_notebook_v3.ipynb)
+- **Preprints**: [Zenodo Repository](https://doi.org/10.5281/zenodo.16891489)
 
 ---
 
@@ -130,7 +130,7 @@ roots    geometry    parameters
 
 This framework represents ongoing theoretical research requiring peer review and experimental validation. All predictions should be considered speculative pending systematic scientific assessment. The work contributes mathematical approaches and computational tools that may prove valuable in related theoretical investigations regardless of ultimate validation outcomes.
 
-> > Physics is running in safe mode. Launching upgrade script: gift.sh
+> Physics is running in safe mode. Launching upgrade script: gift.sh
 >
-> ...72.98% complete.**
+> ...72.93% complete.**
 
