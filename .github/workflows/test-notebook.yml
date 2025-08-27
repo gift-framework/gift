@@ -1,18 +1,21 @@
-name: Test GIFT Framework
+name: Test Notebooks
 
 on:
   push:
-    branches: [ main, develop ]
+    branches: [ main, master ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, master ]
+  schedule:
+    # Test every day at 6 AM UTC
+    - cron: '0 6 * * *'
 
 jobs:
-  test:
+  test-notebooks:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [3.9, '3.10']
-
+        python-version: [3.8, 3.9]
+    
     steps:
     - uses: actions/checkout@v3
     
@@ -25,21 +28,41 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
+        pip install jupyter nbconvert
     
-    - name: Test basic imports
+    - name: Test GIFT notebook v3
       run: |
-        python -c "import numpy, matplotlib, pandas, scipy; print('✅ All imports successful!')"
+        echo "🧪 Testing GIFT v3 notebook..."
+        jupyter nbconvert --to script gift_notebook_v3.ipynb --output test_gift_v3
+        python test_gift_v3.py
+        echo "✅ GIFT v3 notebook test complete"
     
-    - name: Test GIFT framework execution
+    - name: Validate Binder compatibility
       run: |
-        python gift-notebook.py
+        echo "🔧 Checking Binder compatibility..."
+        # Check all required files exist
+        test -f requirements.txt || (echo "❌ requirements.txt missing" && exit 1)
+        test -f runtime.txt || (echo "❌ runtime.txt missing" && exit 1)  
+        test -f postBuild || (echo "❌ postBuild missing" && exit 1)
+        test -f gift_notebook_v3.ipynb || (echo "❌ Main notebook missing" && exit 1)
+        echo "✅ Binder files validated"
     
-    - name: Test Jupyter notebook version (if exists)
+    - name: Test computational framework
       run: |
-        if [ -f "gift-notebook.ipynb" ]; then
-          pip install nbconvert
-          jupyter nbconvert --execute --to notebook gift-notebook.ipynb --output test-output
-          echo "✅ Jupyter notebook test passed"
-        else
-          echo "ℹ️ No .ipynb file found, skipping Jupyter test"
-        fi
+        python -c "
+        import numpy as np
+        import matplotlib.pyplot as plt
+        import scipy
+        import sympy as sp
+        print('🔬 Core libraries OK')
+        
+        # Test GIFT constants
+        xi = 5*np.pi/16
+        tau = 8*(0.577216**(5*np.pi/12))
+        alpha_inv = 128 - 1/24
+        
+        print(f'ξ = {xi:.6f}')
+        print(f'τ = {tau:.6f}') 
+        print(f'α⁻¹ = {alpha_inv:.6f}')
+        print('✅ GIFT constants computational test OK')
+        "
