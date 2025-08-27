@@ -13,15 +13,7 @@
 ```
 gift-framework/
 ├── 📄 README.md                    # This file
-├── 📓 notebooks/
-│   ├── gift_notebook_v3.ipynb      # Main computational framework
-│   ├── validation_protocols.ipynb  # Experimental validation tools
-│   └── citizen_science_guide.ipynb # Accessible analysis protocols
-├── 📰 papers/                      # Preprint manuscripts
-│   ├── gift_i_v3_preprint.md      # Theoretical foundations
-│   ├── gift_ii_v3_preprint.md     # Standard Model emergence
-│   ├── gift_iii_v3_preprint.md    # Cosmological applications
-│   └── gift_iv_v3_preprint.md     # Experimental validation
+├── 📓 gift_notebook_v3.ipynb      # Main computational framework
 ├── 📋 supplements/                 # Technical details
 │   ├── mathematical_derivations.md # S1: Complete mathematical proofs
 │   ├── phenomenology_analysis.md   # S2: Sector-by-sector analysis
