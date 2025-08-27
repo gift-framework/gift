@@ -1,100 +1,144 @@
 # GIFT: Geometric Information Field Theory
-
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16891489.svg)](https://doi.org/10.5281/zenodo.16891489)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gift-framework/gift/HEAD?filepath=gift-notebook.ipynb)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gift-framework/gift/blob/main/gift-notebook.ipynb)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.xxxxx.svg)](https://doi.org/10.5281/zenodo.xxxxx)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gift-framework/gift/HEAD?filepath=notebooks/gift_notebook_v3.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gift-framework/gift/blob/main/notebooks/gift_notebook_v3.ipynb)
 
-A π-based geometric approach to fundamental physics that addresses current tensions in cosmology and particle physics through E8×E8 gauge theory.
-
----
-
-## Status
-
-**This repository is under active development. Major updates and bug fixes may occur.**
+**Geometric Information Field Theory**: A mathematical framework proposing that Standard Model parameters emerge from E8×E8 geometric information structures through systematic dimensional reduction mechanisms.
 
 ---
 
-## Documentation & Resources
-
-- [Preprint (Zenodo)](https://zenodo.org/record/16891489)
-
-## **Repository Contents**
+## Repository Structure
 
 ```
 gift-framework/
-├── README.md
-├── gift-notebook.py         # Main Notebook Source
-├── gift-notebook.ipynb      # Main Notebook 
-├── requirements.txt         # Dependencies
-├── environment.yml          # Conda env
-├── data/                    # experimental data
-├── results/                 # Saved Outputs
-├── docs/                    # Documentation
-├── tests/                   # Tests 
-└── examples/                # Exemple Notebook
+├── 📄 README.md                    # This file
+├── 📓 notebooks/
+│   ├── gift_notebook_v3.ipynb      # Main computational framework
+│   ├── validation_protocols.ipynb  # Experimental validation tools
+│   └── citizen_science_guide.ipynb # Accessible analysis protocols
+├── 📰 papers/                      # Preprint manuscripts
+│   ├── gift_i_v3_preprint.md      # Theoretical foundations
+│   ├── gift_ii_v3_preprint.md     # Standard Model emergence
+│   ├── gift_iii_v3_preprint.md    # Cosmological applications
+│   └── gift_iv_v3_preprint.md     # Experimental validation
+├── 📋 supplements/                 # Technical details
+│   ├── mathematical_derivations.md # S1: Complete mathematical proofs
+│   ├── phenomenology_analysis.md   # S2: Sector-by-sector analysis
+│   └── computational_framework.md  # S3: Implementation details
+├── 📊 data/                        # Experimental data and results
+├── 🧪 tests/                       # Validation tests
+├── 📚 docs/                        # Documentation
+└── 🎓 examples/                    # Educational materials
 ```
 
 ---
 
-## **What's in the Notebook**
+##  Quick Start
 
-The `gift.ipynb` notebook contains:
+### Interactive Sandbox (Recommended)
+Open the main notebook and run:
 
-1. **Fundamental Parameters** - Calculation of ξ, τ, β_H from π-based geometry
-2. **Electromagnetic Sector** - Fine structure constant at electroweak scale
-3. **Cosmological Sector** - Hubble tension resolution via ζ(3) correction
-4. **Fermionic Sector** - Koide relation from projective geometry
-5. **Scalar Sector** - Higgs self-coupling and mass predictions
-6. **Beyond SM** - New particle predictions at 3.897 GeV and 61.4 GeV
-7. **Validation** - Error analysis and experimental comparisons
+```python
+# 1. Initialize framework
+gift_framework = create_gift_framework()
 
-## **Core Theory**
+# 2. Access interactive sandbox
+sandbox = gift_framework['sandbox']
 
-GIFT proposes that physical observables emerge from geometric information encoded in π-based ratios through E8×E8 symmetry breaking:
+# 3. Explore parameter relationships
+sandbox.compare_all()  # Compare GIFT vs experimental
+sandbox.explore_scenario('What if α⁻¹ = 128 exactly?')
 
+# 4. Real-time parameter exploration
+sandbox.edit_sm_value('h0', 70.0)        # Change Hubble constant
+sandbox.sm_to_gift_derive()              # See GIFT implications
+sandbox.edit_gift_param('xi', 1.0)       # Change ξ parameter  
+sandbox.gift_to_sm_derive()              # See SM impacts
 ```
-ξ = 5π/16 = 0.98175     (geometric ratio)
-τ = 8γ^(5π/12) = 3.8966  (mass hierarchy generator)  
-β_H = π/8 = 0.39270      (scale anomaly exponent)
+
+### Core Predictions
+```python
+# Quick validation
+gift_framework['summary']()              # All predictions summary
+gift_framework['derive_all']()           # All sector derivations
+
+# Specific sectors
+gift_framework['derive_em']()            # Electromagnetic: α⁻¹ = 128 - 1/24
+gift_framework['derive_weak']()          # Electroweak: sin²θW = ζ(2) - √2
+gift_framework['derive_cosmo']()         # Cosmological: H₀ via ζ(3) correction
 ```
 
-## Citation
+---
 
-If you use this work, please cite:
+##  Theoretical Foundation
 
+### Core Geometric Parameters
+```python
+ξ = 5π/16 = 0.981748        # Geometric ratio (E8 projection)
+τ = 8γ^(5π/12) = 3.896568   # Mass hierarchy generator  
+β₀ = π/8 = 0.392699         # Anomalous dimension parameter
+δ = 2π/25 = 0.251327        # Koide relation parameter
+```
+
+### Mathematical Constants Integration
+```python
+ζ(2) = π²/6 = 1.644934      # Basel constant (electroweak)
+ζ(3) = 1.202057             # Apéry constant (cosmological)
+γ = 0.577216                # Euler-Mascheroni (mass hierarchy)
+φ = 1.618034                # Golden ratio (optimization)
+```
+
+### Dimensional Reduction Architecture
+```
+E8×E8 → AdS₄×K₇ → Standard Model
+  |         |          |
+240×2    Curvature   Observable
+roots    geometry    parameters
+```
+
+---
+
+## Community & Collaboration
+
+### Contributing
+- **Theoretical Development**: Mathematical formalization, analytical proofs
+- **Experimental Design**: Validation protocols, measurement strategies
+- **Computational**: Algorithm optimization, statistical analysis tools
+- **Educational**: Accessible explanations, interactive materials
+
+### Citation
 ```bibtex
-@software{gift_framework_2025,
-  author       = {Brieuc de La Fournière},
-  title        = {GIFT: Geometric Information Field Theory},
-  year         = {2025},
-  publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.16891489},
-  url          = {https://zenodo.org/record/16891489}
+@article{GIFT-Framework-2025,
+  author = {de La Fournière, Brieuc},
+  title = {GIFT: Geometric Information Field Theory v3},
+  journal = {arXiv preprint},
+  year = {2025},
+  note = {Complete framework: arXiv:2501.xxxxx (I-IV)},
+  url = {https://github.com/gift-framework/gift}
 }
 ```
 
----
-
-## License
-
-This work is licensed under [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
-
-## Reproducibility
-
-All results  are exported with reproducibility checksums.
-See notebook output for details and exported files (`.json`, `.csv`).
+### Open Science
+- **License**: CC BY 4.0 - Full reuse and modification permitted
+- **Data Policy**: All computational results openly accessible
+- **Reproducibility**: Complete computational environment provided
 
 ---
 
-## **Disclaimer**
+## Links & Resources
 
-This is an independent theoretical framework requiring extensive peer review and experimental validation.
+- **Live Notebook**: [Binder Interactive Environment](https://mybinder.org/v2/gh/gift-framework/gift/HEAD?filepath=notebooks/gift_notebook_v3.ipynb)
+- **Quick Demo**: [Google Colab](https://colab.research.google.com/github/gift-framework/gift/blob/main/notebooks/gift_notebook_v3.ipynb)
+- **Preprints**: [Zenodo Repository](https://zenodo.org/record/xxxxx)
 
-All predictions should be considered speculative until confirmed through standard scientific processes.
- 
-> [simple translator available here](https://www.bdelaf.com/gift.html)
+---
+
+## Scientific Disclaimer
+
+This framework represents ongoing theoretical research requiring peer review and experimental validation. All predictions should be considered speculative pending systematic scientific assessment. The work contributes mathematical approaches and computational tools that may prove valuable in related theoretical investigations regardless of ultimate validation outcomes.
+
+> > Physics is running in safe mode. Launching upgrade script: gift.sh
 >
-> Physics is running in safe mode. Launching upgrade script: gift.sh
->
-> ...72.98% complete.
+> ...72.98% complete.**
+
