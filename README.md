@@ -22,43 +22,6 @@ gift-framework/
 
 ---
 
-##  Quick Start
-
-### Interactive Sandbox (Recommended)
-Open the main notebook and run:
-
-```python
-# 1. Initialize framework
-gift_framework = create_gift_framework()
-
-# 2. Access interactive sandbox
-sandbox = gift_framework['sandbox']
-
-# 3. Explore parameter relationships
-sandbox.compare_all()  # Compare GIFT vs experimental
-sandbox.explore_scenario('What if α⁻¹ = 128 exactly?')
-
-# 4. Real-time parameter exploration
-sandbox.edit_sm_value('h0', 70.0)        # Change Hubble constant
-sandbox.sm_to_gift_derive()              # See GIFT implications
-sandbox.edit_gift_param('xi', 1.0)       # Change ξ parameter  
-sandbox.gift_to_sm_derive()              # See SM impacts
-```
-
-### Core Predictions
-```python
-# Quick validation
-gift_framework['summary']()              # All predictions summary
-gift_framework['derive_all']()           # All sector derivations
-
-# Specific sectors
-gift_framework['derive_em']()            # Electromagnetic: α⁻¹ = 128 - 1/24
-gift_framework['derive_weak']()          # Electroweak: sin²θW = ζ(2) - √2
-gift_framework['derive_cosmo']()         # Cosmological: H₀ via ζ(3) correction
-```
-
----
-
 ##  Theoretical Foundation
 
 ### Core Geometric Parameters
