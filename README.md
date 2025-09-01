@@ -12,16 +12,12 @@
 
 ```
 gift-framework/
-├── 📄 README.md                    # This file
-├── 📓 gift_notebook_v3.ipynb      # Main computational framework
-├── 📋 supplements/                 # Technical details
-│   ├── mathematical_derivations.md # S1: Complete mathematical proofs
-│   ├── phenomenology_analysis.md   # S2: Sector-by-sector analysis
-│   └── computational_framework.md  # S3: Implementation details
-├── 📊 data/                        # Experimental data and results
-├── 🧪 tests/                       # Validation tests
-├── 📚 docs/                        # Documentation
-└── 🎓 examples/                    # Educational materials
+├── README.md                    
+├── notebooks/                 
+│   ├── S3_gift_notebook.ipynb 
+├── code/
+└── data/                       
+
 ```
 
 ---
