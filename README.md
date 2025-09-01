@@ -58,17 +58,7 @@ roots    geometry    parameters
 - **Computational**: Algorithm optimization, statistical analysis tools
 - **Educational**: Accessible explanations, interactive materials
 
-### Citation
-```bibtex
-@article{GIFT-Framework-2025,
-  author = {de La Fournière, Brieuc},
-  title = {GIFT: Geometric Information Field Theory v3},
-  journal = {arXiv preprint},
-  year = {2025},
-  note = {Complete framework: arXiv:2501.xxxxx (I-IV)},
-  url = {https://github.com/gift-framework/gift}
-}
-```
+---
 
 ### Open Science
 - **License**: CC BY 4.0 - Full reuse and modification permitted
