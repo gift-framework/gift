@@ -1,15 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>GIFT Framework - Private Repository</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIFT Translator</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .demo-section {
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .code {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            margin: 10px 0;
+            overflow-x: auto;
+        }
+        .example {
+            background: #e8f5e8;
+            border-left: 4px solid #27ae60;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .example strong {
+            color: #27ae60;
+        }
+    </style>
 </head>
 <body>
-    <h1>GIFT Framework</h1>
-    <p>This repository is private. Please clone and run locally:</p>
-    <pre>
+    <div class="container">
+        <h1>🔬 GIFT Translator</h1>
+        <p><strong>Bidirectional translation between Standard Model and Geometric Information Field Theory</strong></p>
+        
+        <div class="demo-section">
+            <h2>🚀 Try it locally</h2>
+            <p>Clone and run the translator on your machine:</p>
+            <div class="code">
 git clone https://github.com/gift-framework/gift.git
 cd gift
+pip install flask numpy
 python run_web_interface.py
-    </pre>
+            </div>
+            <p>Then open <strong>http://localhost:5000</strong></p>
+        </div>
+
+        <h2>📝 Translation Examples</h2>
+        
+        <div class="example">
+            <strong>Einstein's equation:</strong><br>
+            Standard Model: <code>E = mc²</code><br>
+            GIFT: <code>E = ξ·τ·c²·m</code>
+        </div>
+
+        <div class="example">
+            <strong>Fine structure constant:</strong><br>
+            Standard Model: <code>α = e²/(4πε₀ℏc)</code><br>
+            GIFT: <code>α⁻¹ = ζ₃ × 114 - 1/24</code>
+        </div>
+
+        <div class="example">
+            <strong>Weinberg angle:</strong><br>
+            Standard Model: <code>sin²θ_W = g'²/(g² + g'²)</code><br>
+            GIFT: <code>sin²θ_W = ζ₂ - √2</code>
+        </div>
+
+        <h2>💻 Command Line Usage</h2>
+        <div class="code">
+# Interactive mode
+python -m gift_translator.cli --interactive
+
+# Direct translation
+python -m gift_translator.cli "E = mc²" --from SM --to GIFT
+        </div>
+
+        <h2>📚 Documentation</h2>
+        <ul>
+            <li><a href="https://github.com/gift-framework/gift/blob/main/README.md">Main README</a></li>
+            <li><a href="https://github.com/gift-framework/gift/blob/main/README_TRANSLATOR.md">Translator Guide</a></li>
+            <li><a href="https://github.com/gift-framework/gift/blob/main/README_MODULE.md">Module Documentation</a></li>
+        </ul>
+
+        <div style="text-align: center; margin-top: 40px; color: #7f8c8d;">
+            <p>GIFT Framework - Geometric Information Field Theory</p>
+        </div>
+    </div>
 </body>
 </html>
