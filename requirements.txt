@@ -32,6 +32,3 @@ statsmodels>=0.13.0
 # Interactive features
 tqdm>=4.60.0
 
-# Optional for enhanced functionality
-numba>=0.55.0; python_version>="3.8"
->>>>>>> 1c3f1118fcf610d9c577b83b72787d1a288c7750
