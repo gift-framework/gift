@@ -31,23 +31,36 @@ The GIFT (Geometric Information Field Theory) framework provides a geometric app
 └── GIFT_Academic_Support_Notebook.ipynb # Academic validation tools
 ```
 
-## Quick Start
+## 🚀 Quick Start
 
+### 🌐 **Live Demo (Matrix Style)**
+**[🔬 LAUNCH GIFT TRANSLATOR](https://gift-framework.github.io/gift/)** - Try the Matrix-style interface online!
+
+### 💻 **Local Installation**
 1. **Install Dependencies**:
    ```bash
    pip install -r requirements.txt
    ```
 
-2. **Run Core Framework**:
+2. **Run Matrix Interface**:
+   ```bash
+   python run_web_interface.py
+   # Open http://localhost:5000
+   ```
+
+3. **Run Core Framework**:
    ```bash
    jupyter notebook final/GIFT_Core_Framework.ipynb
    ```
 
-3. **Explore Research Challenges**:
-   ```bash
-   cd GIFT_Research_Challenges
-   python run_all_explorations.py
-   ```
+### 🎮 **Command Line Translator**
+```bash
+# Interactive Matrix mode
+python -m gift_translator.cli --interactive
+
+# Direct translation
+python -m gift_translator.cli "E = mc²" --from SM --to GIFT
+```
 
 ## Key Predictions
 
