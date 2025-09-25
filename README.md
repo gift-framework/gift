@@ -39,13 +39,7 @@ The GIFT (Geometric Information Field Theory) framework provides a geometric app
    pip install -r requirements.txt
    ```
 
-2. **Run Matrix Interface**:
-   ```bash
-   python run_web_interface.py
-   # Open http://localhost:5000
-   ```
-
-3. **Run Core Framework**:
+2. **Run Core Framework**:
    ```bash
    jupyter notebook final/GIFT_Core_Framework.ipynb
    ```
