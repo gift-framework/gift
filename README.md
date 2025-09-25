@@ -1,8 +1,10 @@
-# GIFT Framework
+# GIFT: Geometric Information Field Theory
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17153200.svg)](https://doi.org/10.5281/zenodo.17153200)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gift-framework/gift/HEAD?filepath=final/GIFT_Core_Framework.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gift-framework/gift/blob/main/final/GIFT_Core_Framework.ipynb)
 
-**Geometric Information Field Theory**
-
-A theoretical framework for unified physics based on E₈×E₈ geometric structures and dimensional reduction to the Standard Model.
+**Geometric Information Field Theory**: A theoretical framework for unified physics based on E₈×E₈ geometric structures and dimensional reduction to the Standard Model.
 
 ## Overview
 
@@ -59,6 +61,30 @@ The GIFT (Geometric Information Field Theory) framework provides a geometric app
 
 ## Theoretical Foundation
 
+### Core Geometric Parameters
+```python
+ξ = 5π/16 = 0.981748        # Geometric ratio (E8 projection)
+τ = 8γ^(5π/12) = 3.896568   # Mass hierarchy generator  
+β₀ = π/8 = 0.392699         # Anomalous dimension parameter
+δ = 2π/25 = 0.251327        # Koide relation parameter
+```
+
+### Mathematical Constants Integration
+```python
+ζ(2) = π²/6 = 1.644934      # Basel constant (electroweak)
+ζ(3) = 1.202057             # Apéry constant (cosmological)
+γ = 0.577216                # Euler-Mascheroni (mass hierarchy)
+φ = 1.618034                # Golden ratio (optimization)
+```
+
+### Dimensional Reduction Architecture
+```
+E8×E8 → AdS₄×K₇ → Standard Model
+  |         |          |
+240×2    Curvature   Observable
+roots    geometry    parameters
+```
+
 The framework is based on:
 
 - **E₈×E₈ → AdS₄×K₇** dimensional reduction
@@ -98,10 +124,45 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - **Email**: brieuc@bdelaf.com
 - **ORCID**: 0009-0000-0641-9740
 
-## Contributing
+## Community & Collaboration
+
+### Contributing
+- **Theoretical Development**: Mathematical formalization, analytical proofs
+- **Experimental Design**: Validation protocols, measurement strategies
+- **Computational**: Algorithm optimization, statistical analysis tools
+- **Educational**: Accessible explanations, interactive materials
+
+### Open Science
+- **License**: CC BY 4.0 - Full reuse and modification permitted
+- **Data Policy**: All computational results openly accessible
+- **Reproducibility**: Complete computational environment provided
 
 We welcome contributions! Please see our contributing guidelines and code of conduct.
 
 ---
 
+## Links & Resources
+
+- **Live Notebook**: [Binder Interactive Environment](https://mybinder.org/v2/gh/gift-framework/gift/HEAD?filepath=final/GIFT_Core_Framework.ipynb)
+- **Quick Demo**: [Google Colab](https://colab.research.google.com/github/gift-framework/gift/blob/main/final/GIFT_Core_Framework.ipynb)
+- **Preprints**: [Zenodo Repository](https://doi.org/10.5281/zenodo.17153200)
+
+---
+
+## Scientific Disclaimer
+
+This framework represents ongoing theoretical research requiring peer review and experimental validation. All predictions should be considered speculative pending systematic scientific assessment. The work contributes mathematical approaches and computational tools that may prove valuable in related theoretical investigations regardless of ultimate validation outcomes.
+
+
+
+---
+
 *This framework represents ongoing theoretical research. All predictions should be validated against experimental data.*
+
+---
+
+> Physics is running in safe mode. Launching upgrade script: gift.sh
+>
+> ...72.93% complete.
+
+---

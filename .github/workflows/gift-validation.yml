@@ -1,0 +1,66 @@
+name: GIFT Framework Validation
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    # Run validation daily at 2 AM UTC
+    - cron: '0 2 * * *'
+
+jobs:
+  validation:
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        python-version: [3.9, 3.10, 3.11]
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install pytest pytest-cov jupyter nbconvert
+    
+    - name: Run GIFT Core Framework validation
+      run: |
+        python -c "
+        import sys
+        sys.path.append('.')
+        from final.GIFT_Core_Framework import GIFTCoreFramework
+        gift = GIFTCoreFramework()
+        predictions = gift.calculate_predictions()
+        deviations = gift.calculate_deviations(predictions)
+        mean_deviation = sum(deviations.values()) / len(deviations)
+        print(f'Mean deviation: {mean_deviation:.4f}%')
+        assert mean_deviation < 1.0, f'Mean deviation {mean_deviation:.4f}% exceeds 1% threshold'
+        print('✅ GIFT validation passed!')
+        "
+    
+    - name: Test notebook execution
+      run: |
+        jupyter nbconvert --to notebook --execute final/GIFT_Core_Framework.ipynb --output-dir=./test_output/
+    
+    - name: Run research challenges tests
+      run: |
+        cd GIFT_Research_Challenges
+        python test_discoveries.py
+    
+    - name: Upload validation results
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: gift-validation-results-${{ matrix.python-version }}
+        path: |
+          test_output/
+          *.csv
+          *.json

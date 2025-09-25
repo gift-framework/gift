@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+>>>>>>> 1c3f1118fcf610d9c577b83b72787d1a288c7750
 # Python
 __pycache__/
 *.py[cod]
@@ -19,6 +26,7 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+<<<<<<< HEAD
 MANIFEST
 
 # Jupyter Notebook
@@ -77,3 +85,19 @@ plots/
 *.bak
 *.backup
 *_backup.*
+=======
+
+# Data files
+*.csv
+*.xlsx
+*.h5
+*.parquet
+
+# Results
+results/temp/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+>>>>>>> 1c3f1118fcf610d9c577b83b72787d1a288c7750
