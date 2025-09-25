@@ -73,11 +73,11 @@ def examples():
     return examples
 
 if __name__ == '__main__':
-    print("🔬 GIFT.TRANSLATOR.EXE - MATRIX MODE")
-    print("=" * 50)
-    print("Starting web server...")
+    print("GIFT Translator - Web Interface")
+    print("=" * 40)
+    print("Starting server...")
     print("Open: http://localhost:5000")
     print("Press Ctrl+C to stop")
-    print("=" * 50)
+    print("=" * 40)
     
     app.run(debug=True, host='0.0.0.0', port=5000)

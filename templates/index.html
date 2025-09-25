@@ -316,15 +316,15 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>GIFT.TRANSLATOR.EXE</h1>
-            <p>SM ↔ GIFT QUANTUM TRANSLATION MATRIX</p>
+            <h1>GIFT Translator</h1>
+            <p>Standard Model ↔ GIFT Framework</p>
         </div>
 
         <div class="translator-container">
             <div class="input-section active" id="sm-section">
                 <div class="section-header">
                     <span class="format-badge">SM</span>
-                    <span class="section-title">STANDARD MODEL INPUT</span>
+                    <span class="section-title">Standard Model</span>
                 </div>
                 <textarea 
                     class="input-area" 
@@ -338,7 +338,7 @@
             <div class="input-section" id="gift-section">
                 <div class="section-header">
                     <span class="format-badge gift">GIFT</span>
-                    <span class="section-title">GIFT MATRIX OUTPUT</span>
+                    <span class="section-title">GIFT Framework</span>
                 </div>
                 <textarea 
                     class="input-area" 
@@ -349,11 +349,11 @@
         </div>
 
         <div class="controls">
-            <button class="examples-button" onclick="toggleExamples()">EXAMPLES.DAT</button>
-            <button class="translate-button" onclick="translateExpression()">TRANSLATE.EXE</button>
+            <button class="examples-button" onclick="toggleExamples()">Examples</button>
+            <button class="translate-button" onclick="translateExpression()">Translate</button>
         </div>
 
-        <div class="loading" id="loading">TRANSLATING...</div>
+        <div class="loading" id="loading">Translating...</div>
 
         <div id="result" style="display: none;"></div>
     </div>
@@ -431,12 +431,12 @@
             if (result.success) {
                 resultDiv.className = 'result-section';
                 resultDiv.innerHTML = `
-                    <div class="result-header">> TRANSLATION SUCCESS</div>
+                    <div class="result-header">Translation Result</div>
                     <div class="result-text">${result.translated}</div>
                     <div class="explanation">${result.explanation}</div>
                     <div>
                         <span class="confidence ${getConfidenceClass(result.confidence)}">
-                            CONFIDENCE: ${Math.round(result.confidence * 100)}%
+                            Confidence: ${Math.round(result.confidence * 100)}%
                         </span>
                     </div>
                 `;
@@ -458,7 +458,7 @@
             } else {
                 resultDiv.className = 'result-section error';
                 resultDiv.innerHTML = `
-                    <div class="result-header">> TRANSLATION ERROR</div>
+                    <div class="result-header">Translation Error</div>
                     <div class="result-text">${result.error}</div>
                 `;
             }
@@ -472,7 +472,7 @@
 
         function toggleExamples() {
             // This would show a dropdown with example expressions
-            alert('EXAMPLES.DAT LOADING...');
+            alert('Examples feature coming soon!');
         }
 
         // Auto-translate on Enter (Ctrl+Enter)
