@@ -11,7 +11,7 @@ scikit-learn>=1.0.0
 
 # Additional utilities
 tqdm>=4.62.0
-=======
+
 # GIFT Framework v3 - Binder/Colab Compatible Dependencies
 numpy>=1.21.0
 matplotlib>=3.5.0
