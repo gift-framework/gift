@@ -94,12 +94,9 @@ The framework is based on:
 
 ## Research Status
 
-- ✅ Core framework implementation
-- ✅ 22-observable validation
-- ✅ Geometric constraint verification
-- 🔄 E₈×E₈ derivation refinement
-- 🔄 Chiral symmetry breaking mechanisms
-- 🔄 f_π geometric interpretation
+- Core framework implementation
+- 22-observable validation
+- Geometric constraint verification
 
 ## Citation
 
