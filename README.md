@@ -174,9 +174,6 @@ We welcome contributions! Please see our contributing guidelines and code of con
 This framework represents ongoing theoretical research requiring peer review and experimental validation. All predictions should be considered speculative pending systematic scientific assessment. The work contributes mathematical approaches and computational tools that may prove valuable in related theoretical investigations regardless of ultimate validation outcomes.
 
 
-
----
-
 *This framework represents ongoing theoretical research. All predictions should be validated against experimental data.*
 
 ---
