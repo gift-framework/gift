@@ -150,6 +150,54 @@
             color: #000000;
         }
 
+        .examples {
+            margin-bottom: 30px;
+            background: rgba(0, 255, 0, 0.02);
+            border: 1px solid #00ff00;
+            border-radius: 3px;
+            padding: 20px;
+        }
+
+        .examples h3 {
+            color: #00ffaa;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9em;
+        }
+
+        .example-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .example-item {
+            background: rgba(0, 255, 0, 0.05);
+            border: 1px solid #00ff00;
+            padding: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: inherit;
+            text-align: center;
+        }
+
+        .example-item:hover {
+            background: rgba(0, 255, 0, 0.1);
+            border-color: #00ffaa;
+        }
+
+        .example-item strong {
+            color: #00ff00;
+            font-size: 1em;
+        }
+
+        .example-item small {
+            color: #00aa00;
+            font-size: 0.8em;
+            display: block;
+            margin-top: 5px;
+        }
 
         .result-info {
             margin-top: 15px;
@@ -201,6 +249,29 @@
             <p>Bidirectional translation between Standard Model and Geometric Information Field Theory</p>
         </div>
 
+        <div class="examples">
+            <h3>Quick Examples</h3>
+            <div class="example-grid">
+                <div class="example-item" onclick="loadExample('ξ = 5π/16', 'GIFT', 'SM')">
+                    <strong>ξ = 5π/16</strong><br><small>GIFT → SM</small>
+                </div>
+                <div class="example-item" onclick="loadExample('E = mc²', 'SM', 'GIFT')">
+                    <strong>E = mc²</strong><br><small>SM → GIFT</small>
+                </div>
+                <div class="example-item" onclick="loadExample('α = e²/(4πε₀ℏc)', 'SM', 'GIFT')">
+                    <strong>α = e²/(4πε₀ℏc)</strong><br><small>SM → GIFT</small>
+                </div>
+                <div class="example-item" onclick="loadExample('sin²θ_W = ζ₂ - √2', 'GIFT', 'SM')">
+                    <strong>sin²θ_W = ζ₂ - √2</strong><br><small>GIFT → SM</small>
+                </div>
+                <div class="example-item" onclick="loadExample('H₀ = 67.36 × (ζ₃/ξ)^β₀', 'GIFT', 'SM')">
+                    <strong>H₀ = 67.36 × (ζ₃/ξ)^β₀</strong><br><small>GIFT → SM</small>
+                </div>
+                <div class="example-item" onclick="loadExample('Ho = 69.36', 'SM', 'GIFT')">
+                    <strong>Ho = 69.36</strong><br><small>SM → GIFT</small>
+                </div>
+            </div>
+        </div>
 
         <div class="translator-container">
             <div class="input-section">
@@ -230,12 +301,22 @@
     <script src="gift-engine.js"></script>
     <script>
         // Initialize the advanced GIFT engine
-        const giftEngine = new GIFTEngine();
+        let giftEngine;
+        try {
+            giftEngine = new GIFTEngine();
+            console.log('GIFT Engine initialized successfully');
+        } catch (error) {
+            console.error('Error initializing GIFT Engine:', error);
+        }
         
         function translate() {
+            console.log('Translate function called');
+            
             const inputText = document.getElementById('inputText').value.trim();
             const inputFormat = document.querySelector('.input-section .format-btn.active').dataset.format;
             const outputFormat = document.querySelector('.output-section .format-btn.active').dataset.format;
+            
+            console.log('Input:', inputText, 'From:', inputFormat, 'To:', outputFormat);
             
             document.getElementById('error').innerHTML = '';
             document.getElementById('resultInfo').innerHTML = '';
@@ -250,7 +331,13 @@
                 return;
             }
             
+            if (!giftEngine) {
+                document.getElementById('error').innerHTML = '<div class="error">GIFT Engine not initialized</div>';
+                return;
+            }
+            
             const result = giftEngine.translate(inputText, inputFormat, outputFormat);
+            console.log('Translation result:', result);
             
             if (result.success) {
                 document.getElementById('outputText').value = result.translated;
@@ -275,6 +362,22 @@
             }
         }
         
+        function loadExample(expression, fromFormat, toFormat) {
+            document.getElementById('inputText').value = expression;
+            
+            // Set input format
+            document.querySelectorAll('.input-section .format-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.format === fromFormat);
+            });
+            
+            // Set output format
+            document.querySelectorAll('.output-section .format-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.format === toFormat);
+            });
+            
+            // Auto-translate
+            setTimeout(translate, 100);
+        }
         
         // Format button handlers
         document.querySelectorAll('.format-btn').forEach(btn => {
