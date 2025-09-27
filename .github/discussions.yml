@@ -1,0 +1,51 @@
+# GitHub Discussions Configuration for GIFT Framework
+
+# Categories for organizing discussions
+categories:
+  - name: "🧮 Theoretical Physics"
+    description: "Questions and discussions about GIFT theoretical foundations, mathematical derivations, and physics concepts"
+    emoji: "🧮"
+    
+  - name: "💻 Implementation & Code"
+    description: "Help with GIFT framework implementation, Python code, and computational issues"
+    emoji: "💻"
+    
+  - name: "🔬 Research & Collaboration"
+    description: "Research proposals, collaborations, and experimental validation discussions"
+    emoji: "🔬"
+    
+  - name: "💬 General Discussion"
+    description: "General questions, ideas, and community discussions about GIFT framework"
+    emoji: "💬"
+    
+  - name: "🐛 Bug Reports"
+    description: "Report bugs and issues with GIFT framework code, calculations, or documentation"
+    emoji: "🐛"
+    
+  - name: "📚 Announcements"
+    description: "Important announcements, updates, and news about GIFT framework"
+    emoji: "📚"
+
+# Discussion templates (already created in DISCUSSION_TEMPLATE folder)
+# Templates will be automatically picked up from .github/DISCUSSION_TEMPLATE/
+
+# Guidelines for discussions
+guidelines:
+  - "Be respectful and constructive in all discussions"
+  - "Stay on topic related to GIFT framework and theoretical physics"
+  - "Use clear and concise language"
+  - "Support arguments with evidence or references when possible"
+  - "Check existing discussions before creating new ones"
+  - "Use appropriate templates for structured discussions"
+  - "Tag discussions appropriately for better organization"
+
+# Suggested discussion topics
+suggested_topics:
+  - "How to calculate fine structure constant using GIFT framework?"
+  - "E₈×E₈ dimensional reduction mechanisms explained"
+  - "Validation of GIFT cosmological predictions"
+  - "Implementation of GIFT geometric parameters"
+  - "Comparison with Standard Model predictions"
+  - "Future experimental tests of GIFT predictions"
+  - "Educational applications of GIFT framework"
+  - "Mathematical foundations of geometric information theory"
