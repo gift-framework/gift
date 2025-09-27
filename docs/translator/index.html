@@ -150,35 +150,6 @@
             color: #000000;
         }
 
-        .examples {
-            background: rgba(0, 255, 0, 0.03);
-            border: 1px solid #00ff00;
-            border-radius: 3px;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-
-        .examples h3 {
-            color: #00ffaa;
-            margin-bottom: 15px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .example-item {
-            background: rgba(0, 0, 0, 0.5);
-            border: 1px solid #00aa00;
-            padding: 10px;
-            margin: 5px 0;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-family: inherit;
-        }
-
-        .example-item:hover {
-            background: rgba(0, 255, 0, 0.1);
-            border-color: #00ff00;
-        }
 
         .result-info {
             margin-top: 15px;
@@ -230,24 +201,6 @@
             <p>Bidirectional translation between Standard Model and Geometric Information Field Theory</p>
         </div>
 
-        <div class="examples">
-            <h3>Example Expressions</h3>
-            <div class="example-item" onclick="loadExample('E = mc²', 'SM', 'GIFT')">
-                <strong>E = mc²</strong> (SM → GIFT)
-            </div>
-            <div class="example-item" onclick="loadExample('α = e²/(4πε₀ℏc)', 'SM', 'GIFT')">
-                <strong>α = e²/(4πε₀ℏc)</strong> (SM → GIFT)
-            </div>
-            <div class="example-item" onclick="loadExample('ξ = 5π/16', 'GIFT', 'SM')">
-                <strong>ξ = 5π/16</strong> (GIFT → SM)
-            </div>
-            <div class="example-item" onclick="loadExample('sin²θ_W = ζ₂ - √2', 'GIFT', 'SM')">
-                <strong>sin²θ_W = ζ₂ - √2</strong> (GIFT → SM)
-            </div>
-            <div class="example-item" onclick="loadExample('H₀ = 67.36 × (ζ₃/ξ)^β₀', 'GIFT', 'SM')">
-                <strong>H₀ = 67.36 × (ζ₃/ξ)^β₀</strong> (GIFT → SM)
-            </div>
-        </div>
 
         <div class="translator-container">
             <div class="input-section">
@@ -322,22 +275,6 @@
             }
         }
         
-        function loadExample(expression, fromFormat, toFormat) {
-            document.getElementById('inputText').value = expression;
-            
-            // Set input format
-            document.querySelectorAll('.input-section .format-btn').forEach(btn => {
-                btn.classList.toggle('active', btn.dataset.format === fromFormat);
-            });
-            
-            // Set output format
-            document.querySelectorAll('.output-section .format-btn').forEach(btn => {
-                btn.classList.toggle('active', btn.dataset.format === toFormat);
-            });
-            
-            // Auto-translate
-            setTimeout(translate, 100);
-        }
         
         // Format button handlers
         document.querySelectorAll('.format-btn').forEach(btn => {
