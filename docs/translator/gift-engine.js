@@ -252,6 +252,17 @@ class GIFTEngine {
                 }
             }
             
+            // Don't modify pure numerical expressions without GIFT constants
+            if (!containsConstants && /^[A-Za-z_]*\s*=\s*[\d\.\s\+\-\*\/\^\(\)]+$/.test(expression.trim())) {
+                return {
+                    success: true,
+                    translated: expression,
+                    explanation: 'Numerical expression without GIFT constants',
+                    confidence: 0.5,
+                    method: 'no_translation_needed'
+                };
+            }
+            
             // Try to evaluate mathematical expressions
             if (containsConstants || /[+\-*/^()]/.test(expression)) {
                 try {
