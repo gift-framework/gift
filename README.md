@@ -50,10 +50,9 @@ The GIFT (Geometric Information Field Theory) framework provides a geometric app
    pip install -r requirements.txt
    ```
 
-2. **Launch GIFT Translator** (GitHub Pages):
+2. **Command Line Interface**:
    ```bash
-   # Open https://gift-framework.github.io/gift/translator/
-   # Matrix-style interface for SM ↔ GIFT translation
+   python -m gift.cli --help
    ```
 
 3. **Run Core Framework**:
@@ -66,9 +65,9 @@ The GIFT (Geometric Information Field Theory) framework provides a geometric app
    python examples/sector_examples.py
    ```
 
-5. **Command Line Interface**:
+5. **Launch GIFT Translator** (GitHub Pages):
    ```bash
-   python -m gift.cli --help
+   # Open https://gift-framework.github.io/gift/translator/
    ```
 
 ## Key Predictions
