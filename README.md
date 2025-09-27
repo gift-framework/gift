@@ -1,14 +1,15 @@
-# GIFT: Geometric Information Field Theory
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+# GIFT Framework: Geometric Information Field Theory
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17153200.svg)](https://doi.org/10.5281/zenodo.17153200)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gift-framework/gift/HEAD?filepath=final/GIFT_Core_Framework.ipynb)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gift-framework/gift/blob/main/final/GIFT_Core_Framework.ipynb)
+[![GitHub Pages](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-blue.svg)](https://gift-framework.github.io/gift/)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Theoretical Physics](https://img.shields.io/badge/field-theoretical%20physics-purple.svg)](https://en.wikipedia.org/wiki/Theoretical_physics)
 
-**Geometric Information Field Theory**: A theoretical framework for unified physics based on E₈×E₈ geometric structures and dimensional reduction to the Standard Model.
+**Geometric Information Field Theory**: Advanced theoretical physics framework for unified field theory based on E₈×E₈ exceptional Lie group structures and geometric dimensional reduction to the Standard Model.
 
 ## Overview
 
-The GIFT (Geometric Information Field Theory) framework provides a geometric approach to fundamental physics, deriving Standard Model parameters and cosmological observables from E₈×E₈ exceptional Lie group structures through AdS₄×K₇ dimensional reduction.
+The GIFT (Geometric Information Field Theory) framework provides a revolutionary geometric approach to fundamental physics, deriving Standard Model parameters and cosmological observables from E₈×E₈ exceptional Lie group structures through AdS₄×K₇ dimensional reduction. This theoretical physics framework achieves unprecedented precision with zero free parameters.
 
 ## Key Features
 

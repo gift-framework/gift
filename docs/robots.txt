@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://gift-framework.github.io/gift/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Disallow certain paths
+Disallow: /__pycache__/
+Disallow: /.git/
+Disallow: /node_modules/
+
+# Allow important files
+Allow: /translator/
+Allow: /scientific/
+Allow: /assets/
