@@ -20,15 +20,27 @@ The GIFT (Geometric Information Field Theory) framework provides a geometric app
 ## Repository Structure
 
 ```
-├── final/
-│   ├── GIFT_Core_Framework.ipynb    # Main computational framework
-│   ├── gift_preprint_complete.md    # Complete theoretical framework
-│   └── gift_technical_supplement.md # Technical derivations
-├── GIFT_Research_Challenges/        # Ongoing research directions
-│   ├── 01_E8_to_SM_derivation/     # E₈×E₈ → Standard Model analysis
-│   ├── 02_chiral_symmetry_breaking/ # Chiral symmetry mechanisms
-│   └── 03_fpi_geometric_meaning/   # f_π geometric significance
-└── GIFT_Academic_Support_Notebook.ipynb # Academic validation tools
+├── docs/                           # GitHub Pages documentation
+│   ├── index.html                  # Main landing page
+│   ├── translator/                 # Web-based GIFT Translator
+│   └── scientific/                 # Scientific documentation
+│       ├── preprint.md             # Complete theoretical framework
+│       ├── technical.md            # Technical derivations
+│       ├── notebook.ipynb          # Interactive framework
+│       └── analysis/               # Specialized analyses
+├── sectors/                        # Modular physics sectors
+│   ├── electromagnetic/            # QED and electromagnetic tools
+│   ├── electroweak/                # Weak interactions and Higgs
+│   ├── strong/                     # QCD and hadronic physics
+│   ├── cosmological/               # Hubble, dark energy, inflation
+│   ├── fermion/                    # Mass relations and mixing
+│   └── unification/                # E₈×E₈ reduction tools
+├── examples/                       # Usage examples
+│   ├── basic_usage.py              # Core framework demo
+│   └── sector_examples.py          # Sector-specific demos
+└── gift/                          # Core GIFT package
+    ├── core.py                     # Main framework classes
+    └── cli.py                      # Command-line interface
 ```
 
 ## Quick Start
@@ -38,20 +50,25 @@ The GIFT (Geometric Information Field Theory) framework provides a geometric app
    pip install -r requirements.txt
    ```
 
-2. **Run Web Interface**:
+2. **Launch GIFT Translator** (GitHub Pages):
    ```bash
-   python run_web_interface.py
-   # Open http://localhost:5000
+   # Open https://gift-framework.github.io/gift/translator/
+   # Matrix-style interface for SM ↔ GIFT translation
    ```
 
 3. **Run Core Framework**:
    ```bash
-   jupyter notebook final/GIFT_Core_Framework.ipynb
+   jupyter notebook docs/scientific/notebook.ipynb
    ```
 
-4. **Command Line Translator**:
+4. **Sector-Specific Analysis**:
    ```bash
-   python -m gift_translator.cli --interactive
+   python examples/sector_examples.py
+   ```
+
+5. **Command Line Interface**:
+   ```bash
+   python -m gift.cli --help
    ```
 
 ## Key Predictions
@@ -145,9 +162,10 @@ We welcome contributions! Please see our contributing guidelines and code of con
 
 ## Links & Resources
 
-- **Live Notebook**: [Binder Interactive Environment](https://mybinder.org/v2/gh/gift-framework/gift/HEAD?filepath=final/GIFT_Core_Framework.ipynb)
-- **Quick Demo**: [Google Colab](https://colab.research.google.com/github/gift-framework/gift/blob/main/final/GIFT_Core_Framework.ipynb)
-- **Preprints**: [Zenodo Repository](https://doi.org/10.5281/zenodo.17153200)
+- **🔬 GIFT Translator**: [GitHub Pages Interface](https://gift-framework.github.io/gift/translator/)
+- **📚 Documentation**: [Scientific Papers & Analysis](https://gift-framework.github.io/gift/)
+- **💻 Interactive Notebook**: [Jupyter Notebook](https://github.com/gift-framework/gift/blob/main/docs/scientific/notebook.ipynb)
+- **📄 Preprints**: [Zenodo Repository](https://doi.org/10.5281/zenodo.17153200)
 
 ---
 

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔬 GIFT Translator - Matrix Mode</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000;
+            color: #00ff00;
+            font-family: 'Courier New', 'Monaco', 'Menlo', monospace;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            text-shadow: 0 0 10px #00ff00;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .header p {
+            color: #00aa00;
+            font-size: 1.2em;
+        }
+
+        .translator-container {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 20px;
+            align-items: start;
+            margin-bottom: 40px;
+        }
+
+        .input-section, .output-section {
+            background: rgba(0, 255, 0, 0.05);
+            border: 2px solid #00ff00;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+        }
+
+        .section-label {
+            color: #00ffaa;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .format-selector {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .format-btn {
+            background: transparent;
+            border: 1px solid #00ff00;
+            color: #00ff00;
+            padding: 8px 16px;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .format-btn:hover {
+            background: rgba(0, 255, 0, 0.1);
+            box-shadow: 0 0 10px #00ff00;
+        }
+
+        .format-btn.active {
+            background: #00ff00;
+            color: #000000;
+        }
+
+        .text-area {
+            width: 100%;
+            height: 200px;
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #00ff00;
+            color: #00ff00;
+            font-family: inherit;
+            font-size: 1em;
+            padding: 15px;
+            resize: vertical;
+            outline: none;
+        }
+
+        .text-area:focus {
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+        }
+
+        .translate-btn {
+            background: transparent;
+            border: 2px solid #00ff00;
+            color: #00ff00;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            font-family: inherit;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            align-self: center;
+        }
+
+        .translate-btn:hover {
+            background: #00ff00;
+            color: #000000;
+            box-shadow: 0 0 20px #00ff00;
+        }
+
+        .examples {
+            background: rgba(0, 255, 0, 0.05);
+            border: 1px solid #00ff00;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .examples h3 {
+            color: #00ffaa;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .example-item {
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid #00aa00;
+            padding: 10px;
+            margin: 5px 0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .example-item:hover {
+            background: rgba(0, 255, 0, 0.1);
+            border-color: #00ff00;
+        }
+
+        .confidence {
+            margin-top: 15px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            border-left: 3px solid #00ff00;
+        }
+
+        .confidence.high { border-left-color: #00ff00; }
+        .confidence.medium { border-left-color: #ffff00; }
+        .confidence.low { border-left-color: #ff0000; }
+
+        .error {
+            color: #ff0000;
+            background: rgba(255, 0, 0, 0.1);
+            border: 1px solid #ff0000;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .matrix-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.1;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(0, 255, 0, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(0, 255, 0, 0.1) 0%, transparent 50%);
+        }
+
+        @media (max-width: 768px) {
+            .translator-container {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .header h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="matrix-bg"></div>
+    
+    <div class="container">
+        <div class="header">
+            <h1>GIFT.TRANSLATOR.EXE</h1>
+            <p>Bidirectional translation between Standard Model and Geometric Information Field Theory</p>
+        </div>
+
+        <div class="examples">
+            <h3>📚 Example Expressions</h3>
+            <div class="example-item" onclick="loadExample('E = mc²', 'SM', 'GIFT')">
+                <strong>E = mc²</strong> (SM → GIFT)
+            </div>
+            <div class="example-item" onclick="loadExample('α = e²/(4πε₀ℏc)', 'SM', 'GIFT')">
+                <strong>α = e²/(4πε₀ℏc)</strong> (SM → GIFT)
+            </div>
+            <div class="example-item" onclick="loadExample('ξ = 5π/16', 'GIFT', 'SM')">
+                <strong>ξ = 5π/16</strong> (GIFT → SM)
+            </div>
+            <div class="example-item" onclick="loadExample('sin²θ_W = ζ₂ - √2', 'GIFT', 'SM')">
+                <strong>sin²θ_W = ζ₂ - √2</strong> (GIFT → SM)
+            </div>
+        </div>
+
+        <div class="translator-container">
+            <div class="input-section">
+                <div class="section-label">Input</div>
+                <div class="format-selector">
+                    <button class="format-btn active" data-format="SM">Standard Model</button>
+                    <button class="format-btn" data-format="GIFT">GIFT</button>
+                </div>
+                <textarea class="text-area" id="inputText" placeholder="Enter your expression here..."></textarea>
+            </div>
+
+            <button class="translate-btn" onclick="translate()">TRANSLATE.EXE</button>
+
+            <div class="output-section">
+                <div class="section-label">Output</div>
+                <div class="format-selector">
+                    <button class="format-btn" data-format="SM">Standard Model</button>
+                    <button class="format-btn active" data-format="GIFT">GIFT</button>
+                </div>
+                <textarea class="text-area" id="outputText" readonly placeholder="Translation will appear here..."></textarea>
+                <div id="confidence"></div>
+                <div id="error"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // GIFT Translation Engine (JavaScript)
+        class GIFTTranslator {
+            constructor() {
+                this.smToGiftSymbols = {
+                    'α': 'α_gift', 'α_s': 'α_s_gift', 'θ_W': 'θ_W_gift',
+                    'Λ_QCD': 'Λ_QCD_gift', 'm_H': 'm_H_gift', 'H₀': 'H_0_gift'
+                };
+                
+                this.giftToSmSymbols = {};
+                for (let [sm, gift] of Object.entries(this.smToGiftSymbols)) {
+                    this.giftToSmSymbols[gift] = sm;
+                }
+                
+                this.equationPatterns = {
+                    'einstein': { sm: 'E = mc²', gift: 'E = ξ·τ·c²·m' },
+                    'fine_structure': { sm: 'α = e²/(4πε₀ℏc)', gift: 'α⁻¹ = ζ₃ × 114 - 1/24' },
+                    'weinberg': { sm: 'sin²θ_W = g\'²/(g² + g\'²)', gift: 'sin²θ_W = ζ₂ - √2' }
+                };
+            }
+            
+            translate(expression, fromFormat, toFormat) {
+                try {
+                    // Check for known equations
+                    for (let [name, patterns] of Object.entries(this.equationPatterns)) {
+                        if (expression.toLowerCase().includes(patterns[fromFormat.toLowerCase()].toLowerCase())) {
+                            return {
+                                success: true,
+                                translated: patterns[toFormat.toLowerCase()],
+                                explanation: `Known ${name} equation translation`,
+                                confidence: 0.95
+                            };
+                        }
+                    }
+                    
+                    // Symbolic translation
+                    let result = expression;
+                    let confidence = 0.7;
+                    
+                    if (fromFormat === 'SM' && toFormat === 'GIFT') {
+                        for (let [sm, gift] of Object.entries(this.smToGiftSymbols)) {
+                            result = result.replace(new RegExp(sm, 'g'), gift);
+                        }
+                    } else if (fromFormat === 'GIFT' && toFormat === 'SM') {
+                        for (let [gift, sm] of Object.entries(this.giftToSmSymbols)) {
+                            result = result.replace(new RegExp(gift, 'g'), sm);
+                        }
+                    }
+                    
+                    return {
+                        success: true,
+                        translated: result,
+                        explanation: 'Symbolic translation using GIFT formalism',
+                        confidence: confidence
+                    };
+                    
+                } catch (error) {
+                    return {
+                        success: false,
+                        error: error.message
+                    };
+                }
+            }
+        }
+        
+        const translator = new GIFTTranslator();
+        
+        function translate() {
+            const inputText = document.getElementById('inputText').value.trim();
+            const inputFormat = document.querySelector('.input-section .format-btn.active').dataset.format;
+            const outputFormat = document.querySelector('.output-section .format-btn.active').dataset.format;
+            
+            document.getElementById('error').innerHTML = '';
+            document.getElementById('confidence').innerHTML = '';
+            
+            if (!inputText) {
+                document.getElementById('error').innerHTML = '<div class="error">❌ Please enter an expression to translate</div>';
+                return;
+            }
+            
+            if (inputFormat === outputFormat) {
+                document.getElementById('error').innerHTML = '<div class="error">❌ Input and output formats must be different</div>';
+                return;
+            }
+            
+            const result = translator.translate(inputText, inputFormat, outputFormat);
+            
+            if (result.success) {
+                document.getElementById('outputText').value = result.translated;
+                
+                const confidenceDiv = document.getElementById('confidence');
+                const confidenceClass = result.confidence > 0.8 ? 'high' : result.confidence > 0.6 ? 'medium' : 'low';
+                confidenceDiv.innerHTML = `
+                    <div class="confidence ${confidenceClass}">
+                        <strong>Confidence:</strong> ${(result.confidence * 100).toFixed(1)}%<br>
+                        <strong>Explanation:</strong> ${result.explanation}
+                    </div>
+                `;
+            } else {
+                document.getElementById('error').innerHTML = `<div class="error">❌ ${result.error}</div>`;
+            }
+        }
+        
+        function loadExample(expression, fromFormat, toFormat) {
+            document.getElementById('inputText').value = expression;
+            
+            // Set input format
+            document.querySelectorAll('.input-section .format-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.format === fromFormat);
+            });
+            
+            // Set output format
+            document.querySelectorAll('.output-section .format-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.format === toFormat);
+            });
+            
+            // Auto-translate
+            setTimeout(translate, 100);
+        }
+        
+        // Format button handlers
+        document.querySelectorAll('.format-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const section = this.closest('.input-section, .output-section');
+                section.querySelectorAll('.format-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+        
+        // Auto-translate on Enter key
+        document.getElementById('inputText').addEventListener('keydown', function(e) {
+            if (e.ctrlKey && e.key === 'Enter') {
+                translate();
+            }
+        });
+    </script>
+</body>
+</html>

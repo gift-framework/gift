@@ -3,111 +3,389 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GIFT Translator</title>
+    <title>🔬 GIFT Framework - Geometric Information Field Theory</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f5f5f5;
-            color: #333;
+        * {
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000;
+            color: #00ff00;
+            font-family: 'Courier New', 'Monaco', 'Menlo', monospace;
             line-height: 1.6;
         }
+
         .container {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 0 auto;
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px;
         }
-        h1 {
-            color: #2c3e50;
+
+        .header {
             text-align: center;
+            margin-bottom: 40px;
+            text-shadow: 0 0 10px #00ff00;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .header p {
+            color: #00aa00;
+            font-size: 1.3em;
+            margin-bottom: 20px;
+        }
+
+        .badges {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
             margin-bottom: 30px;
         }
-        .demo-section {
-            background: #ecf0f1;
-            padding: 20px;
+
+        .badge {
+            background: rgba(0, 255, 0, 0.1);
+            border: 1px solid #00ff00;
+            padding: 8px 16px;
             border-radius: 5px;
-            margin: 20px 0;
-            text-align: center;
+            font-size: 0.9em;
         }
-        .code {
-            background: #2c3e50;
-            color: #ecf0f1;
-            padding: 15px;
+
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: rgba(0, 255, 0, 0.05);
+            border: 2px solid #00ff00;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 0 30px rgba(0, 255, 0, 0.5);
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            color: #00ffaa;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .card p {
+            margin-bottom: 20px;
+            color: #00aa00;
+        }
+
+        .btn {
+            background: transparent;
+            border: 2px solid #00ff00;
+            color: #00ff00;
+            padding: 12px 24px;
+            font-family: inherit;
+            font-size: 1em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: #00ff00;
+            color: #000000;
+            box-shadow: 0 0 20px #00ff00;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .feature {
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid #00aa00;
             border-radius: 5px;
-            font-family: 'Courier New', monospace;
-            margin: 10px 0;
+            padding: 20px;
+        }
+
+        .feature h3 {
+            color: #00ffaa;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .feature ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .feature li {
+            margin: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .feature li:before {
+            content: "▶";
+            color: #00ff00;
+            position: absolute;
+            left: 0;
+        }
+
+        .predictions {
+            background: rgba(0, 255, 0, 0.05);
+            border: 2px solid #00ff00;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 40px;
+        }
+
+        .predictions h2 {
+            color: #00ffaa;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .prediction-table {
             overflow-x: auto;
         }
-        .example {
-            background: #e8f5e8;
-            border-left: 4px solid #27ae60;
-            padding: 15px;
-            margin: 15px 0;
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: rgba(0, 0, 0, 0.5);
         }
-        .example strong {
-            color: #27ae60;
+
+        th, td {
+            border: 1px solid #00aa00;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background: rgba(0, 255, 0, 0.1);
+            color: #00ffaa;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        td {
+            color: #00aa00;
+        }
+
+        .highlight {
+            color: #00ff00;
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid #00aa00;
+            color: #00aa00;
+        }
+
+        .matrix-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.05;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(0, 255, 0, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(0, 255, 0, 0.1) 0%, transparent 50%);
+        }
+
+        @media (max-width: 768px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .badges {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
 </head>
 <body>
+    <div class="matrix-bg"></div>
+    
     <div class="container">
-        <h1>🔬 GIFT Translator</h1>
-        <p><strong>Bidirectional translation between Standard Model and Geometric Information Field Theory</strong></p>
-        
-        <div class="demo-section">
-            <h2>🚀 Try it locally</h2>
-            <p>Clone and run the translator on your machine:</p>
-            <div class="code">
-git clone https://github.com/gift-framework/gift.git
-cd gift
-pip install flask numpy
-python run_web_interface.py
+        <div class="header">
+            <h1>GIFT Framework</h1>
+            <p>Geometric Information Field Theory</p>
+            <p>E₈×E₈ Unification Framework</p>
+            
+            <div class="badges">
+                <div class="badge">🎯 0.38% Mean Deviation</div>
+                <div class="badge">🔬 22 Physical Observables</div>
+                <div class="badge">⚡ Zero Free Parameters</div>
+                <div class="badge">🌌 E₈×E₈ Geometric Foundation</div>
             </div>
-            <p>Then open <strong>http://localhost:5000</strong></p>
         </div>
 
-        <h2>📝 Translation Examples</h2>
-        
-        <div class="example">
-            <strong>Einstein's equation:</strong><br>
-            Standard Model: <code>E = mc²</code><br>
-            GIFT: <code>E = ξ·τ·c²·m</code>
+        <div class="main-grid">
+            <div class="card">
+                <h2>🧮 GIFT Calculator</h2>
+                <p>Core framework for calculating Standard Model parameters from geometric principles through E₈×E₈ dimensional reduction.</p>
+                <a href="https://github.com/gift-framework/gift" class="btn">View on GitHub</a>
+            </div>
+
+            <div class="card">
+                <h2>🔄 GIFT Translator</h2>
+                <p>Bidirectional translation between Standard Model and GIFT formalism with Matrix-style interface.</p>
+                <a href="./translator/" class="btn">Launch Translator</a>
+            </div>
         </div>
 
-        <div class="example">
-            <strong>Fine structure constant:</strong><br>
-            Standard Model: <code>α = e²/(4πε₀ℏc)</code><br>
-            GIFT: <code>α⁻¹ = ζ₃ × 114 - 1/24</code>
+        <div class="features">
+            <div class="feature">
+                <h3>🎯 High Precision Predictions</h3>
+                <ul>
+                    <li>Fine structure constant: α⁻¹(0) = 137.034</li>
+                    <li>Weinberg angle: sin²θ_W = 0.2307</li>
+                    <li>Strong coupling: α_s(M_Z) = 0.1179</li>
+                    <li>Pion decay constant: f_π = 130.48 MeV</li>
+                </ul>
+            </div>
+
+            <div class="feature">
+                <h3>🌌 Cosmological Predictions</h3>
+                <ul>
+                    <li>Hubble constant: H₀ = 72.93 km/s/Mpc</li>
+                    <li>Dark energy density: Ω_DE = 0.6889</li>
+                    <li>Dark matter density: Ω_DM = 0.1200</li>
+                    <li>Tensor-to-scalar ratio: r = 0.032</li>
+                </ul>
+            </div>
+
+            <div class="feature">
+                <h3>🔬 Theoretical Foundation</h3>
+                <ul>
+                    <li>E₈×E₈ exceptional group structure</li>
+                    <li>AdS₄×K₇ dimensional reduction</li>
+                    <li>K₇ cohomology (H*(K₇) = 99)</li>
+                    <li>Geometric correction families</li>
+                </ul>
+            </div>
         </div>
 
-        <div class="example">
-            <strong>Weinberg angle:</strong><br>
-            Standard Model: <code>sin²θ_W = g'²/(g² + g'²)</code><br>
-            GIFT: <code>sin²θ_W = ζ₂ - √2</code>
+        <div class="predictions">
+            <h2>📊 Key Predictions vs Experimental Data</h2>
+            <div class="prediction-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Observable</th>
+                            <th>GIFT Prediction</th>
+                            <th>Experimental</th>
+                            <th>Deviation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>α⁻¹(0)</td>
+                            <td class="highlight">137.034</td>
+                            <td>137.036</td>
+                            <td class="highlight">0.001%</td>
+                        </tr>
+                        <tr>
+                            <td>sin²θ_W</td>
+                            <td class="highlight">0.2307</td>
+                            <td>0.2312</td>
+                            <td class="highlight">0.22%</td>
+                        </tr>
+                        <tr>
+                            <td>α_s(M_Z)</td>
+                            <td class="highlight">0.1179</td>
+                            <td>0.1179</td>
+                            <td class="highlight">0.04%</td>
+                        </tr>
+                        <tr>
+                            <td>f_π</td>
+                            <td class="highlight">130.48 MeV</td>
+                            <td>130.4 MeV</td>
+                            <td class="highlight">0.06%</td>
+                        </tr>
+                        <tr>
+                            <td>H₀</td>
+                            <td class="highlight">72.93 km/s/Mpc</td>
+                            <td>73.04 km/s/Mpc</td>
+                            <td class="highlight">0.15%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
-        <h2>💻 Command Line Usage</h2>
-        <div class="code">
-# Interactive mode
-python -m gift_translator.cli --interactive
+        <div class="features">
+            <div class="feature">
+                <h3>📚 Documentation</h3>
+                <ul>
+                    <li><a href="./scientific/preprint.md" style="color: #00ff00;">Complete Preprint</a></li>
+                    <li><a href="./scientific/technical.md" style="color: #00ff00;">Technical Supplement</a></li>
+                    <li><a href="./scientific/notebook.ipynb" style="color: #00ff00;">Interactive Notebook</a></li>
+                    <li><a href="./scientific/analysis/" style="color: #00ff00;">Specialized Analysis</a></li>
+                </ul>
+            </div>
 
-# Direct translation
-python -m gift_translator.cli "E = mc²" --from SM --to GIFT
+            <div class="feature">
+                <h3>🔧 Installation</h3>
+                <ul>
+                    <li>Python 3.8+ required</li>
+                    <li>pip install -r requirements.txt</li>
+                    <li>Jupyter for interactive notebooks</li>
+                    <li>See GitHub for full setup</li>
+                </ul>
+            </div>
+
+            <div class="feature">
+                <h3>🤝 Contributing</h3>
+                <ul>
+                    <li>Theoretical development</li>
+                    <li>Experimental validation</li>
+                    <li>Computational optimization</li>
+                    <li>Educational materials</li>
+                </ul>
+            </div>
         </div>
 
-        <h2>📚 Documentation</h2>
-        <ul>
-            <li><a href="https://github.com/gift-framework/gift/blob/main/README.md">Main README</a></li>
-            <li><a href="https://github.com/gift-framework/gift/blob/main/README_TRANSLATOR.md">Translator Guide</a></li>
-            <li><a href="https://github.com/gift-framework/gift/blob/main/README_MODULE.md">Module Documentation</a></li>
-        </ul>
-
-        <div style="text-align: center; margin-top: 40px; color: #7f8c8d;">
-            <p>GIFT Framework - Geometric Information Field Theory</p>
+        <div class="footer">
+            <p><strong>GIFT Framework</strong> - Geometric Information Field Theory</p>
+            <p>Author: Brieuc de La Fournière | ORCID: 0009-0000-0641-9740</p>
+            <p>License: MIT | Open Science Initiative</p>
+            <p style="margin-top: 20px; font-size: 0.9em; opacity: 0.7;">
+                > Physics is running in safe mode. Launching upgrade script: gift.sh<br>
+                > ...72.93% complete.
+            </p>
         </div>
     </div>
 </body>
