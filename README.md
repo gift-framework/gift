@@ -1,7 +1,6 @@
 # GIFT Framework: Geometric Information Field Theory
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17153200.svg)](https://doi.org/10.5281/zenodo.17153200)
-[![GitHub Pages](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-blue.svg)](https://gift-framework.github.io/gift/)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gift-framework/gift/HEAD?filepath=docs/scientific/notebook.ipynb)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gift-framework/gift/blob/main/docs/scientific/notebook.ipynb)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
