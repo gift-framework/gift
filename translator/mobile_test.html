@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Test - GIFT Translator</title>
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #000000;
+            color: #00ff41;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .test-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            font-weight: 300;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+        }
+        
+        .test-section {
+            border: 1px solid #00ff41;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .test-title {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #00ff41;
+            padding-bottom: 8px;
+        }
+        
+        .formula-input {
+            width: 100%;
+            min-height: 120px;
+            background: transparent;
+            border: none;
+            color: #00ff41;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            line-height: 1.6;
+            resize: vertical;
+            outline: none;
+        }
+        
+        .translate-button {
+            background: transparent;
+            color: #00ff41;
+            border: 1px solid #00ff41;
+            padding: 12px 24px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            width: 100%;
+            margin: 15px 0;
+            font-family: inherit;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        
+        .translate-button:hover {
+            background: #00ff41;
+            color: #000000;
+        }
+        
+        .formula-output {
+            background: transparent;
+            border: 1px solid #00ff41;
+            color: #00ff41;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            line-height: 1.6;
+            padding: 15px;
+            min-height: 100px;
+            margin-top: 15px;
+        }
+        
+        .status {
+            text-align: center;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #00ff41;
+            background: #00ff4120;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        
+        .example {
+            background: transparent;
+            border: 1px solid #00ff41;
+            padding: 15px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .example:hover {
+            background: #00ff4120;
+        }
+        
+        .example-title {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 8px;
+        }
+        
+        .example-formula {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>GIFT Translator - Mobile Test</h1>
+        
+        <div class="test-section">
+            <div class="test-title">Input Formula</div>
+            <textarea class="formula-input" id="inputFormula" placeholder="Enter Standard Model formula here...
+
+Example: ℒ_EM = -(1/4) F_μν F^μν - A_μ J^μ"></textarea>
+            
+            <button class="translate-button" onclick="translateFormula()">
+                Translate to GIFT
+            </button>
+            
+            <div id="status" class="status" style="display: none;"></div>
+        </div>
+        
+        <div class="test-section">
+            <div class="test-title">GIFT Translation</div>
+            <div id="outputFormula" class="formula-output">Translation will appear here...</div>
+        </div>
+        
+        <div class="test-section">
+            <div class="test-title">Quick Examples</div>
+            
+            <div class="example" onclick="loadExample('maxwell')">
+                <div class="example-title">Maxwell EM</div>
+                <div class="example-formula">-(1/4) F_μν F^μν - A_μ J^μ</div>
+            </div>
+            
+            <div class="example" onclick="loadExample('qcd')">
+                <div class="example-title">QCD</div>
+                <div class="example-formula">-(1/4) F^a_μν F^{aμν} + ψ̄(iγ^μ D_μ - m)ψ</div>
+            </div>
+            
+            <div class="example" onclick="loadExample('weak')">
+                <div class="example-title">Weak Mixing</div>
+                <div class="example-formula">sin²θ_W = 0.23122</div>
+            </div>
+            
+            <div class="example" onclick="loadExample('higgs')">
+                <div class="example-title">Higgs Lagrangian</div>
+                <div class="example-formula">|D_μ H|² - μ²|H|² - λ|H|⁴</div>
+            </div>
+            
+            <div class="example" onclick="loadExample('dirac')">
+                <div class="example-title">Dirac Lagrangian</div>
+                <div class="example-formula">ψ̄(iγ^μ ∂_μ - m)ψ</div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Enhanced translation function for mobile test
+        function translateFormula() {
+            const input = document.getElementById('inputFormula').value.trim();
+            const output = document.getElementById('outputFormula');
+            const status = document.getElementById('status');
+            
+            if (!input) {
+                showStatus('Please enter a formula', 'error');
+                return;
+            }
+            
+            let result = input;
+            
+            // Apply exact conversions first
+            result = result.replace(/1\/4/g, '1.202057 × 114');
+            result = result.replace(/-\\(1\/4\\)/g, '-(1.202057 × 114)');
+            result = result.replace(/sin²θ_W/g, '1.644934 - 1.414214');
+            result = result.replace(/α_s/g, '1.414214/12');
+            
+            // Smart fraction conversion: handle any fraction like 2/4, 3/8, etc.
+            const fractionPattern = /(-?\s*)?\(?(\d+)\/(\d+)\)?/g;
+            result = result.replace(fractionPattern, (match, sign, numerator, denominator) => {
+                const num = parseInt(numerator);
+                const den = parseInt(denominator);
+                
+                if (denominator === '4') {
+                    return `${sign || ''}(1.202057 × 114 × ${num}/4)`;
+                } else if (denominator === '12') {
+                    return `${sign || ''}(1.414214/12 × ${num})`;
+                } else if (denominator === '8') {
+                    return `${sign || ''}(π/8 × ${num})`;
+                } else {
+                    const value = num / den;
+                    return `${sign || ''}(1.202057 × 114 × ${value})`;
+                }
+            });
+            
+            // Convert numerical coefficients
+            const numberPattern = /\b(\d+\.?\d*)\b/g;
+            result = result.replace(numberPattern, (match, number) => {
+                const num = parseFloat(number);
+                if (num > 1000) return match; // Skip large numbers
+                
+                if (Math.abs(num - 0.1179) < 0.01) return '1.414214/12';
+                if (Math.abs(num - 0.2307) < 0.01) return '1.644934 - 1.414214';
+                if (Math.abs(num - 0.25) < 0.01) return '1.202057 × 114/4';
+                if (Math.abs(num - 0.5) < 0.01) return '1.202057 × 114/2';
+                
+                return match;
+            });
+            
+            output.textContent = result;
+            showStatus('Translation completed', 'success');
+        }
+        
+        function loadExample(exampleName) {
+            const examples = {
+                maxwell: '-(1/4) F_μν F^μν - A_μ J^μ',
+                qcd: '-(1/4) F^a_μν F^{aμν} + ψ̄(iγ^μ D_μ - m)ψ',
+                weak: 'sin²θ_W = 0.23122',
+                higgs: '|D_μ H|² - μ²|H|² - λ|H|⁴',
+                dirac: 'ψ̄(iγ^μ ∂_μ - m)ψ'
+            };
+            
+            document.getElementById('inputFormula').value = examples[exampleName];
+            showStatus(`Loaded ${exampleName} example`, 'info');
+        }
+        
+        function showStatus(message, type) {
+            const status = document.getElementById('status');
+            status.textContent = message.toUpperCase();
+            status.style.display = 'block';
+            status.className = `status ${type}`;
+            
+            setTimeout(() => {
+                status.style.display = 'none';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
