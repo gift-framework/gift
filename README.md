@@ -1,10 +1,8 @@
 # GIFT Framework: Geometric Information Field Theory
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17153200.svg)](https://doi.org/10.5281/zenodo.17153200)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gift-framework/gift/HEAD?filepath=docs/scientific/notebook.ipynb)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gift-framework/gift/blob/main/docs/scientific/notebook.ipynb)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Theoretical Physics](https://img.shields.io/badge/field-theoretical%20physics-purple.svg)](https://en.wikipedia.org/wiki/Theoretical_physics)
+[![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org/)
 
 **Geometric Information Field Theory**: Advanced theoretical physics framework for unified field theory based on E₈×E₈ exceptional Lie group structures and geometric dimensional reduction to the Standard Model.
 
@@ -22,27 +20,21 @@ The GIFT (Geometric Information Field Theory) framework provides a revolutionary
 ## Repository Structure
 
 ```
-├── docs/                           # GitHub Pages documentation
-│   ├── index.html                  # Main landing page
-│   ├── translator/                 # Web-based GIFT Translator
-│   └── scientific/                 # Scientific documentation
-│       ├── preprint.md             # Complete theoretical framework
-│       ├── technical.md            # Technical derivations
-│       ├── notebook.ipynb          # Interactive framework
-│       └── analysis/               # Specialized analyses
-├── sectors/                        # Modular physics sectors
-│   ├── electromagnetic/            # QED and electromagnetic tools
-│   ├── electroweak/                # Weak interactions and Higgs
-│   ├── strong/                     # QCD and hadronic physics
-│   ├── cosmological/               # Hubble, dark energy, inflation
-│   ├── fermion/                    # Mass relations and mixing
-│   └── unification/                # E₈×E₈ reduction tools
-├── examples/                       # Usage examples
-│   ├── basic_usage.py              # Core framework demo
-│   └── sector_examples.py          # Sector-specific demos
-└── gift/                          # Core GIFT package
-    ├── core.py                     # Main framework classes
-    └── cli.py                      # Command-line interface
+├── docs/scientific/                # Scientific documentation
+│   ├── gift_preprint_full.md       # Complete theoretical framework
+│   ├── gift_tech_supplement.md     # Technical mathematical supplement
+│   ├── gift_support_notebook.ipynb # Interactive computational notebook
+│   ├── gift_technical.pdf          # Technical documentation (PDF)
+│   └── gift-main.pdf               # Main paper (PDF)
+├── README.md                       # This file
+├── requirements.txt                # Python dependencies
+├── LICENSE                         # MIT License
+├── environment.yml                 # Conda environment
+├── CODE_OF_CONDUCT.md             # Community guidelines
+├── CONTRIBUTING.md                 # Contribution guidelines
+├── SECURITY.md                     # Security policy
+├── postBuild                       # Build script
+└── runtime.txt                     # Runtime configuration
 ```
 
 ## Quick Start
@@ -50,26 +42,25 @@ The GIFT (Geometric Information Field Theory) framework provides a revolutionary
 1. **Install Dependencies**:
    ```bash
    pip install -r requirements.txt
+   # OR for conda environment:
+   conda env create -f environment.yml
    ```
 
-2. **Command Line Interface**:
+2. **Access Scientific Documentation**:
    ```bash
-   python -m gift.cli --help
+   # Open the main theoretical paper
+   open docs/scientific/gift_preprint_full.md
    ```
 
-3. **Run Core Framework**:
+3. **Interactive Computational Notebook**:
    ```bash
-   jupyter notebook docs/scientific/notebook.ipynb
+   jupyter notebook docs/scientific/gift_support_notebook.ipynb
    ```
 
-4. **Sector-Specific Analysis**:
+4. **Technical Supplement**:
    ```bash
-   python examples/sector_examples.py
-   ```
-
-5. **Launch GIFT Translator** (GitHub Pages):
-   ```bash
-   # Open https://gift-framework.github.io/gift/translator/
+   # Detailed mathematical derivations
+   open docs/scientific/gift_tech_supplement.md
    ```
 
 ## Key Predictions
@@ -127,10 +118,11 @@ If you use this framework in your research, please cite:
 
 ```bibtex
 @misc{gift_framework_2024,
-  title={Geometric Information Field Theory: E₈×E₈ Unification Framework},
+  title={GIFT: Geometric Information Field Theory - A Zero-Parameter Framework for Standard Model Unification Through E₈×E₈ Dimensional Reduction},
   author={de La Fournière, Brieuc},
   year={2024},
-  url={https://github.com/gift-framework/gift}
+  note={Independent Research},
+  url={https://github.com/bdelaf/gift}
 }
 ```
 
@@ -163,13 +155,14 @@ We welcome contributions! Please see our contributing guidelines and code of con
 
 ## Links & Resources
 
-- **📚 Documentation**: [Scientific Papers & Analysis](https://gift-framework.github.io/gift/)
+- **📚 Documentation**: 
+  - [Main Theoretical Paper](docs/scientific/gift_preprint_full.md)
+  - [Technical Supplement](docs/scientific/gift_tech_supplement.md)
+  - [PDF Documentation](docs/scientific/gift-main.pdf)
 - **💻 Interactive Notebook**: 
-  - [Live Binder Environment](https://mybinder.org/v2/gh/gift-framework/gift/HEAD?filepath=docs/scientific/notebook.ipynb)
-  - [Google Colab](https://colab.research.google.com/github/gift-framework/gift/blob/main/docs/scientific/notebook.ipynb)
-  - [📁 Raw Notebook](https://github.com/gift-framework/gift/blob/main/docs/scientific/notebook.ipynb)
-- **📄 Preprints**: [Zenodo Repository](https://doi.org/10.5281/zenodo.17153200)
-- **🔬 GIFT Translator**: [GitHub Pages Interface](https://gift-framework.github.io/gift/translator/)
+  - [Computational Support Notebook](docs/scientific/gift_support_notebook.ipynb)
+- **📄 Research Papers**: 
+  - [Technical PDF](docs/scientific/gift_technical.pdf)
 
 ---
 
