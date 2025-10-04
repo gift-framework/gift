@@ -2,7 +2,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Theoretical Physics](https://img.shields.io/badge/field-theoretical%20physics-purple.svg)](https://en.wikipedia.org/wiki/Theoretical_physics)
-[![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org/)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gift-framework/gift/HEAD?filepath=docs/scientific/gift_support_notebook.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gift-framework/gift/blob/main/docs/scientific/gift_support_notebook.ipynb)
 
 **Geometric Information Field Theory**: Advanced theoretical physics framework for unified field theory based on E₈×E₈ exceptional Lie group structures and geometric dimensional reduction to the Standard Model.
 
@@ -130,12 +131,6 @@ If you use this framework in your research, please cite:
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Contact
-
-- **Author**: Brieuc de La Fournière
-- **Email**: brieuc@bdelaf.com
-- **ORCID**: 0009-0000-0641-9740
-
 ## Community & Collaboration
 
 ### Contributing
@@ -155,14 +150,11 @@ We welcome contributions! Please see our contributing guidelines and code of con
 
 ## Links & Resources
 
-- **📚 Documentation**: 
-  - [Main Theoretical Paper](docs/scientific/gift_preprint_full.md)
-  - [Technical Supplement](docs/scientific/gift_tech_supplement.md)
-  - [PDF Documentation](docs/scientific/gift-main.pdf)
-- **💻 Interactive Notebook**: 
+- ** Documentation**: 
+  - [Main Theoretical Paper](docs/scientific/gift-main.pdf)
+  - [Technical Supplement](docs/scientific/gift_technical.pdf)
+- ** Interactive Notebook**: 
   - [Computational Support Notebook](docs/scientific/gift_support_notebook.ipynb)
-- **📄 Research Papers**: 
-  - [Technical PDF](docs/scientific/gift_technical.pdf)
 
 ---
 
