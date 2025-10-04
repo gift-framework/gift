@@ -2,8 +2,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Theoretical Physics](https://img.shields.io/badge/field-theoretical%20physics-purple.svg)](https://en.wikipedia.org/wiki/Theoretical_physics)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gift-framework/gift/HEAD?filepath=docs/scientific/gift_support_notebook.ipynb)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gift-framework/gift/blob/main/docs/scientific/gift_support_notebook.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gift-framework/gift/HEAD?filepath=docs/gift_support_notebook.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gift-framework/gift/blob/main/docs/gift_support_notebook.ipynb)
 
 **Geometric Information Field Theory**: Advanced theoretical physics framework for unified field theory based on E₈×E₈ exceptional Lie group structures and geometric dimensional reduction to the Standard Model.
 
@@ -21,7 +21,7 @@ The GIFT (Geometric Information Field Theory) framework provides a revolutionary
 ## Repository Structure
 
 ```
-├── docs/scientific/                # Scientific documentation
+├── docs/                           # Scientific documentation
 │   ├── gift_preprint_full.md       # Complete theoretical framework
 │   ├── gift_tech_supplement.md     # Technical mathematical supplement
 │   ├── gift_support_notebook.ipynb # Interactive computational notebook
@@ -50,18 +50,18 @@ The GIFT (Geometric Information Field Theory) framework provides a revolutionary
 2. **Access Scientific Documentation**:
    ```bash
    # Open the main theoretical paper
-   open docs/scientific/gift_preprint_full.md
+   open docs/gift_preprint_full.md
    ```
 
 3. **Interactive Computational Notebook**:
    ```bash
-   jupyter notebook docs/scientific/gift_support_notebook.ipynb
+   jupyter notebook docs/gift_support_notebook.ipynb
    ```
 
 4. **Technical Supplement**:
    ```bash
    # Detailed mathematical derivations
-   open docs/scientific/gift_tech_supplement.md
+   open docs/gift_tech_supplement.md
    ```
 
 ## Key Predictions
@@ -151,10 +151,10 @@ We welcome contributions! Please see our contributing guidelines and code of con
 ## Links & Resources
 
 - ** Documentation**: 
-  - [Main Theoretical Paper](docs/scientific/gift-main.pdf)
-  - [Technical Supplement](docs/scientific/gift_technical.pdf)
+  - [Main Theoretical Paper](docs/gift-main.pdf)
+  - [Technical Supplement](docs/gift_technical.pdf)
 - ** Interactive Notebook**: 
-  - [Computational Support Notebook](docs/scientific/gift_support_notebook.ipynb)
+  - [Computational Support Notebook](docs/gift_support_notebook.ipynb)
 
 ---
 
