@@ -150,25 +150,6 @@ Three new particles emerge from geometric constraints:
    open docs/gift_tech_supplement.md
    ```
 
-### New Particle Predictions
-
-Three new particles emerge from geometric constraints:
-
-1. **Light Scalar** (3.897 GeV = τ GeV):
-   - **Geometric origin**: Mass from τ parameter (mass hierarchy generator)
-   - **Decay signature**: b̄b resonance, accessible via LHC resonance searches
-   - **Production**: gg → φ → b̄b (gluon fusion dominant)
-
-2. **Vector Boson** (20.4 GeV = 5τ GeV):
-   - **Geometric origin**: Mass from 5τ scaling (geometric hierarchy)
-   - **Decay signature**: ℓ⁺ℓ⁻ dilepton channel, testable in LHC Run 4
-   - **Coupling**: Electroweak-strength couplings to SM fermions
-
-3. **Dark Matter Candidate** (4.77 GeV = δ × 19 GeV):
-   - **Geometric origin**: Mass from δ parameter (Koide relation factor)
-   - **Interaction**: Scalar portal coupling to Higgs boson
-   - **Detection**: Direct detection experiments (XENON, LZ)
-
 **Additional cosmological prediction**: Primordial gravitational wave amplitude r ≈ 0.032 (from geometric inflation scale).
 
 ## Philosophical Approach
