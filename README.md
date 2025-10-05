@@ -21,6 +21,8 @@ The GIFT (Geometric Information Field Theory) framework provides a revolutionary
 ## Repository Structure
 
 ```
+├── index.html                      # Interactive GIFT predictions calculator
+├── gift_calculator.js              # Calculator engine and validation system
 ├── docs/                           # Scientific documentation
 │   ├── gift_preprint_full.md       # Complete theoretical framework
 │   ├── gift_tech_supplement.md     # Technical mathematical supplement
@@ -155,6 +157,8 @@ We welcome contributions! Please see our contributing guidelines and code of con
   - [Technical Supplement](docs/gift_technical.pdf)
 - ** Interactive Notebook**: 
   - [Computational Support Notebook](docs/gift_support_notebook.ipynb)
+  - ** Interactive Calculator**: 
+  - [GIFT Predictions Calculator](https://gift-framework.github.io/gift/) - Real-time validation of predictions against experimental data
 
 ---
 
