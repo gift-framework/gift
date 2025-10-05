@@ -11,11 +11,7 @@
 
 Geometric Information Field Theory (GIFT) proposes a systematic derivation of Standard Model parameters and cosmological observables from pure geometric principles through dimensional reduction E₈×E₈ → AdS₄×K₇ → SM. The framework achieves 0.38% mean deviation across 22 fundamental observables using zero adjustable parameters. All physical quantities emerge from four geometric parameters {ξ, τ, β₀, δ} encoded in the topological structure of a G₂ holonomy manifold K₇ with cohomology H*(K₇) = ℂ⁹⁹. The approach provides testable predictions for three new particles accessible to current experimental facilities.
 
-**Author:** Brieuc de La Fournière  
-**Affiliation:** Independent Researcher  
-**Contact:** brieuc@bdelaf.com | ORCID: 0009-0000-0641-9740
-
-## Key Features
+## Features
 
 - **Geometric Parameter Set**: Four fundamental parameters {ξ, τ, β₀, δ} derived from E₈×E₈ structure
 - **High Precision Predictions**: Mean deviation of 0.38% across 22 physical observables
@@ -32,18 +28,20 @@ The dimensional reduction scheme follows:
 
 $$ \text{E}_8 \times \text{E}_8 \;(10\text{D}) \;\to\; \text{AdS}_4 \times K_7 \;(4\text{D}+7\text{D}) \;\to\; \text{Standard Model} \;(4\text{D}) $$
 
-### Geometric Parameters
-
-Four fundamental parameters emerge from topological invariants:
-
-```python
-ξ = 5π/16 = 0.981748        # Geometric ratio (E8 projection)
-τ = 8γ^(5π/12) = 3.896568   # Mass hierarchy generator  
-β₀ = π/8 = 0.392699         # Anomalous dimension parameter
-δ = 2π/25 = 0.251327        # Koide relation parameter
+### Dimensional Reduction Architecture
+```
+E8×E8 → AdS₄×K₇ → Standard Model
+  |         |          |
+240×2    Curvature   Observable
+roots    geometry    parameters
 ```
 
-Where γ = 0.5772156649... is the Euler-Mascheroni constant. These parameters are derived from E₈×E₈ algebraic structure rather than fitted to experimental data.
+The framework is based on:
+
+- **E₈×E₈ → AdS₄×K₇** dimensional reduction
+- **K7 cohomology** structure (H*(K7) = 99)
+- **Geometric correction families** F_α ≈ F_β ≈ 99
+- **Systematic parameter evolution** from geometric constraints
 
 ### Chirality Resolution
 
@@ -73,6 +71,14 @@ Statistical summary: mean deviation 0.38%, median deviation 0.21%.
 τ = 8γ^(5π/12) = 3.896568   # Mass hierarchy generator  
 β₀ = π/8 = 0.392699         # Anomalous dimension parameter
 δ = 2π/25 = 0.251327        # Koide relation parameter
+```
+
+### Mathematical Constants Integration
+```python
+ζ(2) = π²/6 = 1.644934      # Basel constant (electroweak)
+ζ(3) = 1.202057             # Apéry constant (cosmological)
+γ = 0.577216                # Euler-Mascheroni (mass hierarchy)
+φ = 1.618034                # Golden ratio (optimization)
 ```
 
 ### New Particle Predictions
@@ -144,16 +150,6 @@ Three new particles emerge from geometric constraints:
    open docs/gift_tech_supplement.md
    ```
 
-## Theoretical Foundation
-
-### Core Geometric Parameters
-```python
-ξ = 5π/16 = 0.981748        # Geometric ratio (E8 projection)
-τ = 8γ^(5π/12) = 3.896568   # Mass hierarchy generator  
-β₀ = π/8 = 0.392699         # Anomalous dimension parameter
-δ = 2π/25 = 0.251327        # Koide relation parameter
-```
-
 ### New Particle Predictions
 
 Three new particles emerge from geometric constraints:
@@ -174,35 +170,6 @@ Three new particles emerge from geometric constraints:
    - **Detection**: Direct detection experiments (XENON, LZ)
 
 **Additional cosmological prediction**: Primordial gravitational wave amplitude r ≈ 0.032 (from geometric inflation scale).
-
-### Mathematical Constants Integration
-```python
-ζ(2) = π²/6 = 1.644934      # Basel constant (electroweak)
-ζ(3) = 1.202057             # Apéry constant (cosmological)
-γ = 0.577216                # Euler-Mascheroni (mass hierarchy)
-φ = 1.618034                # Golden ratio (optimization)
-```
-
-### Dimensional Reduction Architecture
-```
-E8×E8 → AdS₄×K₇ → Standard Model
-  |         |          |
-240×2    Curvature   Observable
-roots    geometry    parameters
-```
-
-The framework is based on:
-
-- **E₈×E₈ → AdS₄×K₇** dimensional reduction
-- **K7 cohomology** structure (H*(K7) = 99)
-- **Geometric correction families** F_α ≈ F_β ≈ 99
-- **Systematic parameter evolution** from geometric constraints
-
-## Research Status
-
-- Core framework implementation
-- 22-observable validation
-- Geometric constraint verification
 
 ## Philosophical Approach
 
