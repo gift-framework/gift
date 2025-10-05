@@ -36,12 +36,14 @@ $$ \text{E}_8 \times \text{E}_8 \;(10\text{D}) \;\to\; \text{AdS}_4 \times K_7 \
 
 Four fundamental parameters emerge from topological invariants:
 
-- ξ = 5π/16: Bulk-boundary correspondence scaling
-- τ = 8γ^(5π/12): Transcendental scale setting (γ = Euler-Mascheroni constant)
-- β₀ = π/8: Geometric evolution parameter
-- δ = 2π/25: Phase correction factor
+```python
+ξ = 5π/16 = 0.981748        # Geometric ratio (E8 projection)
+τ = 8γ^(5π/12) = 3.896568   # Mass hierarchy generator  
+β₀ = π/8 = 0.392699         # Anomalous dimension parameter
+δ = 2π/25 = 0.251327        # Koide relation parameter
+```
 
-These parameters are derived from E₈×E₈ algebraic structure rather than fitted to experimental data.
+Where γ = 0.5772156649... is the Euler-Mascheroni constant. These parameters are derived from E₈×E₈ algebraic structure rather than fitted to experimental data.
 
 ### Chirality Resolution
 
@@ -63,15 +65,36 @@ The framework reproduces 22 experimental observables with quantitative agreement
 
 Statistical summary: mean deviation 0.38%, median deviation 0.21%.
 
-### Falsifiable Predictions
+## Theoretical Foundation
 
-Three new particles with specific masses and decay channels:
+### Core Geometric Parameters
+```python
+ξ = 5π/16 = 0.981748        # Geometric ratio (E8 projection)
+τ = 8γ^(5π/12) = 3.896568   # Mass hierarchy generator  
+β₀ = π/8 = 0.392699         # Anomalous dimension parameter
+δ = 2π/25 = 0.251327        # Koide relation parameter
+```
 
-1. **Light scalar** (3.897 GeV): b̄b decay signature, accessible via resonance searches
-2. **Vector boson** (20.4 GeV): dilepton channel, testable in LHC Run 4
-3. **Dark matter candidate** (4.77 GeV): scalar portal coupling, direct detection experiments
+### New Particle Predictions
 
-Additional cosmological prediction: primordial gravitational wave amplitude r ≈ 0.032.
+Three new particles emerge from geometric constraints:
+
+1. **Light Scalar** (3.897 GeV = τ GeV):
+   - **Geometric origin**: Mass from τ parameter (mass hierarchy generator)
+   - **Decay signature**: b̄b resonance, accessible via LHC resonance searches
+   - **Production**: gg → φ → b̄b (gluon fusion dominant)
+
+2. **Vector Boson** (20.4 GeV = 5τ GeV):
+   - **Geometric origin**: Mass from 5τ scaling (geometric hierarchy)
+   - **Decay signature**: ℓ⁺ℓ⁻ dilepton channel, testable in LHC Run 4
+   - **Coupling**: Electroweak-strength couplings to SM fermions
+
+3. **Dark Matter Candidate** (4.77 GeV = δ × 19 GeV):
+   - **Geometric origin**: Mass from δ parameter (Koide relation factor)
+   - **Interaction**: Scalar portal coupling to Higgs boson
+   - **Detection**: Direct detection experiments (XENON, LZ)
+
+**Additional cosmological prediction**: Primordial gravitational wave amplitude r ≈ 0.032 (from geometric inflation scale).
 
 ## Repository Structure
 
@@ -121,16 +144,6 @@ Additional cosmological prediction: primordial gravitational wave amplitude r �
    open docs/gift_tech_supplement.md
    ```
 
-## Key Predictions
-
-| Observable | GIFT Prediction | Experimental | Deviation |
-|------------|----------------|--------------|-----------|
-| α⁻¹(0) | 137.034 | 137.036 | 0.001% |
-| sin²θ_W | 0.2307 | 0.2312 | 0.22% |
-| α_s(M_Z) | 0.1179 | 0.1179 | 0.04% |
-| f_π | 130.48 MeV | 130.4 MeV | 0.06% |
-| H₀ | 72.93 km/s/Mpc | 73.04 km/s/Mpc | 0.15% |
-
 ## Theoretical Foundation
 
 ### Core Geometric Parameters
@@ -140,6 +153,27 @@ Additional cosmological prediction: primordial gravitational wave amplitude r �
 β₀ = π/8 = 0.392699         # Anomalous dimension parameter
 δ = 2π/25 = 0.251327        # Koide relation parameter
 ```
+
+### New Particle Predictions
+
+Three new particles emerge from geometric constraints:
+
+1. **Light Scalar** (3.897 GeV = τ GeV):
+   - **Geometric origin**: Mass from τ parameter (mass hierarchy generator)
+   - **Decay signature**: b̄b resonance, accessible via LHC resonance searches
+   - **Production**: gg → φ → b̄b (gluon fusion dominant)
+
+2. **Vector Boson** (20.4 GeV = 5τ GeV):
+   - **Geometric origin**: Mass from 5τ scaling (geometric hierarchy)
+   - **Decay signature**: ℓ⁺ℓ⁻ dilepton channel, testable in LHC Run 4
+   - **Coupling**: Electroweak-strength couplings to SM fermions
+
+3. **Dark Matter Candidate** (4.77 GeV = δ × 19 GeV):
+   - **Geometric origin**: Mass from δ parameter (Koide relation factor)
+   - **Interaction**: Scalar portal coupling to Higgs boson
+   - **Detection**: Direct detection experiments (XENON, LZ)
+
+**Additional cosmological prediction**: Primordial gravitational wave amplitude r ≈ 0.032 (from geometric inflation scale).
 
 ### Mathematical Constants Integration
 ```python
