@@ -2,8 +2,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Theoretical Physics](https://img.shields.io/badge/field-theoretical%20physics-purple.svg)](https://en.wikipedia.org/wiki/Theoretical_physics)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gift-framework/gift/HEAD?filepath=docs/gift_support_notebook.ipynb)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gift-framework/gift/blob/main/docs/gift_support_notebook.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gift-framework/GIFT/HEAD?filepath=docs/gift_support_notebook.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gift-framework/GIFT/blob/main/docs/gift_support_notebook.ipynb)
 
 **Geometric Information Field Theory**: Advanced theoretical physics framework for unified field theory based on E₈×E₈ exceptional Lie group structures and geometric dimensional reduction to the Standard Model.
 
@@ -156,9 +156,9 @@ We welcome contributions! Please see our contributing guidelines and code of con
   - [Main Theoretical Paper](docs/gift-main.pdf)
   - [Technical Supplement](docs/gift_technical.pdf)
   - [Interactive Notebook](docs/gift_support_notebook.ipynb)
-  - [Interactive Calculator](https://gift-framework.github.io/gift/) - Real-time validation of predictions against experimental data
+  - [Interactive Calculator](https://gift-framework.github.io/GIFT/) - Real-time validation of predictions against experimental data
   - [Interactive Tutorial](docs/gift_tutorial_e8_to_sm.ipynb) - From E8 to Standard Model in 10 steps
-  - [Summary Generator](https://gift-framework.github.io/gift/summary_generator.html) - Generate sector-specific summary sheets for researchers and reviewers
+  - [Summary Generator](https://gift-framework.github.io/GIFT/summary_generator.html) - Generate sector-specific summary sheets for researchers and reviewers
 
 ---
 
