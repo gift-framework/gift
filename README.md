@@ -7,9 +7,13 @@
 
 **Geometric Information Field Theory**: Advanced theoretical physics framework for unified field theory based on E₈×E₈ exceptional Lie group structures and geometric dimensional reduction to the Standard Model.
 
-## Overview
+## Abstract
 
-The GIFT (Geometric Information Field Theory) framework provides a revolutionary geometric approach to fundamental physics, deriving Standard Model parameters and cosmological observables from E₈×E₈ exceptional Lie group structures through AdS₄×K₇ dimensional reduction. This theoretical physics framework achieves unprecedented precision with zero free parameters.
+Geometric Information Field Theory (GIFT) proposes a systematic derivation of Standard Model parameters and cosmological observables from pure geometric principles through dimensional reduction E₈×E₈ → AdS₄×K₇ → SM. The framework achieves 0.38% mean deviation across 22 fundamental observables using zero adjustable parameters. All physical quantities emerge from four geometric parameters {ξ, τ, β₀, δ} encoded in the topological structure of a G₂ holonomy manifold K₇ with cohomology H*(K₇) = ℂ⁹⁹. The approach provides testable predictions for three new particles accessible to current experimental facilities.
+
+**Author:** Brieuc de La Fournière  
+**Affiliation:** Independent Researcher  
+**Contact:** brieuc@bdelaf.com | ORCID: 0009-0000-0641-9740
 
 ## Key Features
 
@@ -17,6 +21,57 @@ The GIFT (Geometric Information Field Theory) framework provides a revolutionary
 - **High Precision Predictions**: Mean deviation of 0.38% across 22 physical observables
 - **Zero Free Parameters**: All predictions derive from geometric constraints
 - **Cross-Sector Consistency**: Unified treatment of electromagnetic, electroweak, strong, and cosmological sectors
+
+## Theoretical Framework
+
+### Mathematical Foundation
+
+The framework constructs an 11-dimensional fundamental action based on E₈×E₈ exceptional group structure, treated as an informational substrate rather than particle spectrum. Compactification proceeds via twisted connected sum construction on a G₂ holonomy manifold K₇, ensuring mathematical rigor through explicit cohomological calculations.
+
+The dimensional reduction scheme follows:
+
+$$ \text{E}_8 \times \text{E}_8 \;(10\text{D}) \;\to\; \text{AdS}_4 \times K_7 \;(4\text{D}+7\text{D}) \;\to\; \text{Standard Model} \;(4\text{D}) $$
+
+### Geometric Parameters
+
+Four fundamental parameters emerge from topological invariants:
+
+- ξ = 5π/16: Bulk-boundary correspondence scaling
+- τ = 8γ^(5π/12): Transcendental scale setting (γ = Euler-Mascheroni constant)
+- β₀ = π/8: Geometric evolution parameter
+- δ = 2π/25: Phase correction factor
+
+These parameters are derived from E₈×E₈ algebraic structure rather than fitted to experimental data.
+
+### Chirality Resolution
+
+The framework addresses the Distler-Garibaldi no-go theorem through dimensional separation mechanisms inherent in the K₇ cohomological structure. Three chiral fermion generations emerge naturally from the 99-dimensional cohomology space without requiring fermion mirrors.
+
+## Empirical Validation
+
+### Precision Achievements
+
+The framework reproduces 22 experimental observables with quantitative agreement:
+
+| Observable | GIFT Prediction | Experimental Value | Deviation |
+|------------|-----------------|-------------------|-----------|
+| α⁻¹(0) | 137.034487 | 137.036000 | 0.0011% |
+| sin²θ_W | 0.230721 | 0.23122 | 0.216% |
+| α_s(M_Z) | 0.117851 | 0.1179 | 0.041% |
+| M_H | 125.0 GeV | 125.25 GeV | 0.208% |
+| H₀ | 72.93 km/s/Mpc | 73.04 km/s/Mpc | 0.145% |
+
+Statistical summary: mean deviation 0.38%, median deviation 0.21%.
+
+### Falsifiable Predictions
+
+Three new particles with specific masses and decay channels:
+
+1. **Light scalar** (3.897 GeV): b̄b decay signature, accessible via resonance searches
+2. **Vector boson** (20.4 GeV): dilepton channel, testable in LHC Run 4
+3. **Dark matter candidate** (4.77 GeV): scalar portal coupling, direct detection experiments
+
+Additional cosmological prediction: primordial gravitational wave amplitude r ≈ 0.032.
 
 ## Repository Structure
 
@@ -114,6 +169,16 @@ The framework is based on:
 - Core framework implementation
 - 22-observable validation
 - Geometric constraint verification
+
+## Philosophical Approach
+
+This work represents independent mathematical exploration without institutional affiliation. The framework is proposed as:
+
+- A **falsifiable hypothesis** subject to experimental validation
+- A **mathematical laboratory** for geometric approaches to unification
+- An **open invitation** for critical evaluation by the physics community
+
+No claims of finality are made. The minimalist approach deliberately avoids adjustable phenomenological elements, treating discrepancies as diagnostic rather than correctable through parameter tuning.
 
 ## Citation
 
