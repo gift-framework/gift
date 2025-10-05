@@ -171,7 +171,7 @@ This framework represents ongoing theoretical research requiring peer review and
 
 ---
 
-> Physics is running in safe mode. Launching upgrade script: gift.sh
+> Physics is running in safe mode. Launching upgrade script: gift.py
 >
 > ...72.93% complete.
 
