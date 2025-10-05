@@ -159,6 +159,7 @@ We welcome contributions! Please see our contributing guidelines and code of con
   - [Computational Support Notebook](docs/gift_support_notebook.ipynb)
   - ** Interactive Calculator**: 
   - [GIFT Predictions Calculator](https://gift-framework.github.io/gift/) - Real-time validation of predictions against experimental data
+  - [Interactive Tutorial](docs/gift_tutorial_e8_to_sm.ipynb) - From E8 to Standard Model in 10 steps
 
 ---
 
