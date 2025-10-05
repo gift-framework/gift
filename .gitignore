@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-=======
-# Jupyter Notebook
-.ipynb_checkpoints/
-*.ipynb
+# GIFT Framework - Git Ignore
 
->>>>>>> 1c3f1118fcf610d9c577b83b72787d1a288c7750
 # Python
 __pycache__/
 *.py[cod]
@@ -26,17 +21,11 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-<<<<<<< HEAD
-MANIFEST
 
 # Jupyter Notebook
 .ipynb_checkpoints
 
-# IPython
-profile_default/
-ipython_config.py
-
-# Environment variables
+# Environment
 .env
 .venv
 env/
@@ -65,39 +54,9 @@ Thumbs.db
 *.tmp
 *.temp
 *.log
-*.cache
 
-# Data files (optional - uncomment if you don't want to track data)
-# *.csv
-# *.json
-# *.pkl
-# *.h5
+# Archive folder (keep separate from main repo)
+gift-translator-archive/
 
-# Output files
-output/
-results/
-plots/
-*.png
-*.jpg
-*.pdf
-
-# Backup files
-*.bak
-*.backup
-*_backup.*
-=======
-
-# Data files
-*.csv
-*.xlsx
-*.h5
-*.parquet
-
-# Results
-results/temp/
-*.log
-
-# OS
-.DS_Store
-Thumbs.db
->>>>>>> 1c3f1118fcf610d9c577b83b72787d1a288c7750
+# Calculator backup (if any)
+calculator/
