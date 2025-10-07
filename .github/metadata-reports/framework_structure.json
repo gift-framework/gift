@@ -11,7 +11,7 @@
         {
           "name": "MODULE_METADATA.yml",
           "size": 2309,
-          "modified": "2025-10-08T01:09:56.735446"
+          "modified": "2025-10-08T01:13:17.817866"
         },
         {
           "name": "README.md",
@@ -33,6 +33,11 @@
           "modified": "2025-10-07T13:21:08.209799"
         },
         {
+          "name": "MODULE_METADATA.yml",
+          "size": 320,
+          "modified": "2025-10-08T01:11:05.119501"
+        },
+        {
           "name": "README.md",
           "size": 4739,
           "modified": "2025-10-07T13:21:08.207442"
@@ -40,7 +45,7 @@
       ],
       "submodules": [],
       "has_readme": true,
-      "has_metadata": false,
+      "has_metadata": true,
       "document_count": 1
     },
     "03_ads_k7_construction": {
@@ -52,6 +57,11 @@
           "modified": "2025-10-07T13:21:08.209799"
         },
         {
+          "name": "MODULE_METADATA.yml",
+          "size": 337,
+          "modified": "2025-10-08T01:11:05.121006"
+        },
+        {
           "name": "README.md",
           "size": 7917,
           "modified": "2025-10-07T13:21:08.209799"
@@ -59,12 +69,17 @@
       ],
       "submodules": [],
       "has_readme": true,
-      "has_metadata": false,
+      "has_metadata": true,
       "document_count": 1
     },
     "04_standard_model_sectors": {
       "path": "04_standard_model_sectors",
       "files": [
+        {
+          "name": "MODULE_METADATA.yml",
+          "size": 419,
+          "modified": "2025-10-08T01:11:05.123384"
+        },
         {
           "name": "README.md",
           "size": 7123,
@@ -80,12 +95,17 @@
         "weak_interactions"
       ],
       "has_readme": true,
-      "has_metadata": false,
+      "has_metadata": true,
       "document_count": 0
     },
     "05_cosmology_quantum_gravity": {
       "path": "05_cosmology_quantum_gravity",
       "files": [
+        {
+          "name": "MODULE_METADATA.yml",
+          "size": 403,
+          "modified": "2025-10-08T01:11:05.125460"
+        },
         {
           "name": "README.md",
           "size": 6753,
@@ -99,12 +119,17 @@
         "quantum_gravity"
       ],
       "has_readme": true,
-      "has_metadata": false,
+      "has_metadata": true,
       "document_count": 0
     },
     "06_supplements": {
       "path": "06_supplements",
       "files": [
+        {
+          "name": "MODULE_METADATA.yml",
+          "size": 432,
+          "modified": "2025-10-08T01:11:05.126465"
+        },
         {
           "name": "README.md",
           "size": 9470,
@@ -120,7 +145,7 @@
         "validation_tables"
       ],
       "has_readme": true,
-      "has_metadata": false,
+      "has_metadata": true,
       "document_count": 0
     }
   },
@@ -328,6 +353,12 @@
         "modified": "2025-10-05T23:48:41.048029"
       },
       {
+        "name": "gift_tutorial_e8_to_sm.html",
+        "path": "docs\\gift_tutorial_e8_to_sm.html",
+        "size": 513305,
+        "modified": "2025-10-08T01:24:44.791440"
+      },
+      {
         "name": "e8_root_system.jpg",
         "path": "ml\\e8_root_system.jpg",
         "size": 1013261,
@@ -352,7 +383,7 @@
       "path": "scripts\\generate_metadata.py",
       "lines": 307,
       "size": 11558,
-      "modified": "2025-10-08T01:10:40.923025",
+      "modified": "2025-10-08T01:13:17.817866",
       "has_docstring": true,
       "imports": [
         "import os",
@@ -406,8 +437,8 @@
     },
     "framework-validation-simple.yml": {
       "path": ".github\\workflows\\framework-validation-simple.yml",
-      "size": 1728,
-      "modified": "2025-10-07T23:51:00.530062",
+      "size": 2115,
+      "modified": "2025-10-08T01:13:17.817866",
       "has_triggers": true,
       "has_jobs": true
     },

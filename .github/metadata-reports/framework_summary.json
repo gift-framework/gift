@@ -1,9 +1,9 @@
 {
-  "generated_at": "2025-10-08T01:11:05.115242",
+  "generated_at": "2025-10-08T01:25:33.512836",
   "summary": {
     "total_modules": 6,
     "total_documents": 3,
-    "total_legacy_files": 35,
+    "total_legacy_files": 36,
     "total_scripts": 2,
     "total_workflows": 7
   },
@@ -16,31 +16,31 @@
     },
     "02_e8_foundations": {
       "has_readme": true,
-      "has_metadata": false,
+      "has_metadata": true,
       "document_count": 1,
       "submodules": 0
     },
     "03_ads_k7_construction": {
       "has_readme": true,
-      "has_metadata": false,
+      "has_metadata": true,
       "document_count": 1,
       "submodules": 0
     },
     "04_standard_model_sectors": {
       "has_readme": true,
-      "has_metadata": false,
+      "has_metadata": true,
       "document_count": 0,
       "submodules": 6
     },
     "05_cosmology_quantum_gravity": {
       "has_readme": true,
-      "has_metadata": false,
+      "has_metadata": true,
       "document_count": 0,
       "submodules": 4
     },
     "06_supplements": {
       "has_readme": true,
-      "has_metadata": false,
+      "has_metadata": true,
       "document_count": 0,
       "submodules": 6
     }
@@ -50,7 +50,7 @@
     "docs": 13,
     "notebooks": 4,
     "pdfs": 4,
-    "other": 12
+    "other": 13
   },
   "scripts": {
     "generate_metadata.py": {
