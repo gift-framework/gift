@@ -250,6 +250,7 @@ jobs:
         python -c "
         import os
         import json
+        import re
         from datetime import datetime
         from collections import Counter
         
@@ -277,13 +278,13 @@ jobs:
                     
                     with open(file_path, 'r', encoding='utf-8') as f:
                         content = f.read()
-                        lines = content.split('\\n')
+                        lines = content.split('\n')
                         doc_stats['total_lines'] += len(lines)
                         
                         # Count various elements
                         doc_stats['cross_references'] += len(re.findall(r'\[([^\]]+)\]\(([^)]+)\)', content))
                         doc_stats['images'] += len(re.findall(r'!\[([^\]]*)\]\(([^)]+)\)', content))
-                        doc_stats['code_blocks'] += len(re.findall(r'```', content))
+                        doc_stats['code_blocks'] += len(re.findall(r'\`\`\`', content))
                         
                     if module not in doc_stats['modules']:
                         doc_stats['modules'][module] = 0
