@@ -10,9 +10,9 @@ The **GIFT (Geometric Information Field Theory)** framework provides a complete 
 
 ### Dimensional Reduction Hierarchy
 
-```
+``
 E₈×E₈ (11D Information Architecture) → AdS₄×K₇ (Geometric Compactification) → Standard Model (4D Physics)
-```
+``
 
 The framework treats E₈×E₈ as an **information architecture** rather than a particle spectrum, circumventing the Distler-Garibaldi impossibility theorem through systematic dimensional reduction that preserves geometric information content.
 
