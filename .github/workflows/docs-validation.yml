@@ -305,6 +305,10 @@ jobs:
             json.dump(doc_stats, f, indent=2)
             
         print('✅ Documentation report saved')
+        
+        # Create a placeholder file to ensure directory exists
+        with open('.github/docs-reports/.gitkeep', 'w') as f:
+            f.write('# Documentation reports directory\n')
         "
         
     - name: Upload Documentation Reports
@@ -313,6 +317,7 @@ jobs:
       with:
         name: docs-report
         path: .github/docs-reports/
+        if-no-files-found: warn
         
   validate-metadata:
     name: Metadata Validation

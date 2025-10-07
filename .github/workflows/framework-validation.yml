@@ -259,6 +259,10 @@ jobs:
             json.dump(stats, f, indent=2)
             
         print('✅ Validation report saved')
+        
+        # Create a placeholder file to ensure directory exists
+        with open('.github/validation-reports/.gitkeep', 'w') as f:
+            f.write('# Validation reports directory\n')
         "
         
     - name: Upload Validation Report
@@ -267,6 +271,7 @@ jobs:
       with:
         name: validation-report
         path: .github/validation-reports/
+        if-no-files-found: warn
         
   notebook-validation:
     name: Notebook Validation

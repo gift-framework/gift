@@ -195,6 +195,10 @@ jobs:
             json.dump(report, f, indent=2)
             
         print(f'✅ Report saved to {report_file}')
+        
+        # Create a placeholder file to ensure directory exists
+        with open('.github/notebook-reports/.gitkeep', 'w') as f:
+            f.write('# Notebook reports directory\n')
         "
         
     - name: Upload Notebook Reports
@@ -203,6 +207,7 @@ jobs:
       with:
         name: notebook-reports-${{ matrix.notebook }}
         path: .github/notebook-reports/
+        if-no-files-found: warn
         
   validate-badges:
     name: Validate Badge Links

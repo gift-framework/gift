@@ -178,6 +178,10 @@ jobs:
         with open('.github/experimental-reports/validation-results.json', 'w') as f:
             json.dump(results_summary, f, indent=2)
             
+        # Create a placeholder file to ensure directory exists
+        with open('.github/experimental-reports/.gitkeep', 'w') as f:
+            f.write('# Experimental validation reports directory\n')
+            
         if not all_within_tolerance:
             print('❌ Some predictions outside experimental tolerance')
             exit(1)
@@ -242,6 +246,10 @@ jobs:
             os.makedirs('.github/experimental-reports', exist_ok=True)
             with open('.github/experimental-reports/recent-papers.json', 'w') as f:
                 json.dump(papers_summary, f, indent=2)
+                
+            # Create a placeholder file to ensure directory exists
+            with open('.github/experimental-reports/.gitkeep', 'w') as f:
+                f.write('# Experimental validation reports directory\n')
                 
             if recent_papers:
                 print('📋 Recent papers to review:')
@@ -312,6 +320,7 @@ jobs:
       with:
         name: experimental-validation-reports
         path: .github/experimental-reports/
+        if-no-files-found: warn
         
     - name: Create Issue if Validation Fails
       if: failure()
