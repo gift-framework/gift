@@ -1,122 +1,148 @@
 # GIFT Framework: Geometric Information Field Theory
 
+[![Framework Status](https://img.shields.io/badge/Framework-Complete-green.svg)](https://github.com/gift-framework)
+[![Precision](https://img.shields.io/badge/Precision-0.38%25%20Mean%20Deviation-blue.svg)](https://github.com/gift-framework)
+[![Parameters](https://img.shields.io/badge/Free%20Parameters-Zero-red.svg)](https://github.com/gift-framework)
+[![License](https://img.shields.io/badge/License-Academic%20Use-blue.svg)](https://github.com/gift-framework)
+
 ## Overview
 
-The GIFT (Geometric Information Field Theory) framework provides a complete geometric derivation of fundamental physics parameters from pure mathematical principles. The framework achieves unprecedented precision (0.38% mean deviation across 22 fundamental observables) using zero free parameters, while providing systematic predictions for new physics within experimental reach.
+The **GIFT (Geometric Information Field Theory)** framework provides a complete geometric derivation of fundamental physics parameters from pure mathematical principles. Through systematic dimensional reduction **E₈×E₈ → AdS₄×K₇ → Standard Model**, the framework achieves unprecedented precision with **0.38% mean deviation** across 22 fundamental observables using **zero free parameters**.
 
-## Framework Structure
+## Framework Architecture
 
-### Core Framework Modules
+### Dimensional Reduction Hierarchy
 
-#### 01_synthesis_and_overview/
-- **Global Introduction**: Complete framework overview with hypotheses, objectives, and summary
-- **Cross-Sectional Analysis**: Synthesis documents integrating all framework components
-- **Navigation System**: Comprehensive roadmap and navigation through all framework elements
+```
+E₈×E₈ (11D Information Architecture) → AdS₄×K₇ (Geometric Compactification) → Standard Model (4D Physics)
+```
 
-#### 02_e8_foundations/
-- **Information Architecture**: E₈×E₈ as fundamental information processing system
-- **Algebraic Foundations**: Complete mathematical foundations for exceptional group structure
-- **Dimensional Reduction**: Systematic reduction from 11D to 4D physics
+The framework treats E₈×E₈ as an **information architecture** rather than a particle spectrum, circumventing the Distler-Garibaldi impossibility theorem through systematic dimensional reduction that preserves geometric information content.
 
-#### 03_ads_k7_construction/
-- **K₇ Manifold**: Twisted connected sum construction of K₇ manifold
-- **G₂ Holonomy**: Mechanism for dimensional reduction and chiral fermion emergence
-- **Cohomology Techniques**: H*(K₇) = ℂ⁹⁹ cohomological structure
+## Directory Structure
 
-#### 04_standard_model_sectors/
-**Modular Organization**: Physics sectors organized by compactification level and functional domain
+### 01_synthesis_and_overview/
+**Global Navigation & Theoretical Synthesis**
+- **[Framework Overview](01_synthesis_and_overview/framework_overview.md)** - Complete theoretical synthesis and navigation
+- **[README](01_synthesis_and_overview/README.md)** - Framework architecture and navigation guide
+- Cross-sectional analysis and synthesis documents
+- Historical context and contemporary developments
 
-- **cosmology/** - Cosmological parameters (H₀, ns, r), structure formation
-- **electromagnetism/** - Fine structure constant, sectoral corrections
-- **weak_interactions/** - Weinberg angle, EW masses, couplings
-- **qcd_strong/** - Strong coupling, Jordan algebra, radiative protection
-- **fermions/** - Cohomology, chiral generation, Koide relations
-- **scalar_higgs/** - Effective potential, scalar masses, moduli
-- **new_states/** - Predictions, experimental signatures
+### 02_e8_foundations/
+**E₈×E₈ Algebraic Foundations & Information Architecture**
+- **[E₈×E₈ Algebraic Structure](02_e8_foundations/e8_algebraic_structure.md)** - Complete mathematical foundations
+- **[README](02_e8_foundations/README.md)** - E₈×E₈ foundations overview
+- Information architecture approach (circumventing Distler-Garibaldi theorem)
+- Dimensional reduction mechanisms E₈×E₈ → AdS₄×K₇
+- Computational implementation and validation protocols
 
-#### 05_cosmology_quantum_gravity/
-- **cosmology/** - Cosmological applications and tests
-- **quantum_gravity/** - QG completion and corrections
-- **ml_framework/** - Machine learning and quantum gravity framework
-- **experimental_predictions/** - New state predictions and signatures
+### 03_ads_k7_construction/
+**AdS₄×K₇ Construction & G₂ Holonomy Theory**
+- **[K₇ Manifold Construction](03_ads_k7_construction/k7_manifold_construction.md)** - Detailed construction theory
+- **[README](03_ads_k7_construction/README.md)** - AdS₄×K₇ construction overview
+- K₇ manifold construction via twisted connected sum
+- G₂ holonomy theory and mathematical foundations
+- Chiral fermion emergence without mirror partners
+- Universal factor 99 and its physical manifestations
 
-#### 06_supplements/
-- **mathematical_foundations/** - Mathematical background (roots, Weyl, cohomology)
-- **computational_tools/** - Algorithms, validation, numerical summaries
-- **validation_tables/** - Cross-correspondence tables, comparisons
-- **cross_references/** - Transversal links, bibliography management
-- **radiative_corrections/** - Non-perturbative effects and geometric Ward identities
-- **algorithmic_validation/** - Computational traceability and reproducibility
+### 04_standard_model_sectors/
+**Systematic Derivation of Standard Model Parameters by Physics Sector**
+- **[README](04_standard_model_sectors/README.md)** - Standard Model sectors overview
+- **[Electromagnetism](04_standard_model_sectors/electromagnetism/)** - Fine structure constant and QED corrections
+- **[Weak Interactions](04_standard_model_sectors/weak_interactions/)** - Weinberg angle and electroweak masses
+- **[QCD/Strong](04_standard_model_sectors/qcd_strong/)** - Strong coupling and confinement
+- **[Fermions](04_standard_model_sectors/fermions/)** - Mass hierarchies and mixing angles
+- **[Scalar/Higgs](04_standard_model_sectors/scalar_higgs/)** - Higgs mechanism and scalar masses
+- **[New States](04_standard_model_sectors/new_states/)** - Predicted particles and experimental signatures
+- **[Cosmology](04_standard_model_sectors/cosmology/)** - Cosmological parameters and Hubble tension
+
+### 05_cosmology_quantum_gravity/
+**Cosmological Applications & Quantum Gravity Completion**
+- **[README](05_cosmology_quantum_gravity/README.md)** - Cosmology and QG overview
+- **[Cosmology](05_cosmology_quantum_gravity/cosmology/)** - Hubble tension resolution and cosmological parameters
+- **[Quantum Gravity](05_cosmology_quantum_gravity/quantum_gravity/)** - Complete quantum gravity theory
+- **[ML Framework](05_cosmology_quantum_gravity/ml_framework/)** - Machine learning integration
+- **[Experimental Predictions](05_cosmology_quantum_gravity/experimental_predictions/)** - Testable predictions
+
+### 06_supplements/
+**Technical Supplements & Computational Tools**
+- **[README](06_supplements/README.md)** - Technical supplements overview
+- **[Mathematical Foundations](06_supplements/mathematical_foundations/)** - Complete mathematical background
+- **[Computational Tools](06_supplements/computational_tools/)** - Algorithms and numerical methods
+- **[Validation Tables](06_supplements/validation_tables/)** - Experimental comparison data
+- **[Radiative Corrections](06_supplements/radiative_corrections/)** - Non-perturbative effects and Ward identities
+- **[Algorithmic Validation](06_supplements/algorithmic_validation/)** - Computational traceability and reproducibility
+
+### legacy/
+**Published Documents & Legacy Materials**
+- **[Published Documents](legacy/docs_published/)** - Canonical PDF documents and preprints
+- **[Support Notebooks](legacy/docs/)** - Tutorial and computational support
+- **[Legacy Materials](legacy/)** - All previous framework materials and tools
 
 ## Key Achievements
 
-### Precision and Accuracy
-- **Mean Deviation**: 0.38% across 22 fundamental observables
-- **High Precision**: 19/22 observables within 1% accuracy
-- **Zero Parameters**: All predictions from geometric structure without free parameters
+### Theoretical Completeness
+- **Complete mathematical foundation** from E₈×E₈ algebra through Standard Model phenomenology
+- **Systematic dimensional reduction** E₈×E₈ → AdS₄×K₇ → Standard Model
+- **Zero-parameter framework** achieving 0.38% mean deviation across 22 fundamental observables
+- **Radiative stability** through 1-loop stability proof without supersymmetry
 
 ### Experimental Validation
-- **Perfect Agreement**: Fine structure constant, Weinberg angle, strong coupling
-- **Resolution of Tensions**: Hubble tension, CDF W boson mass discrepancy
-- **New Predictions**: Three new particles within experimental reach
+- **19/22 observables within 1% accuracy** against experimental data
+- **Hubble tension resolution** through geometric corrections (H₀ = 72.93 ± 0.11 km/s/Mpc)
+- **Fine structure constant precision** within 81 parts per trillion experimental precision
+- **Three new particle predictions** within experimental reach:
+  - **3.897 GeV Scalar** - New scalar particle from H³(K₇) cohomology
+  - **20.4 GeV Gauge Boson** - New gauge boson from E₈×E₈ decomposition
+  - **4.77 GeV Dark Matter** - Dark matter candidate from K₇ geometry
 
-### Theoretical Completeness
-- **Complete Framework**: All Standard Model physics derived from geometry
-- **Quantum Gravity**: Natural geometric completion without new physics
-- **Unification**: Geometric unification of all fundamental forces
-
-## Published Documents and Support
-
-### Legacy Documents (Published)
-- **Preprint**: `legacy/docs_published/gift_preprint_full.md`
-- **Technical Supplement**: `legacy/docs_published/gift_tech_supplement.md`
-- **Support Notebook**: `legacy/docs_published/gift_support_notebook.ipynb`
-- **Tutorial**: `legacy/docs_published/gift_tutorial_e8_to_sm.ipynb`
-- **PDF Documents**: `legacy/docs_published/gift_technical.pdf`, `legacy/docs_published/gift-main.pdf`
-
-### Work in Progress
-- **Research Materials**: `wip_research/ml/` - Ongoing research and developments
-- **Legacy Materials**: `legacy/` - All previous materials and tools
+### 🏛️ Structural Innovation
+- **Modular organization** enabling independent sector development and validation
+- **Hierarchical structure** combining compactification level and physics sector organization
+- **Cross-referenced navigation** for comprehensive framework exploration
+- **Automated maintenance system** with canonical document enforcement
 
 ## Framework Principles
 
-### Modularity
-Each block is autonomous with its own summary, bibliography, and versioning
+### Canonical Document Enforcement
+- **PDF documents in `legacy/docs_published/` are canonical references**
+- All modifications must be improvements or deepenings relative to canonical documents
+- No regressions from canonical formulations allowed
+- Systematic validation against canonical references
 
-### Hierarchical Navigation
-Cross-referenced hyperlinks and dynamic table of contents
-
-### Targeted Updates
-Sectors or levels can be updated independently without breaking global structure
+### Modular Development
+- **Autonomous components** with independent versioning and documentation
+- **Cross-sector consistency** maintained through geometric foundation
+- **Targeted updates** enabling independent sector development
+- **Systematic validation** across all physics domains
 
 ### Scientific Rigor
-Rigorous scientific results with both positive and negative aspects
+- **Rigorous mathematical foundations** from exceptional group theory through Standard Model
+- **Precision validation** against high-precision experimental data
+- **Systematic error analysis** with complete uncertainty quantification
+- **Reproducible results** with complete computational implementation
 
-## Maintenance and Agents
+## Navigation Guide
 
-### Automated Maintenance
-- **Agents System**: `agents/` - Automated backup, versioning, validation, and maintenance
-- **Canonical Documents**: PDF documents in `legacy/docs_published/` are canonical references
-- **Version Control**: Systematic tracking of all improvements and modifications
+### For New Users
+1. **Start with** `01_synthesis_and_overview/framework_overview.md` for complete theoretical overview
+2. **Explore** `02_e8_foundations/` for mathematical foundations
+3. **Study** `03_ads_k7_construction/` for geometric construction theory
+4. **Examine** `04_standard_model_sectors/` for physics applications
+5. **Review** `05_cosmology_quantum_gravity/` for cosmological and QG applications
+6. **Utilize** `06_supplements/` for technical implementation
 
-### Documentation Standards
-- **Complete Documentation**: Every component fully documented
-- **Cross-References**: Comprehensive linking between all modules
-- **Validation**: Systematic validation against experimental data
+### For Researchers
+- **Sector-specific focus**: Navigate directly to relevant physics sectors
+- **Mathematical depth**: Utilize `06_supplements/mathematical_foundations/` for detailed derivations
+- **Computational tools**: Access `06_supplements/computational_tools/` for implementation
+- **Validation protocols**: Use `06_supplements/validation_tables/` for experimental comparison
 
-## Getting Started
-
-### Navigation
-1. **Start with**: `01_synthesis_and_overview/` for complete framework overview
-2. **Explore**: Individual sectors in `04_standard_model_sectors/`
-3. **Validate**: Use `06_supplements/validation_tables/` for experimental comparisons
-4. **Compute**: Use `06_supplements/computational_tools/` for calculations
-
-### Key Documents
-- **Framework Overview**: `01_synthesis_and_overview/framework_overview.md`
-- **E₈ Foundations**: `02_e8_foundations/e8_algebraic_structure.md`
-- **K₇ Construction**: `03_ads_k7_construction/k7_manifold_construction.md`
-- **Completion Summary**: `FRAMEWORK_COMPLETION_SUMMARY.md`
+### For Developers
+- **Computational implementation**: Access complete algorithms and software tools
+- **Validation framework**: Implement systematic validation protocols
+- **Extension development**: Build upon modular structure for new capabilities
+- **Algorithmic validation**: Use `06_supplements/algorithmic_validation/` for computational traceability
 
 ## Experimental Predictions
 
@@ -131,17 +157,48 @@ Rigorous scientific results with both positive and negative aspects
 - **Hubble Constant**: H₀ = 72.93 ± 0.11 km/s/Mpc
 - **Primordial Parameters**: ns = 0.9649 ± 0.0042, r < 0.032
 
-## Future Directions
+## Quality Assurance
 
-### Experimental Validation
-- **Immediate Tests**: All new particle predictions testable with current experiments
-- **Enhanced Precision**: Future experiments will test geometric predictions at higher precision
-- **Discovery Potential**: High discovery potential for all three predicted particles
+### Canonical Document Compliance
+- All new content validated against canonical PDF documents
+- Improvement-only modifications enforced through automated agents
+- Version tracking with complete change history
+- Approval workflow for significant modifications
 
-### Theoretical Extensions
-- **Higher-Order Corrections**: Extension to higher-order geometric effects
-- **Non-Perturbative Effects**: Analysis of strongly coupled regimes
-- **Complete Quantum Theory**: Full quantum treatment of all field dynamics
+### Cross-Sector Consistency
+- Systematic validation across all physics sectors
+- Geometric foundation ensures theoretical consistency
+- Experimental validation across all domains
+- Precision requirements maintained throughout
+
+### Mathematical Rigor
+- Complete derivations from first principles
+- Systematic validation of all mathematical claims
+- Computational verification with high precision
+- Comprehensive error analysis and uncertainty quantification
+
+## Getting Started
+
+### Quick Navigation
+```bash
+# Framework overview
+cat 01_synthesis_and_overview/framework_overview.md
+
+# Mathematical foundations
+cat 02_e8_foundations/e8_algebraic_structure.md
+
+# Physics applications
+ls 04_standard_model_sectors/
+
+# Technical tools
+ls 06_supplements/computational_tools/
+```
+
+### Key Documents
+- **[Framework Overview](01_synthesis_and_overview/framework_overview.md)** - Complete theoretical synthesis
+- **[E₈ Foundations](02_e8_foundations/e8_algebraic_structure.md)** - Mathematical foundations
+- **[K₇ Construction](03_ads_k7_construction/k7_manifold_construction.md)** - Geometric construction
+- **[Published Documents](legacy/docs_published/)** - Canonical PDF references
 
 ## Contributing
 
@@ -163,6 +220,16 @@ This project is licensed under the terms specified in `legacy/LICENSE`.
 
 For questions, collaborations, or contributions, please refer to the framework documentation and maintain the highest standards of scientific rigor and geometric consistency.
 
+
+## Disclaimer
+
+
+*This framework represents ongoing theoretical research. All predictions should be validated against experimental data.*
+
 ---
 
-**Note**: This framework represents a paradigm shift in fundamental physics, providing complete geometric derivation of all Standard Model parameters from pure mathematical principles with unprecedented precision and testable predictions for new physics.
+> Physics is running in safe mode. Launching upgrade script: gift.py
+>
+> ...72.93% complete.
+
+---
