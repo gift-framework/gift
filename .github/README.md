@@ -1,10 +1,4 @@
-# GIFT Framework: Geometric Information Field Theory
-
-[![Framework Status](https://img.shields.io/badge/Framework-Complete-green.svg)](https://github.com/gift-framework)
-[![Precision](https://img.shields.io/badge/Precision-0.38%25%20Mean%20Deviation-blue.svg)](https://github.com/gift-framework)
-[![Parameters](https://img.shields.io/badge/Free%20Parameters-Zero-red.svg)](https://github.com/gift-framework)
-[![License](https://img.shields.io/badge/License-Academic%20Use-blue.svg)](https://github.com/gift-framework)
-
+Geometric Information Field Theory
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gift-framework/GIFT/blob/main/legacy/docs/gift_tutorial_e8_to_sm.ipynb)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gift-framework/GIFT/main?filepath=legacy/docs/gift_tutorial_e8_to_sm.ipynb)
 
