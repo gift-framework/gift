@@ -198,6 +198,41 @@ class FrameworkValidator:
         
         return len(all_broken_links) == 0
     
+    def validate_badges(self):
+        """Validate badge links in README"""
+        print("[INFO] Validating badge links...")
+        
+        readme_path = self.root_dir / 'README.md'
+        if not readme_path.exists():
+            self.log_issue("README.md not found for badge validation")
+            return False
+        
+        try:
+            with open(readme_path, 'r', encoding='utf-8') as f:
+                content = f.read()
+            
+            # Check for Shields.io badges
+            if 'img.shields.io' not in content:
+                self.log_issue("No Shields.io badges found in README")
+                return False
+            
+            # Check for Colab badge
+            if 'colab.research.google.com' not in content:
+                self.log_issue("Colab badge not found in README")
+                return False
+            
+            # Check for Binder badge
+            if 'mybinder.org' not in content:
+                self.log_issue("Binder badge not found in README")
+                return False
+            
+            self.log_issue("All required badges found", "INFO")
+            return True
+            
+        except Exception as e:
+            self.log_issue(f"Error validating badges: {str(e)}")
+            return False
+    
     def validate_framework_structure(self):
         """Validate framework directory structure"""
         print("[INFO] Validating framework structure...")
@@ -295,6 +330,7 @@ class FrameworkValidator:
         # Run all validations
         files_valid = self.validate_required_files()
         docs_valid = self.validate_all_documentation()
+        badges_valid = self.validate_badges()
         structure_valid = self.validate_framework_structure()
         self.analyze_documentation()
         
@@ -308,6 +344,7 @@ class FrameworkValidator:
         
         print(f"Required Files: {'[OK]' if files_valid else '[ERROR]'}")
         print(f"Documentation: {'[OK]' if docs_valid else '[WARNING]'}")
+        print(f"Badges: {'[OK]' if badges_valid else '[ERROR]'}")
         print(f"Framework Structure: {'[OK]' if structure_valid else '[ERROR]'}")
         print(f"Total Issues: {len(self.issues)}")
         print(f"Total Warnings: {len(self.warnings)}")

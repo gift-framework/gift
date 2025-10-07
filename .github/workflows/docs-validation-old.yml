@@ -384,24 +384,27 @@ jobs:
         
     - name: Validate Badge Links
       run: |
-        echo "🏷️ Validating badge links..."
+        echo "Validating badge links..."
         
         # Check if badges are properly formatted
         if grep -q "img.shields.io" README.md; then
-          echo "✅ Shields.io badges found"
-        else:
-          echo "❌ No Shields.io badges found"
+          echo "[OK] Shields.io badges found"
+        else
+          echo "[ERROR] No Shields.io badges found"
           exit 1
+        fi
           
         # Check for Colab and Binder badges
         if grep -q "colab.research.google.com" README.md; then
-          echo "✅ Colab badge found"
-        else:
-          echo "❌ Colab badge not found"
+          echo "[OK] Colab badge found"
+        else
+          echo "[ERROR] Colab badge not found"
           exit 1
+        fi
           
         if grep -q "mybinder.org" README.md; then
-          echo "✅ Binder badge found"
-        else:
-          echo "❌ Binder badge not found"
+          echo "[OK] Binder badge found"
+        else
+          echo "[ERROR] Binder badge not found"
           exit 1
+        fi
