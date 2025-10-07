@@ -1,203 +1,238 @@
-# GIFT Framework GitHub Actions
+# GIFT Framework: Geometric Information Field Theory
 
-This directory contains automated workflows for the GIFT (Geometric Information Field Theory) framework, ensuring continuous validation, quality assurance, and automated releases.
+[![Framework Status](https://img.shields.io/badge/Framework-Complete-green.svg)](https://github.com/gift-framework)
+[![Precision](https://img.shields.io/badge/Precision-0.38%25%20Mean%20Deviation-blue.svg)](https://github.com/gift-framework)
+[![Parameters](https://img.shields.io/badge/Free%20Parameters-Zero-red.svg)](https://github.com/gift-framework)
+[![License](https://img.shields.io/badge/License-Academic%20Use-blue.svg)](https://github.com/gift-framework)
 
-## 🚀 Workflows Overview
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gift-framework/GIFT/blob/main/legacy/docs/gift_tutorial_e8_to_sm.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gift-framework/GIFT/main?filepath=legacy/docs/gift_tutorial_e8_to_sm.ipynb)
 
-### 1. Framework Validation (`framework-validation.yml`)
-**Purpose**: Comprehensive validation of the entire GIFT framework
-**Triggers**: Push to main/develop, Pull requests, Daily schedule (6 AM UTC)
+## Overview
 
-**Features**:
-- ✅ **Structure Validation**: Ensures all required directories and canonical documents are present
-- ✅ **Mathematical Consistency**: Validates E₈×E₈ → AdS₄×K₇ → Standard Model calculations
-- ✅ **Experimental Validation**: Compares predictions against experimental data with tolerance checks
-- ✅ **Documentation Links**: Validates all internal links and cross-references
-- ✅ **Security Scanning**: Runs Trivy vulnerability scanner
-- ✅ **Report Generation**: Creates comprehensive validation reports
+The **GIFT (Geometric Information Field Theory)** framework provides a complete geometric derivation of fundamental physics parameters from pure mathematical principles. Through systematic dimensional reduction **E₈×E₈ → AdS₄×K₇ → Standard Model**, the framework achieves unprecedented precision with **0.38% mean deviation** across 22 fundamental observables using **zero free parameters**.
 
-**Outputs**:
-- Validation reports in `.github/validation-reports/`
-- Security scan results
-- Framework statistics and metrics
+## Framework Architecture
 
-### 2. Notebook Testing (`notebooks-test.yml`)
-**Purpose**: Validates interactive Jupyter notebooks for Colab and Binder compatibility
-**Triggers**: Changes to notebook files, Pull requests
+### Dimensional Reduction Hierarchy
 
-**Features**:
-- ✅ **Execution Testing**: Runs notebooks and validates outputs
-- ✅ **Error Detection**: Identifies execution errors and broken code
-- ✅ **Binder Compatibility**: Tests requirements.txt and runtime configuration
-- ✅ **Colab Compatibility**: Validates Colab-specific features
-- ✅ **Badge Validation**: Ensures Colab and Binder badges work correctly
+```
+E₈×E₈ (11D Information Architecture) → AdS₄×K₇ (Geometric Compactification) → Standard Model (4D Physics)
+```
 
-**Outputs**:
-- Notebook execution reports
-- Compatibility validation results
-- Badge link verification
+The framework treats E₈×E₈ as an **information architecture** rather than a particle spectrum, circumventing the Distler-Garibaldi impossibility theorem through systematic dimensional reduction that preserves geometric information content.
 
-### 3. Documentation Validation (`docs-validation.yml`)
-**Purpose**: Ensures documentation quality and consistency
-**Triggers**: Push to main/develop, Pull requests, Weekly schedule (Sunday 2 AM UTC)
+## Directory Structure
 
-**Features**:
-- ✅ **Markdown Structure**: Validates proper heading hierarchy and formatting
-- ✅ **Cross-Reference Validation**: Checks all internal links and references
-- ✅ **Framework Consistency**: Ensures consistent notation and terminology
-- ✅ **Metadata Validation**: Validates repository metadata and badges
-- ✅ **Documentation Statistics**: Generates comprehensive documentation reports
+### 01_synthesis_and_overview/
+**Global Navigation & Theoretical Synthesis**
+- **[Framework Overview](01_synthesis_and_overview/framework_overview.md)** - Complete theoretical synthesis and navigation
+- **[README](01_synthesis_and_overview/README.md)** - Framework architecture and navigation guide
+- Cross-sectional analysis and synthesis documents
+- Historical context and contemporary developments
 
-**Outputs**:
-- Documentation quality reports
-- Cross-reference validation results
-- Framework consistency analysis
+### 02_e8_foundations/
+**E₈×E₈ Algebraic Foundations & Information Architecture**
+- **[E₈×E₈ Algebraic Structure](02_e8_foundations/e8_algebraic_structure.md)** - Complete mathematical foundations
+- **[README](02_e8_foundations/README.md)** - E₈×E₈ foundations overview
+- Information architecture approach (circumventing Distler-Garibaldi theorem)
+- Dimensional reduction mechanisms E₈×E₈ → AdS₄×K₇
+- Computational implementation and validation protocols
 
-### 4. Experimental Validation (`experimental-validation.yml`)
-**Purpose**: Continuous validation against latest experimental data
-**Triggers**: Daily schedule (8 AM UTC), Manual trigger
+### 03_ads_k7_construction/
+**AdS₄×K₇ Construction & G₂ Holonomy Theory**
+- **[K₇ Manifold Construction](03_ads_k7_construction/k7_manifold_construction.md)** - Detailed construction theory
+- **[README](03_ads_k7_construction/README.md)** - AdS₄×K₇ construction overview
+- K₇ manifold construction via twisted connected sum
+- G₂ holonomy theory and mathematical foundations
+- Chiral fermion emergence without mirror partners
+- Universal factor 99 and its physical manifestations
 
-**Features**:
-- ✅ **Real-time Data**: Fetches latest experimental values from CODATA, PDG, arXiv
-- ✅ **Precision Validation**: Compares GIFT predictions with experimental data
-- ✅ **Tolerance Checking**: Ensures predictions stay within experimental uncertainty
-- ✅ **New Results Monitoring**: Tracks new experimental papers and results
-- ✅ **Automatic Alerts**: Creates issues when predictions fall outside tolerance
+### 04_standard_model_sectors/
+**Systematic Derivation of Standard Model Parameters by Physics Sector**
+- **[README](04_standard_model_sectors/README.md)** - Standard Model sectors overview
+- **[Electromagnetism](04_standard_model_sectors/electromagnetism/)** - Fine structure constant and QED corrections
+- **[Weak Interactions](04_standard_model_sectors/weak_interactions/)** - Weinberg angle and electroweak masses
+- **[QCD/Strong](04_standard_model_sectors/qcd_strong/)** - Strong coupling and confinement
+- **[Fermions](04_standard_model_sectors/fermions/)** - Mass hierarchies and mixing angles
+- **[Scalar/Higgs](04_standard_model_sectors/scalar_higgs/)** - Higgs mechanism and scalar masses
+- **[New States](04_standard_model_sectors/new_states/)** - Predicted particles and experimental signatures
+- **[Cosmology](05_cosmology_quantum_gravity/cosmology/)** - Cosmological parameters and Hubble tension
 
-**Outputs**:
-- Experimental validation reports
-- Recent papers monitoring
-- Automatic issue creation for failed validations
+### 05_cosmology_quantum_gravity/
+**Cosmological Applications & Quantum Gravity Completion**
+- **[README](05_cosmology_quantum_gravity/README.md)** - Cosmology and QG overview
+- **[Cosmology](05_cosmology_quantum_gravity/cosmology/)** - Hubble tension resolution and cosmological parameters
+- **[Quantum Gravity](05_cosmology_quantum_gravity/quantum_gravity/)** - Complete quantum gravity theory
+- **[ML Framework](05_cosmology_quantum_gravity/ml_framework/)** - Machine learning integration
+- **[Experimental Predictions](05_cosmology_quantum_gravity/experimental_predictions/)** - Testable predictions
 
-### 5. Release Workflow (`release.yml`)
-**Purpose**: Automated release creation with comprehensive validation
-**Triggers**: Version tags, Manual trigger
+### 06_supplements/
+**Technical Supplements & Computational Tools**
+- **[README](06_supplements/README.md)** - Technical supplements overview
+- **[Mathematical Foundations](06_supplements/mathematical_foundations/)** - Complete mathematical background
+- **[Computational Tools](06_supplements/computational_tools/)** - Algorithms and numerical methods
+- **[Validation Tables](06_supplements/validation_tables/)** - Experimental comparison data
+- **[Radiative Corrections](06_supplements/radiative_corrections/)** - Non-perturbative effects and Ward identities
+- **[Algorithmic Validation](06_supplements/algorithmic_validation/)** - Computational traceability and reproducibility
 
-**Features**:
-- ✅ **Pre-release Validation**: Runs full framework validation before release
-- ✅ **Release Notes**: Generates comprehensive release documentation
-- ✅ **Archive Creation**: Creates clean release archives
-- ✅ **GitHub Release**: Automated GitHub release creation
-- ✅ **Asset Upload**: Uploads documentation and canonical documents
+### legacy/
+**Published Documents & Legacy Materials**
+- **[Published Documents](legacy/docs_published/)** - Canonical PDF documents and preprints
+- **[Support Notebooks](legacy/docs/)** - Tutorial and computational support
+- **[Legacy Materials](legacy/)** - All previous framework materials and tools
 
-**Outputs**:
-- GitHub releases with full documentation
-- Release archives and assets
-- Version updates
+## Key Achievements
 
-## 📊 Validation Metrics
-
-### Framework Precision
-- **Mean Deviation**: 0.38% across 22 fundamental observables
-- **Free Parameters**: 0 (zero-parameter framework)
-- **Experimental Tolerance**: All predictions within 3σ experimental uncertainty
-
-### Quality Assurance
-- **Documentation Coverage**: 100% of modules documented
-- **Link Validation**: All internal links verified
-- **Notebook Compatibility**: Colab and Binder tested
-- **Security Scanning**: Continuous vulnerability monitoring
+### Theoretical Completeness
+- **Complete mathematical foundation** from E₈×E₈ algebra through Standard Model phenomenology
+- **Systematic dimensional reduction** E₈×E₈ → AdS₄×K₇ → Standard Model
+- **Zero-parameter framework** achieving 0.38% mean deviation across 22 fundamental observables
+- **Radiative stability** through 1-loop stability proof without supersymmetry
 
 ### Experimental Validation
-- **Fine Structure Constant**: α⁻¹ = 137.035999139(31) - within 81 parts per trillion
-- **Weinberg Angle**: sin²θW = 0.23129(5) - within experimental precision
-- **Hubble Constant**: H₀ = 72.93 ± 0.11 km/s/Mpc - resolving Hubble tension
+- **19/22 observables within 1% accuracy** against experimental data
+- **Hubble tension resolution** through geometric corrections (H₀ = 72.93 ± 0.11 km/s/Mpc)
+- **Fine structure constant precision** within 81 parts per trillion experimental precision
+- **Three new particle predictions** within experimental reach:
+  - **3.897 GeV Scalar** - New scalar particle from H³(K₇) cohomology
+  - **20.4 GeV Gauge Boson** - New gauge boson from E₈×E₈ decomposition
+  - **4.77 GeV Dark Matter** - Dark matter candidate from K₇ geometry
 
-## 🔧 Configuration
+### 🏛️ Structural Innovation
+- **Modular organization** enabling independent sector development and validation
+- **Hierarchical structure** combining compactification level and physics sector organization
+- **Cross-referenced navigation** for comprehensive framework exploration
+- **Automated maintenance system** with canonical document enforcement
 
-### Validation Tolerances
-```yaml
-validation:
-  tolerances:
-    fine_structure_constant: 0.0001  # 0.01%
-    weinberg_angle: 0.001           # 0.1%
-    hubble_constant: 0.002          # 0.2%
-    strong_coupling: 0.005          # 0.5%
-    mass_parameters: 0.01           # 1%
-```
+## Framework Principles
 
-### Experimental Data Sources
-- **CODATA**: National Institute of Standards and Technology
-- **PDG**: Particle Data Group
-- **arXiv**: Latest research papers and preprints
+### Canonical Document Enforcement
+- **PDF documents in `legacy/docs_published/` are canonical references**
+- All modifications must be improvements or deepenings relative to canonical documents
+- No regressions from canonical formulations allowed
+- Systematic validation against canonical references
 
-### Performance Thresholds
-- **Notebook Execution**: 300 seconds timeout
-- **Memory Usage**: 2048 MB maximum
-- **CPU Usage**: 80% maximum
+### Modular Development
+- **Autonomous components** with independent versioning and documentation
+- **Cross-sector consistency** maintained through geometric foundation
+- **Targeted updates** enabling independent sector development
+- **Systematic validation** across all physics domains
 
-## 📈 Monitoring and Alerts
+### Scientific Rigor
+- **Rigorous mathematical foundations** from exceptional group theory through Standard Model
+- **Precision validation** against high-precision experimental data
+- **Systematic error analysis** with complete uncertainty quantification
+- **Reproducible results** with complete computational implementation
 
-### Automatic Alerts
-- **Failed Validation**: Issues created for failed experimental validation
-- **Broken Links**: Documentation validation failures
-- **Security Issues**: Vulnerability scan alerts
-- **Notebook Errors**: Execution failure notifications
+## Navigation Guide
 
-### Daily Reports
-- **Experimental Validation**: Daily comparison with latest data
-- **Framework Health**: Continuous monitoring of framework integrity
-- **Documentation Quality**: Weekly documentation validation
+### For New Users
+1. **Start with** `01_synthesis_and_overview/framework_overview.md` for complete theoretical overview
+2. **Explore** `02_e8_foundations/` for mathematical foundations
+3. **Study** `03_ads_k7_construction/` for geometric construction theory
+4. **Examine** `04_standard_model_sectors/` for physics applications
+5. **Review** `05_cosmology_quantum_gravity/` for cosmological and QG applications
+6. **Utilize** `06_supplements/` for technical implementation
 
-## 🚀 Getting Started
+### For Researchers
+- **Sector-specific focus**: Navigate directly to relevant physics sectors
+- **Mathematical depth**: Utilize `06_supplements/mathematical_foundations/` for detailed derivations
+- **Computational tools**: Access `06_supplements/computational_tools/` for implementation
+- **Validation protocols**: Use `06_supplements/validation_tables/` for experimental comparison
 
-### Manual Workflow Triggers
+### For Developers
+- **Computational implementation**: Access complete algorithms and software tools
+- **Validation framework**: Implement systematic validation protocols
+- **Extension development**: Build upon modular structure for new capabilities
+- **Algorithmic validation**: Use `06_supplements/algorithmic_validation/` for computational traceability
+
+## Experimental Predictions
+
+### New Particles (Within Experimental Reach)
+- **3.897 GeV Scalar**: New scalar particle from H³(K₇) = ℂ⁷⁷ cohomology
+- **20.4 GeV Gauge Boson**: New gauge boson from E₈×E₈ gauge field decomposition
+- **4.77 GeV Dark Matter**: Dark matter candidate from K₇ geometric structure
+
+### Precision Predictions
+- **Fine Structure Constant**: α⁻¹ = 137.035999139(31)
+- **Weinberg Angle**: sin²θW = 0.23129(5)
+- **Hubble Constant**: H₀ = 72.93 ± 0.11 km/s/Mpc
+- **Primordial Parameters**: ns = 0.9649 ± 0.0042, r < 0.032
+
+## Quality Assurance
+
+### Canonical Document Compliance
+- All new content validated against canonical PDF documents
+- Improvement-only modifications enforced through automated agents
+- Version tracking with complete change history
+- Approval workflow for significant modifications
+
+### Cross-Sector Consistency
+- Systematic validation across all physics sectors
+- Geometric foundation ensures theoretical consistency
+- Experimental validation across all domains
+- Precision requirements maintained throughout
+
+### Mathematical Rigor
+- Complete derivations from first principles
+- Systematic validation of all mathematical claims
+- Computational verification with high precision
+- Comprehensive error analysis and uncertainty quantification
+
+## Getting Started
+
+### Quick Navigation
 ```bash
-# Trigger experimental validation
-gh workflow run experimental-validation.yml
+# Framework overview
+cat 01_synthesis_and_overview/framework_overview.md
 
-# Trigger full framework validation
-gh workflow run framework-validation.yml
+# Mathematical foundations
+cat 02_e8_foundations/e8_algebraic_structure.md
 
-# Create manual release
-gh workflow run release.yml --field version=v3.1.0
+# Physics applications
+ls 04_standard_model_sectors/
+
+# Technical tools
+ls 06_supplements/computational_tools/
 ```
 
-### Local Validation
-```bash
-# Install dependencies
-pip install -r legacy/requirements.txt
+### Key Documents
+- **[Framework Overview](01_synthesis_and_overview/framework_overview.md)** - Complete theoretical synthesis
+- **[E₈ Foundations](02_e8_foundations/e8_algebraic_structure.md)** - Mathematical foundations
+- **[K₇ Construction](03_ads_k7_construction/k7_manifold_construction.md)** - Geometric construction
+- **[Published Documents](legacy/docs_published/)** - Canonical PDF references
 
-# Run framework validation
-python -c "
-import os
-# Framework structure validation
-required_dirs = ['01_synthesis_and_overview', '02_e8_foundations', '03_ads_k7_construction', '04_standard_model_sectors', '05_cosmology_quantum_gravity', '06_supplements', 'legacy']
-for dir_name in required_dirs:
-    assert os.path.exists(dir_name), f'Missing directory: {dir_name}'
-print('✅ Framework structure validated')
-"
-```
+## Contributing
 
-## 📚 Workflow Reports
+### Framework Development
+- **Modular Updates**: Update individual sectors independently
+- **Validation**: Ensure all modifications maintain experimental consistency
+- **Documentation**: Maintain complete documentation standards
 
-All workflows generate detailed reports stored in:
-- `.github/validation-reports/` - Framework validation results
-- `.github/notebook-reports/` - Notebook testing results
-- `.github/docs-reports/` - Documentation validation results
-- `.github/experimental-reports/` - Experimental validation results
+### Research Collaboration
+- **Experimental Validation**: Collaborate on experimental tests of predictions
+- **Theoretical Extensions**: Extend framework to new physics domains
+- **Computational Tools**: Develop enhanced computational capabilities
 
-## 🔒 Security
+## License
 
-### Vulnerability Scanning
-- **Trivy**: File system and dependency vulnerability scanning
-- **Secret Scanning**: Automatic detection of exposed secrets
-- **Dependency Checking**: Regular security updates for dependencies
+This project is licensed under the terms specified in `legacy/LICENSE`.
 
-### Access Control
-- **GitHub Token**: Minimal permissions for workflow execution
-- **Secret Management**: Secure handling of API keys and tokens
-- **Audit Logging**: Complete workflow execution logging
+## Contact
 
-## 📞 Support
+For questions, collaborations, or contributions, please refer to the framework documentation and maintain the highest standards of scientific rigor and geometric consistency.
 
-For workflow-related issues or questions:
-1. Check the workflow logs in the GitHub Actions tab
-2. Review the generated reports in `.github/*-reports/`
-3. Create an issue with the `workflow` label
-4. Refer to the framework documentation in the main repository
+
+## Disclaimer
+
+
+*This framework represents ongoing theoretical research. All predictions should be validated against experimental data.*
 
 ---
 
-**Note**: These workflows ensure the GIFT framework maintains the highest standards of scientific rigor, experimental validation, and documentation quality through automated continuous integration and validation processes.
+> Physics is running in safe mode. Launching upgrade script: gift.py
+>
+> ...72.93% complete.
 
+---
