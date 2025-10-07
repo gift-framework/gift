@@ -1,4 +1,4 @@
-Geometric Information Field Theory
+# Geometric Information Field Theory
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gift-framework/GIFT/blob/main/legacy/docs/gift_tutorial_e8_to_sm.ipynb)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gift-framework/GIFT/main?filepath=legacy/docs/gift_tutorial_e8_to_sm.ipynb)
 
