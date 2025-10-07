@@ -191,6 +191,7 @@ pip install -r legacy/requirements.txt
         echo "✅ Release archive created"
         
     - name: Create GitHub Release
+      id: create_release
       uses: actions/create-release@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -207,8 +208,8 @@ pip install -r legacy/requirements.txt
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./gift-framework-${{ github.ref_name }}.tar.gz
-        asset_name: gift-framework-${{ github.ref_name }}.tar.gz
+        asset_path: ./gift-framework-${{ github.ref_name || github.event.inputs.version }}.tar.gz
+        asset_name: gift-framework-${{ github.ref_name || github.event.inputs.version }}.tar.gz
         asset_content_type: application/gzip
         
     - name: Upload Documentation
