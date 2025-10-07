@@ -26,12 +26,17 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install markdown linkchecker beautifulsoup4 lxml
+        pip install markdown linkchecker beautifulsoup4 lxml pyyaml
         
     - name: Run Framework Validation
       run: |
         echo "🚀 Running GIFT Framework Validation..."
         python scripts/validate_framework.py
+        
+    - name: Generate Metadata
+      run: |
+        echo "📊 Generating framework metadata..."
+        python scripts/generate_metadata.py
         
     - name: Upload Validation Reports
       uses: actions/upload-artifact@v4
@@ -39,6 +44,14 @@ jobs:
       with:
         name: validation-reports
         path: .github/validation-reports/
+        if-no-files-found: warn
+        
+    - name: Upload Metadata Reports
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: metadata-reports
+        path: .github/metadata-reports/
         if-no-files-found: warn
         
     - name: Comment on PR (if applicable)

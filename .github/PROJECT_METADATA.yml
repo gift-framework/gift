@@ -1,0 +1,196 @@
+# GIFT Framework Project Metadata
+# This file contains structured metadata about the GIFT project
+
+project:
+  name: "GIFT Framework"
+  full_name: "Geometric Information Field Theory"
+  description: "Complete geometric derivation of fundamental physics parameters from pure mathematical principles"
+  version: "1.0.0"
+  status: "active"
+  license: "MIT"
+  
+authors:
+  - name: "GIFT Framework Team"
+    email: "brieuc.dlf@gmail.com"
+    affiliation: "Independent Research"
+    
+repository:
+  url: "https://github.com/gift-framework/GIFT"
+  platform: "GitHub"
+  visibility: "public"
+  default_branch: "main"
+  
+framework:
+  theoretical_basis: "E₈×E₈ Information Architecture"
+  dimensional_reduction: "E₈×E₈ → AdS₄×K₇ → Standard Model"
+  precision: "0.38% mean deviation"
+  free_parameters: 0
+  observables_validated: 22
+  observables_within_1_percent: 19
+  
+physics_sectors:
+  - name: "Electromagnetism"
+    precision: "81 parts per trillion"
+    key_prediction: "α⁻¹ = 137.035999139(31)"
+  - name: "Weak Interactions"
+    precision: "0.02%"
+    key_prediction: "sin²θW = 0.23129(5)"
+  - name: "Strong Interactions"
+    precision: "0.09%"
+    key_prediction: "αs(MZ) = 0.1181(11)"
+  - name: "Fermion Masses"
+    precision: "0.001-0.007%"
+    key_predictions: ["me = 0.51099895000(15) MeV", "mμ = 105.6583755(23) MeV"]
+  - name: "Higgs Sector"
+    precision: "0.11%"
+    key_prediction: "mH = 125.10 ± 0.14 GeV"
+  - name: "Cosmology"
+    precision: "0.15%"
+    key_prediction: "H₀ = 72.93 ± 0.11 km/s/Mpc"
+    
+experimental_predictions:
+  new_particles:
+    - name: "3.897 GeV Scalar"
+      mass: "3.897 GeV"
+      source: "H³(K₇) = ℂ⁷⁷ cohomology"
+      experimental_reach: "within current facilities"
+    - name: "20.4 GeV Gauge Boson"
+      mass: "20.4 GeV"
+      source: "E₈×E₈ gauge field decomposition"
+      experimental_reach: "testable at current facilities"
+    - name: "4.77 GeV Dark Matter"
+      mass: "4.77 GeV"
+      source: "K₇ geometric structure"
+      experimental_reach: "direct detection potential"
+      
+documentation:
+  canonical_documents:
+    - path: "legacy/docs_published/gift_preprint_full.md"
+      type: "preprint"
+      status: "canonical"
+    - path: "legacy/docs_published/gift_tech_supplement.md"
+      type: "technical supplement"
+      status: "canonical"
+    - path: "legacy/docs_published/gift_tutorial_e8_to_sm.ipynb"
+      type: "tutorial"
+      status: "canonical"
+      
+  modular_structure:
+    - module: "01_synthesis_and_overview"
+      purpose: "Global navigation and theoretical synthesis"
+      status: "complete"
+    - module: "02_e8_foundations"
+      purpose: "E₈×E₈ algebraic foundations and information architecture"
+      status: "complete"
+    - module: "03_ads_k7_construction"
+      purpose: "AdS₄×K₇ construction and G₂ holonomy theory"
+      status: "complete"
+    - module: "04_standard_model_sectors"
+      purpose: "Systematic derivation of Standard Model parameters by physics sector"
+      status: "complete"
+    - module: "05_cosmology_quantum_gravity"
+      purpose: "Cosmological applications and quantum gravity completion"
+      status: "complete"
+    - module: "06_supplements"
+      purpose: "Technical supplements and computational tools"
+      status: "complete"
+      
+quality_assurance:
+  validation_system:
+    - name: "Framework Validation"
+      script: "scripts/validate_framework.py"
+      frequency: "on push, daily"
+      coverage: "structure, documentation, badges, links"
+    - name: "Experimental Validation"
+      frequency: "daily"
+      coverage: "precision comparison against experimental data"
+    - name: "Notebook Testing"
+      frequency: "on push"
+      coverage: "interactive notebook execution"
+      
+  canonical_enforcement:
+    policy: "PDF documents in legacy/docs_published/ are canonical references"
+    rule: "All modifications must be improvements or deepenings"
+    restriction: "No regressions from canonical formulations allowed"
+    
+tools_and_workflows:
+  maintenance:
+    - name: "Backup Agent"
+      purpose: "Automated backup and versioning"
+      location: "agents/backup_agent.py"
+    - name: "Validation Agent"
+      purpose: "Consistency checks and validation"
+      location: "agents/validation_agent.py"
+    - name: "Canonical Documents Agent"
+      purpose: "PDF enforcement and version control"
+      location: "agents/canonical_documents_agent.py"
+    - name: "Versioning Agent"
+      purpose: "Document version tracking and regression detection"
+      location: "agents/versioning_agent.py"
+      
+  ci_cd:
+    - name: "Framework Validation"
+      workflow: ".github/workflows/framework-validation-simple.yml"
+      triggers: ["push", "pull_request", "daily_schedule"]
+    - name: "Experimental Validation"
+      workflow: ".github/workflows/experimental-validation.yml"
+      triggers: ["daily_schedule"]
+    - name: "Notebook Testing"
+      workflow: ".github/workflows/notebooks-test.yml"
+      triggers: ["push", "pull_request"]
+    - name: "Release Automation"
+      workflow: ".github/workflows/release.yml"
+      triggers: ["tag_push"]
+      
+keywords:
+  physics:
+    - "theoretical physics"
+    - "particle physics"
+    - "cosmology"
+    - "quantum gravity"
+    - "standard model"
+    - "dimensional reduction"
+    - "exceptional groups"
+    - "E₈"
+    - "G₂ holonomy"
+    - "K₇ manifold"
+    - "AdS₄"
+    - "fine structure constant"
+    - "hubble tension"
+    - "dark matter"
+    
+  mathematics:
+    - "differential geometry"
+    - "algebraic topology"
+    - "lie groups"
+    - "cohomology"
+    - "manifolds"
+    - "holonomy"
+    - "octonions"
+    - "weyl groups"
+    
+  computational:
+    - "python"
+    - "jupyter notebooks"
+    - "machine learning"
+    - "numerical validation"
+    - "automated testing"
+    - "github actions"
+    
+citations:
+  format: "APA"
+  template: |
+    GIFT Framework: Geometric Information Field Theory. (2025). 
+    Retrieved from https://github.com/gift-framework/GIFT
+    
+  bibtex_template: |
+    @software{gift_framework_2025,
+      title={GIFT Framework: Geometric Information Field Theory},
+      author={{GIFT Framework Team}},
+      year={2025},
+      url={https://github.com/gift-framework/GIFT},
+      license={MIT}
+    }
+    
+last_updated: "2025-01-08"
+maintainer: "GIFT Framework Team"
