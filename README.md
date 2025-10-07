@@ -5,6 +5,9 @@
 [![Parameters](https://img.shields.io/badge/Free%20Parameters-Zero-red.svg)](https://github.com/gift-framework)
 [![License](https://img.shields.io/badge/License-Academic%20Use-blue.svg)](https://github.com/gift-framework)
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gift-framework/GIFT/blob/main/legacy/docs/gift_tutorial_e8_to_sm.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gift-framework/GIFT/main?filepath=legacy/docs/gift_tutorial_e8_to_sm.ipynb)
+
 ## Overview
 
 The **GIFT (Geometric Information Field Theory)** framework provides a complete geometric derivation of fundamental physics parameters from pure mathematical principles. Through systematic dimensional reduction **E₈×E₈ → AdS₄×K₇ → Standard Model**, the framework achieves unprecedented precision with **0.38% mean deviation** across 22 fundamental observables using **zero free parameters**.
@@ -54,7 +57,7 @@ The framework treats E₈×E₈ as an **information architecture** rather than a
 - **[Fermions](04_standard_model_sectors/fermions/)** - Mass hierarchies and mixing angles
 - **[Scalar/Higgs](04_standard_model_sectors/scalar_higgs/)** - Higgs mechanism and scalar masses
 - **[New States](04_standard_model_sectors/new_states/)** - Predicted particles and experimental signatures
-- **[Cosmology](04_standard_model_sectors/cosmology/)** - Cosmological parameters and Hubble tension
+- **[Cosmology](05_cosmology_quantum_gravity/cosmology/)** - Cosmological parameters and Hubble tension
 
 ### 05_cosmology_quantum_gravity/
 **Cosmological Applications & Quantum Gravity Completion**
