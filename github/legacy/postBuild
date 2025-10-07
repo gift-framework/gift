@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# GIFT v3 Post-Build Script for Binder
+echo "🚀 GIFT v3 Binder Setup"
+
+# Enable Jupyter widgets
+jupyter nbextension enable --py --sys-prefix ipywidgets
+
+# Install additional tools if needed
+pip install --no-deps gmpy2 || echo "gmpy2 installation failed, continuing..."
+
+# Set up environment
+export GIFT_VERSION=v3
+export PYTHONPATH="${PYTHONPATH}:."
+
+echo "✅ GIFT v3 Binder environment ready!"
