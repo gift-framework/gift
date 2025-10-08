@@ -9,15 +9,15 @@ This section provides the comprehensive synthesis and global overview of the Geo
 ### Core Documents
 
 - **[Framework Overview](framework_overview.md)** - Complete theoretical synthesis and navigation guide
-- **[Theoretical Foundation](theoretical_foundation.md)** - Fundamental principles and geometric architecture
-- **[Experimental Validation](experimental_validation.md)** - Comprehensive validation against precision data
-- **[Mathematical Framework](mathematical_framework.md)** - Complete mathematical structure and derivations
+- **Theoretical Foundation** - Fundamental principles and geometric architecture (see section below)
+- **Experimental Validation** - Comprehensive validation against precision data (see section below)
+- **Mathematical Framework** - Complete mathematical structure and derivations (see section below)
 
 ### Navigation Guide
 
-- **[Cross-Reference Index](cross_reference_index.md)** - Complete cross-referencing system
-- **[Notation Guide](notation_guide.md)** - Unified notation and mathematical conventions
-- **[Historical Context](historical_context.md)** - Contemporary theoretical developments and context
+- **Cross-Reference Index** - Complete cross-referencing system (see 06_supplements/cross_references/)
+- **Notation Guide** - Unified notation and mathematical conventions (see 06_supplements/mathematical_foundations/)
+- **Historical Context** - Contemporary theoretical developments and context (see section below)
 
 ## Framework Architecture
 

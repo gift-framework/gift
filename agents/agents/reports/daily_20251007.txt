@@ -1,0 +1,62 @@
+============================================================
+GIFT DAILY MAINTENANCE REPORT
+============================================================
+Generated: 2025-10-07 15:16:15
+
+CANONICAL DOCUMENTS STATUS:
+----------------------------------------
+============================================================
+GIFT CANONICAL DOCUMENTS REPORT
+============================================================
+Generated: 2025-10-07 15:16:15
+
+No canonical documents found. Run scan_canonical_documents() first.
+
+VALIDATION STATUS:
+----------------------------------------
+Total Issues: 9
+Critical: 0
+Warnings: 0
+
+BACKUP STATUS:
+----------------------------------------
+============================================================
+GIFT BACKUP REPORT
+============================================================
+Generated: 2025-10-07 15:16:15
+
+DAILY Backups:
+  Count: 3
+  Total Size: 17.9 KB
+
+  Recent daily backups:
+    gift_backup_daily_20251007_151615.zip (6.8 KB) - 2025-10-07 15:16
+    gift_backup_daily_20251007_150630.zip (6.0 KB) - 2025-10-07 15:06
+    gift_backup_daily_20251007_150616.zip (5.1 KB) - 2025-10-07 15:06
+
+WEEKLY Backups:
+  Count: 0
+  Total Size: 0.0 B
+
+MONTHLY Backups:
+  Count: 0
+  Total Size: 0.0 B
+
+CANONICAL Backups:
+  Count: 1
+  Total Size: 22.0 B
+
+  Recent canonical backups:
+    gift_canonical_20251007_150630.zip (22.0 B) - 2025-10-07 15:06
+
+SUMMARY:
+----------------------------------------
+Total Backups: 4
+Total Size: 17.9 KB
+
+BACKUP SCHEDULE:
+----------------------------------------
+Daily: 02:00
+Weekly: sunday@02:00
+Monthly: 1@02:00
+

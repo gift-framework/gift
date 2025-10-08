@@ -1,10 +1,4 @@
-# GIFT Framework: Geometric Information Field Theory
-
-[![Framework Status](https://img.shields.io/badge/Framework-Complete-green.svg)](https://github.com/gift-framework)
-[![Precision](https://img.shields.io/badge/Precision-0.38%25%20Mean%20Deviation-blue.svg)](https://github.com/gift-framework)
-[![Parameters](https://img.shields.io/badge/Free%20Parameters-Zero-red.svg)](https://github.com/gift-framework)
-[![License](https://img.shields.io/badge/License-Academic%20Use-blue.svg)](https://github.com/gift-framework)
-
+# Geometric Information Field Theory
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gift-framework/GIFT/blob/main/legacy/docs/gift_tutorial_e8_to_sm.ipynb)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gift-framework/GIFT/main?filepath=legacy/docs/gift_tutorial_e8_to_sm.ipynb)
 
@@ -16,9 +10,9 @@ The **GIFT (Geometric Information Field Theory)** framework provides a complete 
 
 ### Dimensional Reduction Hierarchy
 
-```
+``
 E₈×E₈ (11D Information Architecture) → AdS₄×K₇ (Geometric Compactification) → Standard Model (4D Physics)
-```
+``
 
 The framework treats E₈×E₈ as an **information architecture** rather than a particle spectrum, circumventing the Distler-Garibaldi impossibility theorem through systematic dimensional reduction that preserves geometric information content.
 
@@ -82,9 +76,9 @@ The framework treats E₈×E₈ as an **information architecture** rather than a
 - **[Support Notebooks](legacy/docs/)** - Tutorial and computational support
 - **[Legacy Materials](legacy/)** - All previous framework materials and tools
 
-## Key Achievements
+## fEATURES
 
-### Theoretical Completeness
+### Theoretical fOUNDATIONS
 - **Complete mathematical foundation** from E₈×E₈ algebra through Standard Model phenomenology
 - **Systematic dimensional reduction** E₈×E₈ → AdS₄×K₇ → Standard Model
 - **Zero-parameter framework** achieving 0.38% mean deviation across 22 fundamental observables
@@ -98,32 +92,6 @@ The framework treats E₈×E₈ as an **information architecture** rather than a
   - **3.897 GeV Scalar** - New scalar particle from H³(K₇) cohomology
   - **20.4 GeV Gauge Boson** - New gauge boson from E₈×E₈ decomposition
   - **4.77 GeV Dark Matter** - Dark matter candidate from K₇ geometry
-
-### 🏛️ Structural Innovation
-- **Modular organization** enabling independent sector development and validation
-- **Hierarchical structure** combining compactification level and physics sector organization
-- **Cross-referenced navigation** for comprehensive framework exploration
-- **Automated maintenance system** with canonical document enforcement
-
-## Framework Principles
-
-### Canonical Document Enforcement
-- **PDF documents in `legacy/docs_published/` are canonical references**
-- All modifications must be improvements or deepenings relative to canonical documents
-- No regressions from canonical formulations allowed
-- Systematic validation against canonical references
-
-### Modular Development
-- **Autonomous components** with independent versioning and documentation
-- **Cross-sector consistency** maintained through geometric foundation
-- **Targeted updates** enabling independent sector development
-- **Systematic validation** across all physics domains
-
-### Scientific Rigor
-- **Rigorous mathematical foundations** from exceptional group theory through Standard Model
-- **Precision validation** against high-precision experimental data
-- **Systematic error analysis** with complete uncertainty quantification
-- **Reproducible results** with complete computational implementation
 
 ## Navigation Guide
 
@@ -159,26 +127,6 @@ The framework treats E₈×E₈ as an **information architecture** rather than a
 - **Weinberg Angle**: sin²θW = 0.23129(5)
 - **Hubble Constant**: H₀ = 72.93 ± 0.11 km/s/Mpc
 - **Primordial Parameters**: ns = 0.9649 ± 0.0042, r < 0.032
-
-## Quality Assurance
-
-### Canonical Document Compliance
-- All new content validated against canonical PDF documents
-- Improvement-only modifications enforced through automated agents
-- Version tracking with complete change history
-- Approval workflow for significant modifications
-
-### Cross-Sector Consistency
-- Systematic validation across all physics sectors
-- Geometric foundation ensures theoretical consistency
-- Experimental validation across all domains
-- Precision requirements maintained throughout
-
-### Mathematical Rigor
-- Complete derivations from first principles
-- Systematic validation of all mathematical claims
-- Computational verification with high precision
-- Comprehensive error analysis and uncertainty quantification
 
 ## Getting Started
 
@@ -219,11 +167,6 @@ ls 06_supplements/computational_tools/
 
 This project is licensed under the terms specified in `legacy/LICENSE`.
 
-## Contact
-
-For questions, collaborations, or contributions, please refer to the framework documentation and maintain the highest standards of scientific rigor and geometric consistency.
-
-
 ## Disclaimer
 
 
@@ -236,3 +179,4 @@ For questions, collaborations, or contributions, please refer to the framework d
 > ...72.93% complete.
 
 ---
+

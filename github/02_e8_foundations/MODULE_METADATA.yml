@@ -1,0 +1,15 @@
+content:
+  document_count: 1
+  files:
+  - e8_algebraic_structure.md
+  - README.md
+  has_readme: true
+module:
+  id: 02_e8_foundations
+  last_updated: '2025-10-08'
+  name: 02 E8 Foundations
+  purpose: Module 02_e8_foundations of GIFT Framework
+  status: complete
+structure:
+  file_count: 2
+  submodules: []

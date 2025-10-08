@@ -17,8 +17,8 @@ This section provides comprehensive analysis of how all Standard Model parameter
 
 ### Cross-Sector Analysis
 
-- **[Cosmology](cosmology/)** - Cosmological parameters and Hubble tension
-- **[Cross-Sector Consistency](cross_sector_consistency.md)** - Validation across all physics domains
+- **[Cosmology](../05_cosmology_quantum_gravity/cosmology/)** - Cosmological parameters and Hubble tension
+- **Cross-Sector Consistency** - Validation across all physics domains (see section below)
 
 ## Key Principles
 

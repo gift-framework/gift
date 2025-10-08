@@ -1,0 +1,39 @@
+{
+  "backup_name": "gift_backup_daily_20251007_151615",
+  "backup_type": "daily",
+  "timestamp": "20251007_151615",
+  "created_date": "2025-10-07T15:16:15.522145",
+  "files_count": 10,
+  "size_bytes": 6972,
+  "checksum": "532ed4ebf479e7cbf588d202e258e21090f9e99dc98a6d72b022c55aca4bb7c2",
+  "include_legacy": false,
+  "config_used": {
+    "retention_days": {
+      "daily": 30,
+      "weekly": 90,
+      "monthly": 365
+    },
+    "backup_schedule": {
+      "daily": "02:00",
+      "weekly": "sunday@02:00",
+      "monthly": "1@02:00"
+    },
+    "include_patterns": [
+      "github/**",
+      "new_work/**",
+      "wip_research/**",
+      "agents/**",
+      "README.md"
+    ],
+    "exclude_patterns": [
+      "legacy/**",
+      "backups/**",
+      "**/__pycache__/**",
+      "**/*.pyc",
+      "**/.git/**"
+    ],
+    "canonical_docs_only": false,
+    "compression": true,
+    "encryption": false
+  }
+}
