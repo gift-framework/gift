@@ -51,3 +51,4 @@ performance:
   max_memory_usage: 2048          # MB
   max_cpu_usage: 80               # percentage
 
+

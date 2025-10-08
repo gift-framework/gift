@@ -252,3 +252,4 @@ For questions about the test suite:
 ---
 
 *The GIFT Framework test suite ensures comprehensive validation of all framework components, maintaining high quality and reliability standards for the Geometric Information Field Theory project.*
+
