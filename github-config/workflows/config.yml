@@ -1,0 +1,54 @@
+# GIFT Framework GitHub Actions Configuration
+# This file contains configuration for all workflows
+
+# Framework version and metadata
+framework:
+  name: "GIFT Framework"
+  version: "3.0.0"
+  description: "Geometric Information Field Theory - Complete geometric derivation of fundamental physics"
+  
+# Validation tolerances
+validation:
+  tolerances:
+    fine_structure_constant: 0.0001  # 0.01%
+    weinberg_angle: 0.001           # 0.1%
+    hubble_constant: 0.002          # 0.2%
+    strong_coupling: 0.005          # 0.5%
+    mass_parameters: 0.01           # 1%
+    
+  experimental_sources:
+    codata: "https://physics.nist.gov/cgi-bin/cuu/"
+    pdg: "https://pdg.lbl.gov/"
+    arxiv: "http://export.arxiv.org/api/query"
+    
+# Documentation standards
+documentation:
+  required_sections:
+    - "## Overview"
+    - "## Directory Structure" 
+    - "## Key Achievements"
+    - "## Experimental Predictions"
+    
+  consistency_checks:
+    notation:
+      - "E₈×E₈"
+      - "AdS₄×K₇"
+      - "Standard Model"
+    precision_claims:
+      - "0.38% mean deviation"
+      - "22 observables"
+      - "zero free parameters"
+      
+# Security settings
+security:
+  vulnerability_scanning: true
+  dependency_checking: true
+  secret_scanning: true
+  
+# Performance thresholds
+performance:
+  notebook_execution_timeout: 300  # seconds
+  max_memory_usage: 2048          # MB
+  max_cpu_usage: 80               # percentage
+
+

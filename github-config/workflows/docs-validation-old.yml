@@ -1,0 +1,410 @@
+name: Documentation & Metadata Validation
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    # Run weekly to check for broken links
+    - cron: '0 2 * * 0'
+
+env:
+  PYTHON_VERSION: '3.9'
+
+jobs:
+  validate-documentation:
+    name: Documentation Validation
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install markdown linkchecker beautifulsoup4 lxml
+        
+    - name: Validate Markdown Structure
+      run: |
+        echo "📝 Validating Markdown structure..."
+        
+        python -c "
+        import os
+        import re
+        import json
+        from pathlib import Path
+        
+        def validate_markdown_file(file_path):
+            '''Validate a markdown file structure and content'''
+            issues = []
+            
+            try:
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    content = f.read()
+                    
+                # Check for required sections in README files
+                if file_path.name == 'README.md':
+                    required_sections = ['## Overview', '## Directory Structure', '## Key Achievements']
+                    for section in required_sections:
+                        if section not in content:
+                            issues.append(f'Missing required section: {section}')
+                            
+                # Check for proper heading hierarchy
+                headings = re.findall(r'^(#{1,6})\s+(.+)$', content, re.MULTILINE)
+                prev_level = 0
+                for level_markers, heading in headings:
+                    level = len(level_markers)
+                    if level > prev_level + 1:
+                        issues.append(f'Heading hierarchy issue: {heading} (level {level} after level {prev_level})')
+                    prev_level = level
+                    
+                # Check for broken internal links
+                internal_links = re.findall(r'\[([^\]]+)\]\(([^)]+)\)', content)
+                for text, link in internal_links:
+                    if link.startswith('http'):
+                        continue  # Skip external links
+                    if link.startswith('#'):
+                        continue  # Skip anchor links
+                    if not os.path.exists(link):
+                        issues.append(f'Broken internal link: [{text}]({link})')
+                        
+                # Check for images
+                images = re.findall(r'!\[([^\]]*)\]\(([^)]+)\)', content)
+                for alt, src in images:
+                    if not os.path.exists(src):
+                        issues.append(f'Broken image: ![alt]({src})')
+                        
+            except Exception as e:
+                issues.append(f'Error reading file: {str(e)}')
+                
+            return issues
+            
+        # Validate all markdown files
+        all_issues = []
+        markdown_files = []
+        
+        for root, dirs, files in os.walk('.'):
+            # Skip .git and .github directories
+            if '.git' in root or '.github' in root:
+                continue
+                
+            for file in files:
+                if file.endswith('.md'):
+                    file_path = os.path.join(root, file)
+                    markdown_files.append(file_path)
+                    
+                    issues = validate_markdown_file(file_path)
+                    if issues:
+                        all_issues.extend([(file_path, issue) for issue in issues])
+                        
+        print(f'📊 Validated {len(markdown_files)} markdown files')
+        
+        if all_issues:
+            print('⚠️  Issues found (continuing workflow):')
+            for file_path, issue in all_issues:
+                print(f'  {file_path}: {issue}')
+            # Don't exit with error code - just report issues
+            print('⚠️  Some documentation issues found but workflow continues')
+        else:
+            print('✅ All markdown files validated successfully')
+        "
+        
+    - name: Validate Cross-References
+      run: |
+        echo "🔗 Validating cross-references..."
+        
+        python -c "
+        import os
+        import re
+        from collections import defaultdict
+        
+        # Build a map of all documents and their sections
+        document_map = defaultdict(list)
+        
+        for root, dirs, files in os.walk('.'):
+            if '.git' in root or '.github' in root:
+                continue
+                
+            for file in files:
+                if file.endswith('.md'):
+                    file_path = os.path.join(root, file)
+                    relative_path = os.path.relpath(file_path)
+                    
+                    with open(file_path, 'r', encoding='utf-8') as f:
+                        content = f.read()
+                        
+                    # Extract headings
+                    headings = re.findall(r'^(#{1,6})\s+(.+)$', content, re.MULTILINE)
+                    for level, heading in headings:
+                        document_map[relative_path].append(heading.strip())
+                        
+        # Check cross-references
+        broken_refs = []
+        
+        for root, dirs, files in os.walk('.'):
+            if '.git' in root or '.github' in root:
+                continue
+                
+            for file in files:
+                if file.endswith('.md'):
+                    file_path = os.path.join(root, file)
+                    
+                    with open(file_path, 'r', encoding='utf-8') as f:
+                        content = f.read()
+                        
+                    # Find references to other documents
+                    refs = re.findall(r'\[([^\]]+)\]\(([^)]+)\)', content)
+                    for text, link in refs:
+                        if link.startswith('http'):
+                            continue  # Skip external links
+                        if link.startswith('#'):
+                            continue  # Skip anchor links
+                            
+                        # Check if referenced file exists
+                        if not os.path.exists(link):
+                            broken_refs.append((file_path, text, link))
+                            
+        print(f'📊 Found {len(broken_refs)} broken cross-references')
+        
+        if broken_refs:
+            print('⚠️  Broken cross-references (continuing workflow):')
+            for file_path, text, link in broken_refs:
+                print(f'  {file_path}: [{text}]({link})')
+            print('⚠️  Some cross-reference issues found but workflow continues')
+        else:
+            print('✅ All cross-references valid')
+        "
+        
+    - name: Validate Framework Consistency
+      run: |
+        echo "🔍 Validating framework consistency..."
+        
+        python -c "
+        import os
+        import re
+        import json
+        
+        # Check for consistent terminology and notation
+        consistency_checks = {
+            'E8_notation': [
+                r'E_8×E_8',
+                r'E₈×E₈', 
+                r'E8xE8',
+                r'E8\\times E8'
+            ],
+            'dimensional_reduction': [
+                r'E₈×E₈ → AdS₄×K₇ → Standard Model',
+                r'E8xE8 -> AdS4xK7 -> SM',
+                r'E_8×E_8 → AdS_4×K_7 → SM'
+            ],
+            'precision_claims': [
+                r'0\\.38%',
+                r'0\\.38 percent',
+                r'22 observables'
+            ]
+        }
+        
+        issues = []
+        
+        for root, dirs, files in os.walk('.'):
+            if '.git' in root or '.github' in root:
+                continue
+                
+            for file in files:
+                if file.endswith('.md'):
+                    file_path = os.path.join(root, file)
+                    
+                    with open(file_path, 'r', encoding='utf-8') as f:
+                        content = f.read()
+                        
+                    # Check for consistent notation
+                    for category, patterns in consistency_checks.items():
+                        found_patterns = []
+                        for pattern in patterns:
+                            if re.search(pattern, content):
+                                found_patterns.append(pattern)
+                                
+                        if len(found_patterns) > 1:
+                            issues.append(f'{file_path}: Inconsistent {category} notation: {found_patterns}')
+                            
+        if issues:
+            print('⚠️  Consistency issues found (continuing workflow):')
+            for issue in issues:
+                print(f'  {issue}')
+            print('⚠️  Some consistency issues found but workflow continues')
+        else:
+            print('✅ Framework consistency validated')
+        "
+        
+    - name: Generate Documentation Report
+      run: |
+        echo "📊 Generating documentation report..."
+        
+        python -c "
+        import os
+        import json
+        import re
+        from datetime import datetime
+        from collections import Counter
+        
+        # Analyze documentation structure
+        doc_stats = {
+            'timestamp': datetime.now().isoformat(),
+            'total_markdown_files': 0,
+            'total_lines': 0,
+            'modules': {},
+            'cross_references': 0,
+            'images': 0,
+            'code_blocks': 0
+        }
+        
+        for root, dirs, files in os.walk('.'):
+            if '.git' in root or '.github' in root:
+                continue
+                
+            module = root.replace('./', '').replace('/', '_') or 'root'
+            
+            for file in files:
+                if file.endswith('.md'):
+                    file_path = os.path.join(root, file)
+                    doc_stats['total_markdown_files'] += 1
+                    
+                    with open(file_path, 'r', encoding='utf-8') as f:
+                        content = f.read()
+                        lines = content.split('\n')
+                        doc_stats['total_lines'] += len(lines)
+                        
+                        # Count various elements
+                        doc_stats['cross_references'] += len(re.findall(r'\[([^\]]+)\]\(([^)]+)\)', content))
+                        doc_stats['images'] += len(re.findall(r'!\[([^\]]*)\]\(([^)]+)\)', content))
+                        doc_stats['code_blocks'] += len(re.findall(r'\`\`\`', content))
+                        
+                    if module not in doc_stats['modules']:
+                        doc_stats['modules'][module] = 0
+                    doc_stats['modules'][module] += 1
+                    
+        print('📈 Documentation Statistics:')
+        print(f'  Total Markdown Files: {doc_stats[\"total_markdown_files\"]}')
+        print(f'  Total Lines: {doc_stats[\"total_lines\"]}')
+        print(f'  Cross References: {doc_stats[\"cross_references\"]}')
+        print(f'  Images: {doc_stats[\"images\"]}')
+        print(f'  Code Blocks: {doc_stats[\"code_blocks\"]}')
+        
+        print('📁 Files per Module:')
+        for module, count in doc_stats['modules'].items():
+            print(f'  {module}: {count} files')
+            
+        # Save report
+        os.makedirs('.github/docs-reports', exist_ok=True)
+        with open('.github/docs-reports/docs-report.json', 'w') as f:
+            json.dump(doc_stats, f, indent=2)
+            
+        print('✅ Documentation report saved')
+        
+        # Create a placeholder file to ensure directory exists
+        with open('.github/docs-reports/.gitkeep', 'w') as f:
+            f.write('# Documentation reports directory\n')
+        "
+        
+    - name: Upload Documentation Reports
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: docs-report
+        path: .github/docs-reports/
+        if-no-files-found: warn
+        
+  validate-metadata:
+    name: Metadata Validation
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Validate Repository Metadata
+      run: |
+        echo "📋 Validating repository metadata..."
+        
+        python -c "
+        import os
+        import json
+        
+        # Check for required metadata files
+        required_files = {
+            'README.md': 'Main documentation',
+            'LICENSE': 'License information',
+            'legacy/requirements.txt': 'Python dependencies'
+        }
+        
+        missing_files = []
+        for file_path, description in required_files.items():
+            if not os.path.exists(file_path):
+                missing_files.append(f'{file_path} ({description})')
+                
+        if missing_files:
+            print('❌ Missing required files:')
+            for file_path in missing_files:
+                print(f'  {file_path}')
+            exit(1)
+        else:
+            print('✅ All required metadata files present')
+            
+        # Validate README.md structure
+        with open('README.md', 'r', encoding='utf-8') as f:
+            readme_content = f.read()
+            
+        required_sections = [
+            '## Overview',
+            '## Framework Architecture', 
+            '## Key Achievements',
+            '## Experimental Predictions'
+        ]
+        
+        missing_sections = []
+        for section in required_sections:
+            if section not in readme_content:
+                missing_sections.append(section)
+                
+        if missing_sections:
+            print('❌ Missing README sections:')
+            for section in missing_sections:
+                print(f'  {section}')
+            exit(1)
+        else:
+            print('✅ README structure validated')
+        "
+        
+    - name: Validate Badge Links
+      run: |
+        echo "Validating badge links..."
+        
+        # Check if badges are properly formatted
+        if grep -q "img.shields.io" README.md; then
+          echo "[OK] Shields.io badges found"
+        else
+          echo "[ERROR] No Shields.io badges found"
+          exit 1
+        fi
+          
+        # Check for Colab and Binder badges
+        if grep -q "colab.research.google.com" README.md; then
+          echo "[OK] Colab badge found"
+        else
+          echo "[ERROR] Colab badge not found"
+          exit 1
+        fi
+          
+        if grep -q "mybinder.org" README.md; then
+          echo "[OK] Binder badge found"
+        else
+          echo "[ERROR] Binder badge not found"
+          exit 1
+        fi
