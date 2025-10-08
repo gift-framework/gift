@@ -2,23 +2,27 @@
 
 ## Overview
 
+## Directory Structure
+
+- `README.md` - This overview document
+
 This section provides comprehensive analysis of how the Higgs mechanism and scalar physics emerge from geometric principles in the GIFT framework. The Higgs mass, scalar potential, and mass generation mechanism are all derived from the K₇ cohomological structure and universal factor 99, achieving precise predictions that provide geometric understanding of electroweak symmetry breaking.
 
 ## Document Structure
 
 ### Core Scalar Physics
 
-- **[Higgs Mechanism](higgs_mechanism.md)** - Geometric origin of electroweak symmetry breaking
-- **[Scalar Potential](scalar_potential.md)** - V(φ) from K₇ cohomological structure
-- **[Higgs Mass](higgs_mass.md)** - Geometric prediction of mH = 125.10 ± 0.14 GeV
-- **[Mass Generation](mass_generation.md)** - Geometric understanding of particle mass origin
+- ****Higgs Mechanism** - (see section below)** - Geometric origin of electroweak symmetry breaking
+- ****Scalar Potential** - (see section below)** - V(φ) from K₇ cohomological structure
+- ****Higgs Mass** - (see section below)** - Geometric prediction of mH = 125.10 ± 0.14 GeV
+- ****Mass Generation** - (see section below)** - Geometric understanding of particle mass origin
 
 ### Advanced Topics
 
-- **[Scalar Moduli](scalar_moduli.md)** - Geometric origin of scalar field dynamics
-- **[Vacuum Structure](vacuum_structure.md)** - Geometric understanding of vacuum states
-- **[Symmetry Breaking](symmetry_breaking.md)** - Geometric mechanism for gauge symmetry breaking
-- **[Precision Tests](precision_tests.md)** - Comprehensive experimental validation
+- ****Scalar Moduli** - (see section below)** - Geometric origin of scalar field dynamics
+- ****Vacuum Structure** - (see section below)** - Geometric understanding of vacuum states
+- ****Symmetry Breaking** - (see section below)** - Geometric mechanism for gauge symmetry breaking
+- ****Precision Tests** - (see section below)** - Comprehensive experimental validation
 
 ## Key Achievements
 

@@ -2,6 +2,10 @@
 
 ## Overview
 
+## Directory Structure
+
+- `README.md` - This overview document
+
 This section provides comprehensive analysis of how quantum chromodynamics (QCD) and strong interactions emerge from geometric principles in the GIFT framework. The strong coupling constant, QCD confinement, and chiral symmetry breaking are all derived from the K₇ cohomological structure and universal factor 99, achieving precise predictions that provide geometric understanding of the strongest fundamental force.
 
 ## Document Structure
@@ -9,16 +13,16 @@ This section provides comprehensive analysis of how quantum chromodynamics (QCD)
 ### Core Strong Interaction Physics
 
 - **[Strong Coupling Constant](strong_coupling_constant.md)** - Geometric derivation and precision tests
-- **[QCD Confinement](qcd_confinement.md)** - Geometric origin of color confinement
-- **[Chiral Symmetry Breaking](chiral_symmetry_breaking.md)** - Geometric understanding of chiral dynamics
-- **[Jordan Algebra Structure](jordan_algebra_structure.md)** - Mathematical foundations for strong interactions
+- ****QCD Confinement** - (see section below)** - Geometric origin of color confinement
+- ****Chiral Symmetry Breaking** - (see section below)** - Geometric understanding of chiral dynamics
+- ****Jordan Algebra Structure** - (see section below)** - Mathematical foundations for strong interactions
 
 ### Advanced Topics
 
-- **[QCD Running](qcd_running.md)** - Geometric origin of coupling evolution
-- **[Confinement Mechanism](confinement_mechanism.md)** - Geometric understanding of color confinement
-- **[Hadron Masses](hadron_masses.md)** - Geometric prediction of hadronic spectra
-- **[Precision Tests](precision_tests.md)** - Comprehensive experimental validation
+- ****QCD Running** - (see section below)** - Geometric origin of coupling evolution
+- ****Confinement Mechanism** - (see section below)** - Geometric understanding of color confinement
+- ****Hadron Masses** - (see section below)** - Geometric prediction of hadronic spectra
+- ****Precision Tests** - (see section below)** - Comprehensive experimental validation
 
 ## Key Achievements
 

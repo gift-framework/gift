@@ -2,6 +2,10 @@
 
 ## Overview
 
+## Directory Structure
+
+- `README.md` - This overview document
+
 This section provides the comprehensive synthesis and global overview of the Geometric Information Field Theory (GIFT) framework. It serves as the central navigation point for understanding the complete theoretical structure, from the fundamental E₈×E₈ information architecture through dimensional reduction to Standard Model phenomenology and cosmological applications.
 
 ## Document Structure

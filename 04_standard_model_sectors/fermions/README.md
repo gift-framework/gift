@@ -2,6 +2,10 @@
 
 ## Overview
 
+## Directory Structure
+
+- `README.md` - This overview document
+
 This section provides comprehensive analysis of how fermion masses, mixing angles, and chiral structure emerge from geometric principles in the GIFT framework. The three fermion generations, mass hierarchies, and mixing matrices are all derived from the K₇ cohomological structure and universal factor 99, achieving precise predictions that provide geometric understanding of fermion physics.
 
 ## Document Structure
@@ -9,16 +13,16 @@ This section provides comprehensive analysis of how fermion masses, mixing angle
 ### Core Fermion Physics
 
 - **[Mass Hierarchies](mass_hierarchies.md)** - Geometric origin of fermion mass patterns
-- **[Chiral Structure](chiral_structure.md)** - Three generations without mirror partners
-- **[Mixing Matrices](mixing_matrices.md)** - CKM and PMNS matrices from K₇ geometry
-- **[Koide Relations](koide_relations.md)** - Geometric mass relations and patterns
+- ****Chiral Structure** - (see section below)** - Three generations without mirror partners
+- ****Mixing Matrices** - (see section below)** - CKM and PMNS matrices from K₇ geometry
+- ****Koide Relations** - (see section below)** - Geometric mass relations and patterns
 
 ### Advanced Topics
 
-- **[Neutrino Physics](neutrino_physics.md)** - Geometric understanding of neutrino masses and mixing
-- **[Chirality Mechanism](chirality_mechanism.md)** - Geometric origin of chiral fermion emergence
-- **[Generation Structure](generation_structure.md)** - Three generations from K₇ cohomology
-- **[Precision Tests](precision_tests.md)** - Comprehensive experimental validation
+- ****Neutrino Physics** - (see section below)** - Geometric understanding of neutrino masses and mixing
+- ****Chirality Mechanism** - (see section below)** - Geometric origin of chiral fermion emergence
+- ****Generation Structure** - (see section below)** - Three generations from K₇ cohomology
+- ****Precision Tests** - (see section below)** - Comprehensive experimental validation
 
 ## Key Achievements
 

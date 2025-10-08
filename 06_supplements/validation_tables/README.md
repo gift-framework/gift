@@ -2,23 +2,27 @@
 
 ## Overview
 
+## Directory Structure
+
+- `README.md` - This overview document
+
 This section provides comprehensive validation tables comparing GIFT framework predictions with experimental data across all physics sectors. The validation demonstrates the framework's achievement of 0.38% mean deviation across 22 fundamental observables using zero free parameters, with 19/22 observables within 1% accuracy.
 
 ## Document Structure
 
 ### Core Validation Data
 
-- **[Fundamental Constants](fundamental_constants.md)** - Complete comparison of all fundamental constants
-- **[Mass Parameters](mass_parameters.md)** - Comprehensive validation of all particle masses
-- **[Coupling Constants](coupling_constants.md)** - Validation of all gauge couplings and their evolution
-- **[Cosmological Parameters](cosmological_parameters.md)** - Comparison with cosmological observations
+- ****Fundamental Constants** - (see section below)** - Complete comparison of all fundamental constants
+- ****Mass Parameters** - (see section below)** - Comprehensive validation of all particle masses
+- ****Coupling Constants** - (see section below)** - Validation of all gauge couplings and their evolution
+- ****Cosmological Parameters** - (see section below)** - Comparison with cosmological observations
 
 ### Advanced Validation
 
-- **[Cross-Sector Consistency](cross_sector_consistency.md)** - Validation across all physics domains
-- **[Precision Tests](precision_tests.md)** - High-precision experimental comparisons
-- **[Statistical Analysis](statistical_analysis.md)** - Quantitative assessment of framework performance
-- **[Uncertainty Quantification](uncertainty_quantification.md)** - Complete error analysis and uncertainties
+- ****Cross-Sector Consistency** - (see section below)** - Validation across all physics domains
+- ****Precision Tests** - (see section below)** - High-precision experimental comparisons
+- ****Statistical Analysis** - (see section below)** - Quantitative assessment of framework performance
+- ****Uncertainty Quantification** - (see section below)** - Complete error analysis and uncertainties
 
 ## Key Achievements
 

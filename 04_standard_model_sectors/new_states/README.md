@@ -2,22 +2,26 @@
 
 ## Overview
 
+## Directory Structure
+
+- `README.md` - This overview document
+
 This section provides comprehensive analysis of the three new particles predicted by the GIFT framework, all within experimental reach and derived from geometric principles. These particles emerge naturally from the K₇ cohomological structure and E₈×E₈ information architecture, providing testable predictions that validate the geometric approach to fundamental physics.
 
 ## Document Structure
 
 ### Core Particle Predictions
 
-- **[3.897 GeV Scalar](3_897_gev_scalar.md)** - New scalar particle from H³(K₇) cohomology
-- **[20.4 GeV Gauge Boson](20_4_gev_gauge_boson.md)** - New gauge boson from E₈×E₈ decomposition
-- **[4.77 GeV Dark Matter](4_77_gev_dark_matter.md)** - Dark matter candidate from K₇ geometry
+- ****3.897 GeV Scalar** - (see section below)** - New scalar particle from H³(K₇) cohomology
+- ****20.4 GeV Gauge Boson** - (see section below)** - New gauge boson from E₈×E₈ decomposition
+- ****4.77 GeV Dark Matter** - (see section below)** - Dark matter candidate from K₇ geometry
 
 ### Advanced Topics
 
-- **[Experimental Signatures](experimental_signatures.md)** - Detection strategies and signatures
-- **[Coupling Predictions](coupling_predictions.md)** - Geometric origin of particle couplings
-- **[Production Mechanisms](production_mechanisms.md)** - How particles are produced in experiments
-- **[Decay Channels](decay_channels.md)** - Predicted decay modes and branching ratios
+- ****Experimental Signatures** - (see section below)** - Detection strategies and signatures
+- ****Coupling Predictions** - (see section below)** - Geometric origin of particle couplings
+- ****Production Mechanisms** - (see section below)** - How particles are produced in experiments
+- ****Decay Channels** - (see section below)** - Predicted decay modes and branching ratios
 
 ## Key Achievements
 

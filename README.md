@@ -197,7 +197,7 @@ ls 04_standard_model_sectors/
 ls 06_supplements/computational_tools/
 ```
 
-### Key Documents
+## Key Documents
 - **[Framework Overview](01_synthesis_and_overview/framework_overview.md)** - Complete theoretical synthesis
 - **[E₈ Foundations](02_e8_foundations/e8_algebraic_structure.md)** - Mathematical foundations
 - **[K₇ Construction](03_ads_k7_construction/k7_manifold_construction.md)** - Geometric construction

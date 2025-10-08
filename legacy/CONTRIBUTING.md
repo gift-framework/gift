@@ -186,7 +186,7 @@ For changes affecting predictions:
 5. **Submit a pull request** with a clear description
 
 ### Pull Request Template
-Use the provided [pull request template](.github/pull_request_template.md) to ensure all necessary information is included.
+Use the provided **pull request template** - (see section below) to ensure all necessary information is included.
 
 ### Review Process
 - All PRs require review from maintainers
@@ -220,7 +220,7 @@ Contributors will be recognized in:
 
 If you have questions about contributing:
 - Open a [GitHub Discussion](https://github.com/gift-framework/gift/discussions)
-- Use the [theoretical question template](.github/ISSUE_TEMPLATE/theoretical_question.md)
+- Use the **theoretical question template** - (see section below)
 - Contact the maintainer at brieuc@bdelaf.com
 
 Thank you for contributing to the GIFT framework! 🚀

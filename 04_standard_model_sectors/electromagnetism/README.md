@@ -2,6 +2,10 @@
 
 ## Overview
 
+## Directory Structure
+
+- `README.md` - This overview document
+
 This section provides comprehensive analysis of how electromagnetic physics emerges from geometric principles in the GIFT framework. The fine structure constant, QED corrections, and electromagnetic coupling evolution are all derived from the K₇ cohomological structure and universal factor 99, achieving unprecedented precision without free parameters.
 
 ## Document Structure
@@ -9,15 +13,15 @@ This section provides comprehensive analysis of how electromagnetic physics emer
 ### Core Electromagnetic Physics
 
 - **[Fine Structure Constant](fine_structure_constant.md)** - Geometric derivation and precision tests
-- **[QED Corrections](qed_corrections.md)** - Radiative corrections from K₇ cohomology
-- **[Coupling Evolution](coupling_evolution.md)** - Geometric origin of electromagnetic coupling running
-- **[Precision Tests](precision_tests.md)** - Experimental validation and discrepancies
+- ****QED Corrections** - (see section below)** - Radiative corrections from K₇ cohomology
+- ****Coupling Evolution** - (see section below)** - Geometric origin of electromagnetic coupling running
+- ****Precision Tests** - (see section below)** - Experimental validation and discrepancies
 
 ### Advanced Topics
 
-- **[Electromagnetic Anomalies](electromagnetic_anomalies.md)** - Resolution of experimental tensions
-- **[Geometric Corrections](geometric_corrections.md)** - K₇-derived corrections to QED
-- **[High-Energy Behavior](high_energy_behavior.md)** - Geometric predictions for high-energy physics
+- ****Electromagnetic Anomalies** - (see section below)** - Resolution of experimental tensions
+- ****Geometric Corrections** - (see section below)** - K₇-derived corrections to QED
+- ****High-Energy Behavior** - (see section below)** - Geometric predictions for high-energy physics
 
 ## Key Achievements
 

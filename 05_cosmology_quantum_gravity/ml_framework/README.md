@@ -2,23 +2,27 @@
 
 ## Overview
 
+## Directory Structure
+
+- `README.md` - This overview document
+
 This section provides comprehensive analysis of the machine learning framework developed for automated parameter extraction and validation within the GIFT framework. The ML system achieves 10⁻¹⁶ accuracy in parameter extraction while maintaining computational efficiency, providing automated tools for geometric calculation and validation.
 
 ## Document Structure
 
 ### Core ML Components
 
-- **[Parameter Extraction](parameter_extraction.md)** - Automated calculation of Standard Model parameters
-- **[Pattern Recognition](pattern_recognition.md)** - ML algorithms for geometric pattern identification
-- **[Optimization Algorithms](optimization_algorithms.md)** - ML-based optimization of geometric parameters
-- **[Validation Protocols](validation_protocols.md)** - Automated validation against experimental data
+- ****Parameter Extraction** - (see section below)** - Automated calculation of Standard Model parameters
+- ****Pattern Recognition** - (see section below)** - ML algorithms for geometric pattern identification
+- ****Optimization Algorithms** - (see section below)** - ML-based optimization of geometric parameters
+- ****Validation Protocols** - (see section below)** - Automated validation against experimental data
 
 ### Advanced ML Applications
 
-- **[Geometric Learning](geometric_learning.md)** - ML algorithms for learning geometric structures
-- **[Predictive Modeling](predictive_modeling.md)** - ML models for parameter prediction
-- **[Uncertainty Quantification](uncertainty_quantification.md)** - ML-based uncertainty analysis
-- **[Performance Optimization](performance_optimization.md)** - ML optimization of computational algorithms
+- ****Geometric Learning** - (see section below)** - ML algorithms for learning geometric structures
+- ****Predictive Modeling** - (see section below)** - ML models for parameter prediction
+- ****Uncertainty Quantification** - (see section below)** - ML-based uncertainty analysis
+- ****Performance Optimization** - (see section below)** - ML optimization of computational algorithms
 
 ## Key Achievements
 

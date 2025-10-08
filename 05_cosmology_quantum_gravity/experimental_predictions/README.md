@@ -2,23 +2,27 @@
 
 ## Overview
 
+## Directory Structure
+
+- `README.md` - This overview document
+
 This section provides comprehensive analysis of the experimental predictions and testable consequences of the GIFT framework. The framework predicts three new particles within experimental reach, provides geometric resolutions to current experimental tensions, and offers systematic predictions for future experimental validation across all energy scales.
 
 ## Document Structure
 
 ### Core Experimental Predictions
 
-- **[New Particle Predictions](new_particle_predictions.md)** - Three new particles within experimental reach
-- **[Experimental Signatures](experimental_signatures.md)** - Detection strategies and signatures
-- **[Tension Resolutions](tension_resolutions.md)** - Geometric resolutions of experimental tensions
-- **[Future Tests](future_tests.md)** - Predictions for future experimental validation
+- ****New Particle Predictions** - (see section below)** - Three new particles within experimental reach
+- ****Experimental Signatures** - (see section below)** - Detection strategies and signatures
+- ****Tension Resolutions** - (see section below)** - Geometric resolutions of experimental tensions
+- ****Future Tests** - (see section below)** - Predictions for future experimental validation
 
 ### Advanced Topics
 
-- **[Detection Strategies](detection_strategies.md)** - Comprehensive detection approaches
-- **[Coupling Predictions](coupling_predictions.md)** - Geometric origin of particle couplings
-- **[Production Mechanisms](production_mechanisms.md)** - How particles are produced in experiments
-- **[Decay Channels](decay_channels.md)** - Predicted decay modes and branching ratios
+- ****Detection Strategies** - (see section below)** - Comprehensive detection approaches
+- ****Coupling Predictions** - (see section below)** - Geometric origin of particle couplings
+- ****Production Mechanisms** - (see section below)** - How particles are produced in experiments
+- ****Decay Channels** - (see section below)** - Predicted decay modes and branching ratios
 
 ## Key Achievements
 

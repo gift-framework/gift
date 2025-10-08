@@ -2,6 +2,10 @@
 
 ## Overview
 
+## Directory Structure
+
+- `README.md` - This overview document
+
 This section provides comprehensive analysis of cosmological applications and quantum gravity completion within the GIFT framework. The geometric resolution of the Hubble tension, cosmological parameter predictions, and quantum gravity completion through E₈×E₈ structure represent major achievements of the framework, providing geometric foundations for cosmology and pathways toward complete quantum gravity theory.
 
 ## Document Structure
@@ -9,9 +13,9 @@ This section provides comprehensive analysis of cosmological applications and qu
 ### Core Cosmological Applications
 
 - **[Hubble Tension Resolution](cosmology/)** - Geometric resolution of cosmological constant discrepancy
-- **[Cosmological Parameters](cosmological_parameters.md)** - Geometric prediction of all cosmological observables
-- **[Structure Formation](structure_formation.md)** - Geometric foundations of large-scale structure
-- **[Dark Energy Origin](dark_energy_origin.md)** - Geometric emergence of cosmological constant
+- ****Cosmological Parameters** - (see section below)** - Geometric prediction of all cosmological observables
+- ****Structure Formation** - (see section below)** - Geometric foundations of large-scale structure
+- ****Dark Energy Origin** - (see section below)** - Geometric emergence of cosmological constant
 
 ### Quantum Gravity Framework
 

@@ -2,6 +2,10 @@
 
 ## Overview
 
+## Directory Structure
+
+- `README.md` - This overview document
+
 This section provides comprehensive analysis of radiative corrections within the GIFT framework, including non-perturbative effects and geometric Ward identities. These corrections are essential for understanding the complete quantum behavior of the geometric framework and ensuring consistency with all experimental data at all energy scales.
 
 ## Document Structure
@@ -9,16 +13,16 @@ This section provides comprehensive analysis of radiative corrections within the
 ### Core Radiative Corrections
 
 - **[Non-Perturbative Effects](non_perturbative_effects.md)** - Analysis of strongly coupled regimes and non-perturbative corrections
-- **[Geometric Ward Identities](geometric_ward_identities.md)** - Geometric constraints and symmetry preservation
-- **[RG Flow Corrections](rg_flow_corrections.md)** - Renormalization group evolution and corrections
-- **[Quantum Corrections](quantum_corrections.md)** - Quantum field theory corrections to geometric predictions
+- ****Geometric Ward Identities** - (see section below)** - Geometric constraints and symmetry preservation
+- ****RG Flow Corrections** - (see section below)** - Renormalization group evolution and corrections
+- ****Quantum Corrections** - (see section below)** - Quantum field theory corrections to geometric predictions
 
 ### Advanced Topics
 
-- **[Higher-Order Effects](higher_order_effects.md)** - Extension to higher-order radiative corrections
-- **[Strong Coupling Regimes](strong_coupling_regimes.md)** - Analysis of strongly coupled geometric regimes
-- **[Symmetry Breaking](symmetry_breaking.md)** - Geometric understanding of symmetry breaking and restoration
-- **[Precision Tests](precision_tests.md)** - Comprehensive experimental validation of radiative corrections
+- ****Higher-Order Effects** - (see section below)** - Extension to higher-order radiative corrections
+- ****Strong Coupling Regimes** - (see section below)** - Analysis of strongly coupled geometric regimes
+- ****Symmetry Breaking** - (see section below)** - Geometric understanding of symmetry breaking and restoration
+- ****Precision Tests** - (see section below)** - Comprehensive experimental validation of radiative corrections
 
 ## Key Achievements
 

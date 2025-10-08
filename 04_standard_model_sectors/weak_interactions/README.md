@@ -8,17 +8,22 @@ This section provides comprehensive analysis of how electroweak physics emerges 
 
 ### Core Electroweak Physics
 
-- **[Weinberg Angle](weinberg_angle.md)** - Geometric derivation and precision tests
-- **[Electroweak Masses](electroweak_masses.md)** - W and Z boson masses from K₇ geometry
-- **[Weak Coupling Evolution](weak_coupling_evolution.md)** - Geometric origin of weak coupling running
-- **[CDF W Boson Resolution](cdf_w_boson_resolution.md)** - Geometric resolution of mass discrepancy
+- **Weinberg Angle** - Geometric derivation and precision tests (see section below)
+- **Electroweak Masses** - W and Z boson masses from K₇ geometry (see section below)
+- **Weak Coupling Evolution** - Geometric origin of weak coupling running (see section below)
+- **CDF W Boson Resolution** - Geometric resolution of mass discrepancy (see section below)
 
 ### Advanced Topics
 
-- **[Electroweak Symmetry Breaking](electroweak_symmetry_breaking.md)** - Geometric Higgs mechanism
-- **[Weak Mixing Matrix](weak_mixing_matrix.md)** - CKM matrix from K₇ cohomological structure
-- **[Neutrino Physics](neutrino_physics.md)** - PMNS matrix and neutrino mixing
-- **[Precision Tests](precision_tests.md)** - Comprehensive experimental validation
+- **Electroweak Symmetry Breaking** - Geometric Higgs mechanism (see section below)
+- **Weak Mixing Matrix** - CKM matrix from K₇ cohomological structure (see section below)
+- **Neutrino Physics** - PMNS matrix and neutrino mixing (see section below)
+- **Precision Tests** - Comprehensive experimental validation (see section below)
+
+## Directory Structure
+
+- `README.md` - This overview document
+- `weinberg_angle.md` - Detailed Weinberg angle analysis
 
 ## Key Achievements
 

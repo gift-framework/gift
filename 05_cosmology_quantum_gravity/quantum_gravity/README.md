@@ -2,23 +2,27 @@
 
 ## Overview
 
+## Directory Structure
+
+- `README.md` - This overview document
+
 This section provides comprehensive analysis of how the GIFT framework addresses quantum gravity through geometric completion of the Standard Model. The framework provides natural geometric corrections that resolve quantum gravity challenges without requiring new physics, while maintaining consistency with all experimental data and providing a systematic approach to quantum gravitational effects.
 
 ## Document Structure
 
 ### Core Quantum Gravity Topics
 
-- **[Geometric Completion](geometric_completion.md)** - How GIFT provides natural quantum gravity completion
-- **[Gravitational Corrections](gravitational_corrections.md)** - Geometric origin of gravitational effects
-- **[Planck Scale Physics](planck_scale_physics.md)** - Physics at the fundamental geometric scale
-- **[Holographic Principles](holographic_principles.md)** - Information-theoretic approach to quantum gravity
+- ****Geometric Completion** - (see section below)** - How GIFT provides natural quantum gravity completion
+- ****Gravitational Corrections** - (see section below)** - Geometric origin of gravitational effects
+- ****Planck Scale Physics** - (see section below)** - Physics at the fundamental geometric scale
+- ****Holographic Principles** - (see section below)** - Information-theoretic approach to quantum gravity
 
 ### Advanced Topics
 
-- **[Quantum Field Theory](quantum_field_theory.md)** - Geometric foundations for quantum field theory
-- **[Renormalization Group](renormalization_group.md)** - Geometric understanding of RG evolution
-- **[Vacuum Energy](vacuum_energy.md)** - Geometric resolution of cosmological constant problem
-- **[Unification Scale](unification_scale.md)** - Geometric understanding of fundamental scales
+- ****Quantum Field Theory** - (see section below)** - Geometric foundations for quantum field theory
+- ****Renormalization Group** - (see section below)** - Geometric understanding of RG evolution
+- ****Vacuum Energy** - (see section below)** - Geometric resolution of cosmological constant problem
+- ****Unification Scale** - (see section below)** - Geometric understanding of fundamental scales
 
 ## Key Achievements
 

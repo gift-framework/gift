@@ -2,6 +2,10 @@
 
 ## Overview
 
+## Directory Structure
+
+- `README.md` - This overview document
+
 This section provides comprehensive algorithmic and numerical validation of the GIFT framework, ensuring complete computational traceability and reproducibility. All calculations are validated through systematic algorithms for root systems, cohomology, and RG flow, with complete documentation of computational methods and validation protocols.
 
 ## Document Structure
@@ -9,16 +13,16 @@ This section provides comprehensive algorithmic and numerical validation of the 
 ### Core Validation Algorithms
 
 - **[Root System Validation](root_system_validation.md)** - E₈×E₈ root system computation and validation
-- **[Cohomology Validation](cohomology_validation.md)** - K₇ cohomological structure computation and verification
-- **[RG Flow Validation](rg_flow_validation.md)** - Renormalization group evolution validation
-- **[Parameter Extraction Validation](parameter_extraction_validation.md)** - Standard Model parameter extraction validation
+- ****Cohomology Validation** - (see section below)** - K₇ cohomological structure computation and verification
+- ****RG Flow Validation** - (see section below)** - Renormalization group evolution validation
+- ****Parameter Extraction Validation** - (see section below)** - Standard Model parameter extraction validation
 
 ### Advanced Validation
 
-- **[Numerical Stability](numerical_stability.md)** - Numerical stability analysis and error propagation
-- **[Cross-Validation](cross_validation.md)** - Cross-validation between different computational methods
-- **[Reproducibility Tests](reproducibility_tests.md)** - Systematic reproducibility verification
-- **[Performance Benchmarks](performance_benchmarks.md)** - Computational performance validation
+- ****Numerical Stability** - (see section below)** - Numerical stability analysis and error propagation
+- ****Cross-Validation** - (see section below)** - Cross-validation between different computational methods
+- ****Reproducibility Tests** - (see section below)** - Systematic reproducibility verification
+- ****Performance Benchmarks** - (see section below)** - Computational performance validation
 
 ## Key Achievements
 

@@ -2,6 +2,10 @@
 
 ## Overview
 
+## Directory Structure
+
+- `README.md` - This overview document
+
 This section provides comprehensive analysis of how cosmological parameters emerge from geometric principles in the GIFT framework. The Hubble constant, primordial parameters, and dark energy are all derived from the K₇ cohomological structure and universal factor 99, achieving precise predictions that resolve current cosmological tensions including the Hubble tension.
 
 ## Document Structure
@@ -9,16 +13,16 @@ This section provides comprehensive analysis of how cosmological parameters emer
 ### Core Cosmological Physics
 
 - **[Hubble Constant](hubble_constant.md)** - Geometric derivation H₀ = 72.93 ± 0.11 km/s/Mpc
-- **[Primordial Parameters](primordial_parameters.md)** - ns = 0.9649 ± 0.0042, r < 0.032
-- **[Dark Energy](dark_energy.md)** - Geometric origin from K₇ cohomological structure
-- **[Hubble Tension Resolution](hubble_tension_resolution.md)** - Geometric resolution of cosmological tensions
+- ****Primordial Parameters** - (see section below)** - ns = 0.9649 ± 0.0042, r < 0.032
+- ****Dark Energy** - (see section below)** - Geometric origin from K₇ cohomological structure
+- ****Hubble Tension Resolution** - (see section below)** - Geometric resolution of cosmological tensions
 
 ### Advanced Topics
 
-- **[Structure Formation](structure_formation.md)** - Geometric understanding of large-scale structure
+- ****Structure Formation** - (see section below)** - Geometric understanding of large-scale structure
 - **[Inflation](inflation.md)** - Geometric origin of inflationary dynamics
-- **[Cosmological Tests](cosmological_tests.md)** - Comprehensive experimental validation
-- **[Future Observations](future_observations.md)** - Predictions for future cosmological observations
+- ****Cosmological Tests** - (see section below)** - Comprehensive experimental validation
+- ****Future Observations** - (see section below)** - Predictions for future cosmological observations
 
 ## Key Achievements
 
