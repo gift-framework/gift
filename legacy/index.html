@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIFT Predictions Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', 'Courier New', monospace;
+            background: #000000;
+            color: #00ff41;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #00ff41;
+            padding-bottom: 20px;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 10px;
+            letter-spacing: -0.02em;
+        }
+        
+        .header p {
+            font-size: 1rem;
+            opacity: 0.8;
+            font-weight: 300;
+        }
+        
+        .calculator-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .calculator-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+        
+        .input-section, .output-section {
+            border: 1px solid #00ff41;
+            padding: 30px;
+            background: rgba(0, 255, 65, 0.02);
+        }
+        
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            border-bottom: 1px solid #00ff41;
+            padding-bottom: 10px;
+        }
+        
+        .observable-selector {
+            margin-bottom: 20px;
+        }
+        
+        .observable-selector select {
+            width: 100%;
+            background: #000000;
+            color: #00ff41;
+            border: 1px solid #00ff41;
+            padding: 12px 16px;
+            font-size: 14px;
+            font-family: inherit;
+            outline: none;
+            cursor: pointer;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+        
+        .observable-selector select:hover,
+        .observable-selector select:focus {
+            background: rgba(0, 255, 65, 0.1);
+        }
+        
+        /* Force dark theme for dropdown options */
+        .observable-selector select option {
+            background: #000000;
+            color: #00ff41;
+            padding: 8px;
+        }
+        
+        .observable-selector select option:hover,
+        .observable-selector select option:focus {
+            background: rgba(0, 255, 65, 0.2);
+        }
+        
+        .input-group {
+            margin-bottom: 20px;
+        }
+        
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .input-group input {
+            width: 100%;
+            background: #000000;
+            color: #00ff41;
+            border: 1px solid #00ff41;
+            padding: 12px 16px;
+            font-size: 14px;
+            font-family: inherit;
+            outline: none;
+        }
+        
+        .input-group input:focus {
+            background: rgba(0, 255, 65, 0.05);
+        }
+        
+        .calculate-button {
+            width: 100%;
+            background: transparent;
+            color: #00ff41;
+            border: 1px solid #00ff41;
+            padding: 16px;
+            font-size: 16px;
+            font-family: inherit;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .calculate-button:hover {
+            background: #00ff41;
+            color: #000000;
+        }
+        
+        .results {
+            margin-top: 20px;
+        }
+        
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(0, 255, 65, 0.2);
+        }
+        
+        .result-item:last-child {
+            border-bottom: none;
+        }
+        
+        .result-label {
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 12px;
+        }
+        
+        .result-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+        }
+        
+        .deviation {
+            padding: 4px 8px;
+            border-radius: 2px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        .deviation.excellent {
+            background: rgba(0, 255, 65, 0.2);
+            color: #00ff41;
+        }
+        
+        .deviation.good {
+            background: rgba(255, 255, 0, 0.2);
+            color: #ffff00;
+        }
+        
+        .deviation.poor {
+            background: rgba(255, 0, 0, 0.2);
+            color: #ff0000;
+        }
+        
+        .formula-display {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(0, 255, 65, 0.05);
+            border: 1px solid rgba(0, 255, 65, 0.3);
+        }
+        
+        .formula-title {
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 10px;
+        }
+        
+        .formula-content {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            line-height: 1.8;
+            white-space: pre-wrap;
+        }
+        
+        .status-message {
+            margin-top: 20px;
+            padding: 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 500;
+            display: none;
+        }
+        
+        .status-message.success {
+            background: rgba(0, 255, 65, 0.2);
+            color: #00ff41;
+            border: 1px solid #00ff41;
+        }
+        
+        .status-message.error {
+            background: rgba(255, 0, 0, 0.2);
+            color: #ff0000;
+            border: 1px solid #ff0000;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #00ff41;
+            font-size: 12px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>GIFT Predictions Calculator</h1>
+            <p>Geometric Information Field Theory - Interactive Validation Tool</p>
+        </div>
+        
+        <div class="calculator-grid">
+            <div class="input-section">
+                <div class="section-title">Input Parameters</div>
+                
+                <div class="observable-selector">
+                    <label for="observable-select">Select Observable:</label>
+                    <select id="observable-select">
+                        <option value="">Choose an observable...</option>
+                        <option value="alpha_inv_0">Fine Structure Constant α⁻¹</option>
+                        <option value="alpha_inv_MZ">α⁻¹(MZ)</option>
+                        <option value="sin2_theta_W">Weak Mixing Angle sin²θ_W</option>
+                        <option value="alpha_s_MZ">Strong Coupling α_s(MZ)</option>
+                        <option value="lambda_H">Higgs Quartic Coupling λ_H</option>
+                        <option value="m_H">Higgs Mass m_H</option>
+                        <option value="f_pi">Pion Decay Constant f_π</option>
+                        <option value="Q_koide">Koide Relation Q</option>
+                        <option value="theta13">Neutrino Mixing θ₁₃</option>
+                        <option value="theta23">Neutrino Mixing θ₂₃</option>
+                        <option value="theta12">Neutrino Mixing θ₁₂</option>
+                        <option value="delta_CP">CP Violation δ_CP</option>
+                        <option value="H0">Hubble Constant H₀</option>
+                        <option value="Omega_DE">Dark Energy Ω_DE</option>
+                        <option value="n_s">Spectral Index n_s</option>
+                    </select>
+                </div>
+                
+                <div class="input-group">
+                    <label for="experimental-value">Experimental Value (Optional):</label>
+                    <input type="number" id="experimental-value" step="any" placeholder="Enter experimental value for comparison">
+                </div>
+                
+                <button class="calculate-button" onclick="calculatePrediction()">
+                    Calculate GIFT Prediction
+                </button>
+                
+                <div id="status-message" class="status-message"></div>
+            </div>
+            
+            <div class="output-section">
+                <div class="section-title">GIFT Prediction Results</div>
+                
+                <div id="results" class="results">
+                    <div class="result-item">
+                        <span class="result-label">Select an observable to see predictions</span>
+                        <span class="result-value">-</span>
+                    </div>
+                </div>
+                
+                <div id="formula-display" class="formula-display" style="display: none;">
+                    <div class="formula-title">Geometric Formula:</div>
+                    <div id="formula-content" class="formula-content"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Based on rigorous derivations from E8×E8 → AdS₄×K₇ → SM dimensional reduction</p>
+            <p>GIFT Framework: Geometric Information Field Theory</p>
+        </div>
+    </div>
+    
+    <script src="gift_calculator.js"></script>
+</body>
+</html>
