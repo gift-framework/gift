@@ -133,7 +133,7 @@ ls 06_supplements/computational_tools/
 
 ## License
 
-This project is licensed under the terms specified in `legacy/LICENSE`.
+This project is licensed under the MIT terms.
 
 ## Contact
 
