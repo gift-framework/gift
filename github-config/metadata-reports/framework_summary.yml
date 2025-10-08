@@ -1,4 +1,4 @@
-generated_at: '2025-10-08T01:25:33.512836'
+generated_at: '2025-10-08T14:51:21.885851'
 legacy_files:
   docs: 13
   docs_published: 2
@@ -40,14 +40,14 @@ scripts:
   generate_metadata.py:
     has_docstring: true
     import_count: 7
-    lines: 307
+    lines: 308
   validate_framework.py:
     has_docstring: true
     import_count: 8
-    lines: 370
+    lines: 375
 summary:
   total_documents: 3
   total_legacy_files: 36
   total_modules: 6
   total_scripts: 2
-  total_workflows: 7
+  total_workflows: 4

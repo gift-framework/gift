@@ -1,11 +1,11 @@
 {
-  "generated_at": "2025-10-08T01:25:33.512836",
+  "generated_at": "2025-10-08T14:51:21.885851",
   "summary": {
     "total_modules": 6,
     "total_documents": 3,
     "total_legacy_files": 36,
     "total_scripts": 2,
-    "total_workflows": 7
+    "total_workflows": 4
   },
   "modules": {
     "01_synthesis_and_overview": {
@@ -54,12 +54,12 @@
   },
   "scripts": {
     "generate_metadata.py": {
-      "lines": 307,
+      "lines": 308,
       "has_docstring": true,
       "import_count": 7
     },
     "validate_framework.py": {
-      "lines": 370,
+      "lines": 375,
       "has_docstring": true,
       "import_count": 8
     }

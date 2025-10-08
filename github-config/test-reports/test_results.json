@@ -1,14 +1,14 @@
 {
-  "timestamp": "2025-10-08T01:25:56.522718",
+  "timestamp": "2025-10-08T14:51:54.083356",
   "results": {
     "framework": {
       "name": "Framework Tests",
-      "success": false,
-      "error": "'charmap' codec can't encode character '\\u2088' in position 1243: character maps to <undefined>"
+      "success": true,
+      "error": null
     },
     "notebooks": {
       "name": "Notebook Tests",
-      "success": false,
+      "success": true,
       "error": null
     },
     "experimental": {
@@ -19,8 +19,8 @@
   },
   "summary": {
     "total_suites": 3,
-    "successful_suites": 1,
-    "failed_suites": 2,
-    "success_rate": 33.33333333333333
+    "successful_suites": 3,
+    "failed_suites": 0,
+    "success_rate": 100.0
   }
 }

@@ -148,12 +148,12 @@ class TestMetadata(unittest.TestCase):
     
     def test_project_metadata_exists(self):
         """Test that project metadata file exists"""
-        metadata_path = self.root_dir / '.github' / 'PROJECT_METADATA.yml'
+        metadata_path = self.root_dir / 'github-config' / 'PROJECT_METADATA.yml'
         self.assertTrue(metadata_path.exists(), "PROJECT_METADATA.yml not found")
     
     def test_project_metadata_content(self):
         """Test project metadata content"""
-        metadata_path = self.root_dir / '.github' / 'PROJECT_METADATA.yml'
+        metadata_path = self.root_dir / 'github-config' / 'PROJECT_METADATA.yml'
         with open(metadata_path, 'r', encoding='utf-8') as f:
             metadata = yaml.safe_load(f)
         
@@ -244,7 +244,7 @@ class TestWorkflows(unittest.TestCase):
     
     def test_main_workflow_exists(self):
         """Test that main workflow file exists"""
-        workflow_file = self.workflows_dir / 'framework-validation-simple.yml'
+        workflow_file = self.workflows_dir / 'framework-validation.yml'
         self.assertTrue(workflow_file.exists(), "Main workflow file not found")
     
     def test_workflow_syntax(self):
@@ -261,7 +261,7 @@ class TestWorkflows(unittest.TestCase):
     
     def test_workflow_triggers(self):
         """Test that workflows have appropriate triggers"""
-        main_workflow = self.workflows_dir / 'framework-validation-simple.yml'
+        main_workflow = self.workflows_dir / 'framework-validation.yml'
         with open(main_workflow, 'r', encoding='utf-8') as f:
             workflow_content = f.read()
         

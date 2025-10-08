@@ -1,24 +1,23 @@
 # GIFT Framework Test Results
 
-**Generated:** 2025-10-08 01:25:56
+**Generated:** 2025-10-08 14:51:54
 
 ## Summary
 
 - **Total Test Suites:** 3
-- **Successful Suites:** 1
-- **Failed Suites:** 2
-- **Success Rate:** 33.3%
+- **Successful Suites:** 3
+- **Failed Suites:** 0
+- **Success Rate:** 100.0%
 
 ## Test Suite Results
 
 ### Framework Tests
 
-- **Status:** [FAIL]
-- **Error:** 'charmap' codec can't encode character '\u2088' in position 1243: character maps to <undefined>
+- **Status:** [PASS]
 
 ### Notebook Tests
 
-- **Status:** [FAIL]
+- **Status:** [PASS]
 
 ### Experimental Validation Tests
 

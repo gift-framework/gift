@@ -119,7 +119,7 @@ class TestNotebookContent(unittest.TestCase):
                 'AdS₄',
                 'Standard Model',
                 'GIFT',
-                'dimensional reduction'
+                'Dimensional Reduction'
             ]
             
             for concept in key_concepts:

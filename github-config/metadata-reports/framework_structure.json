@@ -10,13 +10,13 @@
         },
         {
           "name": "MODULE_METADATA.yml",
-          "size": 2309,
-          "modified": "2025-10-08T01:13:17.817866"
+          "size": 2311,
+          "modified": "2025-10-08T10:47:50.181341"
         },
         {
           "name": "README.md",
-          "size": 8927,
-          "modified": "2025-10-07T23:45:05.988373"
+          "size": 9219,
+          "modified": "2025-10-08T13:00:45.837610"
         }
       ],
       "submodules": [],
@@ -39,8 +39,8 @@
         },
         {
           "name": "README.md",
-          "size": 4739,
-          "modified": "2025-10-07T13:21:08.207442"
+          "size": 4962,
+          "modified": "2025-10-08T13:00:45.837610"
         }
       ],
       "submodules": [],
@@ -63,8 +63,8 @@
         },
         {
           "name": "README.md",
-          "size": 7917,
-          "modified": "2025-10-07T13:21:08.209799"
+          "size": 8154,
+          "modified": "2025-10-08T13:00:45.839116"
         }
       ],
       "submodules": [],
@@ -82,8 +82,8 @@
         },
         {
           "name": "README.md",
-          "size": 7123,
-          "modified": "2025-10-07T23:45:05.940864"
+          "size": 7548,
+          "modified": "2025-10-08T13:00:45.840141"
         }
       ],
       "submodules": [
@@ -108,8 +108,8 @@
         },
         {
           "name": "README.md",
-          "size": 6753,
-          "modified": "2025-10-07T13:21:08.209799"
+          "size": 6818,
+          "modified": "2025-10-08T13:00:45.845356"
         }
       ],
       "submodules": [
@@ -132,8 +132,8 @@
         },
         {
           "name": "README.md",
-          "size": 9470,
-          "modified": "2025-10-07T13:21:08.209799"
+          "size": 9717,
+          "modified": "2025-10-08T13:00:45.850015"
         }
       ],
       "submodules": [
@@ -175,14 +175,14 @@
       {
         "name": "CONTRIBUTING.md",
         "path": "CONTRIBUTING.md",
-        "size": 6863,
-        "modified": "2025-09-25T13:37:58.852581"
+        "size": 6829,
+        "modified": "2025-10-08T13:00:29.646067"
       },
       {
         "name": "README.md",
         "path": "README.md",
-        "size": 10544,
-        "modified": "2025-10-06T00:04:22.625158"
+        "size": 10791,
+        "modified": "2025-10-08T13:00:45.857222"
       },
       {
         "name": "SECURITY.md",
@@ -356,7 +356,7 @@
         "name": "gift_tutorial_e8_to_sm.html",
         "path": "docs\\gift_tutorial_e8_to_sm.html",
         "size": 513305,
-        "modified": "2025-10-08T01:24:44.791440"
+        "modified": "2025-10-08T14:50:10.240169"
       },
       {
         "name": "e8_root_system.jpg",
@@ -381,9 +381,9 @@
   "scripts": {
     "generate_metadata.py": {
       "path": "scripts\\generate_metadata.py",
-      "lines": 307,
-      "size": 11558,
-      "modified": "2025-10-08T01:13:17.817866",
+      "lines": 308,
+      "size": 11572,
+      "modified": "2025-10-08T12:48:01.079976",
       "has_docstring": true,
       "imports": [
         "import os",
@@ -397,9 +397,9 @@
     },
     "validate_framework.py": {
       "path": "scripts\\validate_framework.py",
-      "lines": 370,
-      "size": 14971,
-      "modified": "2025-10-08T00:27:49.200025",
+      "lines": 375,
+      "size": 14993,
+      "modified": "2025-10-08T14:38:27.518419",
       "has_docstring": true,
       "imports": [
         "import os",
@@ -414,52 +414,31 @@
     }
   },
   "workflows": {
-    "config.yml": {
-      "path": ".github\\workflows\\config.yml",
-      "size": 1471,
-      "modified": "2025-10-07T23:45:05.332507",
-      "has_triggers": true,
-      "has_jobs": false
-    },
-    "docs-validation-old.yml": {
-      "path": ".github\\workflows\\docs-validation-old.yml",
-      "size": 14976,
-      "modified": "2025-10-08T00:25:25.090279",
-      "has_triggers": true,
-      "has_jobs": true
-    },
     "experimental-validation.yml": {
-      "path": ".github\\workflows\\experimental-validation.yml",
-      "size": 14293,
-      "modified": "2025-10-07T23:45:05.698056",
-      "has_triggers": true,
-      "has_jobs": true
-    },
-    "framework-validation-simple.yml": {
-      "path": ".github\\workflows\\framework-validation-simple.yml",
-      "size": 2115,
-      "modified": "2025-10-08T01:13:17.817866",
+      "path": "github-config\\workflows\\experimental-validation.yml",
+      "size": 1823,
+      "modified": "2025-10-08T12:54:36.361073",
       "has_triggers": true,
       "has_jobs": true
     },
     "framework-validation.yml": {
-      "path": ".github\\workflows\\framework-validation.yml",
-      "size": 11113,
-      "modified": "2025-10-07T23:45:05.556125",
+      "path": "github-config\\workflows\\framework-validation.yml",
+      "size": 2118,
+      "modified": "2025-10-08T12:54:36.361073",
       "has_triggers": true,
       "has_jobs": true
     },
     "notebooks-test.yml": {
-      "path": ".github\\workflows\\notebooks-test.yml",
-      "size": 8760,
-      "modified": "2025-10-07T23:45:05.626822",
+      "path": "github-config\\workflows\\notebooks-test.yml",
+      "size": 1707,
+      "modified": "2025-10-08T12:54:36.362577",
       "has_triggers": true,
       "has_jobs": true
     },
-    "release.yml": {
-      "path": ".github\\workflows\\release.yml",
-      "size": 8687,
-      "modified": "2025-10-07T23:45:05.513753",
+    "testing-framework.yml": {
+      "path": "github-config\\workflows\\testing-framework.yml",
+      "size": 1740,
+      "modified": "2025-10-08T12:54:36.363597",
       "has_triggers": true,
       "has_jobs": true
     }
