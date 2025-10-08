@@ -46,7 +46,7 @@ class MetadataGenerator:
             structure['scripts'] = self.analyze_scripts(scripts_dir)
         
         # Scan workflows
-        workflows_dir = self.root_dir / '.github' / 'workflows'
+        workflows_dir = self.root_dir / 'github-config' / 'workflows'
         if workflows_dir.exists():
             structure['workflows'] = self.analyze_workflows(workflows_dir)
         
@@ -274,7 +274,7 @@ class MetadataGenerator:
         structure = self.scan_framework_structure()
         
         # Save metadata
-        output_dir = self.root_dir / '.github' / 'metadata-reports'
+        output_dir = self.root_dir / 'github-config' / 'metadata-reports'
         summary = self.save_metadata(structure, output_dir)
         
         # Generate missing metadata files

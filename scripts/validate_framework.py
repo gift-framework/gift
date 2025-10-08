@@ -264,7 +264,7 @@ class FrameworkValidator:
         print("[INFO] Generating validation report...")
         
         # Create reports directory
-        reports_dir = self.root_dir / '.github' / 'validation-reports'
+        reports_dir = self.root_dir / 'github-config' / 'validation-reports'
         reports_dir.mkdir(parents=True, exist_ok=True)
         
         # Generate summary

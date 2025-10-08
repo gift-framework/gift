@@ -23,7 +23,7 @@ from test_experimental_validation import run_experimental_tests
 class TestRunner:
     """Main test runner for GIFT Framework"""
     
-    def __init__(self, output_dir=".github/test-reports"):
+    def __init__(self, output_dir="github-config/test-reports"):
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
         self.results = {}
