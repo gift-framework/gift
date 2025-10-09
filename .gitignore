@@ -1,5 +1,3 @@
-# GIFT Framework - Git Ignore
-
 # Python
 __pycache__/
 *.py[cod]
@@ -21,11 +19,9 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+MANIFEST
 
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# Environment
+# Virtual environments
 .env
 .venv
 env/
@@ -33,6 +29,9 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
 
 # IDE
 .vscode/
@@ -55,8 +54,37 @@ Thumbs.db
 *.temp
 *.log
 
-# Archive folder (keep separate from main repo)
-gift-translator-archive/
+# Build artifacts
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.git
+.mypy_cache
+.pytest_cache
+.hypothesis
 
-# Calculator backup (if any)
-calculator/
+# Framework specific
+.github/validation-reports/*.json
+.github/validation-reports/*.md
+!/.github/validation-reports/.gitkeep
+
+# Documentation build
+docs/_build/
+site/
+
+# Local development
+local_config.py
+secrets.py
+

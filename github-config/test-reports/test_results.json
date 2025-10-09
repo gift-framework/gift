@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-10-08T14:51:54.083356",
+  "results": {
+    "framework": {
+      "name": "Framework Tests",
+      "success": true,
+      "error": null
+    },
+    "notebooks": {
+      "name": "Notebook Tests",
+      "success": true,
+      "error": null
+    },
+    "experimental": {
+      "name": "Experimental Validation Tests",
+      "success": true,
+      "error": null
+    }
+  },
+  "summary": {
+    "total_suites": 3,
+    "successful_suites": 3,
+    "failed_suites": 0,
+    "success_rate": 100.0
+  }
+}

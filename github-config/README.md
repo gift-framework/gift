@@ -1,7 +1,4 @@
 # Geometric Information Field Theory
-
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gift-framework/GIFT/blob/main/legacy/docs/gift_tutorial_e8_to_sm.ipynb)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gift-framework/GIFT/main?filepath=legacy/docs/gift_tutorial_e8_to_sm.ipynb)
 
@@ -13,9 +10,9 @@ The **GIFT (Geometric Information Field Theory)** framework provides a complete 
 
 ### Dimensional Reduction Hierarchy
 
-```
+``
 E₈×E₈ (11D Information Architecture) → AdS₄×K₇ (Geometric Compactification) → Standard Model (4D Physics)
-```
+``
 
 The framework treats E₈×E₈ as an **information architecture** rather than a particle spectrum, circumventing the Distler-Garibaldi impossibility theorem through systematic dimensional reduction that preserves geometric information content.
 
@@ -23,23 +20,23 @@ The framework treats E₈×E₈ as an **information architecture** rather than a
 
 ### 01_synthesis_and_overview/
 **Global Navigation & Theoretical Synthesis**
-- **[Framework Overview](01_synthesis_and_overview/framework_overview.md)** - Complete theoretical synthesis and navigation
-- **[README](01_synthesis_and_overview/README.md)** - Framework architecture and navigation guide
+- ****Framework Overview** - (see section below)** - Complete theoretical synthesis and navigation
+- ****README** - (see section below)** - Framework architecture and navigation guide
 - Cross-sectional analysis and synthesis documents
 - Historical context and contemporary developments
 
 ### 02_e8_foundations/
 **E₈×E₈ Algebraic Foundations & Information Architecture**
-- **[E₈×E₈ Algebraic Structure](02_e8_foundations/e8_algebraic_structure.md)** - Complete mathematical foundations
-- **[README](02_e8_foundations/README.md)** - E₈×E₈ foundations overview
+- ****E₈×E₈ Algebraic Structure** - (see section below)** - Complete mathematical foundations
+- ****README** - (see section below)** - E₈×E₈ foundations overview
 - Information architecture approach (circumventing Distler-Garibaldi theorem)
 - Dimensional reduction mechanisms E₈×E₈ → AdS₄×K₇
 - Computational implementation and validation protocols
 
 ### 03_ads_k7_construction/
 **AdS₄×K₇ Construction & G₂ Holonomy Theory**
-- **[K₇ Manifold Construction](03_ads_k7_construction/k7_manifold_construction.md)** - Detailed construction theory
-- **[README](03_ads_k7_construction/README.md)** - AdS₄×K₇ construction overview
+- ****K₇ Manifold Construction** - (see section below)** - Detailed construction theory
+- ****README** - (see section below)** - AdS₄×K₇ construction overview
 - K₇ manifold construction via twisted connected sum
 - G₂ holonomy theory and mathematical foundations
 - Chiral fermion emergence without mirror partners
@@ -47,7 +44,7 @@ The framework treats E₈×E₈ as an **information architecture** rather than a
 
 ### 04_standard_model_sectors/
 **Systematic Derivation of Standard Model Parameters by Physics Sector**
-- **[README](04_standard_model_sectors/README.md)** - Standard Model sectors overview
+- ****README** - (see section below)** - Standard Model sectors overview
 - **[Electromagnetism](04_standard_model_sectors/electromagnetism/)** - Fine structure constant and QED corrections
 - **[Weak Interactions](04_standard_model_sectors/weak_interactions/)** - Weinberg angle and electroweak masses
 - **[QCD/Strong](04_standard_model_sectors/qcd_strong/)** - Strong coupling and confinement
@@ -58,7 +55,7 @@ The framework treats E₈×E₈ as an **information architecture** rather than a
 
 ### 05_cosmology_quantum_gravity/
 **Cosmological Applications & Quantum Gravity Completion**
-- **[README](05_cosmology_quantum_gravity/README.md)** - Cosmology and QG overview
+- ****README** - (see section below)** - Cosmology and QG overview
 - **[Cosmology](05_cosmology_quantum_gravity/cosmology/)** - Hubble tension resolution and cosmological parameters
 - **[Quantum Gravity](05_cosmology_quantum_gravity/quantum_gravity/)** - Complete quantum gravity theory
 - **[ML Framework](05_cosmology_quantum_gravity/ml_framework/)** - Machine learning integration
@@ -66,7 +63,7 @@ The framework treats E₈×E₈ as an **information architecture** rather than a
 
 ### 06_supplements/
 **Technical Supplements & Computational Tools**
-- **[README](06_supplements/README.md)** - Technical supplements overview
+- ****README** - (see section below)** - Technical supplements overview
 - **[Mathematical Foundations](06_supplements/mathematical_foundations/)** - Complete mathematical background
 - **[Computational Tools](06_supplements/computational_tools/)** - Algorithms and numerical methods
 - **[Validation Tables](06_supplements/validation_tables/)** - Experimental comparison data
@@ -79,10 +76,10 @@ The framework treats E₈×E₈ as an **information architecture** rather than a
 - **[Support Notebooks](legacy/docs/)** - Tutorial and computational support
 - **[Legacy Materials](legacy/)** - All previous framework materials and tools
 
-## Features
+## fEATURES
 
-### Theoretical Foundations
-- **Mathematical foundation** from E₈×E₈ algebra through Standard Model phenomenology
+### Theoretical fOUNDATIONS
+- **Complete mathematical foundation** from E₈×E₈ algebra through Standard Model phenomenology
 - **Systematic dimensional reduction** E₈×E₈ → AdS₄×K₇ → Standard Model
 - **Zero-parameter framework** achieving 0.38% mean deviation across 22 fundamental observables
 - **Radiative stability** through 1-loop stability proof without supersymmetry
@@ -95,6 +92,41 @@ The framework treats E₈×E₈ as an **information architecture** rather than a
   - **3.897 GeV Scalar** - New scalar particle from H³(K₇) cohomology
   - **20.4 GeV Gauge Boson** - New gauge boson from E₈×E₈ decomposition
   - **4.77 GeV Dark Matter** - Dark matter candidate from K₇ geometry
+
+## Navigation Guide
+
+### For New Users
+1. **Start with** `01_synthesis_and_overview/framework_overview.md` for complete theoretical overview
+2. **Explore** `02_e8_foundations/` for mathematical foundations
+3. **Study** `03_ads_k7_construction/` for geometric construction theory
+4. **Examine** `04_standard_model_sectors/` for physics applications
+5. **Review** `05_cosmology_quantum_gravity/` for cosmological and QG applications
+6. **Utilize** `06_supplements/` for technical implementation
+
+### For Researchers
+- **Sector-specific focus**: Navigate directly to relevant physics sectors
+- **Mathematical depth**: Utilize `06_supplements/mathematical_foundations/` for detailed derivations
+- **Computational tools**: Access `06_supplements/computational_tools/` for implementation
+- **Validation protocols**: Use `06_supplements/validation_tables/` for experimental comparison
+
+### For Developers
+- **Computational implementation**: Access complete algorithms and software tools
+- **Validation framework**: Implement systematic validation protocols
+- **Extension development**: Build upon modular structure for new capabilities
+- **Algorithmic validation**: Use `06_supplements/algorithmic_validation/` for computational traceability
+
+## Experimental Predictions
+
+### New Particles (Within Experimental Reach)
+- **3.897 GeV Scalar**: New scalar particle from H³(K₇) = ℂ⁷⁷ cohomology
+- **20.4 GeV Gauge Boson**: New gauge boson from E₈×E₈ gauge field decomposition
+- **4.77 GeV Dark Matter**: Dark matter candidate from K₇ geometric structure
+
+### Precision Predictions
+- **Fine Structure Constant**: α⁻¹ = 137.035999139(31)
+- **Weinberg Angle**: sin²θW = 0.23129(5)
+- **Hubble Constant**: H₀ = 72.93 ± 0.11 km/s/Mpc
+- **Primordial Parameters**: ns = 0.9649 ± 0.0042, r < 0.032
 
 ## Getting Started
 
@@ -113,10 +145,10 @@ ls 04_standard_model_sectors/
 ls 06_supplements/computational_tools/
 ```
 
-## Documents
-- **[Framework Overview](01_synthesis_and_overview/framework_overview.md)** - Complete theoretical synthesis
-- **[E₈ Foundations](02_e8_foundations/e8_algebraic_structure.md)** - Mathematical foundations
-- **[K₇ Construction](03_ads_k7_construction/k7_manifold_construction.md)** - Geometric construction
+### Key Documents
+- ****Framework Overview** - (see section below)** - Complete theoretical synthesis
+- ****E₈ Foundations** - (see section below)** - Mathematical foundations
+- ****K₇ Construction** - (see section below)** - Geometric construction
 - **[Published Documents](legacy/docs_published/)** - Canonical PDF references
 
 ## Contributing
@@ -133,12 +165,7 @@ ls 06_supplements/computational_tools/
 
 ## License
 
-This project is licensed under the MIT terms.
-
-## Contact
-
-For questions, collaborations, or contributions, please refer to the framework documentation and maintain the highest standards of scientific rigor and geometric consistency.
-
+This project is licensed under the terms specified in `legacy/LICENSE`.
 
 ## Disclaimer
 
@@ -152,3 +179,11 @@ For questions, collaborations, or contributions, please refer to the framework d
 > ...72.93% complete.
 
 ---
+
+
+
+## Key Achievements
+
+- Detailed analysis of framework components
+- Precision predictions and experimental validation
+- Geometric derivations from mathematical principles
