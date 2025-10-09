@@ -916,3 +916,5 @@ loss = mse(sm_pred, sm_target) + 0.5 * mse(cosmo_pred, cosmo_target) + 2.0 * mse
 *Framework status: ML integration complete, ready for data analysis*
 *Key tools: K7Optimizer, KK_Graviton_Detector, CMB_Autoencoder*
 
+
+

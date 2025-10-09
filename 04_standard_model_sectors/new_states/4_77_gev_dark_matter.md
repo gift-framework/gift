@@ -812,3 +812,5 @@ K₇ topology predicts χ is the **lightest** Z₂-odd state → stable ✓
 *Precision level: 1.9% (mass), relic abundance matches to 2%*
 *Critical test: XENONnT (2025), LZ (2027)*
 
+
+

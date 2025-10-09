@@ -905,3 +905,5 @@ pp → G_KK + jet → invisible + jet
 *Framework status: Complete formulation, awaiting experimental tests*
 *Critical predictions: Planck-scale Lorentz violation, new particles at 3.9/20.4/4.77 GeV*
 
+
+

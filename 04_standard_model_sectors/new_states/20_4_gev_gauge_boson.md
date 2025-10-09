@@ -764,3 +764,5 @@ The 20.4 GeV gauge boson is a **robust, falsifiable prediction** of the GIFT fra
 *Precision level: 1.5% (mass), 7% (width)*
 *Discovery timeline: 2025-2027 (LHC Run 3), 2030+ (FCC-ee precision)*
 
+
+
