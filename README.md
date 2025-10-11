@@ -2,12 +2,12 @@
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gift-framework/GIFT/blob/main/legacy/docs/gift_tutorial_e8_to_sm.ipynb)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gift-framework/GIFT/main?filepath=legacy/docs/gift_tutorial_e8_to_sm.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bdelaf/gift/blob/main/gift_framework_v2_complete_notebook.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bdelaf/gift/main?filepath=gift_framework_v2_complete_notebook.ipynb)
 
 ## Overview
 
-The **GIFT (Geometric Information Field Theory)** framework provides a complete geometric derivation of fundamental physics parameters from pure mathematical principles. Through systematic dimensional reduction **E₈×E₈ → AdS₄×K₇ → Standard Model**, the framework achieves unprecedented precision with **0.38% mean deviation** across 22 fundamental observables using **zero free parameters**.
+The **GIFT (Geometric Information Field Theory)** framework provides a complete geometric derivation of fundamental physics parameters from pure mathematical principles. Through systematic dimensional reduction **E₈×E₈ → AdS₄×K₇ → Standard Model**, the framework achieves unprecedented precision across **21 derived observables** (mean deviation ~0.6%) using **zero free parameters**.
 
 ## Core Documents
 
