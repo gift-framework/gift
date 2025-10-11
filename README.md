@@ -2,8 +2,8 @@
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bdelaf/gift/blob/main/gift_framework_v2_complete_notebook.ipynb)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bdelaf/gift/main?filepath=gift_framework_v2_complete_notebook.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gift-framework/GIFT/blob/main/gift_framework_v2_complete_notebook.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gift-framework/GIFT/main?filepath=gift_framework_v2_complete_notebook.ipynb)
 
 ## Overview
 
@@ -284,9 +284,7 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file.
 
 ## Contact
 
-**Brieuc de La Fournière**  
-ORCID: 0009-0000-0641-9740  
-Email: brieuc@bdelaf.com
+gift@bdelaf.com
 
 For collaborations, questions, or contributions, please maintain the highest standards of scientific rigor and geometric consistency.
 
