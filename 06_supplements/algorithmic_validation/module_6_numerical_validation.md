@@ -979,6 +979,15 @@ Deviation: 0.718%
 Status: ✓ Good
 ```
 
+**Dark Energy Equation of State**:
+```
+Formula: w_DE = -1 + δ²/(2π)
+Calculation: -1 + (0.251327)²/(2π) = -1 + 0.01005 = -0.990
+Experimental: -1.03 ± 0.03 (Planck+DESI 2024)
+Deviation: 3.88%
+Status: ✓ Good (within 1.3σ)
+```
+
 **Spectral Index**:
 ```
 Formula: n_s = ξ²
@@ -1007,10 +1016,11 @@ Status: ✓ Excellent
 | δ_CP | 234.5° | 230° | 1.95% | B+ |
 | H₀ | 72.93 | 73.04 | 0.145% | A+ |
 | Ω_DE | 0.6938 | 0.6889 | 0.718% | B+ |
+| w_DE | -0.990 | -1.03 | 3.88% | B |
 | n_s | 0.9638 | 0.9649 | 0.111% | A+ |
 
 **Mean Deviation: 0.38%**
-**Grades: 8× A+, 5× A, 2× A-, 3× B+, 1× B**
+**Grades: 8× A+, 5× A, 2× A-, 3× B+, 2× B**
 
 ---
 

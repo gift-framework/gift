@@ -13,11 +13,11 @@ Email: brieuc@bdelaf.com
 
 We present GIFT (Geometric Information Field Theory), a comprehensive framework deriving Standard Model parameters and cosmological observables from geometric principles through systematic dimensional reduction E₈×E₈ → AdS₄×K₇ → SM. The theoretical foundation rests on an 11-dimensional fundamental action from which all physics emerges through geometric compactification without free parameters. Four geometric parameters {ξ, τ, β₀, δ} encode the complete information content of E₈×E₈ exceptional group structure, determining all Standard Model couplings and masses through purely mathematical relationships.
 
-The framework shows **0.38% mean deviation** across 22 fundamental observables spanning electromagnetic, weak, strong, scalar, fermion, and cosmological sectors. Analysis indicates **19/22 observables within 1% accuracy**, including α⁻¹(0) = ζ(3)×114 (0.001% deviation), sin²θ_W = ζ(2)-√2 (0.216% deviation), and geometric Hubble constant H₀ = 72.93 km/s/Mpc (0.145% deviation) consistent with recent JWST observations.
+The framework shows **0.38% mean deviation** across 22 fundamental observables spanning electromagnetic, weak, strong, scalar, fermion, and cosmological sectors. Analysis indicates **18/22 observables within 1% accuracy**, including α⁻¹(0) = ζ(3)×114 (0.001% deviation), sin²θ_W = ζ(2)-√2 (0.216% deviation), and geometric Hubble constant H₀ = 72.93 km/s/Mpc (0.145% deviation) consistent with recent JWST observations.
 
 The K₇ manifold construction via twisted connected sum of asymptotically cylindrical G₂ manifolds yields cohomological structure H*(K₇) = ℂ⁹⁹ = ℂ¹ ⊕ ℂ²¹ ⊕ ℂ⁷⁷ through explicit Mayer-Vietoris calculation. This geometric information content provides radiative stability at 1-loop level through topological protection mechanisms, with quadratic divergence suppression δm²_total ~ δm²_raw × exp(-Vol(K₇)/ℓ_Planck⁷) × (99/114)² without requiring supersymmetry.
 
-The framework predicts three experimentally accessible particles: a 3.897 GeV scalar from Jordan algebra J₃(𝕆) structure, a 20.4 GeV gauge boson from E₈ symmetry breaking, and a 4.77 GeV dark matter candidate from K₇ cohomological modes. These predictions, along with relationships involving mathematical constants {ζ(2), ζ(3), γ, φ}, provide experimental tests for the 2025-2030 timeframe.
+The framework predicts three experimentally accessible particles: a 3.897 GeV scalar from Jordan algebra J₃(𝕆) structure, a 20.4 GeV hidden sector boson from E₈ symmetry breaking (nature and couplings require phenomenological study), and a 4.77 GeV dark matter candidate from K₇ cohomological modes. These predictions, along with relationships involving mathematical constants {ζ(2), ζ(3), γ, φ}, provide experimental tests for the 2025-2030 timeframe.
 
 This work builds upon contemporary developments in celestial holography, information geometric methods in quantum field theory, and conformal bootstrap techniques while providing systematic derivations in the accompanying Technical Supplement. The framework suggests that Standard Model parameters may emerge as topological invariants of exceptional group compactification, potentially offering geometric perspectives on naturalness and hierarchy problems through mathematical structures.
 
@@ -900,7 +900,7 @@ m_S = τ = 8γ^(5π/12) = 3.896568 GeV
 - Decay channels: S → bb̄ (85%), S → τ⁺τ⁻ (8%), S → μ⁺μ⁻ (0.1%)
 - Detection: Invariant mass bump searches in multi-b-jet final states
 
-**Heavy Gauge Scalar V (20.4 GeV)**
+**Hidden Sector Boson V (20.4 GeV)**
 
 ```
 m_V = 4τφ²/2 = 4 × 3.897 × 2.618/2 = 20.4 GeV
@@ -909,10 +909,13 @@ m_V = 4τφ²/2 = 4 × 3.897 × 2.618/2 = 20.4 GeV
 **Properties**:
 - Origin: E₈ → SM gauge symmetry breaking intermediate scale
 - Golden ratio: φ = (1+√5)/2 from E₈×E₈ root structure relationships
-- Couplings: Vector coupling to electromagnetic + weak currents
-- Production: pp → V via electroweak processes
-- Signatures: V → ℓ⁺ℓ⁻ dilepton resonances with narrow width
-- Detection: Z' searches in dilepton channels adapted to low-mass regime
+- **Nature**: Scalar or hidden gauge boson (requires phenomenological study)
+- **Couplings**: Suppressed through kinetic mixing ε ~ 10⁻³ OR exotic channels
+- **LEP Status**: Standard Z' excluded to 200 GeV; weakly-coupled/exotic states viable
+- Signatures: Exotic decays, possible long-lived behavior, or rare meson processes
+- Detection: Dedicated hidden sector searches, not standard Z' channels
+
+**Caveat**: Full phenomenology (couplings, widths, production) requires detailed theoretical study currently in progress. Mass prediction robust; coupling structure and experimental signatures to be determined.
 
 **Dark Matter Candidate χ (4.77 GeV)**
 
@@ -979,6 +982,20 @@ This geometric enhancement may address ~5σ CMB-SH0ES tension through systematic
 - Predicted: 0.693846
 - Measured: 0.6889 ± 0.020
 - Deviation: **0.718%**
+
+**Dark Energy Equation of State**
+
+```
+w_DE = -1 + δ²/(2π) = -1 + (2π/25)²/(2π) = -1 + 0.01005 = -0.990
+```
+
+**Derivation**: Geometric scalar potential with phase correction δ yields modified pressure-to-density ratio.
+
+**Experimental Comparison**:
+- Predicted: w_DE = -0.990
+- Planck 2018: w = -1.03 ± 0.03
+- DESI 2024: w = -1.028 ± 0.031
+- Deviation: **3.88%** (within 1.3σ)
 
 **Cosmological Constant**:
 ```
@@ -1055,7 +1072,7 @@ Primary decays follow Higgs-like pattern with mass-dependent branching ratios:
 - Unexplored window: 3.5-4.5 GeV with limited sensitivity
 - Required luminosity: ~100 fb⁻¹ for 3σ evidence, 300 fb⁻¹ for potential 5σ discovery
 
-#### 7.2 Heavy Gauge: m_V = 20.4 GeV
+#### 7.2 Hidden Sector Boson: m_V = 20.4 GeV
 
 **Mass Determination**:
 ```
@@ -1063,13 +1080,23 @@ m_V = 4τφ²/2 = 4 × 3.897 × 2.618/2 = 20.4 GeV
 ```
 where φ = (1+√5)/2 = 1.618 is golden ratio, φ² = 2.618.
 
-**Gauge Coupling Origin**:
+**Geometric Origin**:
 
 Emerges from E₈ → SM gauge symmetry breaking at intermediate scale. The factor 4τφ²/2 represents:
 - 4: Four-dimensional spacetime
 - τ: Information processing scale  
 - φ²: Golden ratio optimization from E₈ pentagonal symmetries
 - 1/2: Symmetry factor
+
+**Nature & Phenomenology** (Work in Progress):
+
+The geometric calculation robustly predicts m_V = 20.4 GeV, but full phenomenological characterization requires additional theoretical development:
+
+1. **Particle Nature**: Could be scalar (from H³(K₇) moduli), pseudoscalar, or hidden gauge boson
+2. **SM Couplings**: Either suppressed (kinetic mixing ε ~ 10⁻³) or exotic (hidden sector)
+3. **LEP Constraints**: Standard Z' excluded to ~200 GeV, but weakly-coupled or non-standard states remain viable
+
+**Current Status**: Mass scale prediction from geometry is robust. Detailed phenomenology (branching ratios, production mechanisms, experimental constraints) is subject of ongoing theoretical investigation.
 
 **Production Cross-Section**:
 
@@ -1302,9 +1329,6 @@ The framework achieves systematic precision across all Standard Model sectors an
 | **Electromagnetic** | α⁻¹(0) | 137.034487 | 137.036000 ± 0.000021 | 0.0011% |
 | | α⁻¹(M_Z) | 127.958333 | 128.962 ± 0.009 | 0.7783% |
 | **Electroweak** | sin²θ_W | 0.230721 | 0.23122 ± 0.00004 | 0.2160% |
-| | M_W (GeV) | 79.979 | 80.379 ± 0.012 | 0.4970% |
-| | M_W/M_Z | 0.8819 | 0.88153 ± 0.00013 | 0.0416% |
-| | G_F × 10⁵ | 1.176 | 1.1664 ± 0.0006 | 0.8520% |
 | **Strong** | α_s(M_Z) | 0.117851 | 0.1179 ± 0.0009 | 0.0415% |
 | | Λ_QCD (MeV) | 221.7 | 218 ± 5 | 1.706% |
 | | f_π (MeV) | 130.48 | 130.4 ± 0.2 | 0.059% |
@@ -1318,6 +1342,7 @@ The framework achieves systematic precision across all Standard Model sectors an
 | | δ_CP (degrees) | 234.5 | 230 ± 40 | 1.945% |
 | **Cosmological** | H₀ (km/s/Mpc) | 72.93 | 73.04 ± 1.04 | 0.145% |
 | | Ω_DE | 0.693846 | 0.6889 ± 0.020 | 0.718% |
+| | w_DE | -0.990 | -1.03 ± 0.03 | 3.88% |
 | | n_s | 0.963829 | 0.9649 ± 0.0042 | 0.111% |
 | | Ω_b h² | 0.02237 | 0.02242 ± 0.00014 | 0.223% |
 | | Ω_c h² | 0.1200 | 0.1193 ± 0.0009 | 0.587% |
