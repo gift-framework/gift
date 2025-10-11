@@ -10,12 +10,39 @@ This section provides comprehensive technical supplements supporting the GIFT fr
 
 ## Document Structure
 
+### Technical Modules (Complete Supplement Series)
+
+- **[Module 3: RG Evolution & β-Functions](module_3_rg_evolution.md)** - **COMPLETE RG DERIVATIONS** (1200 lines)
+  - Complete β-functions for {ξ, τ, β₀, δ} with mathematical constants {γ, ζ(2), ζ(3)}
+  - Explicit derivation from K₇ wavefunction renormalization
+  - Fixed point structure: F_α* = 98.999, F_β* = 99.734 with stability analysis
+  - Basin of attraction, convergence rates (τ_α ≈ 10, τ_β ≈ 20)
+  - Quasi-fixed behavior: <0.025% variation over full RG trajectory M_Pl → M_Z
+  - Geometric Lagrangian corrections with abundance and mixing operators
+
+- **[Module 5: 1-Loop Stability](radiative_corrections/module_5_loop_stability.md)** - **COMPLETE STABILITY PROOF** (1170 lines)
+  - Radiative stability proof **without supersymmetry**
+  - Triple suppression: S_K₇ × (99/114)² × Ward ~ 10⁻⁴⁷ total factor
+  - Sector-by-sector divergence analysis (gauge, scalar, fermion)
+  - Hierarchy problem resolution: δm²_GIFT ~ 10⁻¹⁰ GeV² (10⁻¹⁴ × m_H²)
+  - 2-loop and non-perturbative stability confirmation
+  - Comparison with SUSY, technicolor, extra dimensions
+
+- **[Module 6: Numerical Validation](algorithmic_validation/module_6_numerical_validation.md)** - **COMPLETE COMPUTATIONAL FRAMEWORK** (980 lines)
+  - Complete Python implementation (GIFTFramework, ObservableCalculator classes)
+  - 22 observables: detailed calculations with 0.38% mean deviation
+  - Error propagation and uncertainty analysis (<0.5% systematic)
+  - Chi-squared goodness-of-fit tests
+  - Cross-validation protocols and internal consistency checks (12+ tests)
+  - Executable code snippets and reproducibility guidelines
+
 ### Mathematical Foundations
 
 - **[Mathematical Foundations](mathematical_foundations/)** - Complete mathematical background and derivations
 - **[Computational Tools](computational_tools/)** - Algorithms, software, and numerical methods
 - **[Validation Tables](validation_tables/)** - Comprehensive comparison with experimental data
-- **[Cross References](cross_references/)** - Complete cross-referencing and navigation system
+- **[Radiative Corrections](radiative_corrections/)** - Loop calculations and stability proofs
+- **[Algorithmic Validation](algorithmic_validation/)** - Computational validation and code
 
 ## Key Components
 

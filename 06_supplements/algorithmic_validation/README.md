@@ -12,10 +12,20 @@ This section provides comprehensive algorithmic and numerical validation of the 
 
 ### Core Validation Algorithms
 
-- **[Root System Validation](root_system_validation.md)** - E₈×E₈ root system computation and validation
-- ****Cohomology Validation** - (see section below)** - K₇ cohomological structure computation and verification
-- ****RG Flow Validation** - (see section below)** - Renormalization group evolution validation
-- ****Parameter Extraction Validation** - (see section below)** - Standard Model parameter extraction validation
+- **[Module 6: Numerical Validation & Computation](module_6_numerical_validation.md)** - **COMPLETE COMPUTATIONAL FRAMEWORK** (980 lines)
+  - Core algorithms: GIFTFramework, ObservableCalculator, ValidationSuite classes
+  - E₈×E₈ root system algorithms (240-root generation with families)
+  - K₇ cohomology computation (Betti numbers, harmonic analysis)
+  - **22 observables: detailed calculations** with 0.38% mean deviation
+  - Error propagation & uncertainty analysis (<0.5% systematic)
+  - Cross-validation protocols (12+ internal consistency checks)
+  - Statistical analysis (chi-squared, likelihood, goodness-of-fit)
+  - **Complete Python implementation** with executable code
+  - Repository structure, installation, reproducibility guidelines
+- **[Root System Validation](root_system_validation.md)** - E₈×E₈ computational verification
+- **Cohomology Validation** - K₇ structure computation and verification
+- **RG Flow Validation** - Numerical integration of β-functions
+- **Parameter Extraction** - Observable prediction pipeline
 
 ### Advanced Validation
 

@@ -12,10 +12,25 @@ This section provides the complete mathematical foundation for the AdS₄×K₇ 
 
 ### Core Construction Theory
 
-- **[K₇ Manifold Construction](k7_manifold_construction.md)** - Twisted connected sum construction and G₂ holonomy
-- ****Cohomological Structure** - (see section below)** - H*(K₇) = ℂ¹ ⊕ ℂ²¹ ⊕ ℂ⁷⁷ = ℂ⁹⁹ analysis
-- ****Universal Factor 99** - (see section below)** - Geometric origin and physical manifestations
-- ****Chiral Fermion Emergence** - (see section below)** - Three generations without mirror partners
+- **[K₇ Manifold Construction](k7_manifold_construction.md)** - Concise overview of construction theory
+- **[Module 2: K₇ Construction & Cohomology](module_2_k7_construction.md)** - **COMPLETE TECHNICAL DERIVATIONS** (1240 lines)
+  - Asymptotically cylindrical G₂ manifolds M₁ (quintic), M₂ (complete intersection)
+  - Twisted connected sum procedure with explicit matching conditions
+  - **Complete Mayer-Vietoris calculation**: b₂=21, b₃=77 from first principles
+  - L² cohomology reduction: 204→22, 200→55 with detailed analysis
+  - Cohomological structure H*(K₇) = ℂ⁹⁹ primary mathematical foundation
+  - Harmonic forms (21 H² modes, 77 H³ modes) with SU(2) & SU(3) emergence
+  - G₂ holonomy preservation proofs and topological invariants
+- **[Module 4: 11D Action & Dynamics](module_4_11d_action.md)** - **COMPLETE ACTION DERIVATION** (1260 lines)
+  - 11D action S_11D = ∫ d¹¹x √g [R + |F|² + |dφ|² + V + ψ̄Dψ + Λ]
+  - Term-by-term derivation from first principles (Einstein-Hilbert, E₈×E₈ gauge, G₂ 3-form)
+  - Explicit dimensional reduction M₁₁ = AdS₄ × K₇ with metric ansatz
+  - Chiral fermions from associative 3-cycles, Yukawa hierarchy emergence
+  - Cosmological constant exp(-Vol(K₇)/ℓ_Pl⁷) ~ 10⁻⁴⁴ suppression
+  - Complete equations of motion (Einstein, Yang-Mills, Dirac, G₂ forms)
+- **Cohomological Structure** - H*(K₇) = ℂ⁹⁹ detailed analysis
+- **Universal Factor 99** - Geometric origin from 1 + 21 + 77
+- **Chiral Fermion Emergence** - Three generations via boundary modes
 
 ### Advanced Topics
 

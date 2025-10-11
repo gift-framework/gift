@@ -12,10 +12,19 @@ This section provides comprehensive analysis of radiative corrections within the
 
 ### Core Radiative Corrections
 
-- **[Non-Perturbative Effects](non_perturbative_effects.md)** - Analysis of strongly coupled regimes and non-perturbative corrections
-- ****Geometric Ward Identities** - (see section below)** - Geometric constraints and symmetry preservation
-- ****RG Flow Corrections** - (see section below)** - Renormalization group evolution and corrections
-- ****Quantum Corrections** - (see section below)** - Quantum field theory corrections to geometric predictions
+- **[Module 5: 1-Loop Stability Proof](module_5_loop_stability.md)** - **COMPLETE STABILITY DERIVATION** (1170 lines)
+  - Hierarchy problem and radiative stability **without supersymmetry**
+  - Loop integral structure and K₇ geometric regularization
+  - Sector-by-sector divergence analysis (gauge, scalar, fermion)
+  - **Triple suppression mechanism**: S_K₇ × (99/114)² × Ward ~ 10⁻⁴⁷
+  - Complete cancellation proof: δm²_GIFT ~ 10⁻¹⁰ GeV² (10⁻¹⁴ × m_H²)
+  - 2-loop and higher-order corrections (stronger suppression)
+  - Non-perturbative stability (instantons, monopoles, strong coupling)
+  - Comparison with SUSY, technicolor, extra dimensions (GIFT superior)
+- **[Non-Perturbative Effects](non_perturbative_effects.md)** - Strongly coupled regimes analysis
+- **Geometric Ward Identities** - Topological constraints from G₂ holonomy
+- **RG Flow Corrections** - Connection to Module 3 β-functions
+- **Quantum Corrections** - QFT corrections to geometric predictions
 
 ### Advanced Topics
 
