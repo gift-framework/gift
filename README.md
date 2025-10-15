@@ -136,6 +136,5 @@ This work is licensed under the MIT License - see the [LICENSE](LICENSE) file fo
 The complete GIFT v1 framework is preserved in the [legacy_v1/](legacy_v1/) directory for historical reference, development tracking, and comparison studies.
 
 ---
->
->*gIfT from bit*
->
+>*GIFT from bit*
+---
