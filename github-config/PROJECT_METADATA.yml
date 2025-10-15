@@ -1,11 +1,11 @@
-# GIFT Framework Project Metadata
-# This file contains structured metadata about the GIFT project
+# GIFT Framework v2.0 Project Metadata
+# This file contains structured metadata about the GIFT Framework v2.0
 
 project:
   name: "GIFT Framework"
   full_name: "Geometric Information Field Theory"
-  description: "Complete geometric derivation of fundamental physics parameters from pure mathematical principles"
-  version: "1.0.0"
+  description: "Topological unification of particle physics and cosmology from E₈×E₈ and G₂ holonomy"
+  version: "2.0.0"
   status: "active"
   license: "MIT"
   
@@ -15,7 +15,7 @@ authors:
     affiliation: "Independent Research"
     
 repository:
-  url: "https://github.com/gift-framework/GIFT"
+  url: "https://github.com/bdelaf/gift"
   platform: "GitHub"
   visibility: "public"
   default_branch: "main"
@@ -23,30 +23,36 @@ repository:
 framework:
   theoretical_basis: "E₈×E₈ Information Architecture"
   dimensional_reduction: "E₈×E₈ → AdS₄×K₇ → Standard Model"
-  precision: "0.38% mean deviation"
+  precision: "0.208% mean deviation"
   free_parameters: 0
-  observables_validated: 22
-  observables_within_1_percent: 19
+  observables_validated: 18
+  observables_within_1_percent: 18
   
 physics_sectors:
+  - name: "Neutrino Sector"
+    precision: "0.03-0.43%"
+    key_predictions: ["θ₁₂ = 33.45°", "θ₁₃ = 8.59°", "θ₂₃ = 48.99°", "δ_CP = 197.3°"]
+    status: "complete"
   - name: "Electromagnetism"
-    precision: "81 parts per trillion"
-    key_prediction: "α⁻¹ = 137.035999139(31)"
+    precision: "0.001%"
+    key_prediction: "α⁻¹ = 137.036"
   - name: "Weak Interactions"
-    precision: "0.02%"
-    key_prediction: "sin²θW = 0.23129(5)"
+    precision: "0.009%"
+    key_prediction: "sin²θ_W = 0.23127"
   - name: "Strong Interactions"
-    precision: "0.09%"
-    key_prediction: "αs(MZ) = 0.1181(11)"
+    precision: "0.08%"
+    key_prediction: "α_s(M_Z) = 0.1180"
   - name: "Fermion Masses"
     precision: "0.001-0.007%"
-    key_predictions: ["me = 0.51099895000(15) MeV", "mμ = 105.6583755(23) MeV"]
+    key_predictions: ["Q = 2/3 exact", "m_μ/m_e = 27^φ"]
   - name: "Higgs Sector"
     precision: "0.11%"
-    key_prediction: "mH = 125.10 ± 0.14 GeV"
+    key_prediction: "m_H = 125.10 ± 0.14 GeV"
+    dual_origin: "17 = 14+3 = 21-4"
   - name: "Cosmology"
-    precision: "0.15%"
-    key_prediction: "H₀ = 72.93 ± 0.11 km/s/Mpc"
+    precision: "0.10%"
+    key_prediction: "Ω_DE = ln(2) = 0.693"
+    hubble_resolution: "H₀ = 72.93 km/s/Mpc unified"
     
 experimental_predictions:
   new_particles:
@@ -63,84 +69,105 @@ experimental_predictions:
       source: "K₇ geometric structure"
       experimental_reach: "direct detection potential"
       
+  falsification_criteria:
+    - "Fourth generation evidence would contradict N_gen = 3"
+    - "δ_CP deviation from ζ(3) + √5 beyond experimental precision"
+    - "Violation of exact relations (ξ = (5/2)β₀, Q = 2/3)"
+    - "Precision degradation beyond experimental uncertainties"
+    
 documentation:
   canonical_documents:
-    - path: "legacy/docs_published/gift_preprint_full.md"
-      type: "preprint"
+    - path: "gift_main_v2.md"
+      type: "main paper"
       status: "canonical"
-    - path: "legacy/docs_published/gift_tech_supplement.md"
+      lines: 2345
+    - path: "gift_technical_v2.md"
       type: "technical supplement"
       status: "canonical"
-    - path: "legacy/docs_published/gift_tutorial_e8_to_sm.ipynb"
-      type: "tutorial"
+      lines: 4687
+    - path: "gift_v2_notebook.ipynb"
+      type: "interactive notebook"
       status: "canonical"
+      cells: "multiple"
       
-  modular_structure:
-    - module: "01_synthesis_and_overview"
-      purpose: "Global navigation and theoretical synthesis"
+  publication_formats:
+    - path: "publications/gift_main.pdf"
+      type: "PDF main paper"
+      status: "publication-ready"
+    - path: "publications/gift_technical.pdf"
+      type: "PDF technical supplement"
+      status: "publication-ready"
+      
+  supporting_docs:
+    - path: "README.md"
+      purpose: "Repository overview and navigation"
       status: "complete"
-    - module: "02_e8_foundations"
-      purpose: "E₈×E₈ algebraic foundations and information architecture"
+    - path: "CITATION.md"
+      purpose: "Formal citation formats"
       status: "complete"
-    - module: "03_ads_k7_construction"
-      purpose: "AdS₄×K₇ construction and G₂ holonomy theory"
+    - path: "STRUCTURE.md"
+      purpose: "Repository organization guide"
       status: "complete"
-    - module: "04_standard_model_sectors"
-      purpose: "Systematic derivation of Standard Model parameters by physics sector"
+    - path: "CHANGELOG.md"
+      purpose: "Version history and updates"
       status: "complete"
-    - module: "05_cosmology_quantum_gravity"
-      purpose: "Cosmological applications and quantum gravity completion"
+      
+  quick_reference:
+    - path: "docs/QUICK_REFERENCE.md"
+      purpose: "Key formulas and results table"
       status: "complete"
-    - module: "06_supplements"
-      purpose: "Technical supplements and computational tools"
+    - path: "docs/GLOSSARY.md"
+      purpose: "Technical terms and definitions"
+      status: "complete"
+    - path: "docs/FAQ.md"
+      purpose: "Common questions and answers"
       status: "complete"
       
 quality_assurance:
   validation_system:
     - name: "Framework Validation"
-      script: "scripts/validate_framework.py"
+      workflow: ".github/workflows/validation.yml"
       frequency: "on push, daily"
       coverage: "structure, documentation, badges, links"
-    - name: "Experimental Validation"
-      frequency: "daily"
-      coverage: "precision comparison against experimental data"
     - name: "Notebook Testing"
-      frequency: "on push"
+      workflow: ".github/workflows/notebook-test.yml"
+      frequency: "on push, PR"
       coverage: "interactive notebook execution"
+    - name: "Binder Testing"
+      workflow: ".github/workflows/binder-test.yml"
+      frequency: "weekly, on push"
+      coverage: "interactive environment setup"
       
-  canonical_enforcement:
-    policy: "PDF documents in legacy/docs_published/ are canonical references"
-    rule: "All modifications must be improvements or deepenings"
-    restriction: "No regressions from canonical formulations allowed"
-    
+  interactive_features:
+    - name: "Binder Environment"
+      url: "https://mybinder.org/v2/gh/bdelaf/gift/main?filepath=gift_v2_notebook.ipynb"
+      status: "active"
+    - name: "Google Colab"
+      url: "https://colab.research.google.com/github/bdelaf/gift/blob/main/gift_v2_notebook.ipynb"
+      status: "active"
+      
 tools_and_workflows:
-  maintenance:
-    - name: "Backup Agent"
-      purpose: "Automated backup and versioning"
-      location: "agents/backup_agent.py"
-    - name: "Validation Agent"
-      purpose: "Consistency checks and validation"
-      location: "agents/validation_agent.py"
-    - name: "Canonical Documents Agent"
-      purpose: "PDF enforcement and version control"
-      location: "agents/canonical_documents_agent.py"
-    - name: "Versioning Agent"
-      purpose: "Document version tracking and regression detection"
-      location: "agents/versioning_agent.py"
+  interactive_environment:
+    - name: "Python Dependencies"
+      file: "requirements.txt"
+      python_version: "3.11+"
+    - name: "Runtime Configuration"
+      file: "runtime.txt"
+      version: "python-3.11"
+    - name: "Build Script"
+      file: "postBuild"
+      purpose: "Jupyter setup and environment configuration"
       
-  ci_cd:
-    - name: "Framework Validation"
-      workflow: ".github/workflows/framework-validation-simple.yml"
+  automation:
+    - name: "Validation Workflow"
+      purpose: "Document structure and consistency checks"
       triggers: ["push", "pull_request", "daily_schedule"]
-    - name: "Experimental Validation"
-      workflow: ".github/workflows/experimental-validation.yml"
-      triggers: ["daily_schedule"]
     - name: "Notebook Testing"
-      workflow: ".github/workflows/notebooks-test.yml"
+      purpose: "Interactive notebook execution validation"
       triggers: ["push", "pull_request"]
-    - name: "Release Automation"
-      workflow: ".github/workflows/release.yml"
-      triggers: ["tag_push"]
+    - name: "Binder Testing"
+      purpose: "Interactive environment validation"
+      triggers: ["push", "weekly_schedule"]
       
 keywords:
   physics:
@@ -158,6 +185,8 @@ keywords:
     - "fine structure constant"
     - "hubble tension"
     - "dark matter"
+    - "neutrino mixing"
+    - "dark energy"
     
   mathematics:
     - "differential geometry"
@@ -168,6 +197,8 @@ keywords:
     - "holonomy"
     - "octonions"
     - "weyl groups"
+    - "exceptional algebras"
+    - "topological invariants"
     
   computational:
     - "python"
@@ -176,22 +207,65 @@ keywords:
     - "numerical validation"
     - "automated testing"
     - "github actions"
+    - "binder"
+    - "colab"
+    - "interactive computing"
     
 citations:
   format: "APA"
   template: |
-    GIFT Framework: Geometric Information Field Theory. (2025). 
-    Retrieved from https://github.com/gift-framework/GIFT
+    GIFT Framework: Geometric Information Field Theory v2.0. (2025). 
+    Retrieved from https://github.com/bdelaf/gift
     
   bibtex_template: |
-    @software{gift_framework_2025,
-      title={GIFT Framework: Geometric Information Field Theory},
+    @software{gift_framework_v2_2025,
+      title={GIFT Framework v2: Geometric Information Field Theory},
       author={{GIFT Framework Team}},
       year={2025},
-      url={https://github.com/gift-framework/GIFT},
-      license={MIT}
+      url={https://github.com/bdelaf/gift},
+      version={2.0.0},
+      license={MIT},
+      note={Topological unification of particle physics and cosmology from E₈×E₈}
     }
     
-last_updated: "2025-01-08"
+  theoretical_citation: |
+    @article{gift_framework_v2_theory_2025,
+      title={Geometric Information Field Theory v2: Topological Unification of Particle Physics and Cosmology from E₈×E₈ and G₂ Holonomy},
+      author={{GIFT Framework Team}},
+      year={2025},
+      journal={arXiv preprint},
+      note={Mean deviation 0.208\% across 18 observables, 3 geometric parameters}
+    }
+    
+version_history:
+  v2.0.0:
+    date: "2025-01-15"
+    changes:
+      - "Precision improvement: 0.380% → 0.208%"
+      - "Parameter reduction: 4 → 3"
+      - "Complete neutrino sector predictions"
+      - "Unified cosmological observables"
+      - "Exact mathematical relations"
+      - "Repository restructure for publication"
+      
+  v1.0.0:
+    date: "2024"
+    status: "legacy"
+    location: "legacy_v1/"
+    precision: "0.380%"
+    parameters: 4
+    
+legacy_preservation:
+  v1_framework:
+    location: "legacy_v1/"
+    status: "archived"
+    preservation_reason: "historical reference, development tracking"
+    content:
+      - "Complete modular structure (01-06)"
+      - "Analysis documents and status reports"
+      - "Original research materials"
+      - "v1 computational notebooks"
+      
+last_updated: "2025-01-15"
 maintainer: "GIFT Framework Team"
-
+contact: "https://github.com/bdelaf/gift/issues"
