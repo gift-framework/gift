@@ -2,8 +2,8 @@
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gift-framework/GIFT/blob/main/gift_v2_notebook.ipynb)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gift-framework/GIFT/main?filepath=gift_v2_notebook.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gift-framework/GIFT/blob/main/gift_v2_validation.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gift-framework/GIFT/main?filepath=gift_v2_validation.ipynb)
 
 ## Abstract
 
@@ -35,15 +35,15 @@ Version 2.0 represents a substantial advancement, reducing independent parameter
 ### Main Documents
 - **[Main Paper](gift_main_v2.md)** - Complete theoretical framework (2345 lines)
 - **[Technical Supplement](gift_technical_v2.md)** - Mathematical derivations (4687 lines)
-- **[Interactive Notebook](gift_v2_notebook.ipynb)** - Computational implementation
+- **[Interactive Notebook](gift_v2_validation.ipynb)** - Computational implementation
 
 ### PDF Versions
 - **[Main Paper PDF](publications/gift_main.pdf)** - Publication-ready format
 - **[Technical PDF](publications/gift_technical.pdf)** - Complete supplement
 
 ### Interactive Exploration
-- **[Binder](https://mybinder.org/v2/gh/gift-framework/GIFT/main?filepath=gift_v2_notebook.ipynb)** - Run notebook in browser
-- **[Google Colab](https://colab.research.google.com/github/gift-framework/GIFT/blob/main/gift_v2_notebook.ipynb)** - Cloud-based execution
+- **[Binder](https://mybinder.org/v2/gh/gift-framework/GIFT/main?filepath=gift_v2_validation.ipynb)** - Run notebook in browser
+- **[Google Colab](https://colab.research.google.com/github/gift-framework/GIFT/blob/main/gift_v2_validation.ipynb)** - Cloud-based execution
 
 ## Repository Structure
 
@@ -130,10 +130,6 @@ This work is licensed under the MIT License - see the [LICENSE](LICENSE) file fo
 - **[Quick Reference](docs/QUICK_REFERENCE.md)** - Key formulas and results
 - **[Glossary](docs/GLOSSARY.md)** - Technical terms
 - **[FAQ](docs/FAQ.md)** - Common questions
-
-## Legacy Framework
-
-The complete GIFT v1 framework is preserved in the [legacy_v1/](legacy_v1/) directory for historical reference, development tracking, and comparison studies.
 
 ---
 >*GIFT from bit*
