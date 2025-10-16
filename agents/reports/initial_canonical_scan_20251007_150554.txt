@@ -1,6 +1,0 @@
-============================================================
-GIFT CANONICAL DOCUMENTS REPORT
-============================================================
-Generated: 2025-10-07 15:05:54
-
-No canonical documents found. Run scan_canonical_documents() first.

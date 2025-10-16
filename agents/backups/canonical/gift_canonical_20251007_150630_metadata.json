@@ -1,9 +1,0 @@
-{
-  "backup_name": "gift_canonical_20251007_150630",
-  "backup_type": "canonical",
-  "timestamp": "20251007_150630",
-  "created_date": "2025-10-07T15:06:30.066378",
-  "size_bytes": 22,
-  "checksum": "8739c76e681f900923b900c9df0ef75cf421d39cabb54650c4b9ad19b6a76d85",
-  "description": "Canonical documents and reference database backup"
-}
