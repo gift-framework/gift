@@ -2,8 +2,8 @@
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bdelaf/gift/blob/main/gift_v2_notebook.ipynb)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/bdelaf/gift/main?filepath=gift_v2_notebook.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gift-framework/GIFT/blob/main/gift_v2_notebook.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gift-framework/GIFT/main?filepath=gift_v2_notebook.ipynb)
 
 ## Abstract
 
@@ -42,8 +42,8 @@ Version 2.0 represents a substantial advancement, reducing independent parameter
 - **[Technical PDF](publications/gift_technical.pdf)** - Complete supplement
 
 ### Interactive Exploration
-- **[Binder](https://mybinder.org/v2/gh/bdelaf/gift/main?filepath=gift_v2_notebook.ipynb)** - Run notebook in browser
-- **[Google Colab](https://colab.research.google.com/github/bdelaf/gift/blob/main/gift_v2_notebook.ipynb)** - Cloud-based execution
+- **[Binder](https://mybinder.org/v2/gh/gift-framework/GIFT/main?filepath=gift_v2_notebook.ipynb)** - Run notebook in browser
+- **[Google Colab](https://colab.research.google.com/github/gift-framework/GIFT/blob/main/gift_v2_notebook.ipynb)** - Cloud-based execution
 
 ## Repository Structure
 
@@ -102,9 +102,9 @@ If you use this framework in your research, please cite:
 ```bibtex
 @software{gift_framework_v2_2025,
   title={GIFT Framework v2: Geometric Information Field Theory},
-  author={{GIFT Framework Team}},
+  author={{Brieuc de La Fournière}},
   year={2025},
-  url={https://github.com/bdelaf/gift},
+  url={https://github.com/gift-framework/GIFT},
   note={Topological unification of particle physics and cosmology from E₈×E₈}
 }
 ```
