@@ -80,6 +80,17 @@ coverage.xml
 .github/validation-reports/*.md
 !/.github/validation-reports/.gitkeep
 
+# GIFT v2 specific
+# Legacy v1 content (preserved but not actively modified)
+legacy_v1/
+# Publication artifacts
+publications/*.aux
+publications/*.bbl
+publications/*.blg
+publications/*.log
+publications/*.out
+publications/*.toc
+
 # Documentation build
 docs/_build/
 site/
@@ -87,4 +98,17 @@ site/
 # Local development
 local_config.py
 secrets.py
+
+# Interactive environment
+.env
+.ipynb_checkpoints/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# OS specific
+.DS_Store
+Thumbs.db
 
