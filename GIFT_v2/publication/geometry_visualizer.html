@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIFT Framework - Geometric Structure Visualizer</title>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #ffffff;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .nav-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .tab-button {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .tab-button:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        .tab-button.active {
+            background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+            border-color: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        .viz-panel {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            display: none;
+        }
+        
+        .viz-panel.active {
+            display: block;
+        }
+        
+        .plot-container {
+            width: 100%;
+            min-height: 600px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        
+        .description {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .controls-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        
+        .control-row {
+            margin: 15px 0;
+        }
+        
+        .control-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        input[type="range"] {
+            width: 100%;
+            height: 6px;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            outline: none;
+            -webkit-appearance: none;
+        }
+        
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: #667eea;
+            cursor: pointer;
+        }
+        
+        select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            font-size: 1em;
+        }
+        
+        option {
+            background: #764ba2;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔮 GIFT Geometric Structure Visualizer</h1>
+        <div class="subtitle">Exploring the topology from E₈×E₈ to Standard Model</div>
+        
+        <div class="nav-tabs">
+            <button class="tab-button active" onclick="showTab('e8-roots')">E₈ Root System</button>
+            <button class="tab-button" onclick="showTab('cohomology-flow')">Cohomology Flow</button>
+            <button class="tab-button" onclick="showTab('dimensional-reduction')">Dimensional Reduction</button>
+            <button class="tab-button" onclick="showTab('betti-decomposition')">Betti Decomposition</button>
+        </div>
+        
+        <!-- E8 Root System Panel -->
+        <div id="e8-roots" class="viz-panel active">
+            <div class="description">
+                <h2>E₈ Root System Visualization</h2>
+                <p>
+                    The exceptional Lie algebra E₈ contains 240 roots in 8-dimensional space. 
+                    Here we show projections into 2D and 3D for visualization. All roots have 
+                    equal length √2 (simply-laced algebra).
+                </p>
+                <p style="margin-top: 10px;">
+                    <strong>Key properties:</strong> dim(E₈) = 248, rank = 8, |Φ| = 240 roots
+                </p>
+            </div>
+            
+            <div class="controls-box">
+                <div class="control-row">
+                    <label class="control-label">Projection Type</label>
+                    <select id="e8-projection" onchange="updateE8Roots()">
+                        <option value="2d">2D (First two coordinates)</option>
+                        <option value="3d" selected>3D (First three coordinates)</option>
+                        <option value="coxeter">Coxeter plane projection</option>
+                    </select>
+                </div>
+                
+                <div class="control-row">
+                    <label class="control-label">Rotation Speed: <span id="rot-speed-val">0.5</span></label>
+                    <input type="range" id="rotation-speed" min="0" max="2" step="0.1" value="0.5" 
+                           onchange="updateRotationSpeed(this.value)">
+                </div>
+            </div>
+            
+            <div class="plot-container" id="e8-plot"></div>
+        </div>
+        
+        <!-- Cohomology Flow Panel -->
+        <div id="cohomology-flow" class="viz-panel">
+            <div class="description">
+                <h2>Dimensional Reduction Flow: 496 → 99 → 18</h2>
+                <p>
+                    This Sankey diagram shows how information flows from E₈×E₈ (496 dimensions) 
+                    through K₇ cohomology (99 modes) to 18 observable predictions.
+                </p>
+                <p style="margin-top: 10px;">
+                    <strong>Key insight:</strong> H²(K₇)=21 → gauge bosons, H³(K₇)=77 → fermions
+                </p>
+            </div>
+            
+            <div class="plot-container" id="sankey-plot"></div>
+        </div>
+        
+        <!-- Dimensional Reduction Panel -->
+        <div id="dimensional-reduction" class="viz-panel">
+            <div class="description">
+                <h2>Kaluza-Klein Dimensional Reduction</h2>
+                <p>
+                    Visualization of the compactification process: 11D → 4D effective theory.
+                    The cascade shows how dimensions are compactified on K₇ manifold.
+                </p>
+            </div>
+            
+            <div class="plot-container" id="reduction-plot"></div>
+        </div>
+        
+        <!-- Betti Numbers Decomposition Panel -->
+        <div id="betti-decomposition" class="viz-panel">
+            <div class="description">
+                <h2>K₇ Betti Numbers and Particle Content</h2>
+                <p>
+                    Decomposition of K₇ cohomology into Standard Model particle content.
+                    The 21 modes from H²(K₇) and 77 modes from H³(K₇) map directly to 
+                    gauge bosons and chiral fermions.
+                </p>
+            </div>
+            
+            <div class="controls-box">
+                <div class="control-row">
+                    <label class="control-label">View Type</label>
+                    <select id="betti-view" onchange="updateBettiView()">
+                        <option value="pie">Pie Charts</option>
+                        <option value="bar">Stacked Bars</option>
+                        <option value="sunburst" selected>Sunburst Hierarchy</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="plot-container" id="betti-plot"></div>
+        </div>
+    </div>
+    
+    <script>
+        // Tab switching
+        function showTab(tabId) {
+            document.querySelectorAll('.viz-panel').forEach(panel => panel.classList.remove('active'));
+            document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+            
+            document.getElementById(tabId).classList.add('active');
+            event.target.classList.add('active');
+            
+            // Trigger appropriate visualization
+            if (tabId === 'e8-roots') updateE8Roots();
+            if (tabId === 'cohomology-flow') createSankeyFlow();
+            if (tabId === 'dimensional-reduction') createReductionCascade();
+            if (tabId === 'betti-decomposition') updateBettiView();
+        }
+        
+        // E8 Root System Generation (simplified for visualization)
+        function generateE8Roots() {
+            const roots = [];
+            
+            // Type 1: ±ei±ej vectors (112 roots)
+            for (let i = 0; i < 8; i++) {
+                for (let j = i+1; j < 8; j++) {
+                    for (let s1 of [-1, 1]) {
+                        for (let s2 of [-1, 1]) {
+                            const root = new Array(8).fill(0);
+                            root[i] = s1;
+                            root[j] = s2;
+                            roots.push(root);
+                        }
+                    }
+                }
+            }
+            
+            // Type 2: (±1/2, ±1/2, ..., ±1/2) with even number of minus signs (128 roots)
+            // Simplified: add subset for visualization
+            for (let i = 0; i < 64; i++) {
+                const root = [];
+                let minusCount = 0;
+                for (let j = 0; j < 8; j++) {
+                    const val = ((i >> j) & 1) ? 0.5 : -0.5;
+                    root.push(val);
+                    if (val < 0) minusCount++;
+                }
+                if (minusCount % 2 === 0) {
+                    roots.push(root);
+                }
+            }
+            
+            return roots;
+        }
+        
+        // Update E8 visualization
+        let rotationAngle = 0;
+        let rotationInterval = null;
+        
+        function updateE8Roots() {
+            const roots = generateE8Roots();
+            const projection = document.getElementById('e8-projection').value;
+            
+            let trace;
+            
+            if (projection === '3d') {
+                // 3D scatter
+                const x = roots.map(r => r[0]);
+                const y = roots.map(r => r[1]);
+                const z = roots.map(r => r[2]);
+                
+                trace = {
+                    type: 'scatter3d',
+                    mode: 'markers',
+                    x: x,
+                    y: y,
+                    z: z,
+                    marker: {
+                        size: 4,
+                        color: z,
+                        colorscale: 'Viridis',
+                        showscale: true,
+                        colorbar: {
+                            title: 'z-coord',
+                            titlefont: {color: 'white'},
+                            tickfont: {color: 'white'}
+                        }
+                    },
+                    text: roots.map((r, i) => `Root ${i}: [${r.slice(0,3).map(v => v.toFixed(2)).join(', ')}...]`),
+                    hovertemplate: '%{text}<extra></extra>'
+                };
+                
+                const layout = {
+                    title: {
+                        text: 'E₈ Root System (240 roots)<br>3D Projection',
+                        font: {color: 'white', size: 20}
+                    },
+                    scene: {
+                        xaxis: {title: 'x₁', color: 'white', gridcolor: 'rgba(255,255,255,0.2)'},
+                        yaxis: {title: 'x₂', color: 'white', gridcolor: 'rgba(255,255,255,0.2)'},
+                        zaxis: {title: 'x₃', color: 'white', gridcolor: 'rgba(255,255,255,0.2)'},
+                        bgcolor: 'rgba(0,0,0,0.1)'
+                    },
+                    paper_bgcolor: 'rgba(0,0,0,0)',
+                    plot_bgcolor: 'rgba(0,0,0,0)',
+                    margin: {l: 0, r: 0, t: 60, b: 0}
+                };
+                
+                const config = {responsive: true};
+                
+                Plotly.newPlot('e8-plot', [trace], layout, config);
+            } else if (projection === '2d') {
+                // 2D scatter
+                const x = roots.map(r => r[0]);
+                const y = roots.map(r => r[1]);
+                
+                trace = {
+                    type: 'scatter',
+                    mode: 'markers',
+                    x: x,
+                    y: y,
+                    marker: {
+                        size: 8,
+                        color: '#667eea',
+                        line: {color: 'white', width: 1}
+                    },
+                    text: roots.map((r, i) => `Root ${i}`),
+                    hovertemplate: '%{text}<extra></extra>'
+                };
+                
+                const layout = {
+                    title: {
+                        text: 'E₈ Root System (240 roots)<br>2D Projection',
+                        font: {color: 'white', size: 20}
+                    },
+                    xaxis: {title: 'x₁', color: 'white', gridcolor: 'rgba(255,255,255,0.2)', 
+                            zeroline: true, zerolinecolor: 'white'},
+                    yaxis: {title: 'x₂', color: 'white', gridcolor: 'rgba(255,255,255,0.2)',
+                            zeroline: true, zerolinecolor: 'white'},
+                    paper_bgcolor: 'rgba(0,0,0,0)',
+                    plot_bgcolor: 'rgba(0,0,0,0.1)',
+                    margin: {l: 60, r: 30, t: 80, b: 60}
+                };
+                
+                const config = {responsive: true};
+                
+                Plotly.newPlot('e8-plot', [trace], layout, config);
+            } else {
+                // Coxeter plane
+                const angle = 2 * Math.PI / 30;  // Coxeter number h = 30
+                const x = roots.map(r => {
+                    return r[0] * Math.cos(0) + r[1] * Math.cos(angle);
+                });
+                const y = roots.map(r => {
+                    return r[0] * Math.sin(0) + r[1] * Math.sin(angle);
+                });
+                
+                trace = {
+                    type: 'scatter',
+                    mode: 'markers',
+                    x: x,
+                    y: y,
+                    marker: {
+                        size: 6,
+                        color: '#667eea',
+                        line: {color: 'white', width: 0.5}
+                    },
+                    hoverinfo: 'skip'
+                };
+                
+                const layout = {
+                    title: {
+                        text: 'E₈ Root System<br>Coxeter Plane Projection',
+                        font: {color: 'white', size: 20}
+                    },
+                    xaxis: {title: '', showgrid: false, zeroline: false, showticklabels: false},
+                    yaxis: {title: '', showgrid: false, zeroline: false, showticklabels: false,
+                            scaleanchor: 'x'},
+                    paper_bgcolor: 'rgba(0,0,0,0)',
+                    plot_bgcolor: 'rgba(0,0,0,0.1)',
+                    margin: {l: 30, r: 30, t: 80, b: 30}
+                };
+                
+                const config = {responsive: true};
+                
+                Plotly.newPlot('e8-plot', [trace], layout, config);
+            }
+        }
+        
+        // Rotation control
+        function updateRotationSpeed(speed) {
+            document.getElementById('rot-speed-val').textContent = speed;
+            // TODO: Implement actual rotation animation
+        }
+        
+        // Sankey Flow Diagram
+        function createSankeyFlow() {
+            const data = [{
+                type: "sankey",
+                orientation: "h",
+                node: {
+                    pad: 15,
+                    thickness: 30,
+                    line: {color: "white", width: 2},
+                    label: [
+                        "E₈×E₈<br>(496)",
+                        "H⁰(K₇)<br>(1)", 
+                        "H²(K₇)<br>(21)", 
+                        "H³(K₇)<br>(77)",
+                        "SU(3)_C<br>(8)",
+                        "SU(2)_L<br>(3)",
+                        "U(1)_Y<br>(1)",
+                        "Hidden<br>(9)",
+                        "Quarks<br>(18)",
+                        "Leptons<br>(12)",
+                        "Higgs<br>(4)",
+                        "RH Neutrinos<br>(9)",
+                        "Dark Matter<br>(34)",
+                        "Neutrino Mixing<br>(4 angles)",
+                        "Gauge Couplings<br>(5 params)",
+                        "Higgs Sector<br>(2 params)",
+                        "Lepton Masses<br>(3 ratios)",
+                        "Cosmology<br>(3 params)",
+                        "Structure<br>(1 param)"
+                    ],
+                    color: [
+                        "#667eea",  // E8xE8
+                        "#4facfe", "#4facfe", "#4facfe",  // Cohomology
+                        "#00f2fe", "#00f2fe", "#00f2fe", "#764ba2",  // Gauge decomp
+                        "#43e97b", "#43e97b", "#43e97b", "#43e97b", "#764ba2",  // Matter decomp
+                        "#fa709a", "#fa709a", "#fa709a", "#fa709a", "#fa709a", "#fa709a"  // Observables
+                    ]
+                },
+                link: {
+                    source: [
+                        0, 0, 0, 0,  // E8xE8 → cohomology
+                        2, 2, 2, 2,  // H2 → gauge
+                        3, 3, 3, 3, 3,  // H3 → matter
+                        4, 5, 6, 7,  // Gauge → observables
+                        8, 9, 10, 11, 12  // Matter → observables
+                    ],
+                    target: [
+                        1, 2, 3, 1,  // → H0, H2, H3
+                        4, 5, 6, 7,  // → SU(3), SU(2), U(1), hidden
+                        8, 9, 10, 11, 12,  // → quarks, leptons, Higgs, RH, DM
+                        14, 14, 14, 14,  // → gauge observables
+                        13, 16, 15, 13, 17  // → various observables
+                    ],
+                    value: [
+                        1, 21, 77, 1,
+                        8, 3, 1, 9,
+                        18, 12, 4, 9, 34,
+                        8, 3, 1, 9,
+                        18, 12, 4, 9, 34
+                    ],
+                    color: "rgba(255, 255, 255, 0.2)"
+                }
+            }];
+            
+            const layout = {
+                title: {
+                    text: "Information Flow: E₈×E₈ → K₇ → Observables",
+                    font: {color: 'white', size: 20}
+                },
+                font: {size: 12, color: 'white'},
+                paper_bgcolor: 'rgba(0,0,0,0)',
+                plot_bgcolor: 'rgba(0,0,0,0)',
+                margin: {l: 20, r: 20, t: 60, b: 20}
+            };
+            
+            const config = {responsive: true};
+            
+            Plotly.newPlot('sankey-plot', data, layout, config);
+        }
+        
+        // Dimensional Reduction Cascade
+        function createReductionCascade() {
+            const stages = [
+                {name: "11D M-theory", dim: 11, y: 5},
+                {name: "AdS₄ × K₇", dim: 4+7, y: 4},
+                {name: "K₇ compactified", dim: 4, y: 3},
+                {name: "4D effective", dim: 4, y: 2},
+                {name: "Observable", dim: 18, y: 1}
+            ];
+            
+            const traces = stages.map((stage, i) => ({
+                type: 'bar',
+                x: [stage.name],
+                y: [stage.dim],
+                name: stage.name,
+                marker: {
+                    color: `rgba(${100 + i*40}, ${100 + i*30}, ${240 - i*30}, 0.7)`,
+                    line: {color: 'white', width: 2}
+                },
+                text: [`${stage.dim}D`],
+                textposition: 'auto',
+                textfont: {size: 16, color: 'white'},
+                hovertemplate: `${stage.name}<br>${stage.dim} dimensions<extra></extra>`
+            }));
+            
+            const layout = {
+                title: {
+                    text: "Dimensional Reduction: 11D → 4D",
+                    font: {color: 'white', size: 20}
+                },
+                showlegend: false,
+                xaxis: {
+                    title: '',
+                    tickangle: -45,
+                    tickfont: {color: 'white', size: 14}
+                },
+                yaxis: {
+                    title: 'Dimensionality',
+                    tickfont: {color: 'white'},
+                    gridcolor: 'rgba(255,255,255,0.2)'
+                },
+                paper_bgcolor: 'rgba(0,0,0,0)',
+                plot_bgcolor: 'rgba(0,0,0,0.1)',
+                margin: {l: 60, r: 30, t: 80, b: 100}
+            };
+            
+            const config = {responsive: true};
+            
+            Plotly.newPlot('reduction-plot', traces, layout, config);
+        }
+        
+        // Betti Numbers Decomposition
+        function updateBettiView() {
+            const viewType = document.getElementById('betti-view').value;
+            
+            if (viewType === 'sunburst') {
+                const data = [{
+                    type: "sunburst",
+                    labels: [
+                        "H*(K₇)=99",
+                        "H²(K₇)=21", "H³(K₇)=77",
+                        "SU(3)_C", "SU(2)_L", "U(1)_Y", "Massive",
+                        "Quarks", "Leptons", "Higgs", "RH ν", "Dark"
+                    ],
+                    parents: [
+                        "",
+                        "H*(K₇)=99", "H*(K₇)=99",
+                        "H²(K₇)=21", "H²(K₇)=21", "H²(K₇)=21", "H²(K₇)=21",
+                        "H³(K₇)=77", "H³(K₇)=77", "H³(K₇)=77", "H³(K₇)=77", "H³(K₇)=77"
+                    ],
+                    values: [
+                        99,
+                        21, 77,
+                        8, 3, 1, 9,
+                        18, 12, 4, 9, 34
+                    ],
+                    marker: {
+                        colors: [
+                            "#667eea",
+                            "#4facfe", "#00f2fe",
+                            "#43e97b", "#43e97b", "#43e97b", "#764ba2",
+                            "#fa709a", "#fa709a", "#fa709a", "#fa709a", "#764ba2"
+                        ],
+                        line: {color: 'white', width: 2}
+                    },
+                    textfont: {size: 14, color: 'white'},
+                    hovertemplate: '<b>%{label}</b><br>Modes: %{value}<extra></extra>'
+                }];
+                
+                const layout = {
+                    title: {
+                        text: "K₇ Cohomology → Standard Model Content",
+                        font: {color: 'white', size: 20}
+                    },
+                    paper_bgcolor: 'rgba(0,0,0,0)',
+                    margin: {l: 0, r: 0, t: 60, b: 0},
+                    height: 600
+                };
+                
+                const config = {responsive: true};
+                
+                Plotly.newPlot('betti-plot', data, layout, config);
+            } else if (viewType === 'bar') {
+                // Stacked bar chart
+                const trace1 = {
+                    x: ['H²(K₇)', 'H³(K₇)'],
+                    y: [8, 18],
+                    name: 'Colored Sector',
+                    type: 'bar',
+                    marker: {color: '#43e97b'}
+                };
+                
+                const trace2 = {
+                    x: ['H²(K₇)', 'H³(K₇)'],
+                    y: [3, 12],
+                    name: 'Flavor Sector',
+                    type: 'bar',
+                    marker: {color: '#4facfe'}
+                };
+                
+                const trace3 = {
+                    x: ['H²(K₇)', 'H³(K₇)'],
+                    y: [1, 4],
+                    name: 'Scalar Sector',
+                    type: 'bar',
+                    marker: {color: '#fa709a'}
+                };
+                
+                const trace4 = {
+                    x: ['H²(K₇)', 'H³(K₇)'],
+                    y: [9, 43],
+                    name: 'Other/Hidden',
+                    type: 'bar',
+                    marker: {color: '#764ba2'}
+                };
+                
+                const layout = {
+                    title: {
+                        text: "Particle Content from Cohomology",
+                        font: {color: 'white', size: 20}
+                    },
+                    barmode: 'stack',
+                    xaxis: {tickfont: {color: 'white', size: 14}},
+                    yaxis: {
+                        title: 'Number of Modes',
+                        tickfont: {color: 'white'},
+                        gridcolor: 'rgba(255,255,255,0.2)'
+                    },
+                    legend: {font: {color: 'white'}},
+                    paper_bgcolor: 'rgba(0,0,0,0)',
+                    plot_bgcolor: 'rgba(0,0,0,0.1)',
+                    margin: {l: 60, r: 30, t: 80, b: 60}
+                };
+                
+                const config = {responsive: true};
+                
+                Plotly.newPlot('betti-plot', [trace1, trace2, trace3, trace4], layout, config);
+            } else {
+                // Pie charts
+                const data1 = {
+                    values: [8, 3, 1, 9],
+                    labels: ['SU(3)_C', 'SU(2)_L', 'U(1)_Y', 'Massive'],
+                    type: 'pie',
+                    domain: {x: [0, 0.48], y: [0, 1]},
+                    marker: {colors: ['#43e97b', '#4facfe', '#fa709a', '#764ba2']},
+                    textinfo: 'label+value',
+                    textfont: {color: 'white', size: 14},
+                    hole: 0.4,
+                    name: 'H²(K₇) = 21'
+                };
+                
+                const data2 = {
+                    values: [18, 12, 4, 9, 34],
+                    labels: ['Quarks', 'Leptons', 'Higgs', 'RH ν', 'Dark Matter'],
+                    type: 'pie',
+                    domain: {x: [0.52, 1], y: [0, 1]},
+                    marker: {colors: ['#43e97b', '#4facfe', '#fa709a', '#00f2fe', '#764ba2']},
+                    textinfo: 'label+value',
+                    textfont: {color: 'white', size: 14},
+                    hole: 0.4,
+                    name: 'H³(K₇) = 77'
+                };
+                
+                const layout = {
+                    title: {
+                        text: "Cohomology → Particle Content",
+                        font: {color: 'white', size: 20}
+                    },
+                    annotations: [
+                        {
+                            text: 'H²(K₇)<br>Gauge<br>21 modes',
+                            x: 0.20,
+                            y: 0.5,
+                            font: {size: 16, color: 'white'},
+                            showarrow: false
+                        },
+                        {
+                            text: 'H³(K₇)<br>Matter<br>77 modes',
+                            x: 0.80,
+                            y: 0.5,
+                            font: {size: 16, color: 'white'},
+                            showarrow: false
+                        }
+                    ],
+                    showlegend: false,
+                    paper_bgcolor: 'rgba(0,0,0,0)',
+                    margin: {l: 20, r: 20, t: 80, b: 20},
+                    height: 500
+                };
+                
+                const config = {responsive: true};
+                
+                Plotly.newPlot('betti-plot', [data1, data2], layout, config);
+            }
+        }
+        
+        // Initialize on load
+        window.addEventListener('load', function() {
+            updateE8Roots();
+        });
+    </script>
+</body>
+</html>
+
