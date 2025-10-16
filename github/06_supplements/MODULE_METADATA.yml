@@ -1,0 +1,20 @@
+content:
+  document_count: 0
+  files:
+  - README.md
+  has_readme: true
+module:
+  id: 06_supplements
+  last_updated: '2025-10-08'
+  name: 06 Supplements
+  purpose: Module 06_supplements of GIFT Framework
+  status: complete
+structure:
+  file_count: 1
+  submodules:
+  - algorithmic_validation
+  - computational_tools
+  - cross_references
+  - mathematical_foundations
+  - radiative_corrections
+  - validation_tables

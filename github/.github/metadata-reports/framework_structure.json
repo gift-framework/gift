@@ -1,0 +1,467 @@
+{
+  "modules": {
+    "01_synthesis_and_overview": {
+      "path": "01_synthesis_and_overview",
+      "files": [
+        {
+          "name": "framework_overview.md",
+          "size": 15365,
+          "modified": "2025-10-07T13:21:08.207442"
+        },
+        {
+          "name": "MODULE_METADATA.yml",
+          "size": 2309,
+          "modified": "2025-10-08T01:13:17.817866"
+        },
+        {
+          "name": "README.md",
+          "size": 8927,
+          "modified": "2025-10-07T23:45:05.988373"
+        }
+      ],
+      "submodules": [],
+      "has_readme": true,
+      "has_metadata": true,
+      "document_count": 1
+    },
+    "02_e8_foundations": {
+      "path": "02_e8_foundations",
+      "files": [
+        {
+          "name": "e8_algebraic_structure.md",
+          "size": 12052,
+          "modified": "2025-10-07T13:21:08.209799"
+        },
+        {
+          "name": "MODULE_METADATA.yml",
+          "size": 320,
+          "modified": "2025-10-08T01:11:05.119501"
+        },
+        {
+          "name": "README.md",
+          "size": 4739,
+          "modified": "2025-10-07T13:21:08.207442"
+        }
+      ],
+      "submodules": [],
+      "has_readme": true,
+      "has_metadata": true,
+      "document_count": 1
+    },
+    "03_ads_k7_construction": {
+      "path": "03_ads_k7_construction",
+      "files": [
+        {
+          "name": "k7_manifold_construction.md",
+          "size": 13184,
+          "modified": "2025-10-07T13:21:08.209799"
+        },
+        {
+          "name": "MODULE_METADATA.yml",
+          "size": 337,
+          "modified": "2025-10-08T01:11:05.121006"
+        },
+        {
+          "name": "README.md",
+          "size": 7917,
+          "modified": "2025-10-07T13:21:08.209799"
+        }
+      ],
+      "submodules": [],
+      "has_readme": true,
+      "has_metadata": true,
+      "document_count": 1
+    },
+    "04_standard_model_sectors": {
+      "path": "04_standard_model_sectors",
+      "files": [
+        {
+          "name": "MODULE_METADATA.yml",
+          "size": 419,
+          "modified": "2025-10-08T01:11:05.123384"
+        },
+        {
+          "name": "README.md",
+          "size": 7123,
+          "modified": "2025-10-07T23:45:05.940864"
+        }
+      ],
+      "submodules": [
+        "electromagnetism",
+        "fermions",
+        "new_states",
+        "qcd_strong",
+        "scalar_higgs",
+        "weak_interactions"
+      ],
+      "has_readme": true,
+      "has_metadata": true,
+      "document_count": 0
+    },
+    "05_cosmology_quantum_gravity": {
+      "path": "05_cosmology_quantum_gravity",
+      "files": [
+        {
+          "name": "MODULE_METADATA.yml",
+          "size": 403,
+          "modified": "2025-10-08T01:11:05.125460"
+        },
+        {
+          "name": "README.md",
+          "size": 6753,
+          "modified": "2025-10-07T13:21:08.209799"
+        }
+      ],
+      "submodules": [
+        "cosmology",
+        "experimental_predictions",
+        "ml_framework",
+        "quantum_gravity"
+      ],
+      "has_readme": true,
+      "has_metadata": true,
+      "document_count": 0
+    },
+    "06_supplements": {
+      "path": "06_supplements",
+      "files": [
+        {
+          "name": "MODULE_METADATA.yml",
+          "size": 432,
+          "modified": "2025-10-08T01:11:05.126465"
+        },
+        {
+          "name": "README.md",
+          "size": 9470,
+          "modified": "2025-10-07T13:21:08.209799"
+        }
+      ],
+      "submodules": [
+        "algorithmic_validation",
+        "computational_tools",
+        "cross_references",
+        "mathematical_foundations",
+        "radiative_corrections",
+        "validation_tables"
+      ],
+      "has_readme": true,
+      "has_metadata": true,
+      "document_count": 0
+    }
+  },
+  "documents": {},
+  "legacy_files": {
+    "docs_published": [
+      {
+        "name": "gift_preprint_full.md",
+        "path": "docs_published\\gift_preprint_full.md",
+        "size": 46973,
+        "modified": "2025-10-07T12:30:20.017948"
+      },
+      {
+        "name": "gift_tech_supplement.md",
+        "path": "docs_published\\gift_tech_supplement.md",
+        "size": 39506,
+        "modified": "2025-10-07T12:30:36.988180"
+      }
+    ],
+    "docs": [
+      {
+        "name": "CODE_OF_CONDUCT.md",
+        "path": "CODE_OF_CONDUCT.md",
+        "size": 5137,
+        "modified": "2025-09-25T13:37:58.851679"
+      },
+      {
+        "name": "CONTRIBUTING.md",
+        "path": "CONTRIBUTING.md",
+        "size": 6863,
+        "modified": "2025-09-25T13:37:58.852581"
+      },
+      {
+        "name": "README.md",
+        "path": "README.md",
+        "size": 10544,
+        "modified": "2025-10-06T00:04:22.625158"
+      },
+      {
+        "name": "SECURITY.md",
+        "path": "SECURITY.md",
+        "size": 3644,
+        "modified": "2025-09-25T13:37:58.851679"
+      },
+      {
+        "name": "gift_preprint_full.md",
+        "path": "docs\\gift_preprint_full.md",
+        "size": 46760,
+        "modified": "2025-10-02T23:47:29"
+      },
+      {
+        "name": "gift_tech_supplement.md",
+        "path": "docs\\gift_tech_supplement.md",
+        "size": 42170,
+        "modified": "2025-10-03T15:32:36"
+      },
+      {
+        "name": "11D_and_dynamics.md",
+        "path": "ml\\11D_and_dynamics.md",
+        "size": 8500,
+        "modified": "2025-10-07T09:47:33.290083"
+      },
+      {
+        "name": "gift_preprint_full.md",
+        "path": "ml\\gift_preprint_full.md",
+        "size": 49609,
+        "modified": "2025-10-04T11:14:02"
+      },
+      {
+        "name": "gift_tech_supplement.md",
+        "path": "ml\\gift_tech_supplement.md",
+        "size": 72298,
+        "modified": "2025-10-04T10:45:12"
+      },
+      {
+        "name": "k7_construction_and_chirality_analysis.md",
+        "path": "ml\\k7_construction_and_chirality_analysis.md",
+        "size": 34727,
+        "modified": "2025-10-07T09:16:21.046080"
+      },
+      {
+        "name": "MATHEMATICAL_SUPPORT_DOCUMENT.md",
+        "path": "ml\\MATHEMATICAL_SUPPORT_DOCUMENT.md",
+        "size": 11958,
+        "modified": "2025-10-03T17:42:44"
+      },
+      {
+        "name": "preprint_addon.md",
+        "path": "ml\\preprint_addon.md",
+        "size": 4460,
+        "modified": "2025-10-03T23:21:56.860620"
+      },
+      {
+        "name": "quantum_gravity_ml_framework_analysis.md",
+        "path": "ml\\quantum_gravity_ml_framework_analysis.md",
+        "size": 39383,
+        "modified": "2025-10-07T12:09:37.786852"
+      }
+    ],
+    "notebooks": [
+      {
+        "name": "gift_support_notebook.ipynb",
+        "path": "docs\\gift_support_notebook.ipynb",
+        "size": 67447,
+        "modified": "2025-10-05T12:31:21.796484"
+      },
+      {
+        "name": "gift_tutorial_e8_to_sm.ipynb",
+        "path": "docs\\gift_tutorial_e8_to_sm.ipynb",
+        "size": 582542,
+        "modified": "2025-10-05T17:19:26.688636"
+      },
+      {
+        "name": "gift_support_notebook.ipynb",
+        "path": "docs_published\\gift_support_notebook.ipynb",
+        "size": 67447,
+        "modified": "2025-10-05T12:31:21.796484"
+      },
+      {
+        "name": "gift_tutorial_e8_to_sm.ipynb",
+        "path": "docs_published\\gift_tutorial_e8_to_sm.ipynb",
+        "size": 582542,
+        "modified": "2025-10-05T17:19:26.688636"
+      }
+    ],
+    "pdfs": [
+      {
+        "name": "gift-main.pdf",
+        "path": "docs\\gift-main.pdf",
+        "size": 196111,
+        "modified": "2025-10-05T12:31:21.790864"
+      },
+      {
+        "name": "gift_technical.pdf",
+        "path": "docs\\gift_technical.pdf",
+        "size": 414821,
+        "modified": "2025-10-05T12:31:21.804005"
+      },
+      {
+        "name": "gift-main.pdf",
+        "path": "docs_published\\gift-main.pdf",
+        "size": 196111,
+        "modified": "2025-10-05T12:31:21.790864"
+      },
+      {
+        "name": "gift_technical.pdf",
+        "path": "docs_published\\gift_technical.pdf",
+        "size": 414821,
+        "modified": "2025-10-05T12:31:21.804005"
+      }
+    ],
+    "other": [
+      {
+        "name": "environment.yml",
+        "path": "environment.yml",
+        "size": 256,
+        "modified": "2025-09-25T10:36:39.983040"
+      },
+      {
+        "name": "gift_calculator.js",
+        "path": "gift_calculator.js",
+        "size": 13377,
+        "modified": "2025-10-05T15:09:28.754272"
+      },
+      {
+        "name": "index.html",
+        "path": "index.html",
+        "size": 10774,
+        "modified": "2025-10-05T15:29:59.614506"
+      },
+      {
+        "name": "LICENSE",
+        "path": "LICENSE",
+        "size": 1101,
+        "modified": "2025-09-25T10:32:37.058866"
+      },
+      {
+        "name": "postBuild",
+        "path": "postBuild",
+        "size": 427,
+        "modified": "2025-09-25T10:36:39.995624"
+      },
+      {
+        "name": "requirements.txt",
+        "path": "requirements.txt",
+        "size": 405,
+        "modified": "2025-09-25T23:53:14.224611"
+      },
+      {
+        "name": "runtime.txt",
+        "path": "runtime.txt",
+        "size": 12,
+        "modified": "2025-09-25T10:36:39.996882"
+      },
+      {
+        "name": "summary_generator.html",
+        "path": "summary_generator.html",
+        "size": 6996,
+        "modified": "2025-10-05T23:36:40.515184"
+      },
+      {
+        "name": "summary_generator.js",
+        "path": "summary_generator.js",
+        "size": 24115,
+        "modified": "2025-10-05T23:48:41.048029"
+      },
+      {
+        "name": "gift_tutorial_e8_to_sm.html",
+        "path": "docs\\gift_tutorial_e8_to_sm.html",
+        "size": 513305,
+        "modified": "2025-10-08T01:24:44.791440"
+      },
+      {
+        "name": "e8_root_system.jpg",
+        "path": "ml\\e8_root_system.jpg",
+        "size": 1013261,
+        "modified": "2025-10-04T16:51:58"
+      },
+      {
+        "name": "k7_manifold.jpg",
+        "path": "ml\\k7_manifold.jpg",
+        "size": 868766,
+        "modified": "2025-10-04T16:52:20"
+      },
+      {
+        "name": "parameter_network.jpg",
+        "path": "ml\\parameter_network.jpg",
+        "size": 581285,
+        "modified": "2025-10-04T16:52:14"
+      }
+    ]
+  },
+  "scripts": {
+    "generate_metadata.py": {
+      "path": "scripts\\generate_metadata.py",
+      "lines": 307,
+      "size": 11558,
+      "modified": "2025-10-08T01:13:17.817866",
+      "has_docstring": true,
+      "imports": [
+        "import os",
+        "import yaml",
+        "import json",
+        "from datetime import datetime",
+        "from pathlib import Path",
+        "from collections import defaultdict",
+        "import sys"
+      ]
+    },
+    "validate_framework.py": {
+      "path": "scripts\\validate_framework.py",
+      "lines": 370,
+      "size": 14971,
+      "modified": "2025-10-08T00:27:49.200025",
+      "has_docstring": true,
+      "imports": [
+        "import os",
+        "import sys",
+        "import json",
+        "import re",
+        "import subprocess",
+        "from datetime import datetime",
+        "from pathlib import Path",
+        "from collections import Counter, defaultdict"
+      ]
+    }
+  },
+  "workflows": {
+    "config.yml": {
+      "path": ".github\\workflows\\config.yml",
+      "size": 1471,
+      "modified": "2025-10-07T23:45:05.332507",
+      "has_triggers": true,
+      "has_jobs": false
+    },
+    "docs-validation-old.yml": {
+      "path": ".github\\workflows\\docs-validation-old.yml",
+      "size": 14976,
+      "modified": "2025-10-08T00:25:25.090279",
+      "has_triggers": true,
+      "has_jobs": true
+    },
+    "experimental-validation.yml": {
+      "path": ".github\\workflows\\experimental-validation.yml",
+      "size": 14293,
+      "modified": "2025-10-07T23:45:05.698056",
+      "has_triggers": true,
+      "has_jobs": true
+    },
+    "framework-validation-simple.yml": {
+      "path": ".github\\workflows\\framework-validation-simple.yml",
+      "size": 2115,
+      "modified": "2025-10-08T01:13:17.817866",
+      "has_triggers": true,
+      "has_jobs": true
+    },
+    "framework-validation.yml": {
+      "path": ".github\\workflows\\framework-validation.yml",
+      "size": 11113,
+      "modified": "2025-10-07T23:45:05.556125",
+      "has_triggers": true,
+      "has_jobs": true
+    },
+    "notebooks-test.yml": {
+      "path": ".github\\workflows\\notebooks-test.yml",
+      "size": 8760,
+      "modified": "2025-10-07T23:45:05.626822",
+      "has_triggers": true,
+      "has_jobs": true
+    },
+    "release.yml": {
+      "path": ".github\\workflows\\release.yml",
+      "size": 8687,
+      "modified": "2025-10-07T23:45:05.513753",
+      "has_triggers": true,
+      "has_jobs": true
+    }
+  }
+}

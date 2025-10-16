@@ -1,0 +1,53 @@
+generated_at: '2025-10-08T01:25:33.512836'
+legacy_files:
+  docs: 13
+  docs_published: 2
+  notebooks: 4
+  other: 13
+  pdfs: 4
+modules:
+  01_synthesis_and_overview:
+    document_count: 1
+    has_metadata: true
+    has_readme: true
+    submodules: 0
+  02_e8_foundations:
+    document_count: 1
+    has_metadata: true
+    has_readme: true
+    submodules: 0
+  03_ads_k7_construction:
+    document_count: 1
+    has_metadata: true
+    has_readme: true
+    submodules: 0
+  04_standard_model_sectors:
+    document_count: 0
+    has_metadata: true
+    has_readme: true
+    submodules: 6
+  05_cosmology_quantum_gravity:
+    document_count: 0
+    has_metadata: true
+    has_readme: true
+    submodules: 4
+  06_supplements:
+    document_count: 0
+    has_metadata: true
+    has_readme: true
+    submodules: 6
+scripts:
+  generate_metadata.py:
+    has_docstring: true
+    import_count: 7
+    lines: 307
+  validate_framework.py:
+    has_docstring: true
+    import_count: 8
+    lines: 370
+summary:
+  total_documents: 3
+  total_legacy_files: 36
+  total_modules: 6
+  total_scripts: 2
+  total_workflows: 7

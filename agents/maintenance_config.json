@@ -1,0 +1,23 @@
+{
+  "maintenance_schedule": {
+    "canonical_scan": "daily@06:00",
+    "validation": "daily@07:00",
+    "backup": "daily@02:00",
+    "cleanup": "weekly@sunday@04:00"
+  },
+  "notification_settings": {
+    "email_alerts": false,
+    "log_level": "INFO",
+    "report_recipients": []
+  },
+  "validation_settings": {
+    "strict_mode": true,
+    "auto_fix": false,
+    "require_approval": true
+  },
+  "backup_settings": {
+    "auto_backup": true,
+    "include_legacy": false,
+    "retention_days": 90
+  }
+}

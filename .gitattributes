@@ -1,0 +1,28 @@
+# Language detection
+*.py linguist-language=Python
+*.js linguist-language=JavaScript
+*.html linguist-language=HTML
+*.css linguist-language=CSS
+*.md linguist-language=Markdown
+*.ipynb linguist-language=Jupyter Notebook
+
+# Documentation files
+*.md linguist-documentation
+README.md linguist-documentation
+LICENSE linguist-documentation
+
+# Large files
+*.pdf linguist-generated
+*.ipynb linguist-generated
+
+# Binary files
+*.png linguist-vendored
+*.jpg linguist-vendored
+*.jpeg linguist-vendored
+*.gif linguist-vendored
+*.ico linguist-vendored
+
+# Archive files
+*.zip linguist-vendored
+*.tar.gz linguist-vendored
+*.rar linguist-vendored

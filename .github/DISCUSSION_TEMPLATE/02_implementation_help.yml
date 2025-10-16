@@ -1,0 +1,117 @@
+name: 💻 Implementation & Code Help
+description: Get help with GIFT framework implementation, Python code, or computational issues
+title: "[CODE] "
+labels: ["implementation", "python", "help"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Implementation & Code Help
+        
+        Get help with GIFT framework implementation, Python code, or computational issues.
+        
+        ### Guidelines
+        - Include error messages and code snippets
+        - Specify your Python version and operating system
+        - Describe what you're trying to achieve
+        - Check existing issues before posting
+  
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Describe the Problem"
+      description: "What are you trying to implement or what issue are you encountering?"
+      placeholder: "e.g., I'm trying to calculate the Hubble constant using the cosmological sector module..."
+    validations:
+      required: true
+  
+  - type: textarea
+    id: code
+    attributes:
+      label: "Code Snippet"
+      description: "Include relevant code, error messages, or output"
+      render: python
+      placeholder: |
+        ```python
+        from sectors.cosmological import HubbleCalculator
+        calc = HubbleCalculator()
+        # Your code here
+        ```
+    validations:
+      required: true
+  
+  - type: textarea
+    id: error
+    attributes:
+      label: "Error Message (if any)"
+      description: "Copy and paste the complete error message"
+      render: shell
+      placeholder: |
+        Traceback (most recent call last):
+          File "example.py", line 1, in <module>
+        ModuleNotFoundError: No module named 'gift'
+    validations:
+      required: false
+  
+  - type: dropdown
+    id: environment
+    attributes:
+      label: "Environment"
+      description: "Your development environment"
+      options:
+        - "Python 3.8"
+        - "Python 3.9"
+        - "Python 3.10"
+        - "Python 3.11"
+        - "Jupyter Notebook"
+        - "Google Colab"
+        - "Other"
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: os
+    attributes:
+      label: "Operating System"
+      description: "Your operating system"
+      options:
+        - "Windows"
+        - "macOS"
+        - "Linux"
+        - "Other"
+    validations:
+      required: true
+  
+  - type: checkboxes
+    id: modules
+    attributes:
+      label: "Related GIFT Modules"
+      description: "Select modules relevant to your question"
+      options:
+        - label: "Core GIFT framework (gift/core.py)"
+          required: false
+        - label: "Electromagnetic sector"
+          required: false
+        - label: "Cosmological sector"
+          required: false
+        - label: "Unification sector"
+          required: false
+        - label: "Electroweak sector"
+          required: false
+        - label: "Strong sector"
+          required: false
+        - label: "Fermion sector"
+          required: false
+        - label: "GIFT Translator"
+          required: false
+        - label: "Examples and demos"
+          required: false
+  
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected vs Actual Behavior"
+      description: "What did you expect to happen vs what actually happened?"
+      placeholder: "Expected: H₀ = 72.93 km/s/Mpc, Actual: Error message..."
+    validations:
+      required: false
